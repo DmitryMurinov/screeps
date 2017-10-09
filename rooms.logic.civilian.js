@@ -254,13 +254,23 @@ module.exports = {
             }
         }
 
-        // if (controllerLevel >= 4 && gameTime.substring(gameTime.length - 2, gameTime.length) == '00') {
-        //     this.placeRampart(roomName);
-        //     var rampartAreas = new Array();
-        //     var rampartArea1 = {x1: 20, y1: 17, x2: 34, y2: 31};
-        //     rampartAreas.push(rampartArea1);
-        //     this.placeRampartFromArea(roomName, rampartAreas);
-        // }
+        if (controllerLevel >= 4 && gameTime.substring(gameTime.length - 2, gameTime.length) == '00') {
+            this.placeRampart(roomName);
+            var rampartAreas = new Array();
+            //     var rampartArea1 = {x1: 20, y1: 17, x2: 34, y2: 31};
+            var rampartArea2 = {x1: 20, y1: 17, x2: 34, y2: 17};
+            var rampartArea3 = {x1: 20, y1: 31, x2: 34, y2: 31};
+            var rampartArea4 = {x1: 20, y1: 17, x2: 20, y2: 31};
+            var rampartArea5 = {x1: 34, y1: 17, x2: 34, y2: 31};
+
+            //     rampartAreas.push(rampartArea1);
+            rampartAreas.push(rampartArea2);
+            rampartAreas.push(rampartArea3);
+            rampartAreas.push(rampartArea4);
+            rampartAreas.push(rampartArea5);
+
+            this.placeRampartFromArea(roomName, rampartAreas);
+        }
 
 
         var freeSpawn;
@@ -288,16 +298,16 @@ module.exports = {
 
         var creepPotential = 0;
 
-        if(controllerLevel < 7) {
+        if (controllerLevel < 7) {
             creepPotential = 300 * _.sum(Game.spawns, (s) => s.room.name == roomName && s.owner.username == 'Dehar')
                 + 50 * _.sum(Game.structures, (s) => s.room.name == roomName && s.owner.username == 'Dehar' &&
                     s.structureType == STRUCTURE_EXTENSION);
-        } else if (controllerLevel == 7){
+        } else if (controllerLevel == 7) {
             creepPotential = 300 * _.sum(Game.spawns, (s) => s.room.name == roomName && s.owner.username == 'Dehar')
                 + 100 * _.sum(Game.structures, (s) => s.room.name == roomName && s.owner.username == 'Dehar' &&
                     s.structureType == STRUCTURE_EXTENSION);
 
-        } else if (controllerLevel == 8){
+        } else if (controllerLevel == 8) {
             creepPotential = 300 * _.sum(Game.spawns, (s) => s.room.name == roomName && s.owner.username == 'Dehar')
                 + 200 * _.sum(Game.structures, (s) => s.room.name == roomName && s.owner.username == 'Dehar' &&
                     s.structureType == STRUCTURE_EXTENSION);
@@ -538,7 +548,7 @@ module.exports = {
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 4 + "(\"courier\"), memory)";
                     var createString = eval(constructorString);
                     eval(createString);
-                }  else if (controllerLevel > 1 && localMadeUpgraders < localMadeUpgradersNeeded) {
+                } else if (controllerLevel > 1 && localMadeUpgraders < localMadeUpgradersNeeded) {
                     var memory = "{role: 'upgrader', working: false, origination: '" + roomName + "'}";
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + controllerLevel + "(\"upgrader\"), memory)";
                     var createString = eval(constructorString);
@@ -713,7 +723,7 @@ module.exports = {
                     var createString = eval(constructorString);
                     eval(createString);
                     roomMemory.controllerAttacker2Needed = false;
-                }else if (localMadeMedic1 < 0) {
+                } else if (localMadeMedic1 < 0) {
                     var memory = "{role: 'medic1', claim: true, working: false, origination: '" + roomName + "', arrived1: false " +
                         ", needBoost: true" +
                         ", roomToWorkX1: 3, roomToWorkY1: 30,  roomToWorkName1: \"E57N17\"" +
@@ -792,7 +802,7 @@ module.exports = {
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 6 + "(\"dismantilist\"), memory)";
                     var createString = eval(constructorString);
                     eval(createString);
-                }else if (localMadeKeeperKiller1 < 2) {
+                } else if (localMadeKeeperKiller1 < 2) {
                     var memory = "{role: 'keeperKiller1', working: false, origination: '" + roomName + "', arrived: false, " +
                         "roomToWorkX1: " + (roomToWorkX5 + 3) + "," +
                         "roomToWorkY1: " + roomToWorkY5 + "," +
