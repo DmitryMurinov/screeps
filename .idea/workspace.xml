@@ -1,0 +1,1111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b8621ae8-e9ab-4357-b403-3494cd163854" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/creep.templates.js" afterPath="$PROJECT_DIR$/creep.templates.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/creeps.runAllCreeps.backup20170920.js" afterPath="$PROJECT_DIR$/creeps.runAllCreeps.backup20170920.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/creeps.runAllCreeps.js" afterPath="$PROJECT_DIR$/creeps.runAllCreeps.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/helper.counter.js" afterPath="$PROJECT_DIR$/helper.counter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labs.js" afterPath="$PROJECT_DIR$/labs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.js" afterPath="$PROJECT_DIR$/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manageResources.js" afterPath="$PROJECT_DIR$/manageResources.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/market.js" afterPath="$PROJECT_DIR$/market.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/role.attackerLogic.js" afterPath="$PROJECT_DIR$/role.attackerLogic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/role.basicCreepOuter.js" afterPath="$PROJECT_DIR$/role.basicCreepOuter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/role.controllerAttacker.js" afterPath="$PROJECT_DIR$/role.controllerAttacker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/role.dismantalist.js" afterPath="$PROJECT_DIR$/role.dismantalist.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/role.keeperKiller.js" afterPath="$PROJECT_DIR$/role.keeperKiller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/role.outerHarvesterLogic.js" afterPath="$PROJECT_DIR$/role.outerHarvesterLogic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rooms.logic.civilian.js" afterPath="$PROJECT_DIR$/rooms.logic.civilian.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rooms.logic.civilian.new.js" afterPath="$PROJECT_DIR$/rooms.logic.civilian.new.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rooms.logic.war.js" afterPath="$PROJECT_DIR$/rooms.logic.war.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/struct.linksLogic.js" afterPath="$PROJECT_DIR$/struct.linksLogic.js" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="role.pureHarvester.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/role.pureHarvester.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="17" column="99" lean-forward="false" selection-start-line="17" selection-start-column="99" selection-end-line="17" selection-end-column="99" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="role.controllerAttacker.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/role.controllerAttacker.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="572">
+              <caret line="145" column="33" lean-forward="false" selection-start-line="145" selection-start-column="33" selection-end-line="145" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="17">
+                <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="creeps.runAllCreeps.backup20170920.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/creeps.runAllCreeps.backup20170920.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="54" lean-forward="false" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="role.outerReserver.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/role.outerReserver.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="role.sieger.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/role.sieger.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="creep.templates.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/creep.templates.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="572">
+              <caret line="402" column="0" lean-forward="false" selection-start-line="402" selection-start-column="0" selection-end-line="402" selection-end-column="0" />
+              <folding>
+                <marker date="1507565494374" expanded="true" signature="6465:8537" ph="{...}" />
+                <marker date="1507565494374" expanded="true" signature="18224:18236" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="role.bankirLogic.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/role.bankirLogic.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="role.bankir.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/role.bankir.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="role.basicCreep.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/role.basicCreep.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="572">
+              <caret line="238" column="19" lean-forward="false" selection-start-line="238" selection-start-column="19" selection-end-line="238" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>57N14</find>
+      <find>trib</find>
+      <find>54n18</find>
+      <find>medic</find>
+      <find>localMadeBasicCreepsOuter5</find>
+      <find>localMadeAttackerLogic</find>
+      <find>name</find>
+      <find>con</find>
+      <find>) {</find>
+      <find>balan</find>
+      <find>bala</find>
+      <find>runLa</find>
+      <find>ram</find>
+      <find>this.placeRampart(roomName);</find>
+      <find>consol</find>
+      <find>par</find>
+      <find>conto</find>
+      <find>controllerAttacker2</find>
+      <find>console</find>
+      <find>contro</find>
+      <find>conso</find>
+      <find>localMadeAttackerLogic3</find>
+      <find>time</find>
+      <find>cons</find>
+      <find>controllerAttacker</find>
+      <find>gameti</find>
+      <find>previ</find>
+      <find>pa</find>
+      <find>controllera</find>
+      <find>room</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Spawn</replace>
+      <replace>{role</replace>
+      <replace>E53N16</replace>
+      <replace>E54N18</replace>
+      <replace>controllerLevel1to3 + &quot;(\&quot;pureHarvester\&quot;</replace>
+      <replace>8</replace>
+      <replace>9</replace>
+      <replace>localMadeBasicCreepsOuter1</replace>
+      <replace>roomMemory</replace>
+      <replace>TOUGH</replace>
+      <replace>1000</replace>
+      <replace>rolesList</replace>
+      <replace>terminal.store[RESOURCE_LEMERGIUM_ALKALIDE]</replace>
+      <replace>* produceModifier) {</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/role.harvTo280ThenUpgradeRC.js" />
+        <option value="$PROJECT_DIR$/role.outerHarvester.js" />
+        <option value="$PROJECT_DIR$/role.outerClaimer.js" />
+        <option value="$PROJECT_DIR$/role.outerCourier.js" />
+        <option value="$PROJECT_DIR$/role.outerBuilder2.js" />
+        <option value="$PROJECT_DIR$/role.builder.js" />
+        <option value="$PROJECT_DIR$/role.outerUpgrader2.js" />
+        <option value="$PROJECT_DIR$/role.repairer.js" />
+        <option value="$PROJECT_DIR$/role.outerBuilder.js" />
+        <option value="$PROJECT_DIR$/role.outerRepairer.js" />
+        <option value="$PROJECT_DIR$/role.outerRepairer2.js" />
+        <option value="$PROJECT_DIR$/ScreepsAutocomplete-master/rooms.logic.civilian.js" />
+        <option value="$PROJECT_DIR$/creep.runAllCreeps.js" />
+        <option value="$PROJECT_DIR$/role.pureHarvesterLink.js" />
+        <option value="$PROJECT_DIR$/role.attacker.js" />
+        <option value="$PROJECT_DIR$/role.courierLogic.js" />
+        <option value="$PROJECT_DIR$/role.patrolLogic.js" />
+        <option value="$PROJECT_DIR$/role.refillerWar.js" />
+        <option value="$PROJECT_DIR$/role.zombieLogic.js" />
+        <option value="$PROJECT_DIR$/rooms.logic.war.js" />
+        <option value="$PROJECT_DIR$/role.siegerLogic.js" />
+        <option value="$PROJECT_DIR$/role.exauster.js" />
+        <option value="$PROJECT_DIR$/role.outerClaimerLogic.js" />
+        <option value="$PROJECT_DIR$/role.pureHarvester.js" />
+        <option value="$PROJECT_DIR$/struct.linksLogic.js" />
+        <option value="$PROJECT_DIR$/role.ControllerAttacker.js" />
+        <option value="$PROJECT_DIR$/rooms.logic.civilian.new.js" />
+        <option value="$PROJECT_DIR$/struct.structuresNeedEnergy.js" />
+        <option value="$PROJECT_DIR$/role.pureMiner.js" />
+        <option value="$PROJECT_DIR$/market.js" />
+        <option value="$PROJECT_DIR$/role.basicCreep.js" />
+        <option value="$PROJECT_DIR$/role.courierMine.js" />
+        <option value="$PROJECT_DIR$/role.bankirLogic.js" />
+        <option value="$PROJECT_DIR$/role.upgrader.js" />
+        <option value="$PROJECT_DIR$/role.outerCourierLogic.js" />
+        <option value="$PROJECT_DIR$/role.courier.js" />
+        <option value="$PROJECT_DIR$/role.medicLogic.js" />
+        <option value="$PROJECT_DIR$/manageResources.js" />
+        <option value="$PROJECT_DIR$/role.attackerLogic.js" />
+        <option value="$PROJECT_DIR$/labs.js" />
+        <option value="$PROJECT_DIR$/role.controllerAttacker.js" />
+        <option value="$PROJECT_DIR$/role.dismantalist.js" />
+        <option value="$PROJECT_DIR$/role.keeperKiller.js" />
+        <option value="$PROJECT_DIR$/role.basicCreepOuter.js" />
+        <option value="$PROJECT_DIR$/main.js" />
+        <option value="$PROJECT_DIR$/creep.templates.js" />
+        <option value="$PROJECT_DIR$/role.outerHarvesterLogic.js" />
+        <option value="$PROJECT_DIR$/role.outerReserver.js" />
+        <option value="$PROJECT_DIR$/helper.counter.js" />
+        <option value="$PROJECT_DIR$/rooms.logic.civilian.js" />
+        <option value="$PROJECT_DIR$/creeps.runAllCreeps.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="411" />
+    <option name="y" value="68" />
+    <option name="width" value="1400" />
+    <option name="height" value="848" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource ProjectPane="true" />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="default" type="b2602c69:ProjectViewProjectNode" />
+              <item name="default" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\murin\AppData\Local\Screeps\scripts\screeps.com\default" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\murin\AppData\Local\Screeps\scripts\screeps.com\default" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b8621ae8-e9ab-4357-b403-3494cd163854" name="Default" comment="" />
+      <created>1503516219015</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1503516219015</updated>
+      <workItem from="1503516222724" duration="8592000" />
+      <workItem from="1503601002869" duration="9388000" />
+      <workItem from="1503612376181" duration="538000" />
+      <workItem from="1503638230847" duration="1413000" />
+      <workItem from="1503683648543" duration="19723000" />
+      <workItem from="1503734915417" duration="3370000" />
+      <workItem from="1503769691438" duration="15579000" />
+      <workItem from="1503821014817" duration="29382000" />
+      <workItem from="1503941043166" duration="11287000" />
+      <workItem from="1503985072302" duration="2688000" />
+      <workItem from="1504031015423" duration="4539000" />
+      <workItem from="1504035602296" duration="10327000" />
+      <workItem from="1504073458168" duration="1338000" />
+      <workItem from="1504114766147" duration="15778000" />
+      <workItem from="1504161277180" duration="1242000" />
+      <workItem from="1504200718876" duration="2289000" />
+      <workItem from="1504203619511" duration="6180000" />
+      <workItem from="1504242756434" duration="4147000" />
+      <workItem from="1504286931324" duration="13580000" />
+      <workItem from="1504334974597" duration="35000" />
+      <workItem from="1504369292936" duration="13267000" />
+      <workItem from="1504424526392" duration="8921000" />
+      <workItem from="1504449105621" duration="62000" />
+      <workItem from="1504461289785" duration="10872000" />
+      <workItem from="1504503283935" duration="824000" />
+      <workItem from="1504547786214" duration="10640000" />
+      <workItem from="1504639079699" duration="7997000" />
+      <workItem from="1504673981650" duration="2799000" />
+      <workItem from="1504722006367" duration="10438000" />
+      <workItem from="1504812254813" duration="10147000" />
+      <workItem from="1504848820221" duration="2396000" />
+      <workItem from="1504897208562" duration="13783000" />
+      <workItem from="1504941217835" duration="2303000" />
+      <workItem from="1504987932863" duration="4593000" />
+      <workItem from="1505034388151" duration="6397000" />
+      <workItem from="1505057876165" duration="6507000" />
+      <workItem from="1505153458544" duration="4435000" />
+      <workItem from="1505236901140" duration="3079000" />
+      <workItem from="1505327728546" duration="2764000" />
+      <workItem from="1505501192137" duration="5023000" />
+      <workItem from="1505507891452" duration="3338000" />
+      <workItem from="1505541203868" duration="3599000" />
+      <workItem from="1505552403516" duration="578000" />
+      <workItem from="1505567573662" duration="6186000" />
+      <workItem from="1505580401593" duration="12068000" />
+      <workItem from="1505626702255" duration="25239000" />
+      <workItem from="1505666977887" duration="11819000" />
+      <workItem from="1505752906801" duration="10908000" />
+      <workItem from="1505796629853" duration="1177000" />
+      <workItem from="1505841226702" duration="8734000" />
+      <workItem from="1505893678189" duration="4449000" />
+      <workItem from="1505931848012" duration="9215000" />
+      <workItem from="1506017400855" duration="7027000" />
+      <workItem from="1506052741458" duration="1887000" />
+      <workItem from="1506102895756" duration="8231000" />
+      <workItem from="1506147457076" duration="1298000" />
+      <workItem from="1506174103406" duration="1987000" />
+      <workItem from="1506192026980" duration="596000" />
+      <workItem from="1506192667754" duration="7570000" />
+      <workItem from="1506230115681" duration="14741000" />
+      <workItem from="1506261212628" duration="20537000" />
+      <workItem from="1506314981396" duration="4151000" />
+      <workItem from="1506345452715" duration="568000" />
+      <workItem from="1506348532964" duration="26400000" />
+      <workItem from="1506411463843" duration="12766000" />
+      <workItem from="1506435368580" duration="14423000" />
+      <workItem from="1506504229141" duration="35820000" />
+      <workItem from="1506575206506" duration="654000" />
+      <workItem from="1506575937813" duration="221000" />
+      <workItem from="1506620743391" duration="4911000" />
+      <workItem from="1506625714218" duration="14903000" />
+      <workItem from="1506667945535" duration="11821000" />
+      <workItem from="1506682190197" duration="3000" />
+      <workItem from="1506685736749" duration="19768000" />
+      <workItem from="1506764911620" duration="66000" />
+      <workItem from="1506878318526" duration="4777000" />
+      <workItem from="1506970329053" duration="1212000" />
+      <workItem from="1507056894991" duration="762000" />
+      <workItem from="1507133033082" duration="38000" />
+      <workItem from="1507230279034" duration="120000" />
+      <workItem from="1507396385466" duration="11062000" />
+      <workItem from="1507441924671" duration="3802000" />
+      <workItem from="1507452380146" duration="6939000" />
+      <workItem from="1507479585210" duration="7778000" />
+      <workItem from="1507532180667" duration="6706000" />
+      <workItem from="1507576791003" duration="1137000" />
+    </task>
+    <task id="LOCAL-00001" summary="Глобальное обновление, переписывание логики комнат">
+      <created>1507576833116</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1507576833119</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Глобальное обновление, переписывание логики комнат">
+      <created>1507577013663</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1507577013663</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Глобальное обновление, переписывание логики комнат">
+      <created>1507577909477</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1507577909477</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="640654000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980973" sideWeight="0.50625" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18697916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.49375" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="Глобальное обновление, переписывание логики комнат" />
+    <option name="LAST_COMMIT_MESSAGE" value="Глобальное обновление, переписывание логики комнат" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/zzz.role.outerRepairer2.js" />
+    <entry file="file://$PROJECT_DIR$/zzz.role.zombieLogic.js" />
+    <entry file="file://$PROJECT_DIR$/zzz.role.pureHarvesterLink.js" />
+    <entry file="file://$PROJECT_DIR$/zzz.role.patrolLogicBackUp.js" />
+    <entry file="file://$PROJECT_DIR$/zzz.role.courierLogic.js" />
+    <entry file="file://$PROJECT_DIR$/zzz.role.outerClaimer.js" />
+    <entry file="file://$PROJECT_DIR$/role.tower.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.towerpopup.backup20170920.js" />
+    <entry file="file://$PROJECT_DIR$/role.towerpopup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="9" lean-forward="false" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.reserver.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rooms.logic.civilian.new.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1853">
+          <caret line="109" column="49" lean-forward="false" selection-start-line="109" selection-start-column="49" selection-end-line="109" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.builder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/struct.linksLogic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="41" column="84" lean-forward="false" selection-start-line="41" selection-start-column="84" selection-end-line="41" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/struct.structuresNeedEnergy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScreepsAutocomplete-master/Room.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1912">
+          <caret line="353" column="4" lean-forward="false" selection-start-line="353" selection-start-column="4" selection-end-line="353" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/market.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="30" lean-forward="false" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.repairer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.pureMiner.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="14" column="70" lean-forward="false" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.courierMine.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="40" column="17" lean-forward="false" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.refillerWar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" column="48" lean-forward="false" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zzz.role.attacker.js" />
+    <entry file="file://$PROJECT_DIR$/role.upgrader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="36" column="75" lean-forward="true" selection-start-line="36" selection-start-column="75" selection-end-line="36" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.exauster.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="21" lean-forward="false" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zzz.role.outerCourierLogicBackUPPathFinding.js" />
+    <entry file="file://$PROJECT_DIR$/manageResources.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1156">
+          <caret line="68" column="58" lean-forward="false" selection-start-line="68" selection-start-column="58" selection-end-line="68" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/labs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2635">
+          <caret line="155" column="40" lean-forward="false" selection-start-line="155" selection-start-column="40" selection-end-line="155" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.dismantalist.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1156">
+          <caret line="68" column="24" lean-forward="false" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.keeperKiller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="49" column="43" lean-forward="false" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.basicCreepOuter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4539">
+          <caret line="267" column="5" lean-forward="false" selection-start-line="267" selection-start-column="5" selection-end-line="267" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rooms.logic.war.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.outerHarvesterLogic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="72" column="13" lean-forward="true" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.outerCourierLogic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="44" lean-forward="true" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.outerClaimerLogic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="739">
+          <caret line="97" column="29" lean-forward="true" selection-start-line="97" selection-start-column="29" selection-end-line="97" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.patrolLogic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helper.counter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="32" lean-forward="false" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+          <folding>
+            <marker date="1507568705589" expanded="true" signature="269:2970" ph="{...}" />
+            <marker date="1507568705589" expanded="true" signature="3013:3768" ph="{...}" />
+            <marker date="1507568705589" expanded="true" signature="3802:6161" ph="{...}" />
+            <marker date="1507568705589" expanded="true" signature="6231:6406" ph="{...}" />
+            <marker date="1507568705589" expanded="true" signature="6458:6636" ph="{...}" />
+            <marker date="1507568705589" expanded="true" signature="6685:6860" ph="{...}" />
+            <marker date="1507568705589" expanded="true" signature="6913:7094" ph="{...}" />
+            <marker date="1507568705589" expanded="true" signature="7129:8555" ph="{...}" />
+            <marker date="1507568705589" expanded="true" signature="7332:7527" ph="{...}" />
+            <marker date="1507568705589" expanded="true" signature="7408:7517" ph="{...}" />
+            <marker date="1507568705589" expanded="true" signature="7567:8518" ph="{...}" />
+            <marker date="1507568705589" expanded="true" signature="7644:8508" ph="{...}" />
+            <marker date="1507568705589" expanded="true" signature="8593:9045" ph="{...}" />
+            <marker date="1507568705589" expanded="true" signature="8761:8795" ph="{...}" />
+            <marker date="1507568705589" expanded="true" signature="9006:9039" ph="{...}" />
+            <marker date="1507568705589" expanded="true" signature="9568:9657" ph="{...}" />
+            <marker date="1507568705589" expanded="true" signature="10022:10306" ph="{...}" />
+            <marker date="1507568705589" expanded="true" signature="10062:10288" ph="{...}" />
+            <marker date="1507568705589" expanded="true" signature="10187:10266" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rooms.logic.civilian.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5627">
+          <caret line="331" column="113" lean-forward="false" selection-start-line="331" selection-start-column="113" selection-end-line="331" selection-end-column="113" />
+          <folding>
+            <marker date="1507568705603" expanded="true" signature="476:576" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="109083:114966" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="109083:114980" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="109083:114990" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="109322:110391" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="109917:110070" ph="//..." />
+            <marker date="1507568705603" expanded="true" signature="110433:111629" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="111012:111165" ph="//..." />
+            <marker date="1507568705603" expanded="true" signature="111672:112324" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="112360:112863" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="112898:113664" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="113665:114142" ph="/*...*/" />
+            <marker date="1507568705603" expanded="true" signature="114178:114948" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="115059:168855" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="115392:115446" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="115517:115571" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="115757:115805" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="116044:116106" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="116185:116247" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="116327:116390" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="116471:116534" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="116579:116642" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="116697:120250" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="116973:117063" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="117329:117414" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="118051:118140" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="120147:120240" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="120259:120744" ph="//..." />
+            <marker date="1507568705603" expanded="true" signature="120798:120989" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="120897:120979" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="121025:121072" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="121104:121151" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="121183:121226" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="121334:121378" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="121410:121492" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="121524:121570" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="121769:122582" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="122754:122808" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="122847:122901" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="128226:128382" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="128316:128372" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="128464:128631" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="128560:128621" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="128693:128838" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="128874:129667" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="128939:129334" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="129023:129318" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="129418:129657" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="130067:130111" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="130150:168848" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="130236:144152" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="130304:130599" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="130631:138886" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="130721:131032" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="131088:138153" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="131160:131505" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="131544:132160" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="132216:132651" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="132693:133313" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="133357:133983" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="134025:134771" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="134813:135433" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="135478:136104" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="136147:136894" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="136932:137660" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="137694:138131" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="138209:138526" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="138557:138868" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="138918:144137" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="138966:139277" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="139309:142339" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="139381:139726" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="139768:140388" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="140432:141058" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="141100:141846" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="141880:142317" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="142372:142720" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="142753:143089" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="143122:143452" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="143485:143802" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="143808:144119" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="144158:168838" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="144382:144442" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="144474:144534" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="144660:144720" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="144753:144893" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="145139:145254" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="145394:145510" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="145558:145620" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="145722:145786" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="145888:145952" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="146054:146118" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="146161:146456" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="146492:147041" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="147103:147514" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="147597:148083" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="148137:148551" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="148607:148988" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="149024:149501" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="149581:149976" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="150037:150894" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="150951:151632" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="151667:152449" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="152477:153281" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="153342:154199" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="154266:154844" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="154909:155660" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="155726:156739" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="156285:156434" ph="//..." />
+            <marker date="1507568705603" expanded="true" signature="156781:157911" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="157318:157467" ph="//..." />
+            <marker date="1507568705603" expanded="true" signature="157953:158857" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="158925:159503" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="159545:160315" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="160381:161122" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="161189:162196" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="161742:161891" ph="//..." />
+            <marker date="1507568705603" expanded="true" signature="162238:163049" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="163117:163695" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="163761:164512" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="164579:165431" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="164977:165126" ph="//..." />
+            <marker date="1507568705603" expanded="true" signature="165473:166284" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="166320:166803" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="166838:167572" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="167573:168050" ph="/*...*/" />
+            <marker date="1507568705603" expanded="true" signature="168086:168824" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="168894:168902" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="168959:171600" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="169190:171594" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="169230:169449" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="169455:171584" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="169474:170054" ph="//..." />
+            <marker date="1507568705603" expanded="true" signature="170209:170381" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="170298:170363" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="170413:171570" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="170501:170857" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="170897:171319" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="170984:171295" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="171342:171418" ph="//..." />
+            <marker date="1507568705603" expanded="true" signature="171455:171552" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="171906:172443" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="172241:172416" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="172495:172619" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="173028:173810" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="173120:173447" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="173512:173788" ph="{...}" />
+            <marker date="1507568705603" expanded="true" signature="173642:173762" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/creeps.runAllCreeps.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.attackerLogic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="191" column="5" lean-forward="false" selection-start-line="191" selection-start-column="5" selection-end-line="191" selection-end-column="5" />
+          <folding>
+            <marker date="1507564308196" expanded="true" signature="17:11266" ph="{...}" />
+            <marker date="1507564308196" expanded="true" signature="46:11263" ph="{...}" />
+            <marker date="1507564308196" expanded="true" signature="1093:11257" ph="{...}" />
+            <marker date="1507564308196" expanded="true" signature="10606:11247" ph="{...}" />
+            <marker date="1507564308196" expanded="true" signature="10652:10747" ph="{...}" />
+            <marker date="1507564308196" expanded="true" signature="10786:10862" ph="{...}" />
+            <marker date="1507564308196" expanded="true" signature="10868:11233" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.courier.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="44" lean-forward="false" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.medic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.outerReserver.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.sieger.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.pureHarvester.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="17" column="99" lean-forward="false" selection-start-line="17" selection-start-column="99" selection-end-line="17" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.controllerAttacker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="145" column="33" lean-forward="false" selection-start-line="145" selection-start-column="33" selection-end-line="145" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="17">
+            <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/creeps.runAllCreeps.backup20170920.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="54" lean-forward="false" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/creep.templates.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="402" column="0" lean-forward="false" selection-start-line="402" selection-start-column="0" selection-end-line="402" selection-end-column="0" />
+          <folding>
+            <marker date="1507565494374" expanded="true" signature="6465:8537" ph="{...}" />
+            <marker date="1507565494374" expanded="true" signature="18224:18236" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.bankirLogic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.bankir.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.basicCreep.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="238" column="19" lean-forward="false" selection-start-line="238" selection-start-column="19" selection-end-line="238" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
