@@ -77,7 +77,6 @@ module.exports = {
             terminal = terminals[0];
         }
 
-
         var lemergiumAlkalideReserve = allReservesCount[roomName + ";" + RESOURCE_LEMERGIUM_ALKALIDE];
 
         var lemergiumAlkalideReserveNeeded = 2000;
@@ -269,7 +268,7 @@ module.exports = {
             rampartAreas.push(rampartArea4);
             rampartAreas.push(rampartArea5);
 
-            this.placeRampartFromArea(roomName, rampartAreas);
+            // this.placeRampartFromArea(roomName, rampartAreas);
         }
 
 
@@ -279,6 +278,7 @@ module.exports = {
             freeSpawn = localSpawns[0].pos.findClosestByRange(localSpawns.filter((s) => s.isActive() == true && s.spawning == null));
         }
 
+/*
         if (controllerLevel >= 7) {
             var creepsToExtendLife;
             if (freeSpawn) {
@@ -295,6 +295,7 @@ module.exports = {
                 eval(healString);
             }
         }
+*/
 
         var creepPotential = 0;
 
@@ -2528,6 +2529,14 @@ module.exports = {
                     }
                 }
         }
+    },
+
+    createCreeps: function (roomName, allCreepsCount, gameTime, creepsData, creepsNeeded) {
+
+
+
+
+
     }
 }
 ;
