@@ -243,7 +243,7 @@ module.exports = {
                     } else {
                         var terminal = creep.room.terminal;
 
-                        if (terminal && terminal.store[RESOURCE_ENERGY] > 50000) {
+                        if (terminal && terminal.store[RESOURCE_ENERGY] > 10000) {
                             if (creep.withdraw(terminal, RESOURCE_ENERGY) == ERR_NOT_IN_RANGE) {
                                 creep.moveTo(terminal);
                             }
