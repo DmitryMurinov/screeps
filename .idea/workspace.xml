@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/role.outerHarvesterLogic.js" afterPath="$PROJECT_DIR$/role.outerHarvesterLogic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rooms.logic.civilian.js" afterPath="$PROJECT_DIR$/rooms.logic.civilian.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,21 +42,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rooms.logic.civilian.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="rooms.logic.civilian.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rooms.logic.civilian.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="2037" column="35" lean-forward="true" selection-start-line="2037" selection-start-column="35" selection-end-line="2037" selection-end-column="35" />
+            <state relative-caret-position="638">
+              <caret line="2066" column="37" lean-forward="false" selection-start-line="2066" selection-start-column="37" selection-end-line="2066" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="role.outerHarvesterLogic.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="role.outerHarvesterLogic.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/role.outerHarvesterLogic.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
-              <caret line="20" column="12" lean-forward="false" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -166,8 +166,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/role.courier.js" />
-        <option value="$PROJECT_DIR$/rooms.logic.civilian.js" />
         <option value="$PROJECT_DIR$/role.outerHarvesterLogic.js" />
+        <option value="$PROJECT_DIR$/rooms.logic.civilian.js" />
       </list>
     </option>
   </component>
@@ -336,7 +336,7 @@
       <updated>1507578927917</updated>
       <workItem from="1507578930859" duration="1672000" />
       <workItem from="1507645846579" duration="4760000" />
-      <workItem from="1507832656005" duration="4455000" />
+      <workItem from="1507832656005" duration="4603000" />
     </task>
     <task id="LOCAL-00001" summary="Защита главной комнаты.">
       <created>1507580036995</created>
@@ -408,11 +408,18 @@
       <option name="project" value="LOCAL" />
       <updated>1507837674856</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Обновляю логику комнат.">
+      <created>1507837827144</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1507837827144</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10887000" />
+    <option name="totallyTimeSpent" value="11035000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -631,21 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/role.builder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="19" selection-end-column="22" />
-          <folding>
-            <marker date="1507564308197" expanded="true" signature="1098:1137" ph="{...}" />
-            <marker date="1507564308197" expanded="true" signature="4230:4269" ph="{...}" />
-            <marker date="1507564308197" expanded="true" signature="4584:4627" ph="{...}" />
-            <marker date="1507564308197" expanded="true" signature="8120:8151" ph="{...}" />
-            <marker date="1507564308197" expanded="true" signature="8565:8600" ph="{...}" />
-            <marker date="1507564308197" expanded="true" signature="9034:9073" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/role.attackerLogic.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1468">
@@ -670,18 +662,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rooms.logic.civilian.js">
+    <entry file="file://$PROJECT_DIR$/role.outerHarvesterLogic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="2037" column="35" lean-forward="true" selection-start-line="2037" selection-start-column="35" selection-end-line="2037" selection-end-column="35" />
+        <state relative-caret-position="340">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/role.outerHarvesterLogic.js">
+    <entry file="file://$PROJECT_DIR$/role.builder.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="12" lean-forward="false" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+        <state relative-caret-position="306">
+          <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="19" selection-end-column="22" />
+          <folding>
+            <marker date="1507564308197" expanded="true" signature="1098:1137" ph="{...}" />
+            <marker date="1507564308197" expanded="true" signature="4230:4269" ph="{...}" />
+            <marker date="1507564308197" expanded="true" signature="4584:4627" ph="{...}" />
+            <marker date="1507564308197" expanded="true" signature="8120:8151" ph="{...}" />
+            <marker date="1507564308197" expanded="true" signature="8565:8600" ph="{...}" />
+            <marker date="1507564308197" expanded="true" signature="9034:9073" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rooms.logic.civilian.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="2066" column="37" lean-forward="false" selection-start-line="2066" selection-start-column="37" selection-end-line="2066" selection-end-column="37" />
           <folding />
         </state>
       </provider>

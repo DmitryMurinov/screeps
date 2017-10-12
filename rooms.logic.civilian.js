@@ -2064,6 +2064,8 @@ module.exports = {
             var roomToWorkY5 = roomMemory.roomToWorkY5;
         }
 
+        console.log(roomToWorkName1);
+
         if (gameTime.substring(gameTime.length - 3, gameTime.length) === '500') {
             var creepPotential = 0;
 
