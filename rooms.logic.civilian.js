@@ -2058,7 +2058,7 @@ module.exports = {
             roomToWorkName4 = roomMemory.roomToWorkName4;
             roomToWorkX4 = roomMemory.roomToWorkX4;
             roomToWorkY4 = roomMemory.roomToWorkY4;
-        } else if (roomMemory.roomToWorkName2) {
+        } else if (roomMemory.roomToWorkName5) {
             roomToWorkName5 = roomMemory.roomToWorkName5;
             roomToWorkX5 = roomMemory.roomToWorkX5;
             roomToWorkY5 = roomMemory.roomToWorkY5;
