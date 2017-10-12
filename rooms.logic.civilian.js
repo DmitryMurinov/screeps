@@ -3014,7 +3014,7 @@ module.exports = {
                     var createString = eval(constructorString);
                     eval(createString);
                 } else if (controllerLevel > 1 && localMadeOuterCourierLogic2 < localMadeOuterCourierLogic2Needed) {
-                    var memory = "{role: 'outerCourierLogic', working: false, origination: '" + roomName + "', arrived: false, roomToBackX: 4, roomToBackY: 1," +
+                    var memory = "{role: 'outerCourierLogic2', working: false, origination: '" + roomName + "', arrived: false, roomToBackX: 4, roomToBackY: 1," +
                         "roomToWorkX: " + (roomToWorkX2 - 2) + ", roomToWorkY: " + roomToWorkY2 + ",  " +
                         "linkRoomName: \"" + roomName + "\", linkRoomX: 5" + ", linkRoomY: 2," +
                         "roomToWorkName: \"" + roomToWorkName2 + "\"}";
@@ -3057,7 +3057,7 @@ module.exports = {
                     var createString = eval(constructorString);
                     eval(createString);
                 } else if (controllerLevel > 1 && localMadeOuterCourierLogic3 < localMadeOuterCourierLogic3Needed) {
-                    var memory = "{role: 'outerCourierLogic', working: false, origination: '" + roomName + "', arrived: false, roomToBackX: 20, roomToBackY: 47," +
+                    var memory = "{role: 'outerCourierLogic3', working: false, origination: '" + roomName + "', arrived: false, roomToBackX: 20, roomToBackY: 47," +
                         "roomToWorkX: " + (roomToWorkX3 - 2) + ", roomToWorkY: " + roomToWorkY3 + ",  " +
                         "linkRoomName: \"" + roomName + "\", linkRoomX: 21" + ", linkRoomY: 47," +
                         "roomToWorkName: \"" + roomToWorkName3 + "\"}";
