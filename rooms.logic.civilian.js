@@ -2046,19 +2046,23 @@ module.exports = {
             roomToWorkName1 = roomMemory.roomToWorkName1;
             roomToWorkX1 = roomMemory.roomToWorkX1;
             roomToWorkY1 = roomMemory.roomToWorkY1;
-        } else if (roomMemory.roomToWorkName2) {
+        }
+        if (roomMemory.roomToWorkName2) {
             roomToWorkName2 = roomMemory.roomToWorkName2;
             roomToWorkX2 = roomMemory.roomToWorkX2;
             roomToWorkY2 = roomMemory.roomToWorkY2;
-        } else if (roomMemory.roomToWorkName3) {
+        }
+        if (roomMemory.roomToWorkName3) {
             roomToWorkName3 = roomMemory.roomToWorkName3;
             roomToWorkX3 = roomMemory.roomToWorkX3;
             roomToWorkY3 = roomMemory.roomToWorkY3;
-        } else if (roomMemory.roomToWorkName4) {
+        }
+        if (roomMemory.roomToWorkName4) {
             roomToWorkName4 = roomMemory.roomToWorkName4;
             roomToWorkX4 = roomMemory.roomToWorkX4;
             roomToWorkY4 = roomMemory.roomToWorkY4;
-        } else if (roomMemory.roomToWorkName5) {
+        }
+        if (roomMemory.roomToWorkName5) {
             roomToWorkName5 = roomMemory.roomToWorkName5;
             roomToWorkX5 = roomMemory.roomToWorkX5;
             roomToWorkY5 = roomMemory.roomToWorkY5;

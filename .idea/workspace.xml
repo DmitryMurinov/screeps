@@ -45,8 +45,8 @@
       <file leaf-file-name="rooms.logic.civilian.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rooms.logic.civilian.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="239" column="38" lean-forward="true" selection-start-line="239" selection-start-column="38" selection-end-line="239" selection-end-column="38" />
+            <state relative-caret-position="734">
+              <caret line="2064" column="8" lean-forward="false" selection-start-line="2064" selection-start-column="8" selection-end-line="2064" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -337,7 +337,7 @@
       <updated>1507578927917</updated>
       <workItem from="1507578930859" duration="1672000" />
       <workItem from="1507645846579" duration="4760000" />
-      <workItem from="1507832656005" duration="5840000" />
+      <workItem from="1507832656005" duration="6149000" />
     </task>
     <task id="LOCAL-00001" summary="Защита главной комнаты.">
       <created>1507580036995</created>
@@ -437,11 +437,18 @@
       <option name="project" value="LOCAL" />
       <updated>1507838945542</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Обновляю логику комнат.">
+      <created>1507839214905</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1507839214905</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12272000" />
+    <option name="totallyTimeSpent" value="12581000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -709,8 +716,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rooms.logic.civilian.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="239" column="38" lean-forward="true" selection-start-line="239" selection-start-column="38" selection-end-line="239" selection-end-column="38" />
+        <state relative-caret-position="734">
+          <caret line="2064" column="8" lean-forward="false" selection-start-line="2064" selection-start-column="8" selection-end-line="2064" selection-end-column="8" />
           <folding />
         </state>
       </provider>
