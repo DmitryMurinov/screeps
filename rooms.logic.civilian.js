@@ -269,10 +269,6 @@ module.exports = {
                 }
         */
 
-        if (controllerLevel >= 6 && creepPotential >= 2300 && creepPotential <= 5300) {
-            controllerLevel = 6;
-        }
-
     },
 
     E57N15:
