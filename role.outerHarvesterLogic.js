@@ -18,9 +18,12 @@ module.exports = {
             if (creep.memory.destinationPath != undefined) {
                 moveResult = creep.moveByPath(creep.memory.destinationPath);
             }
+
+            console.log(creep.room.name);
+
             if (creep.moveByPath.destinationPath == undefined || moveResult != 'OK') {
                 creep.memory.destinationPath = creep.pos.findPathTo(
-                    new RoomPosition(creep.memory.roomToWorkX, creep.memory.roomToWorkY, creep.memory.roomToWorkName));
+                new RoomPosition(creep.memory.roomToWorkX, creep.memory.roomToWorkY, creep.memory.roomToWorkName));
                 creep.moveByPath(creep.memory.destinationPath);
             }
         }
