@@ -200,38 +200,38 @@ module.exports = {
 
         let creepsNeeded = new Map();
 
-        creepsNeeded.set("basicCreep", 2);
-        creepsNeeded.set("pureHarvester", 1);
-        creepsNeeded.set("pureMiner", 1);
-        creepsNeeded.set("courier", 1);
-        creepsNeeded.set("upgrader", 1);
-        creepsNeeded.set("basicCreepOuter1", 1);
-        creepsNeeded.set("basicCreepOuter2", 1);
-        creepsNeeded.set("basicCreepOuter3", 1);
-        creepsNeeded.set("basicCreepOuter4", 0);
+        creepsNeeded.set("basicCreep", 0);//2
+        creepsNeeded.set("pureHarvester", 0);//1
+        creepsNeeded.set("pureMiner", 0);//1
+        creepsNeeded.set("courier", 0);//1
+        creepsNeeded.set("upgrader", 0);//1
+        creepsNeeded.set("basicCreepOuter1", 0);//1
+        creepsNeeded.set("basicCreepOuter2", 0);//1
+        creepsNeeded.set("basicCreepOuter3", 0);//1
+        creepsNeeded.set("basicCreepOuter4", 0);//0
         creepsNeeded.set("basicCreepOuter5", 0);
-        creepsNeeded.set("basicCreepOuter6", 3);
+        creepsNeeded.set("basicCreepOuter6", 3);//3
         creepsNeeded.set("outerHarvesterLogic", 0);
-        creepsNeeded.set("outerHarvesterLogic1", 2);
-        creepsNeeded.set("outerHarvesterLogic2", 2);
-        creepsNeeded.set("outerHarvesterLogic3", 2);
+        creepsNeeded.set("outerHarvesterLogic1", 0);//2
+        creepsNeeded.set("outerHarvesterLogic2", 0);//2
+        creepsNeeded.set("outerHarvesterLogic3", 0);//2
         creepsNeeded.set("outerHarvesterLogic4", 0);
         creepsNeeded.set("outerHarvesterLogic5", 0);
-        creepsNeeded.set("outerCourierLogic1", 1);
-        creepsNeeded.set("outerCourierLogic2", 1);
-        creepsNeeded.set("outerCourierLogic3", 1);
+        creepsNeeded.set("outerCourierLogic1", 0);//1
+        creepsNeeded.set("outerCourierLogic2", 0);//1
+        creepsNeeded.set("outerCourierLogic3", 0);//1
         creepsNeeded.set("outerCourierLogic4", 0);
         creepsNeeded.set("outerCourierLogic5", 0);
-        creepsNeeded.set("attackerLogic1", 1);
+        creepsNeeded.set("attackerLogic1", 0);//1
         creepsNeeded.set("attackerLogic2", 0);
         creepsNeeded.set("attackerLogic3", 0);
         creepsNeeded.set("keeperKiller1", 0);
         creepsNeeded.set("keeperKiller2", 0);
         creepsNeeded.set("controllerAttacker1", 0);
         creepsNeeded.set("controllerAttacker2", 0);
-        creepsNeeded.set("outerReserver1", 1);
-        creepsNeeded.set("outerReserver2", 1);
-        creepsNeeded.set("outerReserver3", 1);
+        creepsNeeded.set("outerReserver1", 0);//1
+        creepsNeeded.set("outerReserver2", 0);//1
+        creepsNeeded.set("outerReserver3", 0);//1
         creepsNeeded.set("outerReserver4", 0);
         creepsNeeded.set("outerReserver5", 0);
         creepsNeeded.set("dismantilist1", 0);
