@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/role.outerHarvesterLogic.js" afterPath="$PROJECT_DIR$/role.outerHarvesterLogic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rooms.logic.civilian.js" afterPath="$PROJECT_DIR$/rooms.logic.civilian.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,21 +42,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rooms.logic.civilian.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="rooms.logic.civilian.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rooms.logic.civilian.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-544">
-              <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
+            <state relative-caret-position="145">
+              <caret line="2037" column="35" lean-forward="true" selection-start-line="2037" selection-start-column="35" selection-end-line="2037" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="role.outerHarvesterLogic.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="role.outerHarvesterLogic.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/role.outerHarvesterLogic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="43" lean-forward="false" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+            <state relative-caret-position="523">
+              <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -128,11 +128,11 @@
     <findStrings>
       <find>roomMemory</find>
       <find>var</find>
-      <find>=</find>
       <find>.* =</find>
       <find>creepsNeeded\[&quot;.*&quot;\];</find>
       <find>creepsNeeded\[</find>
       <find>\];</find>
+      <find>=</find>
     </findStrings>
     <replaceStrings>
       <replace>roomMemory.</replace>
@@ -145,6 +145,7 @@
       <replace>creepsNeeded</replace>
       <replace>creepsNeeded.get(</replace>
       <replace>);</replace>
+      <replace>= null;</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -164,8 +165,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/role.courier.js" />
-        <option value="$PROJECT_DIR$/rooms.logic.civilian.js" />
         <option value="$PROJECT_DIR$/role.outerHarvesterLogic.js" />
+        <option value="$PROJECT_DIR$/rooms.logic.civilian.js" />
       </list>
     </option>
   </component>
@@ -334,7 +335,7 @@
       <updated>1507578927917</updated>
       <workItem from="1507578930859" duration="1672000" />
       <workItem from="1507645846579" duration="4760000" />
-      <workItem from="1507832656005" duration="4001000" />
+      <workItem from="1507832656005" duration="4301000" />
     </task>
     <task id="LOCAL-00001" summary="Защита главной комнаты.">
       <created>1507580036995</created>
@@ -392,11 +393,18 @@
       <option name="project" value="LOCAL" />
       <updated>1507837310888</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Обновляю логику комнат.">
+      <created>1507837371885</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1507837371885</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10433000" />
+    <option name="totallyTimeSpent" value="10733000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -654,18 +662,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rooms.logic.civilian.js">
+    <entry file="file://$PROJECT_DIR$/role.outerHarvesterLogic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-544">
-          <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
+        <state relative-caret-position="523">
+          <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/role.outerHarvesterLogic.js">
+    <entry file="file://$PROJECT_DIR$/rooms.logic.civilian.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="43" lean-forward="false" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+        <state relative-caret-position="145">
+          <caret line="2037" column="35" lean-forward="true" selection-start-line="2037" selection-start-column="35" selection-end-line="2037" selection-end-column="35" />
           <folding />
         </state>
       </provider>

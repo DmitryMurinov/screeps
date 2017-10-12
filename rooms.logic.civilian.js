@@ -2026,6 +2026,22 @@ module.exports = {
             localMadePureMinersNeeded = 1;
         }
 
+        var roomToWorkName1 = null;
+        var roomToWorkX1 = null;
+        var roomToWorkY1 = null;
+        var roomToWorkName2 = null;
+        var roomToWorkX2 = null;
+        var roomToWorkY2 = null;
+        var roomToWorkName3 = null;
+        var roomToWorkX3 = null;
+        var roomToWorkY3 = null;
+        var roomToWorkName4 = null;
+        var roomToWorkX4 = null;
+        var roomToWorkY4 = null;
+        var roomToWorkName5 = null;
+        var roomToWorkX5 = null;
+        var roomToWorkY5 = null;
+
         if (roomMemory.roomToWorkName1) {
             var roomToWorkName1 = roomMemory.roomToWorkName1;
             var roomToWorkX1 = roomMemory.roomToWorkX1;
