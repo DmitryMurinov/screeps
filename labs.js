@@ -161,7 +161,7 @@ module.exports = {
                 }
 
                 if (creep) {
-                    if (creep.memory.role == 'medicLogic'
+                    if (creep.memory.role == 'medic'
                         || creep.memory.role == 'pureMiner' || creep.memory.role.indexOf('controllerAttacker') !== -1 ||
                         creep.memory.role.indexOf('dismantalist') !== -1 ||
                         creep.memory.role.indexOf('attackerLogic') !== -1) {
@@ -499,7 +499,7 @@ module.exports = {
 
     ingredientsBoost: function (role) {
 
-        if (role.indexOf('controllerAttacker') !== -1 || role == 'medicLogic') {
+        if (role.indexOf('controllerAttacker') !== -1 || role == 'medic') {
             var resourceList = new Array();
             resourceList.push(RESOURCE_CATALYZED_LEMERGIUM_ALKALIDE);
             resourceList.push(RESOURCE_CATALYZED_GHODIUM_ALKALIDE);
