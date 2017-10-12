@@ -227,8 +227,8 @@ module.exports = {
         creepsNeeded.set("attackerLogic3", 0);
         creepsNeeded.set("keeperKiller1", 0);
         creepsNeeded.set("keeperKiller2", 0);
-        creepsNeeded.set("controllerAttacker1", 0);
-        creepsNeeded.set("controllerAttacker2", 0);
+        creepsNeeded.set("controllerAttacker1", 1);
+        creepsNeeded.set("controllerAttacker2", 1);
         creepsNeeded.set("outerReserver1", 0);//1
         creepsNeeded.set("outerReserver2", 0);//1
         creepsNeeded.set("outerReserver3", 0);//1
