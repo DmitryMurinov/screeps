@@ -18,8 +18,8 @@
       <file leaf-file-name="role.bankir.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/role.bankir.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="629">
+              <caret line="82" column="35" lean-forward="false" selection-start-line="82" selection-start-column="35" selection-end-line="82" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -45,8 +45,8 @@
       <file leaf-file-name="rooms.logic.civilian.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rooms.logic.civilian.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="2066" column="37" lean-forward="false" selection-start-line="2066" selection-start-column="37" selection-end-line="2066" selection-end-column="37" />
+            <state relative-caret-position="476">
+              <caret line="2058" column="51" lean-forward="true" selection-start-line="2058" selection-start-column="51" selection-end-line="2058" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -55,8 +55,8 @@
       <file leaf-file-name="role.outerHarvesterLogic.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/role.outerHarvesterLogic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="595">
+              <caret line="35" column="23" lean-forward="false" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -134,6 +134,7 @@
       <find>\];</find>
       <find>=</find>
       <find>= .*\..*;</find>
+      <find>conso</find>
     </findStrings>
     <replaceStrings>
       <replace>roomMemory.</replace>
@@ -336,7 +337,7 @@
       <updated>1507578927917</updated>
       <workItem from="1507578930859" duration="1672000" />
       <workItem from="1507645846579" duration="4760000" />
-      <workItem from="1507832656005" duration="4603000" />
+      <workItem from="1507832656005" duration="5454000" />
     </task>
     <task id="LOCAL-00001" summary="Защита главной комнаты.">
       <created>1507580036995</created>
@@ -415,11 +416,18 @@
       <option name="project" value="LOCAL" />
       <updated>1507837827144</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Обновляю логику комнат.">
+      <created>1507837977887</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1507837977887</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11035000" />
+    <option name="totallyTimeSpent" value="11886000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -630,14 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/role.bankir.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/role.attackerLogic.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1468">
@@ -662,14 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/role.outerHarvesterLogic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/role.builder.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -685,10 +677,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/role.bankir.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="82" column="35" lean-forward="false" selection-start-line="82" selection-start-column="35" selection-end-line="82" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.outerHarvesterLogic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="23" lean-forward="false" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/rooms.logic.civilian.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="2066" column="37" lean-forward="false" selection-start-line="2066" selection-start-column="37" selection-end-line="2066" selection-end-column="37" />
+        <state relative-caret-position="476">
+          <caret line="2058" column="51" lean-forward="true" selection-start-line="2058" selection-start-column="51" selection-end-line="2058" selection-end-column="51" />
           <folding />
         </state>
       </provider>

@@ -2043,28 +2043,26 @@ module.exports = {
         var roomToWorkY5 = null;
 
         if (roomMemory.roomToWorkName1) {
-            var roomToWorkName1 = roomMemory.roomToWorkName1;
-            var roomToWorkX1 = roomMemory.roomToWorkX1;
-            var roomToWorkY1 = roomMemory.roomToWorkY1;
+            roomToWorkName1 = roomMemory.roomToWorkName1;
+            roomToWorkX1 = roomMemory.roomToWorkX1;
+            roomToWorkY1 = roomMemory.roomToWorkY1;
         } else if (roomMemory.roomToWorkName2) {
-            var roomToWorkName2 = roomMemory.roomToWorkName2;
-            var roomToWorkX2 = roomMemory.roomToWorkX2;
-            var roomToWorkY2 = roomMemory.roomToWorkY2;
+            roomToWorkName2 = roomMemory.roomToWorkName2;
+            roomToWorkX2 = roomMemory.roomToWorkX2;
+            roomToWorkY2 = roomMemory.roomToWorkY2;
         } else if (roomMemory.roomToWorkName3) {
-            var roomToWorkName3 = roomMemory.roomToWorkName3;
-            var roomToWorkX3 = roomMemory.roomToWorkX3;
-            var roomToWorkY3 = roomMemory.roomToWorkY3;
+            roomToWorkName3 = roomMemory.roomToWorkName3;
+            roomToWorkX3 = roomMemory.roomToWorkX3;
+            roomToWorkY3 = roomMemory.roomToWorkY3;
         } else if (roomMemory.roomToWorkName4) {
-            var roomToWorkName4 = roomMemory.roomToWorkName4;
-            var roomToWorkX4 = roomMemory.roomToWorkX4;
-            var roomToWorkY4 = roomMemory.roomToWorkY4;
+            roomToWorkName4 = roomMemory.roomToWorkName4;
+            roomToWorkX4 = roomMemory.roomToWorkX4;
+            roomToWorkY4 = roomMemory.roomToWorkY4;
         } else if (roomMemory.roomToWorkName2) {
-            var roomToWorkName5 = roomMemory.roomToWorkName5;
-            var roomToWorkX5 = roomMemory.roomToWorkX5;
-            var roomToWorkY5 = roomMemory.roomToWorkY5;
+            roomToWorkName5 = roomMemory.roomToWorkName5;
+            roomToWorkX5 = roomMemory.roomToWorkX5;
+            roomToWorkY5 = roomMemory.roomToWorkY5;
         }
-
-        console.log(roomToWorkName1);
 
         if (gameTime.substring(gameTime.length - 3, gameTime.length) === '500') {
             var creepPotential = 0;
@@ -2218,7 +2216,7 @@ module.exports = {
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + controllerLevel1to6 + "(\"exauster\"), memory)";
                     var createString = eval(constructorString);
                     eval(createString);
-                } else if (controllerLevel > 1 && localMadeOuterHarvesterLogic1 < localMadeOuterCourierLogic1Needed) {
+                } else if (controllerLevel > 1 && localMadeOuterHarvesterLogic1 < localMadeOuterHarvesterLogic1Needed) {
                     var memory = "{role: 'outerHarvesterLogic1', working: false, origination: '" + roomName + "', arrived: false, roomToWorkX: " + roomToWorkX1 + ", roomToWorkY: " + roomToWorkY1 + ",  " +
                         "roomToWorkName: \"" + roomToWorkName1 + "\"}";
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + controllerLevel1to3 + "(\"pureHarvester\"), memory)";
