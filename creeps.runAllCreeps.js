@@ -11,7 +11,7 @@ var roleAttackerLogic = require('role.attackerLogic');
 var roleRefillerWar = require('role.refillerWar');
 var roleSiegerLogic = require('role.sieger');
 var roleMedicLogic = require('role.medic');
-var roleBankirLogic = require('role.bankir');
+var roleBankir = require('role.bankir');
 var rolePureMiner = require('role.pureMiner');
 var roleCourierMine = require('role.courierMine');
 var roleExauster = require('role.exauster');
@@ -40,7 +40,7 @@ module.exports = {
             } else if (creep.memory.role == 'courierMine') {
                 roleCourierMine.run(creep);
             } else if (creep.memory.role.indexOf('bankirLogic') !== - 1) {
-                roleBankirLogic.run(creep);
+                roleBankir.run(creep);
             }
             if (creep.memory.role == 'upgrader') {
                 roleUpgrader.run(creep);
