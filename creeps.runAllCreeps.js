@@ -39,7 +39,7 @@ module.exports = {
                 rolePureMiner.run(creep);
             } else if (creep.memory.role == 'courierMine') {
                 roleCourierMine.run(creep);
-            } else if (creep.memory.role == 'bankirLogic') {
+            } else if (creep.memory.role.indexOf('bankirLogic') !== - 1) {
                 roleBankirLogic.run(creep);
             }
             if (creep.memory.role == 'upgrader') {
