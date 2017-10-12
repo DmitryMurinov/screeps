@@ -19,9 +19,6 @@ module.exports = {
                 moveResult = creep.moveByPath(creep.memory.destinationPath);
             }
 
-            console.log(creep.room.name);
-            console.log(creep.memory.role);
-
             if (creep.moveByPath.destinationPath == undefined || moveResult != 'OK') {
                 creep.memory.destinationPath = creep.pos.findPathTo(
                 new RoomPosition(creep.memory.roomToWorkX, creep.memory.roomToWorkY, creep.memory.roomToWorkName));
