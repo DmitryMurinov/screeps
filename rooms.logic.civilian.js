@@ -2416,7 +2416,7 @@ module.exports = {
                     var memory = "{role: 'basicCreepOuter6', working: false, origination: '" + roomName + "', arrived: false," +
                         "roomToWorkX1: 3," +
                         "roomToWorkY1: 29," +
-                        "roomToWorkName1: \"E57N17\"," +
+                        "roomToWorkName1: \"E56N17\"," +
                         // "roomToWorkX2: 8," +
                         // "roomToWorkY2: 2," +
                         // "roomToWorkName2: \"E54N18\"" +
