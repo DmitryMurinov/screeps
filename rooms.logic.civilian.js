@@ -158,29 +158,27 @@ module.exports = {
             localMadePureMinersNeeded = 0;
         }
 
+        if (gameTime.substring(gameTime.length - 2, gameTime.length) == '00') {
+            roomMemory.roomToWorkName1 = "E52N16";
+            roomMemory.roomToWorkX1 = 46;
+            roomMemory.roomToWorkY1 = 20;
 
-        roomMemory.roomToWorkName1 = "E52N16";
-        roomMemory.roomToWorkX1 = 46;
-        roomMemory.roomToWorkY1 = 20;
+            roomMemory.roomToWorkName2 = "E53N17";
+            roomMemory.roomToWorkX2 = 5;
+            roomMemory.roomToWorkY2 = 45;
 
-        roomMemory.roomToWorkName2 = "E53N17";
-        roomMemory.roomToWorkX2 = 5;
-        roomMemory.roomToWorkY2 = 45;
+            roomMemory.roomToWorkName3 = "E53N15";
+            roomMemory.roomToWorkX3 = 20;
+            roomMemory.roomToWorkY3 = 2;
 
-        roomMemory.roomToWorkName3 = "E53N15";
-        roomMemory.roomToWorkX3 = 20;
-        roomMemory.roomToWorkY3 = 2;
+            roomMemory.roomToWorkName4 = "E52N15";
+            roomMemory.roomToWorkX4 = 45;
+            roomMemory.roomToWorkY4 = 38;
 
-        roomMemory.roomToWorkName4 = "E52N15";
-        roomMemory.roomToWorkX4 = 45;
-        roomMemory.roomToWorkY4 = 38;
-
-        roomMemory.roomToWorkName5 = "E54N16";
-        roomMemory.roomToWorkX5 = 2;
-        roomMemory.roomToWorkY5 = 29;
-
-
-        var freeSpawn;
+            roomMemory.roomToWorkName5 = "E54N16";
+            roomMemory.roomToWorkX5 = 2;
+            roomMemory.roomToWorkY5 = 29;
+        }
 
         if (controllerLevel >= 4 && gameTime.substring(gameTime.length - 2, gameTime.length) == '00') {
             this.placeRampart(roomName);
@@ -201,8 +199,6 @@ module.exports = {
         }
 
         let creepsNeeded = new Map();
-
-        creepsNeeded.set();
 
         creepsNeeded.set("basicCreep", 2);
         creepsNeeded.set("pureHarvester", 1);
