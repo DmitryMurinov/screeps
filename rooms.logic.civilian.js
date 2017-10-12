@@ -2077,6 +2077,38 @@ module.exports = {
             roomMemory.creepPotential = creepPotential;
         }
 
+        if(!roomMemory.creepPotential){
+            var creepPotential = 0;
+
+            if (controllerLevel < 7) {
+                creepPotential = 300 * _.sum(Game.spawns, (s) => s.room.name == roomName && s.owner.username == 'Dehar')
+                    + 50 * _.sum(Game.structures, (s) => s.room.name == roomName && s.owner.username == 'Dehar' &&
+                        s.structureType == STRUCTURE_EXTENSION);
+            } else if (controllerLevel == 7) {
+                creepPotential = 300 * _.sum(Game.spawns, (s) => s.room.name == roomName && s.owner.username == 'Dehar')
+                    + 100 * _.sum(Game.structures, (s) => s.room.name == roomName && s.owner.username == 'Dehar' &&
+                        s.structureType == STRUCTURE_EXTENSION);
+
+            } else if (controllerLevel == 8) {
+                creepPotential = 300 * _.sum(Game.spawns, (s) => s.room.name == roomName && s.owner.username == 'Dehar')
+                    + 200 * _.sum(Game.structures, (s) => s.room.name == roomName && s.owner.username == 'Dehar' &&
+                        s.structureType == STRUCTURE_EXTENSION);
+            }
+
+            roomMemory.creepPotential = creepPotential;
+        }
+
+        var freeSpawn;
+
+        loopSpawns:
+        for (let i in Game.spawns) {
+            var spawn = (Game.spawns[i]);
+
+            if (spawn.room.name == roomName && spawn.isActive() === true && spawn.spawning === null) {
+                freeSpawn = spawn;
+                break loopSpawns;
+            }
+        }
 
         var creepPotential = roomMemory.creepPotential;
 
