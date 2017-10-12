@@ -2521,7 +2521,7 @@ module.exports = {
                             "undefined, {role: 'basicCreep', working: false, origination: '" + roomName + "'});";
                         eval(createString);
                     } else if (creepPotential > 500 && localMadeCreeps >= 2) {
-                        if (localMadeBasicCreeps < basicCreepsNeeded) {
+                        if (localMadeBasicCreeps < localMadeBasicCreepsNeeded) {
                             var createString = " Game.spawns." + freeSpawn.name + ".createCreep([WORK, WORK, WORK, CARRY, CARRY, MOVE, MOVE, MOVE], " +
                                 "undefined, {role: 'basicCreep', working: false, origination: '" + roomName + "'});";
                             eval(createString);
