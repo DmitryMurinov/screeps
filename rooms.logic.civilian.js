@@ -2414,9 +2414,9 @@ module.exports = {
                     eval(createString);
                 } else if (localMadeBasicCreepsOuter6 < localMadeBasicCreepsOuter6Needed) {
                     var memory = "{role: 'basicCreepOuter6', working: false, origination: '" + roomName + "', arrived: false," +
-                        "roomToWorkX1: 1," +
-                        "roomToWorkY1: 32," +
-                        "roomToWorkName1: \"E57N15\"," +
+                        "roomToWorkX1: 3," +
+                        "roomToWorkY1: 29," +
+                        "roomToWorkName1: \"E57N17\"," +
                         // "roomToWorkX2: 8," +
                         // "roomToWorkY2: 2," +
                         // "roomToWorkName2: \"E54N18\"" +
@@ -2496,19 +2496,6 @@ module.exports = {
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + controllerLevel1to4 + "(\"basicCreepOuter\"), memory)";
                     var createString = eval(constructorString);
                     var createString = creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev3("basicCreep"), memory);
-                    eval(createString);
-                } else if (localMadeBasicCreepsOuter6 < localMadeBasicCreepsOuter6Needed) {
-                    var memory = "{role: 'basicCreepOuter6', working: false, origination: '" + roomName + "', arrived: false," +
-                        "roomToWorkX1: 40," +
-                        "roomToWorkY1: 47," +
-                        "roomToWorkName1: \"E50N20\"," +
-                        "roomToWorkX2: 5," +
-                        "roomToWorkY2: 36," +
-                        "roomToWorkName2: \"E51N19\"" +
-                        "}";
-                    var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + controllerLevel + "(\"basicCreepOuter\"), memory)";
-                    var createString = eval(constructorString);
-                    // var createString = creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev3("basicCreep"), memory);
                     eval(createString);
                 } else if (localMadeSieger < localMadeSiegerNeeded) {
                     var memory = "{role: 'siegerLogic', claim: true, working: false, origination: '" + roomName + "', arrived1: false, roomToWorkX1: 12, roomToWorkY1: 45,  roomToWorkName1: \"W30S47\"" +
