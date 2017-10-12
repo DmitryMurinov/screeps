@@ -2449,7 +2449,7 @@ module.exports = {
                     var memory = "{role: 'attackerLogic3', claim: true, working: false, origination: '" + roomName + "', " +
                         "needBoost: true," +
                         "roomToInvestigateName0 : \"E57N17\", roomToInvestigateX0: 5, roomToInvestigateY0: 30" +
-                        // ",roomToInvestigateName0 : \"E52N15\", roomToInvestigateX0: 48, roomToInvestigateY0: 36" +
+                        ",roomToInvestigateName0 : \"E56N18\", roomToInvestigateX0: 34, roomToInvestigateY0: 46" +
                         // ",roomToInvestigateName1 : \"E58N11\", roomToInvestigateX1: 2, roomToInvestigateY1: 8" +
                         "}";
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 4 + "(\"attackerLogic\"), memory)";
