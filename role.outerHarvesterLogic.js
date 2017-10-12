@@ -20,6 +20,7 @@ module.exports = {
             }
 
             console.log(creep.room.name);
+            console.log(creep.memory.role);
 
             if (creep.moveByPath.destinationPath == undefined || moveResult != 'OK') {
                 creep.memory.destinationPath = creep.pos.findPathTo(
