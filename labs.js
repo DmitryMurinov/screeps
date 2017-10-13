@@ -33,30 +33,30 @@ module.exports = {
         }
 
 
-
         if (totalLabs > 0) {
 
             var produceModifier = 1;
-            if(Game.rooms[roomName].memory.catalizedResourcesBalanced = false){
+            if (Game.rooms[roomName].memory.catalizedResourcesBalanced = false) {
                 produceModifier = 0.5;
             }
 
             if (roomName == 'E52N19') {
-                if (allReservesCount[roomName + ";" + RESOURCE_UTRIUM_ALKALIDE] > 200 && (
-                    Game.rooms[roomName].storage.store[RESOURCE_CATALYZED_UTRIUM_ALKALIDE] == undefined ||
-                    Game.rooms[roomName].storage.store[RESOURCE_CATALYZED_UTRIUM_ALKALIDE] < 6000 * produceModifier)) {
-                    resourceNeededType = RESOURCE_CATALYZED_UTRIUM_ALKALIDE;
+
+                if (Game.rooms[roomName].storage.store[RESOURCE_CATALYZED_GHODIUM_ALKALIDE] == undefined ||
+                    Game.rooms[roomName].storage.store[RESOURCE_CATALYZED_GHODIUM_ALKALIDE] < 12000 * produceModifier) {
+                    resourceNeededType = RESOURCE_CATALYZED_GHODIUM_ALKALIDE;
                     resourceNeededAmount = 1500;
                     this.produce(roomName, totalLabs, resourceNeededType, resourceNeededAmount)
                 } else if (allReservesCount[roomName + ";" + RESOURCE_LEMERGIUM_ALKALIDE] > 200 && (
-                    Game.rooms[roomName].storage.store[RESOURCE_CATALYZED_LEMERGIUM_ALKALIDE] == undefined ||
-                    Game.rooms[roomName].storage.store[RESOURCE_CATALYZED_LEMERGIUM_ALKALIDE] < 6000 * produceModifier)) {
+                        Game.rooms[roomName].storage.store[RESOURCE_CATALYZED_LEMERGIUM_ALKALIDE] == undefined ||
+                        Game.rooms[roomName].storage.store[RESOURCE_CATALYZED_LEMERGIUM_ALKALIDE] < 6000 * produceModifier)) {
                     resourceNeededType = RESOURCE_CATALYZED_LEMERGIUM_ALKALIDE;
                     resourceNeededAmount = 1500;
                     this.produce(roomName, totalLabs, resourceNeededType, resourceNeededAmount)
-                } else if (Game.rooms[roomName].storage.store[RESOURCE_CATALYZED_GHODIUM_ALKALIDE] == undefined ||
-                    Game.rooms[roomName].storage.store[RESOURCE_CATALYZED_GHODIUM_ALKALIDE] < 12000 * produceModifier) {
-                    resourceNeededType = RESOURCE_CATALYZED_GHODIUM_ALKALIDE;
+                } else if (allReservesCount[roomName + ";" + RESOURCE_UTRIUM_ALKALIDE] > 200 && (
+                        Game.rooms[roomName].storage.store[RESOURCE_CATALYZED_UTRIUM_ALKALIDE] == undefined ||
+                        Game.rooms[roomName].storage.store[RESOURCE_CATALYZED_UTRIUM_ALKALIDE] < 6000 * produceModifier)) {
+                    resourceNeededType = RESOURCE_CATALYZED_UTRIUM_ALKALIDE;
                     resourceNeededAmount = 1500;
                     this.produce(roomName, totalLabs, resourceNeededType, resourceNeededAmount)
                 } else if (Game.rooms[roomName].storage.store[RESOURCE_CATALYZED_ZYNTHIUM_ACID] == undefined ||
@@ -80,19 +80,21 @@ module.exports = {
                     roomMemory.labWorkToId = null;
                 }
             } else if (roomName == 'E53N16') {
-                if (Game.rooms[roomName].storage.store[RESOURCE_CATALYZED_UTRIUM_ALKALIDE] == undefined ||
-                    Game.rooms[roomName].storage.store[RESOURCE_CATALYZED_UTRIUM_ALKALIDE] < 6000 * produceModifier) {
-                    resourceNeededType = RESOURCE_CATALYZED_UTRIUM_ALKALIDE;
+                if (Game.rooms[roomName].storage.store[RESOURCE_CATALYZED_GHODIUM_ALKALIDE] == undefined ||
+                    Game.rooms[roomName].storage.store[RESOURCE_CATALYZED_GHODIUM_ALKALIDE] < 12000 * produceModifier) {
+                    resourceNeededType = RESOURCE_CATALYZED_GHODIUM_ALKALIDE;
                     resourceNeededAmount = 1500;
                     this.produce(roomName, totalLabs, resourceNeededType, resourceNeededAmount)
-                } else if (Game.rooms[roomName].storage.store[RESOURCE_CATALYZED_LEMERGIUM_ALKALIDE] == undefined ||
-                    Game.rooms[roomName].storage.store[RESOURCE_CATALYZED_LEMERGIUM_ALKALIDE] < 6000 * produceModifier) {
+                } else if (allReservesCount[roomName + ";" + RESOURCE_LEMERGIUM_ALKALIDE] > 200 && (
+                        Game.rooms[roomName].storage.store[RESOURCE_CATALYZED_LEMERGIUM_ALKALIDE] == undefined ||
+                        Game.rooms[roomName].storage.store[RESOURCE_CATALYZED_LEMERGIUM_ALKALIDE] < 6000 * produceModifier)) {
                     resourceNeededType = RESOURCE_CATALYZED_LEMERGIUM_ALKALIDE;
                     resourceNeededAmount = 1500;
                     this.produce(roomName, totalLabs, resourceNeededType, resourceNeededAmount)
-                } else if (Game.rooms[roomName].storage.store[RESOURCE_CATALYZED_GHODIUM_ALKALIDE] == undefined ||
-                    Game.rooms[roomName].storage.store[RESOURCE_CATALYZED_GHODIUM_ALKALIDE] < 12000 * produceModifier) {
-                    resourceNeededType = RESOURCE_CATALYZED_GHODIUM_ALKALIDE;
+                } else if (allReservesCount[roomName + ";" + RESOURCE_UTRIUM_ALKALIDE] > 200 && (
+                        Game.rooms[roomName].storage.store[RESOURCE_CATALYZED_UTRIUM_ALKALIDE] == undefined ||
+                        Game.rooms[roomName].storage.store[RESOURCE_CATALYZED_UTRIUM_ALKALIDE] < 6000 * produceModifier)) {
+                    resourceNeededType = RESOURCE_CATALYZED_UTRIUM_ALKALIDE;
                     resourceNeededAmount = 1500;
                     this.produce(roomName, totalLabs, resourceNeededType, resourceNeededAmount)
                 } else if (Game.rooms[roomName].storage.store[RESOURCE_CATALYZED_ZYNTHIUM_ACID] == undefined ||
@@ -127,7 +129,7 @@ module.exports = {
 
         var storage = Game.rooms[roomName].storage;
         var terminal = Game.rooms[roomName].terminal;
-        if(storage && terminal) {
+        if (storage && terminal) {
             var terminalPosition = terminal.pos;
 
             var roomMemory = Game.rooms[roomName].memory;
@@ -264,7 +266,6 @@ module.exports = {
 
             var ingredient1 = this.ingredientsReaction(resourceNeededType)[0];
             var ingredient2 = this.ingredientsReaction(resourceNeededType)[1];
-
 
 
             if ((lab1.mineralType != null && lab1.mineralType != resourceNeededType) || lab1.mineralAmount > 500) {
