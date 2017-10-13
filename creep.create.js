@@ -484,7 +484,7 @@ module.exports = {
                         "roomToWorkY1: " + 21 + "," +
                         "roomToWorkName1: \"" + "E55N13" + "\"" +
                         "}";
-                    var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 7 + "(\"controllerAttacker\"), memory)";
+                    var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 5 + "(\"controllerAttacker\"), memory)";
                     var createString = eval(constructorString);
                     eval(createString);
                     roomMemory.controllerAttacker2Needed = false;
