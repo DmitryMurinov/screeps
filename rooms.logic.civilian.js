@@ -3151,8 +3151,8 @@ module.exports = {
                     eval(createString);
                 } else if (localMadeMedic2 < localMadeMedic2Needed) {
                     var memory = "{role: 'medic2', claim: true, working: false, origination: '" + roomName + "', arrived1: false " +
-                        ", needBoost: true" +
-                        ", arrived2: false, roomToWorkX1: 48, roomToWorkY1: 40,  roomToWorkName1: \"E52N15\"" +
+                        ", needBoost: false" +
+                        ", arrived2: false, roomToWorkX1: 16, roomToWorkY1: 9,  roomToWorkName1: \"E53N15\"" +
                         // ", arrived3: false, roomToWorkX1: 5, roomToWorkY1: 35,  roomToWorkName1: \"W27S49\"" +
                         "}";
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 6 + "(\"medicLogic\"), memory)";
