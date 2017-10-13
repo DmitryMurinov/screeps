@@ -82,8 +82,18 @@ module.exports = {
         //Main logic
 
         if (creep.memory.arrived == true) {
+
             if (creep.room.controller) {
-                if (creep.reserveController(creep.room.controller) == ERR_NOT_IN_RANGE) {
+
+                var actionResult = null;
+                if (Game.rooms[creep.room.name].controller.reservation.username &&
+                    Game.rooms[creep.room.name].controller.reservation.username != 'Dehar') {
+                    actionResult = creep.attackController(creep.room.controller);
+                } else {
+                    actionResult = creep.reserveController(creep.room.controller);
+                }
+
+                if (actionResult == ERR_NOT_IN_RANGE) {
                     if (!creep.memory.storedPath) {
                         creep.memory.storedPath = creep.pos.findPathTo(creep.room.controller);
                     }
