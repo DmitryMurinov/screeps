@@ -347,6 +347,8 @@ module.exports = {
 
             var controllerLevel = Game.rooms[roomName].controller.level;
 
+            var roomMemory = Game.rooms[roomName].memory;
+
             var wallsLevel = 100000;
 
             var basicCreepsNeeded = 2;
@@ -582,6 +584,8 @@ module.exports = {
         var roomName = "E52N19";
 
         var controllerLevel = Game.rooms[roomName].controller.level;
+
+        var roomMemory = Game.rooms[roomName].memory;
 
         var wallsLevel = 100000;
 
@@ -1348,6 +1352,8 @@ module.exports = {
 
             var controllerLevel = Game.rooms[roomName].controller.level;
 
+            var roomMemory = Game.rooms[roomName].memory;
+
             var wallsLevel = 100000;
 
             var basicCreepsNeeded = 2;
@@ -2083,14 +2089,11 @@ module.exports = {
 
         function (allCreepsCount, gameTime, allReservesCount) {
 
-            // var startCpu = Game.cpu.getUsed();
-
-
-            var betterRoomName = "W33N23";
-
             var roomName = "E55N13";
 
             var controllerLevel = Game.rooms[roomName].controller.level;
+
+            var roomMemory = Game.rooms[roomName].memory;
 
             var wallsLevel = 100000;
 
