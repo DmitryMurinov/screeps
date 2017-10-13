@@ -72,6 +72,9 @@ module.exports = {
         rolesList.push('attackerLogic3');
         rolesList.push('attackerLogic4');
         rolesList.push('attackerLogic5');
+        rolesList.push('attackerLogic6');
+        rolesList.push('attackerLogic7');
+        rolesList.push('attackerLogic8');
         rolesList.push('controllerAttacker1');
         rolesList.push('controllerAttacker2');
         rolesList.push('dismantilist1');

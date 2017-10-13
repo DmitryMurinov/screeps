@@ -245,7 +245,7 @@ module.exports = {
         creepsNeeded.set("dismantilist1", 0);
         creepsNeeded.set("dismantilist2", 0);
         creepsNeeded.set("medic1", 0);
-        creepsNeeded.set("medic2", 1);
+        creepsNeeded.set("medic2", 0);
         creepsNeeded.set("sieger", 0);
         creepsNeeded.set("bankir", 1);
         creepsNeeded.set("courierMiner", 0);
@@ -253,17 +253,64 @@ module.exports = {
 
         let creepsData = new Map();
 
-        creepsData.set("attacker1",
-        "needBoost: false," +
-        "roomToInvestigateName0 : \"E53N17\", roomToInvestigateX0: 12, roomToInvestigateY0: 28"
-        // "roomToInvestigateName0 : \"E57N11\", roomToInvestigateX0: 28, roomToInvestigateY0: 2" +
-        // ",roomToInvestigateName1 : \"E58N11\", roomToInvestigateX1: 2, roomToInvestigateY1: 8" +
+        creepsData.set("attacker1", "needBoost: false," +
+            "roomToInvestigateName0 : \"E53N17\", roomToInvestigateX0: 12, roomToInvestigateY0: 28" // ",roomToInvestigateName0 : \"E57N11\", roomToInvestigateX0: 28, roomToInvestigateY0: 2" +
         );
+
+        creepsData.set("attacker2", "needBoost: false," +
+            "roomToInvestigateName0 : \"E53N15\", roomToInvestigateX0: 16, roomToInvestigateY0: 9" // ",roomToInvestigateName1 : \"E53N14\", roomToInvestigateX1: 14, roomToInvestigateY1: 23" +
+        );
+
+        creepsData.set("attacker3", "needBoost: false," +
+            "roomToInvestigateName0 : \"E56N19\", roomToInvestigateX0: 30, roomToInvestigateY0: 45" // ",roomToInvestigateName1 : \"E53N14\", roomToInvestigateX1: 14, roomToInvestigateY1: 23" +
+        );
+
 
         creepsData.set("outerCourier1",
             "roomToBackX: 2, roomToBackY: 19, linkRoomX: 2, linkRoomY: 18, "
         );
 
+        creepsData.set("outerCourier2",
+            "roomToBackX: 4, roomToBackY: 1, linkRoomX: 5, linkRoomY: 2, "
+        );
+
+        creepsData.set("outerCourier3",
+            "roomToBackX: 20, roomToBackY: 47, linkRoomX: 21, linkRoomY: 47, "
+        );
+
+        creepsData.set("controllerAttacker1", "needBoost: false," +
+            "roomToWorkX1: " + 27 + ", roomToWorkY1: " + 45 + ", roomToWorkName1: \"" + "E56N19" + "\""
+        );
+
+        creepsData.set("controllerAttacker2", "needBoost: false," +
+            "roomToWorkX1: " + 21 + ", roomToWorkY1: " + 21 + ", roomToWorkName1: \"" + "E55N13" + "\""
+        );
+
+        creepsData.set("medic1", "needBoost: false," +
+            "roomToWorkX1: " + 28 + ", roomToWorkY1: " + 45 + ", roomToWorkName1: \"" + "E56N19" + "\""
+        );
+
+        creepsData.set("medic2", "needBoost: false," +
+            "roomToWorkX1: " + 35 + ", roomToWorkY1: " + 4 + ", roomToWorkName1: \"" + "E55N13" + "\""
+        );
+
+        creepsData.set("dismantalist1", "needBoost: true," +
+            "roomToWorkX1: " + 48 + ", roomToWorkY1: " + 34 + ", roomToWorkName1: \"" + "E52N15" + "\""
+        );
+
+        creepsData.set("dismantalist2", "needBoost: true," +
+            "roomToWorkX1: " + 48 + ", roomToWorkY1: " + 34 + ", roomToWorkName1: \"" + "E52N15" + "\""
+        );
+
+        creepsData.set("basicCreepOuter6",
+            "roomToWorkX1: 35, roomToWorkY1: 2, roomToWorkName1: \"E55N13\"," // "roomToWorkX1: 35, roomToWorkY1: 2, roomToWorkName1: \"E55N13\""
+        );
+
+        creepsData.set("siegerLogic",
+            " arrived1: false, roomToWorkX1: 12, roomToWorkY1: 45,  roomToWorkName1: \"W30S47\"" +
+            ", arrived2: false, roomToWorkX1: 39, roomToWorkY1: 3,  roomToWorkName1: \"W30S50\"" +
+            ", arrived3: false, roomToWorkX1: 3, roomToWorkY1: 35,  roomToWorkName1: \"W27S49\""
+        );
 
 
 
@@ -1078,49 +1125,49 @@ module.exports = {
             lemergiumAlkalideReserveNeeded = 21000;
         }
 
-/*        if (terminal && Game.market.credits >= 5000) {
-            if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_GHODIUM_ALKALIDE] == undefined
-                    || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_GHODIUM_ALKALIDE] < lemergiumAlkalideReserve * 2))) {
-                market.buy(roomName, RESOURCE_GHODIUM_ALKALIDE, 500, 5.0);
-            }
-            else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_UTRIUM_ACID] == undefined
-                    || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_UTRIUM_ACID] < lemergiumAlkalideReserve))) {
-                market.buy(roomName, RESOURCE_UTRIUM_ACID, 500, 3.0);
-            }
-            else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_UTRIUM_ALKALIDE] == undefined
-                    || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_UTRIUM_ALKALIDE] < lemergiumAlkalideReserve))) {
-                market.buy(roomName, RESOURCE_UTRIUM_ALKALIDE, 500, 3.0);
-            }
-            else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_UTRIUM_ALKALIDE] == undefined
-                    || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_UTRIUM_ALKALIDE] < lemergiumAlkalideReserve))) {
-                market.buy(roomName, RESOURCE_UTRIUM_ALKALIDE, 500, 3.0);
-            }
-            else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_LEMERGIUM_ACID] == undefined
-                    || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_LEMERGIUM_ACID] < lemergiumAlkalideReserve))) {
-                market.buy(roomName, RESOURCE_LEMERGIUM_ACID, 500, 3.0);
-            }
-            else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_KEANIUM_ALKALIDE] == undefined
-                    || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_KEANIUM_ALKALIDE] < lemergiumAlkalideReserve))) {
-                market.buy(roomName, RESOURCE_KEANIUM_ALKALIDE, 500, 3.0);
-            }
-            else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_ZYNTHIUM_ACID] == undefined
-                    || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_ZYNTHIUM_ACID] < lemergiumAlkalideReserve))) {
-                market.buy(roomName, RESOURCE_ZYNTHIUM_ACID, 500, 3.0);
-            }
-            else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_ZYNTHIUM_ALKALIDE] == undefined
-                    || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_ZYNTHIUM_ALKALIDE] < lemergiumAlkalideReserve / 2))) {
-                market.buy(roomName, RESOURCE_ZYNTHIUM_ALKALIDE, 500, 3.0);
-            }
-            else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_CATALYST] == undefined
-                    || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_CATALYST] < lemergiumAlkalideReserve * 5))) {
-                market.buy(roomName, RESOURCE_CATALYST, 500, 1.5);
-            }
-            else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] == undefined
-                    || lemergiumAlkalideReserve < lemergiumAlkalideReserveNeeded)) {
-                market.buy(roomName, RESOURCE_LEMERGIUM_ALKALIDE, 500, 3.0);
+        /*        if (terminal && Game.market.credits >= 5000) {
+                    if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_GHODIUM_ALKALIDE] == undefined
+                            || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_GHODIUM_ALKALIDE] < lemergiumAlkalideReserve * 2))) {
+                        market.buy(roomName, RESOURCE_GHODIUM_ALKALIDE, 500, 5.0);
+                    }
+                    else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_UTRIUM_ACID] == undefined
+                            || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_UTRIUM_ACID] < lemergiumAlkalideReserve))) {
+                        market.buy(roomName, RESOURCE_UTRIUM_ACID, 500, 3.0);
+                    }
+                    else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_UTRIUM_ALKALIDE] == undefined
+                            || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_UTRIUM_ALKALIDE] < lemergiumAlkalideReserve))) {
+                        market.buy(roomName, RESOURCE_UTRIUM_ALKALIDE, 500, 3.0);
+                    }
+                    else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_UTRIUM_ALKALIDE] == undefined
+                            || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_UTRIUM_ALKALIDE] < lemergiumAlkalideReserve))) {
+                        market.buy(roomName, RESOURCE_UTRIUM_ALKALIDE, 500, 3.0);
+                    }
+                    else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_LEMERGIUM_ACID] == undefined
+                            || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_LEMERGIUM_ACID] < lemergiumAlkalideReserve))) {
+                        market.buy(roomName, RESOURCE_LEMERGIUM_ACID, 500, 3.0);
+                    }
+                    else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_KEANIUM_ALKALIDE] == undefined
+                            || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_KEANIUM_ALKALIDE] < lemergiumAlkalideReserve))) {
+                        market.buy(roomName, RESOURCE_KEANIUM_ALKALIDE, 500, 3.0);
+                    }
+                    else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_ZYNTHIUM_ACID] == undefined
+                            || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_ZYNTHIUM_ACID] < lemergiumAlkalideReserve))) {
+                        market.buy(roomName, RESOURCE_ZYNTHIUM_ACID, 500, 3.0);
+                    }
+                    else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_ZYNTHIUM_ALKALIDE] == undefined
+                            || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_ZYNTHIUM_ALKALIDE] < lemergiumAlkalideReserve / 2))) {
+                        market.buy(roomName, RESOURCE_ZYNTHIUM_ALKALIDE, 500, 3.0);
+                    }
+                    else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_CATALYST] == undefined
+                            || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_CATALYST] < lemergiumAlkalideReserve * 5))) {
+                        market.buy(roomName, RESOURCE_CATALYST, 500, 1.5);
+                    }
+                    else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] == undefined
+                            || lemergiumAlkalideReserve < lemergiumAlkalideReserveNeeded)) {
+                        market.buy(roomName, RESOURCE_LEMERGIUM_ALKALIDE, 500, 3.0);
 
-            }
-        }*/
+                    }
+                }*/
         // } else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_UTRIUM] == undefined
         //         || terminal.store[RESOURCE_UTRIUM] < 1000)) {
         //     market.buy(roomName, RESOURCE_UTRIUM, 100, .6);
