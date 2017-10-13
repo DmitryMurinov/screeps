@@ -85,6 +85,9 @@ module.exports = {
             if (enemies != undefined) {
 
                 if (creep.attack(enemies) == ERR_NOT_IN_RANGE) {
+                    if(creep.memory.healAvailable && creep.hits < creep.hitsMax){
+                        creep.heal(creep);
+                    }
                     creep.moveTo(enemies);
                 }
 
