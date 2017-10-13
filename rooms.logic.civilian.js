@@ -265,7 +265,6 @@ module.exports = {
             "roomToInvestigateName0 : \"E56N19\", roomToInvestigateX0: 30, roomToInvestigateY0: 45" // ",roomToInvestigateName1 : \"E53N14\", roomToInvestigateX1: 14, roomToInvestigateY1: 23" +
         );
 
-
         creepsData.set("outerCourier1",
             "roomToBackX: 2, roomToBackY: 19, linkRoomX: 2, linkRoomY: 18, "
         );
@@ -311,8 +310,6 @@ module.exports = {
             ", arrived2: false, roomToWorkX1: 39, roomToWorkY1: 3,  roomToWorkName1: \"W30S50\"" +
             ", arrived3: false, roomToWorkX1: 3, roomToWorkY1: 35,  roomToWorkName1: \"W27S49\""
         );
-
-
 
         creepCreate.create(roomName, allCreepsCount, gameTime, creepsData, creepsNeeded);
         /*
