@@ -235,7 +235,7 @@ module.exports = {
         creepsNeeded.set("keeperKiller3", 0);
         creepsNeeded.set("keeperKiller4", 0);
         creepsNeeded.set("keeperKiller5", 0);
-        creepsNeeded.set("controllerAttacker1", 1);
+        creepsNeeded.set("controllerAttacker1", 0);
         creepsNeeded.set("controllerAttacker2", 0);
         creepsNeeded.set("outerReserver1", 1);//1
         creepsNeeded.set("outerReserver2", 1);//1
@@ -244,7 +244,7 @@ module.exports = {
         creepsNeeded.set("outerReserver5", 0);
         creepsNeeded.set("dismantilist1", 0);
         creepsNeeded.set("dismantilist2", 0);
-        creepsNeeded.set("medic1", 2);
+        creepsNeeded.set("medic1", 0);
         creepsNeeded.set("medic2", 1);
         creepsNeeded.set("sieger", 0);
         creepsNeeded.set("bankir", 1);
