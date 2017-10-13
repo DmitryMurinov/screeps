@@ -6,6 +6,19 @@ module.exports = {
 
         var enemiesToExclude;
 
+        if(!creep.memory.healAvailable) {
+            var body = creep.body;
+            creep.memory.healAvailable = false;
+            bodyLoop:
+            for (i in body) {
+                var bodyPart = body[i];
+                if (bodyPart.type == HEAL) {
+                    creep.memory.healAvailable = true;
+                    break bodyLoop;
+                }
+            }
+        }
+
         if (!creep.memory.needBoost) {
             creep.memory.needBoost == false;
         }
@@ -71,15 +84,17 @@ module.exports = {
 
             if (enemies != undefined) {
 
-
                 if (creep.attack(enemies) == ERR_NOT_IN_RANGE) {
                     creep.moveTo(enemies);
                 }
 
             } else {
 
-                var roomsToInvestigate = new Array();
+                if(creep.memory.healAvailable && creep.hits < creep.hitsMax){
+                    creep.heal(creep);
+                }
 
+                var roomsToInvestigate = new Array();
 
                 if (creep.memory.roomToInvestigateName0) {
                     let roomToInvestigate0 = new Map;

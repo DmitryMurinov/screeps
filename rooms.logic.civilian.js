@@ -238,7 +238,7 @@ module.exports = {
         creepsNeeded.set("dismantilist1", 0);
         creepsNeeded.set("dismantilist2", 0);
         creepsNeeded.set("medic1", 1);
-        creepsNeeded.set("medic2", 1);
+        creepsNeeded.set("medic2", 0);
         creepsNeeded.set("sieger", 0);
         creepsNeeded.set("bankir", 1);
         creepsNeeded.set("courierMiner", 0);
@@ -3015,7 +3015,7 @@ module.exports = {
                         ",roomToInvestigateName2 : \"E58N11\", roomToInvestigateX2: 42, roomToInvestigateY2: 16" +
                         ",roomToInvestigateName3 : \"E53N14\", roomToInvestigateX3: 16, roomToInvestigateY3: 11" +
                         "}";
-                    var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 5 + "(\"attackerLogic\"), memory)";
+                    var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 6 + "(\"attackerLogic\"), memory)";
                     var createString = eval(constructorString);
                     eval(createString);
                 } else if (controllerLevel > 1 && localMadeOuterHarvesterLogic2 < localMadeOuterHarvesterLogic2Needed) {
