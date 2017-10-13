@@ -288,6 +288,10 @@ module.exports = {
 
             var terminal = Game.rooms[roomName].terminal;
 
+            var lemergiumAlkalideReserve = allReservesCount[roomName + ";" + RESOURCE_LEMERGIUM_ALKALIDE];
+
+            var lemergiumAlkalideReserveNeeded = 2000;
+
             if (terminal && Game.market.credits >= 5000) {
                 if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_CATALYST] == undefined
                         || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_CATALYST] < lemergiumAlkalideReserve))) {
