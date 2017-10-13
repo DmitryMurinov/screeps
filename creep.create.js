@@ -495,6 +495,7 @@ module.exports = {
                         // ", roomToWorkX2: 34, roomToWorkY2: 10,  roomToWorkName2: \"E52N11\"" +
                         "}";
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 6 + "(\"medicLogic\"), memory)";
+                    var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 6 + "(\"medicLogic\"), memory)";
                     var createString = eval(constructorString);
                     eval(createString);
                 } else if (localMadeMedic2 < localMadeMedic2Needed) {
