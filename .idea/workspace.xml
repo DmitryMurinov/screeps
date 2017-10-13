@@ -4,6 +4,7 @@
     <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/role.outerReserver.js" afterPath="$PROJECT_DIR$/role.outerReserver.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/role.reserver.js" afterPath="$PROJECT_DIR$/role.reserver.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,21 +56,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="role.outerReserver.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="role.outerReserver.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/role.outerReserver.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="84" column="12" lean-forward="false" selection-start-line="84" selection-start-column="12" selection-end-line="84" selection-end-column="12" />
+            <state relative-caret-position="402">
+              <caret line="88" column="70" lean-forward="false" selection-start-line="88" selection-start-column="70" selection-end-line="88" selection-end-column="70" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="role.reserver.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="role.reserver.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/role.reserver.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="86" column="40" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="112" selection-end-column="2" />
+            <state relative-caret-position="402">
+              <caret line="89" column="70" lean-forward="false" selection-start-line="89" selection-start-column="70" selection-end-line="89" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -165,8 +166,8 @@
         <option value="$PROJECT_DIR$/helper.counter.js" />
         <option value="$PROJECT_DIR$/labs.js" />
         <option value="$PROJECT_DIR$/rooms.logic.civilian.js" />
-        <option value="$PROJECT_DIR$/role.reserver.js" />
         <option value="$PROJECT_DIR$/role.outerReserver.js" />
+        <option value="$PROJECT_DIR$/role.reserver.js" />
       </list>
     </option>
   </component>
@@ -336,7 +337,7 @@
       <workItem from="1507578930859" duration="1672000" />
       <workItem from="1507645846579" duration="4760000" />
       <workItem from="1507832656005" duration="11840000" />
-      <workItem from="1507878328295" duration="866000" />
+      <workItem from="1507878328295" duration="928000" />
     </task>
     <task id="LOCAL-00001" summary="Защита главной комнаты.">
       <created>1507580036995</created>
@@ -583,11 +584,18 @@
       <option name="project" value="LOCAL" />
       <updated>1507878978238</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Обновил резервера до атаки, если контроллер чужой. Выкинул клэйм.">
+      <created>1507879198205</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1507879198205</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19138000" />
+    <option name="totallyTimeSpent" value="19200000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -980,18 +988,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/role.reserver.js">
+    <entry file="file://$PROJECT_DIR$/role.outerReserver.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="86" column="40" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="112" selection-end-column="2" />
+        <state relative-caret-position="402">
+          <caret line="88" column="70" lean-forward="false" selection-start-line="88" selection-start-column="70" selection-end-line="88" selection-end-column="70" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/role.outerReserver.js">
+    <entry file="file://$PROJECT_DIR$/role.reserver.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="84" column="12" lean-forward="false" selection-start-line="84" selection-start-column="12" selection-end-line="84" selection-end-column="12" />
+        <state relative-caret-position="402">
+          <caret line="89" column="70" lean-forward="false" selection-start-line="89" selection-start-column="70" selection-end-line="89" selection-end-column="70" />
           <folding />
         </state>
       </provider>

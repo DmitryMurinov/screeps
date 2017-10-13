@@ -87,7 +87,7 @@ module.exports = {
             if (creep.room.controller) {
 
                 var actionResult = null;
-                if (Game.rooms[creep.room.name].controller.reservation.username &&
+                if (Game.rooms[creep.room.name].controller.reservation &&
                     Game.rooms[creep.room.name].controller.reservation.username != 'Dehar') {
                     actionResult = creep.attackController(creep.room.controller);
                 } else {
