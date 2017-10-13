@@ -3089,7 +3089,7 @@ module.exports = {
                     var createString = eval(constructorString);
                     eval(createString);
                 } else if (localMadeBasicCreepsOuter3 < localMadeBasicCreepsOuter3Needed) {
-                    var memory = "{role: 'basicCreepOuter2', working: false, origination: '" + roomName + "', arrived: false, " +
+                    var memory = "{role: 'basicCreepOuter3', working: false, origination: '" + roomName + "', arrived: false, " +
                         "roomToWorkX1: " + roomToWorkX3 + "," +
                         "roomToWorkY1: " + roomToWorkY3 + "," +
                         "roomToWorkName1: \"" + roomToWorkName3 + "\"," +
