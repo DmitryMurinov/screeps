@@ -3011,8 +3011,9 @@ module.exports = {
                     var memory = "{role: 'attackerLogic2', claim: true, working: false, origination: '" + roomName + "', " +
                         "needBoost: false," +
                         "roomToInvestigateName0 : \"E53N15\", roomToInvestigateX0: 16, roomToInvestigateY0: 6" +
-                        // ",roomToInvestigateName0 : \"E52N15\", roomToInvestigateX0: 48, roomToInvestigateY0: 36" +
-                        // ",roomToInvestigateName1 : \"E58N11\", roomToInvestigateX1: 2, roomToInvestigateY1: 8" +
+                        ",roomToInvestigateName1 : \"E53N14\", roomToInvestigateX1: 16, roomToInvestigateY1: 11" +
+                        ",roomToInvestigateName2 : \"E58N11\", roomToInvestigateX2: 42, roomToInvestigateY2: 16" +
+                        ",roomToInvestigateName3 : \"E53N14\", roomToInvestigateX3: 16, roomToInvestigateY3: 11" +
                         "}";
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 3 + "(\"attackerLogic\"), memory)";
                     var createString = eval(constructorString);
