@@ -84,58 +84,27 @@ module.exports = {
         if (creep.memory.arrived == true) {
 
 
-            if (creep.room.controller !=null && creep.room.controller != undefined) {
-                if (creep.memory.claim == true) {
-                    var errorCode = creep.claimController(creep.room.controller);
+            if (creep.room.controller) {
 
-                    // console.log(errorCode);
-
-
-                    if (errorCode == ERR_GCL_NOT_ENOUGH) {
-                        if (creep.reserveController(creep.room.controller) == ERR_NOT_IN_RANGE) {
-                            if (!creep.memory.storedPath) {
-                                creep.memory.storedPath = creep.pos.findPathTo(creep.room.controller);
-                            }
-                            if (creep.memory.storedPath) {
-                                moveResult = creep.moveByPath(creep.memory.storedPath);
-                            }
-                            if (moveResult == OK) {
-                            } else {
-                                creep.memory.storedPath = creep.pos.findPathTo(creep.room.controller);
-                                moveResult = creep.moveByPath(creep.memory.storedPath);
-                            }
-                        }
-                    }
-                    else {
-                        if (errorCode == ERR_NOT_IN_RANGE) {
-
-                            if (creep.memory.storedPath == undefined || creep.memory.storedPath == null) {
-                                creep.memory.storedPath = creep.pos.findPathTo(creep.room.controller);
-                            }
-                            if (creep.memory.storedPath) {
-                                moveResult = creep.moveByPath(creep.memory.storedPath);
-                            }
-                            if (moveResult == OK) {
-                            } else {
-                                creep.memory.storedPath = creep.pos.findPathTo(creep.room.controller);
-                                moveResult = creep.moveByPath(creep.memory.storedPath);
-                            }
-                        }
-                    }
+                var actionResult = null;
+                if (Game.rooms[creep.room.name].controller.reservation.username &&
+                    Game.rooms[creep.room.name].controller.reservation.username != 'Dehar') {
+                    actionResult = creep.attackController(creep.room.controller);
                 } else {
+                    actionResult = creep.reserveController(creep.room.controller);
+                }
 
-                    if (creep.reserveController(creep.room.controller) == ERR_NOT_IN_RANGE) {
-                        if (!creep.memory.storedPath) {
-                            creep.memory.storedPath = creep.pos.findPathTo(creep.room.controller);
-                        }
-                        if (creep.memory.storedPath) {
-                            moveResult = creep.moveByPath(creep.memory.storedPath);
-                        }
-                        if (moveResult == OK) {
-                        } else {
-                            creep.memory.storedPath = creep.pos.findPathTo(creep.room.controller);
-                            moveResult = creep.moveByPath(creep.memory.storedPath);
-                        }
+                if (actionResult == ERR_NOT_IN_RANGE) {
+                    if (!creep.memory.storedPath) {
+                        creep.memory.storedPath = creep.pos.findPathTo(creep.room.controller);
+                    }
+                    if (creep.memory.storedPath) {
+                        moveResult = creep.moveByPath(creep.memory.storedPath);
+                    }
+                    if (moveResult == OK) {
+                    } else {
+                        creep.memory.storedPath = creep.pos.findPathTo(creep.room.controller);
+                        moveResult = creep.moveByPath(creep.memory.storedPath);
                     }
                 }
             }

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/role.reserver.js" afterPath="$PROJECT_DIR$/role.reserver.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rooms.logic.civilian.js" afterPath="$PROJECT_DIR$/rooms.logic.civilian.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,28 +26,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="role.builder.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/role.builder.js">
+      <file leaf-file-name="rooms.logic.civilian.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rooms.logic.civilian.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="19" selection-end-column="22" />
-              <folding>
-                <marker date="1507564308197" expanded="true" signature="1098:1137" ph="{...}" />
-                <marker date="1507564308197" expanded="true" signature="4230:4269" ph="{...}" />
-                <marker date="1507564308197" expanded="true" signature="4584:4627" ph="{...}" />
-                <marker date="1507564308197" expanded="true" signature="8120:8151" ph="{...}" />
-                <marker date="1507564308197" expanded="true" signature="8565:8600" ph="{...}" />
-                <marker date="1507564308197" expanded="true" signature="9034:9073" ph="{...}" />
-              </folding>
+            <state relative-caret-position="646">
+              <caret line="3017" column="56" lean-forward="true" selection-start-line="3017" selection-start-column="56" selection-end-line="3017" selection-end-column="56" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rooms.logic.civilian.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rooms.logic.civilian.js">
+      <file leaf-file-name="role.refillerWar.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/role.refillerWar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="3019" column="17" lean-forward="false" selection-start-line="3019" selection-start-column="17" selection-end-line="3019" selection-end-column="17" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="role.courierMine.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/role.courierMine.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="role.outerReserver.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/role.outerReserver.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="role.reserver.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/role.reserver.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="725">
+              <caret line="108" column="17" lean-forward="false" selection-start-line="108" selection-start-column="17" selection-end-line="108" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -82,41 +106,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="role.outerHarvesterLogic.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/role.outerHarvesterLogic.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="23" lean-forward="false" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="46" lean-forward="false" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="helper.counter.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/helper.counter.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="952">
               <caret line="56" column="35" lean-forward="false" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="creeps.runAllCreeps.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/creeps.runAllCreeps.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="43" column="13" lean-forward="false" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -172,6 +166,7 @@
         <option value="$PROJECT_DIR$/helper.counter.js" />
         <option value="$PROJECT_DIR$/labs.js" />
         <option value="$PROJECT_DIR$/rooms.logic.civilian.js" />
+        <option value="$PROJECT_DIR$/role.reserver.js" />
       </list>
     </option>
   </component>
@@ -341,7 +336,7 @@
       <workItem from="1507578930859" duration="1672000" />
       <workItem from="1507645846579" duration="4760000" />
       <workItem from="1507832656005" duration="11840000" />
-      <workItem from="1507878328295" duration="67000" />
+      <workItem from="1507878328295" duration="623000" />
     </task>
     <task id="LOCAL-00001" summary="Защита главной комнаты.">
       <created>1507580036995</created>
@@ -574,11 +569,18 @@
       <option name="project" value="LOCAL" />
       <updated>1507846672578</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Обновляю логику комнат.">
+      <created>1507878405790</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1507878405791</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18339000" />
+    <option name="totallyTimeSpent" value="18895000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -948,8 +950,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rooms.logic.civilian.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="3019" column="17" lean-forward="false" selection-start-line="3019" selection-start-column="17" selection-end-line="3019" selection-end-column="17" />
+        <state relative-caret-position="646">
+          <caret line="3017" column="56" lean-forward="true" selection-start-line="3017" selection-start-column="56" selection-end-line="3017" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.refillerWar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.courierMine.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.outerReserver.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.reserver.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="108" column="17" lean-forward="false" selection-start-line="108" selection-start-column="17" selection-end-line="108" selection-end-column="17" />
           <folding />
         </state>
       </provider>

@@ -3017,7 +3017,7 @@ module.exports = {
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 3 + "(\"attackerLogic\"), memory)";
                     var createString = eval(constructorString);
                     eval(createString);
-                }else if (controllerLevel > 1 && localMadeOuterHarvesterLogic2 < localMadeOuterHarvesterLogic2Needed) {
+                } else if (controllerLevel > 1 && localMadeOuterHarvesterLogic2 < localMadeOuterHarvesterLogic2Needed) {
                     var memory = "{role: 'outerHarvesterLogic2', working: false, origination: '" + roomName + "', arrived: false, roomToWorkX: " + roomToWorkX2 + ", roomToWorkY: " + roomToWorkY2 + ",  " +
                         "roomToWorkName: \"" + roomToWorkName2 + "\"}";
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + controllerLevel1to3 + "(\"pureHarvester\"), memory)";
