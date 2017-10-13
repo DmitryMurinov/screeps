@@ -8,7 +8,7 @@ module.exports = {
 
     sell: function (roomName, resource, amount, price) {
 
-        const maxTransferEnergyCost = amount;
+        const maxTransferEnergyCost = amount * 2;
         const orders = Game.market.getAllOrders({type: ORDER_BUY, resourceType: resource});
 
         var orderNumber = 0;
