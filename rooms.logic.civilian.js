@@ -3007,7 +3007,17 @@ module.exports = {
                     var createString = eval(constructorString);
                     // var createString = creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev3("basicCreep"), memory);
                     eval(createString);
-                } else if (controllerLevel > 1 && localMadeOuterHarvesterLogic2 < localMadeOuterHarvesterLogic2Needed) {
+                } else if (controllerLevel > 1 && localMadeAttackerLogic2 < localMadeAttackerLogic2Needed) {
+                    var memory = "{role: 'attackerLogic2', claim: true, working: false, origination: '" + roomName + "', " +
+                        "needBoost: false," +
+                        "roomToInvestigateName0 : \"E53N15\", roomToInvestigateX0: 16, roomToInvestigateY0: 6" +
+                        // ",roomToInvestigateName0 : \"E52N15\", roomToInvestigateX0: 48, roomToInvestigateY0: 36" +
+                        // ",roomToInvestigateName1 : \"E58N11\", roomToInvestigateX1: 2, roomToInvestigateY1: 8" +
+                        "}";
+                    var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 3 + "(\"attackerLogic\"), memory)";
+                    var createString = eval(constructorString);
+                    eval(createString);
+                }else if (controllerLevel > 1 && localMadeOuterHarvesterLogic2 < localMadeOuterHarvesterLogic2Needed) {
                     var memory = "{role: 'outerHarvesterLogic2', working: false, origination: '" + roomName + "', arrived: false, roomToWorkX: " + roomToWorkX2 + ", roomToWorkY: " + roomToWorkY2 + ",  " +
                         "roomToWorkName: \"" + roomToWorkName2 + "\"}";
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + controllerLevel1to3 + "(\"pureHarvester\"), memory)";
@@ -3174,16 +3184,6 @@ module.exports = {
                         "needBoost: false," +
                         "roomToInvestigateName0 : \"E53N17\", roomToInvestigateX0: 12, roomToInvestigateY0: 28" +
                         // "roomToInvestigateName0 : \"E57N11\", roomToInvestigateX0: 28, roomToInvestigateY0: 2" +
-                        // ",roomToInvestigateName1 : \"E58N11\", roomToInvestigateX1: 2, roomToInvestigateY1: 8" +
-                        "}";
-                    var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 3 + "(\"attackerLogic\"), memory)";
-                    var createString = eval(constructorString);
-                    eval(createString);
-                } else if (controllerLevel > 1 && localMadeAttackerLogic2 < localMadeAttackerLogic2Needed) {
-                    var memory = "{role: 'attackerLogic2', claim: true, working: false, origination: '" + roomName + "', " +
-                        "needBoost: false," +
-                        "roomToInvestigateName0 : \"E53N15\", roomToInvestigateX0: 16, roomToInvestigateY0: 6" +
-                        // ",roomToInvestigateName0 : \"E52N15\", roomToInvestigateX0: 48, roomToInvestigateY0: 36" +
                         // ",roomToInvestigateName1 : \"E58N11\", roomToInvestigateX1: 2, roomToInvestigateY1: 8" +
                         "}";
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 3 + "(\"attackerLogic\"), memory)";
