@@ -19,8 +19,8 @@
       <file leaf-file-name="rooms.logic.civilian.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rooms.logic.civilian.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="246" column="38" lean-forward="true" selection-start-line="246" selection-start-column="38" selection-end-line="246" selection-end-column="38" />
+            <state relative-caret-position="374">
+              <caret line="229" column="46" lean-forward="true" selection-start-line="229" selection-start-column="46" selection-end-line="229" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -29,8 +29,8 @@
       <file leaf-file-name="creep.create.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/creep.create.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="631">
-              <caret line="497" column="96" lean-forward="false" selection-start-line="497" selection-start-column="96" selection-end-line="497" selection-end-column="96" />
+            <state relative-caret-position="9095">
+              <caret line="535" column="114" lean-forward="true" selection-start-line="535" selection-start-column="114" selection-end-line="535" selection-end-column="114" />
               <folding />
             </state>
           </provider>
@@ -349,14 +349,7 @@
       <workItem from="1507645846579" duration="4760000" />
       <workItem from="1507832656005" duration="11840000" />
       <workItem from="1507878328295" duration="6498000" />
-      <workItem from="1507906864027" duration="3949000" />
-    </task>
-    <task id="LOCAL-00013" summary="Обновляю логику комнат.">
-      <created>1507838830136</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1507838830136</updated>
+      <workItem from="1507906864027" duration="4068000" />
     </task>
     <task id="LOCAL-00014" summary="Обновляю логику комнат.">
       <created>1507838945542</created>
@@ -694,11 +687,18 @@
       <option name="project" value="LOCAL" />
       <updated>1507913298815</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Допиливание логики комнат.">
+      <created>1507913374235</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1507913374235</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28719000" />
+    <option name="totallyTimeSpent" value="28838000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1134,16 +1134,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/creep.create.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="631">
-          <caret line="497" column="96" lean-forward="false" selection-start-line="497" selection-start-column="96" selection-end-line="497" selection-end-column="96" />
+        <state relative-caret-position="9095">
+          <caret line="535" column="114" lean-forward="true" selection-start-line="535" selection-start-column="114" selection-end-line="535" selection-end-column="114" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rooms.logic.civilian.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="246" column="38" lean-forward="true" selection-start-line="246" selection-start-column="38" selection-end-line="246" selection-end-column="38" />
+        <state relative-caret-position="374">
+          <caret line="229" column="46" lean-forward="true" selection-start-line="229" selection-start-column="46" selection-end-line="229" selection-end-column="46" />
           <folding />
         </state>
       </provider>

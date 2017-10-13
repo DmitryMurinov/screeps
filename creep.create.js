@@ -536,7 +536,7 @@ module.exports = {
                         ",roomToInvestigateName0 : \"E56N18\", roomToInvestigateX0: 34, roomToInvestigateY0: 46" +
                         // ",roomToInvestigateName1 : \"E58N11\", roomToInvestigateX1: 2, roomToInvestigateY1: 8" +
                         "}";
-                    var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 4 + "(\"attackerLogic\"), memory)";
+                    var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 6 + "(\"attackerLogic\"), memory)";
                     var createString = eval(constructorString);
                     eval(createString);
                 } else if (localMadeDismantilist2 < localMadeDismantilist2Needed) {
