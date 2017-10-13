@@ -77,7 +77,7 @@ module.exports = {
             //     });
             // }
 
-            if(creep.room.name == 'E58N11' && enemies == undefined){
+            if(creep.room.name == 'E56N19' && enemies == undefined){
                 enemies = creep.pos.findClosestByPath(FIND_STRUCTURES, {filter: (s) => s.structureType != STRUCTURE_CONTROLLER
                     && s.structureType != STRUCTURE_KEEPER_LAIR && s.pos.x == 20 && s.pos.y == 45});
             }
