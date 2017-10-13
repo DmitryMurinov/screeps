@@ -42,7 +42,9 @@ module.exports.loop = function () {
 
     // var startCpu = Game.cpu.getUsed();
 
-    roomLogicCivilian.runMyRooms(allCreepsCount, gameTime, allReservesCount);
+    if(gameTime.substring(gameTime.length - 1, gameTime.length) == ('0' || '5')) {
+        roomLogicCivilian.runMyRooms(allCreepsCount, gameTime, allReservesCount);
+    }
     // console.log(Game.cpu.getUsed() - startCpu);
 
     // roomLogicWar.runMyRooms(gameTime);
