@@ -219,7 +219,7 @@ module.exports = {
 
 
             var droppedEnergy = creep.pos.findClosestByPath(FIND_DROPPED_RESOURCES, {
-                filter: (r) => r.amount > 2000 && r.resourceType == RESOURCE_ENERGY
+                filter: (r) => r.amount >= creep.carryCapacity && r.resourceType == RESOURCE_ENERGY
             });
 
             if (droppedEnergy) {
