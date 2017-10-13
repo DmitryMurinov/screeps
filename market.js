@@ -18,6 +18,12 @@ module.exports = {
             if(orders[i].price >= price) {
                 transferEnergyCost = Game.market.calcTransactionCost(
                     amount, roomName, orders[i].roomName);
+
+                if(roomName == 'E57N15'){
+                    console.log(transferEnergyCost);
+                }
+
+
                 if (i > 0) {
                     var transferEnergyCostPrevious = Game.market.calcTransactionCost(
                         amount, roomName, orders[i - 1].roomName);
