@@ -495,7 +495,6 @@ module.exports = {
                 roomMemory.roomToWorkY3 = 2;
             }
 
-            if (!roomMemory.roomToWorkName1) {
                 roomMemory.roomToWorkName1 = "E57N14";
                 roomMemory.roomToWorkX1 = 25;
                 roomMemory.roomToWorkY1 = 1;
@@ -507,7 +506,6 @@ module.exports = {
                 roomMemory.roomToWorkName3 = "E54N17";
                 roomMemory.roomToWorkX3 = 28;
                 roomMemory.roomToWorkY3 = 2;
-            }
 
             let creepsNeeded = new Map();
 
