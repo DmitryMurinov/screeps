@@ -1,4 +1,4 @@
-var structLinks = require('struct.linksLogic');
+var structLinks = require('links');
 
 var helperCounter = require('helper.counter');
 

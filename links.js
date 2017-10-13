@@ -52,7 +52,7 @@ module.exports = {
 
         // const linkEnergySource2 = Game.rooms['E54N18'].lookForAt('structure', 27, 16)[0];
 
-        const linkStorage = Game.rooms['E57N15'].lookForAt('structure', 24, 19)[0];
+        const linkStorage = Game.rooms['E57N15'].lookForAt('structure', 7, 23)[0];
 
         const linkController = Game.rooms['E57N15'].lookForAt('structure', 37, 27)[0];
 
@@ -67,9 +67,9 @@ module.exports = {
         //         linkEnergySource1.transferEnergy(linkStorage);
         //     }
         // }
-        if(linkOuter1 && linkController) {
+        if(linkOuter1 && linkStorage) {
             if (linkOuter1.energy >= 200 && linkOuter1.cooldown == 0) {
-                linkOuter1.transferEnergy(linkController);
+                linkOuter1.transferEnergy(linkStorage);
             }
         }
 
