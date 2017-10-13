@@ -1,3 +1,5 @@
+var creepTemplates = require('creep.templates');
+
 module.exports = {
 
     create: function (roomName, allCreepsCount, gameTime, creepsData, creepsNeeded) {
@@ -356,7 +358,7 @@ module.exports = {
                 } else if (controllerLevel > 1 && localMadeAttackerLogic2 < localMadeAttackerLogic2Needed) {
                     var memory = "{role: 'attackerLogic2', claim: true, working: false, origination: '" + roomName + "', " +
                         "needBoost: false," +
-                        "roomToInvestigateName0 : \"E53N15\", roomToInvestigateX0: 23, roomToInvestigateY0: 46" +
+                        "roomToInvestigateName0 : \"E53N15\", roomToInvestigateX0: 16, roomToInvestigateY0: 9" +
                         // ",roomToInvestigateName1 : \"E53N14\", roomToInvestigateX1: 14, roomToInvestigateY1: 23" +
                         // ",roomToInvestigateName2 : \"E52N14\", roomToInvestigateX2: 42, roomToInvestigateY2: 16" +
                         // ",roomToInvestigateName3 : \"E53N14\", roomToInvestigateX3: 14, roomToInvestigateY3: 23" +
