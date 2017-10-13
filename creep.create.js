@@ -490,7 +490,7 @@ module.exports = {
                     roomMemory.controllerAttacker2Needed = false;
                 } else if (localMadeMedic1 < localMadeMedic1Needed) {
                     var memory = "{role: 'medic1', claim: true, working: false, origination: '" + roomName + "', arrived1: false " +
-                        ", needBoost: false" +
+                        ", needBoost: true" +
                         ", roomToWorkX1: 11, roomToWorkY1: 45,  roomToWorkName1: \"E56N18\"" +
                         // ", roomToWorkX2: 34, roomToWorkY2: 10,  roomToWorkName2: \"E52N11\"" +
                         "}";
