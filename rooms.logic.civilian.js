@@ -343,7 +343,7 @@ module.exports = {
 
             if (terminal && Game.market.credits < 5000) {
                 if (terminal.store[RESOURCE_KEANIUM] >= 500 && terminal.store[RESOURCE_ENERGY] > 500) {
-                    market.sell(roomName, RESOURCE_KEANIUM, 500, 5);
+                    market.sell(roomName, RESOURCE_KEANIUM, 500, 0.85);
                 }
             }
 
