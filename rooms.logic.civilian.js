@@ -544,6 +544,8 @@ module.exports = {
             creepsNeeded.set("courierMiner", 0);
             creepsNeeded.set("exauster", 0);
 
+            let creepsData = new Map();
+
             creepsData.set("attacker1", "needBoost: false," +
                 "roomToInvestigateName0 : \"E57N14\", roomToInvestigateX0: 16, roomToInvestigateY0: 46," +
                 "roomToInvestigateName1 : \"E57N13\", roomToInvestigateX1: 16, roomToInvestigateY1: 3"
@@ -2272,6 +2274,8 @@ module.exports = {
             creepsNeeded.set("bankir", 1);
             creepsNeeded.set("courierMiner", 0);
             creepsNeeded.set("exauster", 0);
+
+            let creepsData = new Map();
 
             creepsData.set("attacker1", "needBoost: false," +
                 "roomToInvestigateName0 : \"E57N14\", roomToInvestigateX0: 16, roomToInvestigateY0: 46," +
