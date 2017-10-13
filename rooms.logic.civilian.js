@@ -495,18 +495,6 @@ module.exports = {
                 roomMemory.roomToWorkY3 = 2;
             }
 
-                roomMemory.roomToWorkName1 = "E57N14";
-                roomMemory.roomToWorkX1 = 25;
-                roomMemory.roomToWorkY1 = 1;
-
-                roomMemory.roomToWorkName2 = "E57N13";
-                roomMemory.roomToWorkX2 = 16;
-                roomMemory.roomToWorkY2 = 5;
-
-                roomMemory.roomToWorkName3 = "E54N17";
-                roomMemory.roomToWorkX3 = 28;
-                roomMemory.roomToWorkY3 = 2;
-
             let creepsNeeded = new Map();
 
             creepsNeeded.set("basicCreep", 2);
