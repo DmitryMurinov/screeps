@@ -346,8 +346,8 @@ module.exports = {
             // }
 
             if (terminal && Game.market.credits < 5000) {
-                if (terminal.store[RESOURCE_OXYGEN] >= 500 && terminal.store[RESOURCE_ENERGY] > 500) {
-                    market.sell(roomName, RESOURCE_OXYGEN, 500, 0.9);
+                if (terminal.store[RESOURCE_KEANIUM] >= 500 && terminal.store[RESOURCE_ENERGY] > 500) {
+                    market.sell(roomName, RESOURCE_KEANIUM, 500, 5);
                 }
             }
 
@@ -1058,7 +1058,7 @@ module.exports = {
             lemergiumAlkalideReserveNeeded = 21000;
         }
 
-        if (terminal && Game.market.credits >= 5000) {
+/*        if (terminal && Game.market.credits >= 5000) {
             if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_GHODIUM_ALKALIDE] == undefined
                     || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_GHODIUM_ALKALIDE] < lemergiumAlkalideReserve * 2))) {
                 market.buy(roomName, RESOURCE_GHODIUM_ALKALIDE, 500, 5.0);
@@ -1100,7 +1100,7 @@ module.exports = {
                 market.buy(roomName, RESOURCE_LEMERGIUM_ALKALIDE, 500, 3.0);
 
             }
-        }
+        }*/
         // } else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_UTRIUM] == undefined
         //         || terminal.store[RESOURCE_UTRIUM] < 1000)) {
         //     market.buy(roomName, RESOURCE_UTRIUM, 100, .6);

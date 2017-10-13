@@ -28,8 +28,8 @@
       <file leaf-file-name="rooms.logic.civilian.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rooms.logic.civilian.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="336" column="13" lean-forward="false" selection-start-line="336" selection-start-column="13" selection-end-line="336" selection-end-column="13" />
+            <state relative-caret-position="408">
+              <caret line="351" column="13" lean-forward="true" selection-start-line="351" selection-start-column="13" selection-end-line="351" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -338,7 +338,7 @@
       <workItem from="1507578930859" duration="1672000" />
       <workItem from="1507645846579" duration="4760000" />
       <workItem from="1507832656005" duration="11840000" />
-      <workItem from="1507878328295" duration="4575000" />
+      <workItem from="1507878328295" duration="4731000" />
     </task>
     <task id="LOCAL-00001" summary="Защита главной комнаты.">
       <created>1507580036995</created>
@@ -655,11 +655,18 @@
       <option name="project" value="LOCAL" />
       <updated>1507882923216</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Обновил логику покупки ресурсов">
+      <created>1507883289382</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1507883289382</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22847000" />
+    <option name="totallyTimeSpent" value="23003000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -708,7 +715,8 @@
     <MESSAGE value="Добавил патруль вокруг комнаты рядом." />
     <MESSAGE value="Изменил логику производства минералов." />
     <MESSAGE value="Обновление логики патруля вокруг врага." />
-    <option name="LAST_COMMIT_MESSAGE" value="Обновление логики патруля вокруг врага." />
+    <MESSAGE value="Обновил логику покупки ресурсов" />
+    <option name="LAST_COMMIT_MESSAGE" value="Обновил логику покупки ресурсов" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1069,8 +1077,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rooms.logic.civilian.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="336" column="13" lean-forward="false" selection-start-line="336" selection-start-column="13" selection-end-line="336" selection-end-column="13" />
+        <state relative-caret-position="408">
+          <caret line="351" column="13" lean-forward="true" selection-start-line="351" selection-start-column="13" selection-end-line="351" selection-end-column="13" />
           <folding />
         </state>
       </provider>
