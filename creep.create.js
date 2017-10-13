@@ -491,7 +491,7 @@ module.exports = {
                 } else if (localMadeMedic1 < localMadeMedic1Needed) {
                     var memory = "{role: 'medic1', claim: true, working: false, origination: '" + roomName + "', arrived1: false " +
                         ", needBoost: true" +
-                        ", roomToWorkX1: 11, roomToWorkY1: 45,  roomToWorkName1: \"E56N18\"" +
+                        ", roomToWorkX1: 28, roomToWorkY1: 45,  roomToWorkName1: \"E56N19\"" +
                         // ", roomToWorkX2: 34, roomToWorkY2: 10,  roomToWorkName2: \"E52N11\"" +
                         "}";
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 6 + "(\"medicLogic\"), memory)";
@@ -532,8 +532,8 @@ module.exports = {
                 }  else if (controllerLevel > 1 && localMadeAttackerLogic3 < localMadeAttackerLogic3Needed) {
                     var memory = "{role: 'attackerLogic3', claim: true, working: false, origination: '" + roomName + "', " +
                         "needBoost: false," +
-                        "roomToInvestigateName0 : \"E57N17\", roomToInvestigateX0: 5, roomToInvestigateY0: 30" +
-                        ",roomToInvestigateName0 : \"E56N18\", roomToInvestigateX0: 34, roomToInvestigateY0: 46" +
+                        "roomToInvestigateName0 : \"E56N19\", roomToInvestigateX0: 30, roomToInvestigateY0: 45" +
+                        // ",roomToInvestigateName0 : \"E56N18\", roomToInvestigateX0: 34, roomToInvestigateY0: 46" +
                         // ",roomToInvestigateName1 : \"E58N11\", roomToInvestigateX1: 2, roomToInvestigateY1: 8" +
                         "}";
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 6 + "(\"attackerLogic\"), memory)";
