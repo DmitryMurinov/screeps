@@ -3012,7 +3012,7 @@ module.exports = {
                         "needBoost: false," +
                         "roomToInvestigateName0 : \"E53N15\", roomToInvestigateX0: 16, roomToInvestigateY0: 6" +
                         ",roomToInvestigateName1 : \"E53N14\", roomToInvestigateX1: 14, roomToInvestigateY1: 23" +
-                        ",roomToInvestigateName2 : \"E58N11\", roomToInvestigateX2: 42, roomToInvestigateY2: 16" +
+                        ",roomToInvestigateName2 : \"E52N14\", roomToInvestigateX2: 42, roomToInvestigateY2: 16" +
                         ",roomToInvestigateName3 : \"E53N14\", roomToInvestigateX3: 14, roomToInvestigateY3: 23" +
                         "}";
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 6 + "(\"attackerLogic\"), memory)";
