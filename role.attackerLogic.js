@@ -79,7 +79,7 @@ module.exports = {
 
             if(creep.room.name == 'E58N11' && enemies == undefined){
                 enemies = creep.pos.findClosestByPath(FIND_STRUCTURES, {filter: (s) => s.structureType != STRUCTURE_CONTROLLER
-                    && s.structureType != STRUCTURE_KEEPER_LAIR && s.pos.x == 11 && s.pos.y == 17});
+                    && s.structureType != STRUCTURE_KEEPER_LAIR && s.pos.x == 20 && s.pos.y == 45});
             }
 
             if (enemies != undefined) {
