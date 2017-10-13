@@ -469,9 +469,9 @@ module.exports = {
                 } else if (controllerLevel > 2 && controllerAttacker1 < controllerAttacker1Needed && roomMemory.controllerAttacker1Needed == true) {
                     var memory = "{role: 'controllerAttacker1', claim: false, working: false, origination: '" + roomName + "', arrived: false, " +
                         "needBoost: false," +
-                        "roomToWorkX1: " + 2 + "," +
-                        "roomToWorkY1: " + 30 + "," +
-                        "roomToWorkName1: \"" + "E56N17" + "\"" +
+                        "roomToWorkX1: " + 27 + "," +
+                        "roomToWorkY1: " + 45 + "," +
+                        "roomToWorkName1: \"" + "E56N19" + "\"" +
                         "}";
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 5 + "(\"controllerAttacker\"), memory)";
                     var createString = eval(constructorString);
