@@ -238,9 +238,10 @@ module.exports = {
 
         //max 2300
         //Updated:
-        var attackerLogic = "[TOUGH, TOUGH, TOUGH, TOUGH, TOUGH, TOUGH, ATTACK, MOVE" +
+        var attackerLogic = "[TOUGH, TOUGH, TOUGH, TOUGH, TOUGH, TOUGH, " +
+            "MOVE, MOVE, MOVE, MOVE, MOVE, MOVE, ATTACK, MOVE" +
             ", ATTACK, MOVE, ATTACK, MOVE, ATTACK, MOVE, ATTACK, MOVE, ATTACK, MOVE, ATTACK, MOVE, ATTACK, MOVE" +
-            ", MOVE, MOVE, MOVE, MOVE, MOVE, MOVE, ATTACK, MOVE, ATTACK, MOVE, ATTACK, MOVE, HEAL, MOVE]";
+            ",  ATTACK, MOVE, ATTACK, MOVE, ATTACK, MOVE, HEAL, MOVE]";
 
         var medicLogic = "[TOUGH, TOUGH, TOUGH, TOUGH, MOVE, MOVE, MOVE, MOVE, MOVE, MOVE, MOVE, MOVE, MOVE, MOVE," +
             "HEAL, HEAL, HEAL, HEAL, HEAL, HEAL]";
@@ -356,7 +357,6 @@ module.exports = {
             ", MOVE, MOVE, MOVE, MOVE, MOVE, MOVE, MOVE, MOVE, MOVE, MOVE]";
 
         var outerClaimerLogic = "[CLAIM, CLAIM, MOVE, MOVE, MOVE, MOVE]";
-
 
 
         //MikiOnEs design move x 25 attack x 19 heal x 6
