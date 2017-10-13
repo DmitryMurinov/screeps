@@ -286,11 +286,7 @@ module.exports = {
 
             var basicCreepsNeeded = 2;
 
-            var terminals = Game.rooms[roomName].find(FIND_MY_STRUCTURES, {filter: (s) => s.structureType == STRUCTURE_TERMINAL});
-            var terminal;
-            if (terminals.length > 0) {
-                terminal = terminals[0];
-            }
+            var terminal = Game.rooms[roomName].terminal;
 
             if (terminal && Game.market.credits >= 5000) {
                 if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_CATALYST] == undefined

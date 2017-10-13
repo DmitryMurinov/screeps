@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/market.js" afterPath="$PROJECT_DIR$/market.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rooms.logic.civilian.js" afterPath="$PROJECT_DIR$/rooms.logic.civilian.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,17 +15,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="rooms.logic.civilian.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="rooms.logic.civilian.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rooms.logic.civilian.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="349" column="28" lean-forward="true" selection-start-line="349" selection-start-column="28" selection-end-line="349" selection-end-column="28" />
+            <state relative-caret-position="510">
+              <caret line="345" column="61" lean-forward="true" selection-start-line="345" selection-start-column="61" selection-end-line="345" selection-end-column="61" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="market.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="market.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/market.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
@@ -168,8 +168,8 @@
         <option value="$PROJECT_DIR$/labs.js" />
         <option value="$PROJECT_DIR$/creep.templates.js" />
         <option value="$PROJECT_DIR$/role.attackerLogic.js" />
-        <option value="$PROJECT_DIR$/rooms.logic.civilian.js" />
         <option value="$PROJECT_DIR$/market.js" />
+        <option value="$PROJECT_DIR$/rooms.logic.civilian.js" />
       </list>
     </option>
   </component>
@@ -339,7 +339,7 @@
       <workItem from="1507578930859" duration="1672000" />
       <workItem from="1507645846579" duration="4760000" />
       <workItem from="1507832656005" duration="11840000" />
-      <workItem from="1507878328295" duration="4995000" />
+      <workItem from="1507878328295" duration="5113000" />
     </task>
     <task id="LOCAL-00001" summary="Защита главной комнаты.">
       <created>1507580036995</created>
@@ -677,11 +677,18 @@
       <option name="project" value="LOCAL" />
       <updated>1507883601356</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Обновил логику покупки ресурсов">
+      <created>1507883696980</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1507883696980</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23267000" />
+    <option name="totallyTimeSpent" value="23385000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1090,18 +1097,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rooms.logic.civilian.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="349" column="28" lean-forward="true" selection-start-line="349" selection-start-column="28" selection-end-line="349" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/market.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="52" lean-forward="false" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rooms.logic.civilian.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="345" column="61" lean-forward="true" selection-start-line="345" selection-start-column="61" selection-end-line="345" selection-end-column="61" />
           <folding />
         </state>
       </provider>
