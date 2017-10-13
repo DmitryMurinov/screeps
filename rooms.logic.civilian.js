@@ -474,7 +474,6 @@ module.exports = {
             var roomToWorkX2 = 16;
             var roomToWorkY2 = 5;
 
-
             var roomToWorkName3 = "E54N17";
             var roomToWorkX3 = 28;
             var roomToWorkY3 = 2;
@@ -493,6 +492,9 @@ module.exports = {
                 roomMemory.roomToWorkX3 = 28;
                 roomMemory.roomToWorkY3 = 2;
             }
+
+
+            let creepsNeeded = new Map();
 
             creepsNeeded.set("basicCreep", 2);
             creepsNeeded.set("pureHarvester", 2);
@@ -2220,6 +2222,8 @@ module.exports = {
                 roomMemory.roomToWorkX3 = 28;
                 roomMemory.roomToWorkY3 = 2;
             }
+
+            let creepsNeeded = new Map();
 
             creepsNeeded.set("basicCreep", 2);
             creepsNeeded.set("pureHarvester", 2);
