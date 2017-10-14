@@ -113,8 +113,11 @@ module.exports = {
         var localMadeCourierMinerNeeded = creepsNeeded.get("courierMiner");
         var localMadeExaustersNeeded = creepsNeeded.get("exauster");
 
-        var localMadeDefenderNeeded = 5;
+        var localMadeDefenderNeeded = 0;
 
+        if(roomName == 'E52N19') {
+            localMadeDefenderNeeded = 5;
+        }
 /*        var enemies;
         if (enemies == undefined) {
             Game.rooms[roomName].find(FIND_HOSTILE_CREEPS, {
