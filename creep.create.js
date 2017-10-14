@@ -115,24 +115,21 @@ module.exports = {
 
         var localMadeDefenderNeeded = 0;
 
-        if(roomName == 'E52N19') {
-            localMadeDefenderNeeded = 5;
-        }
-/*        var enemies;
+        var enemies;
         if (enemies == undefined) {
-            Game.rooms[roomName].find(FIND_HOSTILE_CREEPS, {
+            enemies = Game.rooms[roomName].find(FIND_HOSTILE_CREEPS, {
                 filter:
                     (c) => c.owner.username == 'Creepz'
             });
         }
 
         if(enemies && enemies.length > 0){
-            if(enemies.length > 5){
+            if(enemies.length <= 2){
                 localMadeDefenderNeeded = 5;
             } else {
-                localMadeDefenderNeeded = enemies.length;
+                localMadeDefenderNeeded = enemies.length * 2.5;
             }
-        }*/
+        }
 
         var mines = Game.rooms[roomName].find(FIND_MINERALS);
         var mine = mines[0];
