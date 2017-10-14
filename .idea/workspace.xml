@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic.civilian.js" afterPath="$PROJECT_DIR$/logic.civilian.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/creep.create.js" afterPath="$PROJECT_DIR$/creep.create.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +18,8 @@
       <file leaf-file-name="logic.civilian.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/logic.civilian.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-884">
-              <caret line="282" column="4" lean-forward="false" selection-start-line="282" selection-start-column="4" selection-end-line="282" selection-end-column="4" />
+            <state relative-caret-position="187">
+              <caret line="814" column="4" lean-forward="false" selection-start-line="814" selection-start-column="4" selection-end-line="814" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -35,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/default.iml">
+      <file leaf-file-name="creep.create.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/creep.create.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="476">
+              <caret line="720" column="26" lean-forward="false" selection-start-line="720" selection-start-column="26" selection-end-line="720" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -48,7 +48,7 @@
       <file leaf-file-name="defend.rooms.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/defend.rooms.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="-323">
               <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
               <folding />
             </state>
@@ -197,9 +197,9 @@
         <option value="$PROJECT_DIR$/role.RangedAttacker.js" />
         <option value="$PROJECT_DIR$/labs.js" />
         <option value="$PROJECT_DIR$/role.defender.js" />
-        <option value="$PROJECT_DIR$/creep.create.js" />
         <option value="$PROJECT_DIR$/creeps.runAllCreeps.js" />
         <option value="$PROJECT_DIR$/logic.civilian.js" />
+        <option value="$PROJECT_DIR$/creep.create.js" />
       </list>
     </option>
   </component>
@@ -377,14 +377,7 @@
       <workItem from="1507878328295" duration="6498000" />
       <workItem from="1507906864027" duration="15315000" />
       <workItem from="1507965195220" duration="2057000" />
-      <workItem from="1507988018978" duration="19905000" />
-    </task>
-    <task id="LOCAL-00081" summary="Допиливание логики комнат.">
-      <created>1507927629451</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1507927629451</updated>
+      <workItem from="1507988018978" duration="20494000" />
     </task>
     <task id="LOCAL-00082" summary="Допиливание логики комнат.">
       <created>1507928426317</created>
@@ -722,11 +715,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508020102371</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="Обновление комнат.">
+      <created>1508020262751</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1508020262751</updated>
+    </task>
+    <option name="localTasksCounter" value="131" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62047000" />
+    <option name="totallyTimeSpent" value="62636000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1092,14 +1092,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/creep.create.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="131" column="9" lean-forward="true" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/default.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1128,14 +1120,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="84" column="28" lean-forward="true" selection-start-line="84" selection-start-column="28" selection-end-line="84" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/defend.rooms.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -1172,10 +1156,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/defend.rooms.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-323">
+          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/creep.create.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="720" column="26" lean-forward="false" selection-start-line="720" selection-start-column="26" selection-end-line="720" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/logic.civilian.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-884">
-          <caret line="282" column="4" lean-forward="false" selection-start-line="282" selection-start-column="4" selection-end-line="282" selection-end-column="4" />
+        <state relative-caret-position="187">
+          <caret line="814" column="4" lean-forward="false" selection-start-line="814" selection-start-column="4" selection-end-line="814" selection-end-column="4" />
           <folding />
         </state>
       </provider>

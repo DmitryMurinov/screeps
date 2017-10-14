@@ -711,6 +711,13 @@ module.exports = {
                             var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + controllerLevel + "(\"pureHarvester\"), memory)";
                             var createString = eval(constructorString);
                             eval(createString);
+                        }  else if (localMadeAttackerLogic1 < localMadeAttackerLogic1Needed) {
+                            var memory = "{role: 'attackerLogic1', claim: true, working: false, origination: '" + roomName + "', " +
+                                creepsData.get('attacker1') +
+                                "}";
+                            var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 3 + "(\"attackerLogic\"), memory)";
+                            var createString = eval(constructorString);
+                            eval(createString);
                         } else if (localMadeBasicCreepsOuter1 < localMadeBasicCreepsOuter1Needed) {
                             var memory = "{role: 'basicCreepOuter1', working: false, origination: '" + roomName + "', arrived: false, roomToWorkX: " + roomToWorkX1 + ", roomToWorkY: " + roomToWorkY1 + ",  " +
                                 "roomToWorkName: \"" + roomToWorkName1 + "\"}";
@@ -756,13 +763,6 @@ module.exports = {
                         } else if (localMadeUpgraders < localMadeUpgradersNeeded) {
                             var memory = "{role: 'upgrader', working: false, origination: '" + roomName + "'}";
                             var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + controllerLevel + "(\"upgrader\"), memory)";
-                            var createString = eval(constructorString);
-                            eval(createString);
-                        } else if (localMadeAttackerLogic1 < localMadeAttackerLogic1Needed) {
-                            var memory = "{role: 'attackerLogic1', claim: true, working: false, origination: '" + roomName + "', " +
-                                creepsData.get('attacker1') +
-                                "}";
-                            var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 3 + "(\"attackerLogic\"), memory)";
                             var createString = eval(constructorString);
                             eval(createString);
                         }
