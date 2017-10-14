@@ -84,6 +84,8 @@ module.exports = {
 
         const linkEnergySource2 = Game.rooms['E52N19'].lookForAt('structure', 13, 47)[0];
 
+        const linkEnergySource3 = Game.rooms['E52N19'].lookForAt('structure', 2, 38)[0];
+
         const linkStorage = Game.rooms['E52N19'].lookForAt('structure', 27, 30)[0];
         // const linkTo = linkFrom.pos.findInRange(FIND_MY_STRUCTURES, 2,
         //     {filter: {structureType: STRUCTURE_LINK}})[0];
@@ -97,9 +99,17 @@ module.exports = {
                 linkEnergySource1.transferEnergy(linkStorage);
             }
         }
-        if(linkEnergySource2.energy >= 200 && linkEnergySource2.cooldown == 0) {
-            linkEnergySource2.transferEnergy(linkStorage);
+        if(linkEnergySource2 && linkStorage) {
+            if (linkEnergySource2.energy >= 200 && linkEnergySource2.cooldown == 0) {
+                linkEnergySource2.transferEnergy(linkStorage);
+            }
         }
+        if(linkEnergySource3 && linkStorage) {
+            if (linkEnergySource3.energy >= 200 && linkEnergySource3.cooldown == 0) {
+                linkEnergySource3.transferEnergy(linkStorage);
+            }
+        }
+
     }
 
 

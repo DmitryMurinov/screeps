@@ -19,6 +19,7 @@ var roleControllerAttacker = require('role.controllerAttacker');
 var roleDismantalist = require('role.dismantalist');
 var roleKeeperKiller = require('role.keeperKiller');
 var roleOuterReserver = require('role.outerReserver');
+var roleDefender = require('role.defender');
 
 module.exports = {
 
@@ -35,6 +36,8 @@ module.exports = {
                 roleAttacker.run(creep);
             } else if (creep.memory.role == 'refillerWar') {
                 roleRefillerWar.run(creep);
+            } else if (creep.memory.role == 'defender') {
+                roleDefender.run(creep);
             } else if (creep.memory.role == 'pureMiner') {
                 rolePureMiner.run(creep);
             } else if (creep.memory.role == 'courierMine') {
