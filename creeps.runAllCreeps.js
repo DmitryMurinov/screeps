@@ -33,7 +33,7 @@ module.exports = {
 
             // str.indexOf('word') !== -1
 
-            console.log(creep.room.name + creep.memory.role);
+            console.log(creep.room.name + creep.name + creep.memory.role);
 
             if (creep.memory.role == 'attacker') {
                 roleAttacker.run(creep);
