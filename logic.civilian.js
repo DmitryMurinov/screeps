@@ -61,8 +61,6 @@ module.exports = {
             wallsLevel = 10015000;
         }
 
-        this.defendRoom(roomName, wallsLevel);
-
         if (controllerLevel >= 4 && gameTime.substring(gameTime.length - 2, gameTime.length) == '00') {
             this.placeRampart(roomName);
         }
