@@ -6,17 +6,17 @@ module.exports = {
 
         var enemiesToExclude;
 
-        if(!creep.memory.healAvailable) {
+        if (!creep.memory.healAvailable) {
             var body = creep.body;
             creep.memory.healAvailable = false;
             bodyLoop:
-            for (i in body) {
-                var bodyPart = body[i];
-                if (bodyPart.type == HEAL) {
-                    creep.memory.healAvailable = true;
-                    break bodyLoop;
+                for (i in body) {
+                    var bodyPart = body[i];
+                    if (bodyPart.type == HEAL) {
+                        creep.memory.healAvailable = true;
+                        break bodyLoop;
+                    }
                 }
-            }
         }
 
         if (!creep.memory.needBoost) {
@@ -47,8 +47,10 @@ module.exports = {
             var enemies;
 
             if (enemies == undefined) {
-                enemies = creep.pos.findClosestByPath(FIND_HOSTILE_CREEPS, {filter:
-                    (c) => c.owner.username != 'Source Keeper'});
+                enemies = creep.pos.findClosestByPath(FIND_HOSTILE_CREEPS, {
+                    filter:
+                        (c) => c.owner.username != 'Source Keeper'
+                });
             }
 
             if (enemies == undefined) {
@@ -70,22 +72,24 @@ module.exports = {
             //     });
             // }
 
-            if(!enemies) {
+            if (!enemies && creep.room.controller) {
                 var enemies = creep.pos.findClosestByPath(FIND_HOSTILE_STRUCTURES, {
                     filter: (s) => s.structureType != STRUCTURE_CONTROLLER &&
                         s.room.controller.safeMode == undefined
                 });
             }
 
-            if(creep.room.name == 'E56N19' && enemies == undefined){
-                enemies = creep.pos.findClosestByPath(FIND_STRUCTURES, {filter: (s) => s.structureType != STRUCTURE_CONTROLLER
-                    && s.structureType != STRUCTURE_KEEPER_LAIR && s.pos.x == 20 && s.pos.y == 45});
+            if (creep.room.name == 'E56N19' && enemies == undefined) {
+                enemies = creep.pos.findClosestByPath(FIND_STRUCTURES, {
+                    filter: (s) => s.structureType != STRUCTURE_CONTROLLER
+                        && s.structureType != STRUCTURE_KEEPER_LAIR && s.pos.x == 20 && s.pos.y == 45
+                });
             }
 
             if (enemies != undefined) {
 
                 if (creep.attack(enemies) == ERR_NOT_IN_RANGE) {
-                    if(creep.memory.healAvailable && creep.hits < creep.hitsMax){
+                    if (creep.memory.healAvailable && creep.hits < creep.hitsMax) {
                         creep.heal(creep);
                     }
                     creep.moveTo(enemies);
@@ -93,7 +97,7 @@ module.exports = {
 
             } else {
 
-                if(creep.memory.healAvailable && creep.hits < creep.hitsMax){
+                if (creep.memory.healAvailable && creep.hits < creep.hitsMax) {
                     creep.heal(creep);
                 }
 

@@ -123,7 +123,7 @@ module.exports = {
 
                     var controller = creep.room.controller;
 
-                    if (controller.owner) {
+                    if (controller.owner && controller.owner.username != 'Dehar') {
                         if (creep.attackController(controller) == ERR_NOT_IN_RANGE) {
                             if (creep.memory.healAvailable && creep.hits < creep.hitsMax) {
                                 creep.heal(creep);
