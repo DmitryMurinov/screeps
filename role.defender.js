@@ -61,7 +61,7 @@ module.exports = {
                     si.structureType != STRUCTURE_RAMPART && si.structureType != STRUCTURE_CONTAINER &&
                     si.structureType != STRUCTURE_ROAD
                 }).length == 0 &&
-                    Game.rooms[s.room.name].find(FIND_CREEPS, { filter : (c) => si.pos == s.pos
+                    Game.rooms[s.room.name].find(FIND_CREEPS, { filter : (c) => c.pos == c.pos
                 }).length == 0
                 });
 

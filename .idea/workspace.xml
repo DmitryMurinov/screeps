@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/labs.js" afterPath="$PROJECT_DIR$/labs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/role.defender.js" afterPath="$PROJECT_DIR$/role.defender.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,7 +35,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="labs.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="labs.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/labs.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="623">
@@ -105,11 +105,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="role.defender.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="role.defender.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/role.defender.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+            <state relative-caret-position="555">
+              <caret line="63" column="94" lean-forward="true" selection-start-line="63" selection-start-column="94" selection-end-line="63" selection-end-column="94" />
               <folding />
             </state>
           </provider>
@@ -189,7 +189,6 @@
         <option value="$PROJECT_DIR$/main.js" />
         <option value="$PROJECT_DIR$/defend.rooms.js" />
         <option value="$PROJECT_DIR$/role.controllerAttacker.js" />
-        <option value="$PROJECT_DIR$/role.defender.js" />
         <option value="$PROJECT_DIR$/links.js" />
         <option value="$PROJECT_DIR$/creep.templates.js" />
         <option value="$PROJECT_DIR$/role.attackerLogic.js" />
@@ -199,6 +198,7 @@
         <option value="$PROJECT_DIR$/role.RangedAttacker.js" />
         <option value="$PROJECT_DIR$/creep.create.js" />
         <option value="$PROJECT_DIR$/labs.js" />
+        <option value="$PROJECT_DIR$/role.defender.js" />
       </list>
     </option>
   </component>
@@ -376,14 +376,7 @@
       <workItem from="1507878328295" duration="6498000" />
       <workItem from="1507906864027" duration="15315000" />
       <workItem from="1507965195220" duration="2057000" />
-      <workItem from="1507988018978" duration="16835000" />
-    </task>
-    <task id="LOCAL-00071" summary="Допиливание логики комнат.">
-      <created>1507915763335</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1507915763335</updated>
+      <workItem from="1507988018978" duration="16924000" />
     </task>
     <task id="LOCAL-00072" summary="Допиливание логики комнат.">
       <created>1507915888529</created>
@@ -721,11 +714,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508016550065</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="Защита сектора">
+      <created>1508016809958</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1508016809958</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58977000" />
+    <option name="totallyTimeSpent" value="59066000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1097,14 +1097,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/role.defender.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/creeps.runAllCreeps.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
@@ -1173,6 +1165,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="623">
           <caret line="517" column="58" lean-forward="true" selection-start-line="517" selection-start-column="58" selection-end-line="517" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.defender.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="63" column="94" lean-forward="true" selection-start-line="63" selection-start-column="94" selection-end-line="63" selection-end-column="94" />
           <folding />
         </state>
       </provider>
