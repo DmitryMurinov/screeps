@@ -18,8 +18,8 @@
       <file leaf-file-name="logic.civilian.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/logic.civilian.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="381" column="81" lean-forward="true" selection-start-line="381" selection-start-column="81" selection-end-line="381" selection-end-column="81" />
+            <state relative-caret-position="541">
+              <caret line="383" column="90" lean-forward="false" selection-start-line="383" selection-start-column="90" selection-end-line="383" selection-end-column="90" />
               <folding />
             </state>
           </provider>
@@ -367,14 +367,7 @@
       <workItem from="1507878328295" duration="6498000" />
       <workItem from="1507906864027" duration="15315000" />
       <workItem from="1507965195220" duration="2057000" />
-      <workItem from="1507988018978" duration="3323000" />
-    </task>
-    <task id="LOCAL-00046" summary="Обновил логику покупки ресурсов">
-      <created>1507883289382</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1507883289382</updated>
+      <workItem from="1507988018978" duration="3347000" />
     </task>
     <task id="LOCAL-00047" summary="Обновил логику покупки ресурсов">
       <created>1507883437599</created>
@@ -712,11 +705,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508002116524</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="Допиливание логики комнат.">
+      <created>1508002191131</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1508002191131</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45465000" />
+    <option name="totallyTimeSpent" value="45489000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1150,8 +1150,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/logic.civilian.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="381" column="81" lean-forward="true" selection-start-line="381" selection-start-column="81" selection-end-line="381" selection-end-column="81" />
+        <state relative-caret-position="541">
+          <caret line="383" column="90" lean-forward="false" selection-start-line="383" selection-start-column="90" selection-end-line="383" selection-end-column="90" />
           <folding />
         </state>
       </provider>
