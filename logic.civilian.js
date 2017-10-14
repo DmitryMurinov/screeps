@@ -433,8 +433,6 @@ module.exports = {
                 wallsLevel = 10015000;
             }
 
-            this.defendRoom(roomName, wallsLevel);
-
             var gameTime = Game.time.toString();
 
             if (controllerLevel >= 4 && gameTime.substring(gameTime.length - 1, gameTime.length) == '0') {
@@ -692,8 +690,6 @@ module.exports = {
         } else if (controllerLevel == 8) {
             wallsLevel = 10015000;
         }
-
-        this.defendRoom(roomName, wallsLevel);
 
         var gameTime = Game.time.toString();
 
@@ -1418,24 +1414,6 @@ module.exports = {
                 }
             }
 
-            if (controllerLevel == 2) {
-                var wallsLevel = 25000;
-            } else if (controllerLevel == 3) {
-                var wallsLevel = 55000;
-            } else if (controllerLevel == 4) {
-                wallsLevel = 55000;
-            } else if (controllerLevel == 5) {
-                wallsLevel = 115000;
-            } else if (controllerLevel == 6) {
-                wallsLevel = 215000;
-            } else if (controllerLevel == 7) {
-                wallsLevel = 515000;
-                basicCreepsNeeded = 5;
-            } else if (controllerLevel == 8) {
-                wallsLevel = 10015000;
-            }
-
-            this.defendRoom(roomName, wallsLevel);
 
             var gameTime = Game.time.toString();
 
@@ -2161,24 +2139,7 @@ module.exports = {
                 }
             }
 
-            if (controllerLevel == 2) {
-                var wallsLevel = 25000;
-            } else if (controllerLevel == 3) {
-                var wallsLevel = 55000;
-            } else if (controllerLevel == 4) {
-                wallsLevel = 55000;
-            } else if (controllerLevel == 5) {
-                wallsLevel = 115000;
-            } else if (controllerLevel == 6) {
-                wallsLevel = 215000;
-            } else if (controllerLevel == 7) {
-                wallsLevel = 515000;
-                basicCreepsNeeded = 5;
-            } else if (controllerLevel == 8) {
-                wallsLevel = 10015000;
-            }
 
-            this.defendRoom(roomName, wallsLevel);
 
             var gameTime = Game.time.toString();
 
