@@ -108,16 +108,16 @@ module.exports = {
             if (structuresForRampart.length > 0) {
                 Game.rooms[roomName].createConstructionSite(structuresForRampart[0].pos, STRUCTURE_RAMPART);
             }
-            var x;
-            var y;
-            var terrain;
-            var terrainOk = false;
         }
     },
 
     placeRampartForController: function (roomName) {
         var rampartSites = Game.rooms[roomName].find(FIND_CONSTRUCTION_SITES, {filter: (cs) => cs.structureType == STRUCTURE_RAMPART});
         if (rampartSites.length == 0) {
+            var x;
+            var y;
+            var terrain;
+            var terrainOk = false;
             var controllerPosition = Game.rooms[roomName].controller.pos;
             for (x = controllerPosition.x - 1; x <= controllerPosition.x + 1; x++) {
                 for (y = controllerPosition.y - 1; y <= controllerPosition.y + 1; y++) {
