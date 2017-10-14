@@ -166,6 +166,7 @@ module.exports = {
                     if (creep.memory.role.indexOf('medic') !== -1
                         || creep.memory.role == 'pureMiner' || creep.memory.role.indexOf('controllerAttacker') !== -1 ||
                         creep.memory.role.indexOf('dismantalist') !== -1 ||
+                        creep.memory.role.indexOf('defender') !== -1 ||
                         creep.memory.role.indexOf('attackerLogic') !== -1) {
                         var ingredient1 = this.ingredientsBoost(creep.memory.role)[0];
                         var ingredient2;
@@ -516,6 +517,11 @@ module.exports = {
             return resourceList;
         } else if (role.indexOf('attackerLogic') !== -1) {
             var resourceList = new Array();
+            resourceList.push(RESOURCE_CATALYZED_GHODIUM_ALKALIDE);
+            return resourceList;
+        } else if (role.indexOf('defender') !== -1) {
+            var resourceList = new Array();
+            resourceList.push(RESOURCE_CATALYZED_KEANIUM_ALKALIDE);
             resourceList.push(RESOURCE_CATALYZED_GHODIUM_ALKALIDE);
             return resourceList;
         }
