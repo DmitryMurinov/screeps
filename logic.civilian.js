@@ -190,7 +190,7 @@ module.exports = {
         creepsNeeded.set("outerCourierLogic5", 0);
         creepsNeeded.set("attackerLogic1", 1);
         creepsNeeded.set("attackerLogic2", 1);
-        creepsNeeded.set("attackerLogic3", 0);
+        creepsNeeded.set("attackerLogic3", 5);
         creepsNeeded.set("attackerLogic4", 0);
         creepsNeeded.set("attackerLogic5", 0);
         creepsNeeded.set("keeperKiller1", 0);
@@ -207,7 +207,7 @@ module.exports = {
         creepsNeeded.set("outerReserver5", 0);
         creepsNeeded.set("dismantilist1", 0);
         creepsNeeded.set("dismantilist2", 0);
-        creepsNeeded.set("medic1", 0);
+        creepsNeeded.set("medic1", 2);
         creepsNeeded.set("medic2", 0);
         creepsNeeded.set("sieger", 0);
         creepsNeeded.set("bankir", 1);
@@ -249,8 +249,8 @@ module.exports = {
             "roomToWorkX1: " + 21 + ", roomToWorkY1: " + 21 + ", roomToWorkName1: \"" + "E55N13" + "\""
         );
 
-        creepsData.set("medic1", "needBoost: false," +
-            "roomToWorkX1: " + 28 + ", roomToWorkY1: " + 45 + ", roomToWorkName1: \"" + "E56N19" + "\""
+        creepsData.set("medic1", "needBoost: true," +
+            "roomToWorkX1: " + 30 + ", roomToWorkY1: " + 46 + ", roomToWorkName1: \"" + "E56N19" + "\""
         );
 
         creepsData.set("medic2", "needBoost: false," +
