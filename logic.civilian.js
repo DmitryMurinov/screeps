@@ -379,6 +379,8 @@ module.exports = {
                 defendRoom.placeRampartFromArea(roomName, rampartAreas);
             }
 
+            console.log(gameTime.substring(gameTime.length - 2, gameTime.length));
+
             if (gameTime.substring(gameTime.length - 2, gameTime.length) == '00') {
                 roomMemory.roomToWorkName1 = "E57N14";
                 roomMemory.roomToWorkX1 = 25;
