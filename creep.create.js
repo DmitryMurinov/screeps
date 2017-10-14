@@ -115,6 +115,21 @@ module.exports = {
 
         var localMadeDefenderNeeded = 0;
 
+        var enemies;
+        if (enemies == undefined) {
+            Game.rooms[roomName].find(FIND_HOSTILE_CREEPS, {
+                filter:
+                    (c) => c.owner.username == 'Creepz'
+            });
+        }
+
+        if(enemies && enemies.length > 0){
+            if(enemies.length > 5){
+                localMadeDefenderNeeded = 5;
+            } else {
+                localMadeDefenderNeeded = enemies.length;
+            }
+        }
 
         var mines = Game.rooms[roomName].find(FIND_MINERALS);
         var mine = mines[0];
@@ -374,7 +389,7 @@ module.exports = {
                     var createString = eval(constructorString);
                     eval(createString);
                 } else if (controllerLevel > 1 && localMadeDefender < localMadeDefenderNeeded) {
-                    var memory = "{role: 'defender', claim: true, working: false, origination: '" + roomName + "', " +
+                    var memory = "{role: 'defender', claim: true, working: false, origination: '" + roomName + "', needBoost: true," +
                         // creepsData.get('attacker1') +
                         "}";
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 5 + "(\"rangedAttacker\"), memory)";
