@@ -98,7 +98,7 @@ module.exports = {
 
         if (creep.memory.working == true && creep.carry.energy > 0) {
             if (creep.memory.working == true && closestExtOrSpawnNeedEnergy) {
-                if (creep.transfer(closestExtOrSpawnNeedEnergy, RESOURCE_ENERGY)) {
+                if (creep.transfer(closestExtOrSpawnNeedEnergy, RESOURCE_ENERGY) == ERR_NOT_IN_RANGE) {
                     creep.moveTo(closestExtOrSpawnNeedEnergy)
                 }
             } else if (creep.memory.working == true && tower) {
