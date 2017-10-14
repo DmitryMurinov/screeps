@@ -4,7 +4,6 @@
     <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/creep.create.js" afterPath="$PROJECT_DIR$/creep.create.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic.civilian.js" afterPath="$PROJECT_DIR$/logic.civilian.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="logic.civilian.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="logic.civilian.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/logic.civilian.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1922">
-              <caret line="812" column="10" lean-forward="true" selection-start-line="812" selection-start-column="10" selection-end-line="812" selection-end-column="10" />
+            <state relative-caret-position="-14601">
+              <caret line="17" column="67" lean-forward="true" selection-start-line="17" selection-start-column="67" selection-end-line="17" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -39,8 +38,8 @@
       <file leaf-file-name="creeps.runAllCreeps.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/creeps.runAllCreeps.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+            <state relative-caret-position="578">
+              <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -56,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="creep.create.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="creep.create.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/creep.create.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="399" column="59" lean-forward="true" selection-start-line="399" selection-start-column="59" selection-end-line="399" selection-end-column="59" />
+            <state relative-caret-position="408">
+              <caret line="119" column="45" lean-forward="false" selection-start-line="119" selection-start-column="45" selection-end-line="119" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -89,8 +88,8 @@
       <file leaf-file-name="role.RangedAttacker.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/role.RangedAttacker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="103" column="31" lean-forward="true" selection-start-line="103" selection-start-column="31" selection-end-line="103" selection-end-column="31" />
+            <state relative-caret-position="1173">
+              <caret line="93" column="21" lean-forward="false" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -109,7 +108,7 @@
       <file leaf-file-name="role.defender.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/role.defender.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
+            <state relative-caret-position="640">
               <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding />
             </state>
@@ -138,8 +137,8 @@
       <find>this.defendRoom</find>
       <find>this</find>
       <find>(roomName, allCreepsCount, gameTime, creepsData, creepsNeeded)</find>
-      <find>creepCreate</find>
       <find>med</find>
+      <find>creepCreate</find>
       <find>ranged</find>
     </findStrings>
     <replaceStrings>
@@ -197,8 +196,9 @@
         <option value="$PROJECT_DIR$/role.attackerLogic.js" />
         <option value="$PROJECT_DIR$/creeps.runAllCreeps.js" />
         <option value="$PROJECT_DIR$/helper.counter.js" />
-        <option value="$PROJECT_DIR$/creep.create.js" />
         <option value="$PROJECT_DIR$/logic.civilian.js" />
+        <option value="$PROJECT_DIR$/role.RangedAttacker.js" />
+        <option value="$PROJECT_DIR$/creep.create.js" />
       </list>
     </option>
   </component>
@@ -376,14 +376,7 @@
       <workItem from="1507878328295" duration="6498000" />
       <workItem from="1507906864027" duration="15315000" />
       <workItem from="1507965195220" duration="2057000" />
-      <workItem from="1507988018978" duration="15760000" />
-    </task>
-    <task id="LOCAL-00068" summary="Допиливание логики комнат.">
-      <created>1507915114411</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1507915114411</updated>
+      <workItem from="1507988018978" duration="16519000" />
     </task>
     <task id="LOCAL-00069" summary="Допиливание логики комнат.">
       <created>1507915488651</created>
@@ -721,11 +714,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508015214588</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <task id="LOCAL-00117" summary="Защита сектора">
+      <created>1508015735371</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1508015735371</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57902000" />
+    <option name="totallyTimeSpent" value="58661000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1096,14 +1096,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/role.RangedAttacker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="103" column="31" lean-forward="true" selection-start-line="103" selection-start-column="31" selection-end-line="103" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/defend.rooms.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -1136,18 +1128,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/creeps.runAllCreeps.js">
+    <entry file="file://$PROJECT_DIR$/role.RangedAttacker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+        <state relative-caret-position="1173">
+          <caret line="93" column="21" lean-forward="false" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/role.defender.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
+        <state relative-caret-position="640">
           <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic.civilian.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14601">
+          <caret line="17" column="67" lean-forward="true" selection-start-line="17" selection-start-column="67" selection-end-line="17" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/creeps.runAllCreeps.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1162,16 +1170,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/creep.create.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="399" column="59" lean-forward="true" selection-start-line="399" selection-start-column="59" selection-end-line="399" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logic.civilian.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1922">
-          <caret line="812" column="10" lean-forward="true" selection-start-line="812" selection-start-column="10" selection-end-line="812" selection-end-column="10" />
+        <state relative-caret-position="408">
+          <caret line="119" column="45" lean-forward="false" selection-start-line="119" selection-start-column="45" selection-end-line="119" selection-end-column="45" />
           <folding />
         </state>
       </provider>

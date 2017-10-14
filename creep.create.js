@@ -113,9 +113,9 @@ module.exports = {
         var localMadeCourierMinerNeeded = creepsNeeded.get("courierMiner");
         var localMadeExaustersNeeded = creepsNeeded.get("exauster");
 
-        var localMadeDefenderNeeded = 0;
+        var localMadeDefenderNeeded = 5;
 
-        var enemies;
+/*        var enemies;
         if (enemies == undefined) {
             Game.rooms[roomName].find(FIND_HOSTILE_CREEPS, {
                 filter:
@@ -129,7 +129,7 @@ module.exports = {
             } else {
                 localMadeDefenderNeeded = enemies.length;
             }
-        }
+        }*/
 
         var mines = Game.rooms[roomName].find(FIND_MINERALS);
         var mine = mines[0];
