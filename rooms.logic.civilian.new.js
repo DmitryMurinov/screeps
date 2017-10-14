@@ -2030,7 +2030,7 @@ module.exports = {
         }
     },
 
-    placeRampart: function (roomName) {
+    placeRampartForStructure: function (roomName) {
         rampartSites = Game.rooms[roomName].find(FIND_CONSTRUCTION_SITES, {filter: (cs) => cs.structureType == STRUCTURE_RAMPART});
         if (rampartSites.length == 0) {
             var structuresForRampart = Game.rooms[roomName].find(FIND_STRUCTURES, {

@@ -1,6 +1,7 @@
 var creepTemplates = require('creep.templates');
 var creepCreate = require('creep.create');
 var market = require('market');
+var defendRoom = require('defend.rooms');
 
 module.exports = {
 
@@ -18,13 +19,6 @@ module.exports = {
 
     E53N16: function (allCreepsCount, gameTime, allReservesCount) {
 
-        // for(var i in allCreepsCount){
-        // var entry = allCreepsCount[i];
-        // }
-
-        // var startCpu = Game.cpu.getUsed();
-
-        var betterRoomName = "W33N23";
 
         var roomName = "E53N16";
 
@@ -32,37 +26,9 @@ module.exports = {
 
         var controllerLevel = Game.rooms[roomName].controller.level;
 
-        var wallsLevel = 10000;
-
-        var basicCreepsNeeded = 3;
-        var localMadeUpgradersNeeded = 1;
-
-        if (allReservesCount[roomName + ";" + RESOURCE_ENERGY] > 100000) {
-            localMadeUpgradersNeeded += 1;
-        }
-        if (allReservesCount[roomName + ";" + RESOURCE_ENERGY] > 200000) {
-            localMadeUpgradersNeeded += 1;
-        }
-
-
-        if (controllerLevel == 2) {
-            var wallsLevel = 25000;
-        } else if (controllerLevel == 3) {
-            var wallsLevel = 55000;
-        } else if (controllerLevel == 4) {
-            wallsLevel = 55000;
-        } else if (controllerLevel == 5) {
-            wallsLevel = 115000;
-        } else if (controllerLevel == 6) {
-            wallsLevel = 215000;
-        } else if (controllerLevel == 7) {
-            wallsLevel = 515000;
-        } else if (controllerLevel == 8) {
-            wallsLevel = 10015000;
-        }
-
         if (controllerLevel >= 4 && gameTime.substring(gameTime.length - 2, gameTime.length) == '00') {
-            this.placeRampart(roomName);
+            this.placeRampartForStructure(roomName);
+            this.placeRampartForController(roomName);
         }
 
         if (controllerLevel >= 6 && gameTime.substring(gameTime.length - 3, gameTime.length) == '000') {
@@ -183,7 +149,7 @@ module.exports = {
         }
 
         if (controllerLevel >= 4 && gameTime.substring(gameTime.length - 2, gameTime.length) == '00') {
-            this.placeRampart(roomName);
+            this.placeRampartForStructure(roomName);
             var rampartAreas = new Array();
             //     var rampartArea1 = {x1: 20, y1: 17, x2: 34, y2: 31};
             var rampartArea2 = {x1: 20, y1: 17, x2: 34, y2: 17};
@@ -197,16 +163,30 @@ module.exports = {
             rampartAreas.push(rampartArea4);
             rampartAreas.push(rampartArea5);
 
-            // this.placeRampartFromArea(roomName, rampartAreas);
+            // defendRoom.placeRampartFromArea(roomName, rampartAreas);
+        }
+
+        var localMadeUpgradersNeeded = 1;
+        if(controllerLevel < 8) {
+            if (allReservesCount[roomName + ";" + RESOURCE_ENERGY] > 200000) {
+                localMadeUpgradersNeeded += 2;
+            } else if (allReservesCount[roomName + ";" + RESOURCE_ENERGY] > 100000) {
+                localMadeUpgradersNeeded += 1;
+            }
+        }
+
+        var localMadePureMinersNeeded = 0;
+        if (controllerLevel >= 6) {
+            localMadePureMinersNeeded = 1;
         }
 
         let creepsNeeded = new Map();
 
         creepsNeeded.set("basicCreep", 2);
         creepsNeeded.set("pureHarvester", 1);
-        creepsNeeded.set("pureMiner", 1);
+        creepsNeeded.set("pureMiner", localMadePureMinersNeeded);
         creepsNeeded.set("courier", 1);
-        creepsNeeded.set("upgrader", 1);
+        creepsNeeded.set("upgrader", localMadeUpgradersNeeded);
         creepsNeeded.set("basicCreepOuter1", 1);
         creepsNeeded.set("basicCreepOuter2", 1);
         creepsNeeded.set("basicCreepOuter3", 1);
@@ -311,24 +291,6 @@ module.exports = {
         );
 
         creepCreate.create(roomName, allCreepsCount, gameTime, creepsData, creepsNeeded);
-        /*
-                if (controllerLevel >= 7) {
-                    var creepsToExtendLife;
-                    if (freeSpawn) {
-                        creepsToExtendLife = freeSpawn.pos.findInRange(FIND_MY_CREEPS, 1, {
-                            filter: (c) => c.ticksToLive < 1200 &&
-                                c.memory.role != 'attackerLogic' && c.memory.role != 'warRepairer' && c.memory.role != 'bowman' && c.memory.role != 'medicLogic' &&
-                                c.memory.role != 'outerClaimerLogic'
-                        });
-                    }
-
-                    if (creepsToExtendLife != undefined && creepsToExtendLife.length > 0) {
-                        var creepToExtendLife = creepsToExtendLife[0];
-                        var healString = " Game.spawns." + freeSpawn.name + ".renewCreep(Game.creeps." + creepToExtendLife.name + ")";
-                        eval(healString);
-                    }
-                }
-        */
 
     },
 
@@ -336,20 +298,12 @@ module.exports = {
 
         function (allCreepsCount, gameTime, allReservesCount) {
 
-            // var startCpu = Game.cpu.getUsed();
-
-
-            var betterRoomName = "W33N23";
 
             var roomName = "E57N15";
 
             var controllerLevel = Game.rooms[roomName].controller.level;
 
             var roomMemory = Game.rooms[roomName].memory;
-
-            var wallsLevel = 100000;
-
-            var basicCreepsNeeded = 2;
 
             var terminal = Game.rooms[roomName].terminal;
 
@@ -401,42 +355,16 @@ module.exports = {
                 }
             }
 
-
-            // } else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_UTRIUM] == undefined
-            //         || terminal.store[RESOURCE_UTRIUM] < 1000)) {
-            //     market.buy(roomName, RESOURCE_UTRIUM, 100, .6);
-            // } else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_HYDROGEN] == undefined
-            //         || terminal.store[RESOURCE_HYDROGEN] < 2000)) {
-            //     market.buy(roomName, RESOURCE_HYDROGEN, 100, 1);
-            // }
-
             if (terminal && Game.market.credits < 5000) {
                 if (terminal.store[RESOURCE_KEANIUM] >= 500 && terminal.store[RESOURCE_ENERGY] > 500) {
                     market.sell(roomName, RESOURCE_KEANIUM, 500, 0.85);
                 }
             }
 
-            if (controllerLevel == 2) {
-                var wallsLevel = 25000;
-            } else if (controllerLevel == 3) {
-                var wallsLevel = 55000;
-            } else if (controllerLevel == 4) {
-                wallsLevel = 55000;
-            } else if (controllerLevel == 5) {
-                wallsLevel = 115000;
-            } else if (controllerLevel == 6) {
-                wallsLevel = 215000;
-            } else if (controllerLevel == 7) {
-                wallsLevel = 515000;
-                basicCreepsNeeded = 5;
-            } else if (controllerLevel == 8) {
-                wallsLevel = 10015000;
-            }
-
             var gameTime = Game.time.toString();
 
             if (controllerLevel >= 4 && gameTime.substring(gameTime.length - 1, gameTime.length) == '0') {
-                this.placeRampart(roomName);
+                this.placeRampartForStructure(roomName);
                 var rampartAreas = new Array();
                 var rampartArea1 = {x1: 1, y1: 29, x2: 5, y2: 30};
                 var rampartArea2 = {x1: 4, y1: 31, x2: 5, y2: 32};
@@ -450,32 +378,6 @@ module.exports = {
                 // rampartAreas.push(rampartArea5);
                 this.placeRampartFromArea(roomName, rampartAreas);
             }
-
-            var mines = Game.rooms[roomName].find(FIND_MINERALS);
-            var mine = mines[0];
-
-
-            var localMadePureMinersNeeded = 0;
-            if (controllerLevel >= 6) {
-                localMadePureMinersNeeded = 1;
-            }
-
-            if (mine.mineralAmount == 0) {
-                localMadePureMinersNeeded = 0;
-            }
-
-            var roomToWorkName1 = "E57N14";
-            var roomToWorkX1 = 25;
-            var roomToWorkY1 = 1;
-
-            var roomToWorkName2 = "E57N13";
-            var roomToWorkX2 = 16;
-            var roomToWorkY2 = 5;
-
-            var roomToWorkName3 = "E54N17";
-            var roomToWorkX3 = 28;
-            var roomToWorkY3 = 2;
-
 
             if (gameTime.substring(gameTime.length - 2, gameTime.length) == '00') {
                 roomMemory.roomToWorkName1 = "E57N14";
@@ -491,13 +393,27 @@ module.exports = {
                 roomMemory.roomToWorkY3 = 2;
             }
 
+            var localMadeUpgradersNeeded = 1;
+            if(controllerLevel < 8) {
+                if (allReservesCount[roomName + ";" + RESOURCE_ENERGY] > 200000) {
+                    localMadeUpgradersNeeded += 2;
+                } else if (allReservesCount[roomName + ";" + RESOURCE_ENERGY] > 100000) {
+                    localMadeUpgradersNeeded += 1;
+                }
+            }
+
+            var localMadePureMinersNeeded = 0;
+            if (controllerLevel >= 6) {
+                localMadePureMinersNeeded = 1;
+            }
+
             let creepsNeeded = new Map();
 
             creepsNeeded.set("basicCreep", 2);
             creepsNeeded.set("pureHarvester", 2);
-            creepsNeeded.set("pureMiner", 1);
+            creepsNeeded.set("pureMiner", localMadePureMinersNeeded);
             creepsNeeded.set("courier", 3);
-            creepsNeeded.set("upgrader", 1);
+            creepsNeeded.set("upgrader", localMadeUpgradersNeeded);
             creepsNeeded.set("basicCreepOuter1", 2);
             creepsNeeded.set("basicCreepOuter2", 1);
             creepsNeeded.set("basicCreepOuter3", 0);
@@ -594,7 +510,6 @@ module.exports = {
             localMadeUpgradersNeeded += 1;
         }
 
-
         var terminals = Game.rooms[roomName].find(FIND_MY_STRUCTURES, {filter: (s) => s.structureType == STRUCTURE_TERMINAL});
         var terminal;
         if (terminals.length > 0) {
@@ -660,13 +575,7 @@ module.exports = {
 
                     }
                 }*/
-        // } else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_UTRIUM] == undefined
-        //         || terminal.store[RESOURCE_UTRIUM] < 1000)) {
-        //     market.buy(roomName, RESOURCE_UTRIUM, 100, .6);
-        // } else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_HYDROGEN] == undefined
-        //         || terminal.store[RESOURCE_HYDROGEN] < 2000)) {
-        //     market.buy(roomName, RESOURCE_HYDROGEN, 100, 1);
-        // }
+
 
         if (terminal && Game.market.credits < 5000) {
             if (terminal.store[RESOURCE_OXYGEN] >= 500 && terminal.store[RESOURCE_ENERGY] > 500) {
@@ -674,27 +583,10 @@ module.exports = {
             }
         }
 
-        if (controllerLevel == 2) {
-            var wallsLevel = 25000;
-        } else if (controllerLevel == 3) {
-            var wallsLevel = 55000;
-        } else if (controllerLevel == 4) {
-            wallsLevel = 55000;
-        } else if (controllerLevel == 5) {
-            wallsLevel = 115000;
-        } else if (controllerLevel == 6) {
-            wallsLevel = 215000;
-        } else if (controllerLevel == 7) {
-            wallsLevel = 515000;
-            // basicCreepsNeeded = 5;
-        } else if (controllerLevel == 8) {
-            wallsLevel = 10015000;
-        }
 
         var gameTime = Game.time.toString();
 
-        if (controllerLevel >= 4 && gameTime.substring(gameTime.length - 2, gameTime.length) == '00') {
-            this.placeRampart(roomName);
+        if (controllerLevel >= 4 && gameTime.substring(gameTime.length - 1, gameTime.length) == '0') {
             var rampartAreas = new Array();
             var rampartArea1 = {x1: 16, y1: 22, x2: 31, y2: 22};
             var rampartArea2 = {x1: 13, y1: 22, x2: 13, y2: 26};
@@ -708,20 +600,7 @@ module.exports = {
             rampartAreas.push(rampartArea4);
             rampartAreas.push(rampartArea5);
             rampartAreas.push(rampartArea6);
-            this.placeRampartFromArea(roomName, rampartAreas);
-        }
-
-        var mines = Game.rooms[roomName].find(FIND_MINERALS);
-        var mine = mines[0];
-
-
-        var localMadePureMinersNeeded = 0;
-        if (controllerLevel >= 6) {
-            localMadePureMinersNeeded = 1;
-        }
-
-        if (mine.mineralAmount == 0) {
-            localMadePureMinersNeeded = 0;
+            defendRoom.placeRampartFromArea(roomName, rampartAreas);
         }
 
         var roomToWorkName1 = "E51N19";
@@ -737,7 +616,113 @@ module.exports = {
         var roomToWorkX3 = 19;
         var roomToWorkY3 = 3;
 
-        // var cpuStart = Game.cpu.getUsed();
+
+        if (gameTime.substring(gameTime.length - 2, gameTime.length) == '00') {
+            roomMemory.roomToWorkName1 = "E51N19";
+            roomMemory.roomToWorkX1 = 45;
+            roomMemory.roomToWorkY1 = 41;
+
+            roomMemory.roomToWorkName2 = "E52N18";
+            roomMemory.roomToWorkX2 = 12;
+            roomMemory.roomToWorkY2 = 2;
+
+            roomMemory.roomToWorkName3 = "E51N18";
+            roomMemory.roomToWorkX3 = 19;
+            roomMemory.roomToWorkY3 = 3;
+        }
+
+        var localMadeUpgradersNeeded = 1;
+        if(controllerLevel < 8) {
+            if (allReservesCount[roomName + ";" + RESOURCE_ENERGY] > 200000) {
+                localMadeUpgradersNeeded += 2;
+            } else if (allReservesCount[roomName + ";" + RESOURCE_ENERGY] > 100000) {
+                localMadeUpgradersNeeded += 1;
+            }
+        }
+
+        var localMadePureMinersNeeded = 0;
+        if (controllerLevel >= 6) {
+            localMadePureMinersNeeded = 1;
+        }
+
+        let creepsNeeded = new Map();
+
+        creepsNeeded.set("basicCreep", 2);
+        creepsNeeded.set("pureHarvester", 2);
+        creepsNeeded.set("pureMiner", localMadePureMinersNeeded);
+        creepsNeeded.set("courier", 3);
+        creepsNeeded.set("upgrader", localMadeUpgradersNeeded);
+        creepsNeeded.set("basicCreepOuter1", 2);
+        creepsNeeded.set("basicCreepOuter2", 1);
+        creepsNeeded.set("basicCreepOuter3", 0);
+        creepsNeeded.set("basicCreepOuter4", 0);
+        creepsNeeded.set("basicCreepOuter5", 0);
+        creepsNeeded.set("basicCreepOuter6", 0);
+        creepsNeeded.set("outerHarvesterLogic", 0);
+        creepsNeeded.set("outerHarvesterLogic1", 2);
+        creepsNeeded.set("outerHarvesterLogic2", 2);
+        creepsNeeded.set("outerHarvesterLogic3", 0);
+        creepsNeeded.set("outerHarvesterLogic4", 0);
+        creepsNeeded.set("outerHarvesterLogic5", 0);
+        creepsNeeded.set("outerCourierLogic1", 1);
+        creepsNeeded.set("outerCourierLogic2", 2);
+        creepsNeeded.set("outerCourierLogic3", 0);
+        creepsNeeded.set("outerCourierLogic4", 0);
+        creepsNeeded.set("outerCourierLogic5", 0);
+        creepsNeeded.set("attackerLogic1", 0);
+        creepsNeeded.set("attackerLogic2", 0);
+        creepsNeeded.set("attackerLogic3", 0);
+        creepsNeeded.set("attackerLogic4", 0);
+        creepsNeeded.set("attackerLogic5", 0);
+        creepsNeeded.set("keeperKiller1", 0);
+        creepsNeeded.set("keeperKiller2", 0);
+        creepsNeeded.set("keeperKiller3", 0);
+        creepsNeeded.set("keeperKiller4", 0);
+        creepsNeeded.set("keeperKiller5", 0);
+        creepsNeeded.set("controllerAttacker1", 0);
+        creepsNeeded.set("controllerAttacker2", 0);
+        creepsNeeded.set("outerReserver1", 1);
+        creepsNeeded.set("outerReserver2", 1);
+        creepsNeeded.set("outerReserver3", 0);
+        creepsNeeded.set("outerReserver4", 0);
+        creepsNeeded.set("outerReserver5", 0);
+        creepsNeeded.set("dismantilist1", 0);
+        creepsNeeded.set("dismantilist2", 0);
+        creepsNeeded.set("medic1", 0);
+        creepsNeeded.set("medic2", 0);
+        creepsNeeded.set("sieger", 0);
+        creepsNeeded.set("bankir", 1);
+        creepsNeeded.set("courierMiner", 0);
+        creepsNeeded.set("exauster", 0);
+
+        let creepsData = new Map();
+
+        creepsData.set("attacker1", "needBoost: false," +
+            "roomToInvestigateName0 : \"E57N14\", roomToInvestigateX0: 16, roomToInvestigateY0: 46," +
+            "roomToInvestigateName1 : \"E57N13\", roomToInvestigateX1: 16, roomToInvestigateY1: 3"
+        );
+
+        creepsData.set("outerCourier1",
+            "roomToBackX: 26, roomToBackY: 47, linkRoomX: 27, linkRoomY: 47, "
+        );
+
+        creepsData.set("outerCourier2",
+            "roomToBackX: 28, roomToBackY: 47, linkRoomX: 27, linkRoomY: 47, "
+        );
+
+        creepsData.set("outerCourier3",
+            "roomToBackX: 20, roomToBackY: 47, linkRoomX: 21, linkRoomY: 47, "
+        );
+
+        creepsData.set("controllerAttacker1", "needBoost: false," +
+            "roomToWorkX1: " + 27 + ", roomToWorkY1: " + 45 + ", roomToWorkName1: \"" + "E56N19" + "\""
+        );
+
+        creepsData.set("controllerAttacker2", "needBoost: false," +
+            "roomToWorkX1: " + 21 + ", roomToWorkY1: " + 21 + ", roomToWorkName1: \"" + "E55N13" + "\""
+        );
+
+        // creepCreate.create(roomName, allCreepsCount, gameTime, creepsData, creepsNeeded);
 
         var localMadeCreeps = _.sum(Game.creeps, (c) => c.memory.origination == roomName);
 
@@ -1418,7 +1403,7 @@ module.exports = {
             var gameTime = Game.time.toString();
 
             if (controllerLevel >= 4 && gameTime.substring(gameTime.length - 1, gameTime.length) == '0') {
-                this.placeRampart(roomName);
+                this.placeRampartForStructure(roomName);
                 var rampartAreas = new Array();
                 var rampartArea1 = {x1: 1, y1: 29, x2: 5, y2: 30};
                 var rampartArea2 = {x1: 4, y1: 31, x2: 5, y2: 32};
@@ -2117,7 +2102,6 @@ module.exports = {
                         || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_ZYNTHIUM_ALKALIDE] < lemergiumAlkalideReserve / 2))) {
                     market.buy(roomName, RESOURCE_ZYNTHIUM_ALKALIDE, 500, 3.0);
                 }
-
                 else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] == undefined
                         || lemergiumAlkalideReserve < lemergiumAlkalideReserveNeeded)) {
                     market.buy(roomName, RESOURCE_LEMERGIUM_ALKALIDE, 500, 3.0);
@@ -2125,26 +2109,16 @@ module.exports = {
             }
 
 
-            // } else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_UTRIUM] == undefined
-            //         || terminal.store[RESOURCE_UTRIUM] < 1000)) {
-            //     market.buy(roomName, RESOURCE_UTRIUM, 100, .6);
-            // } else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_HYDROGEN] == undefined
-            //         || terminal.store[RESOURCE_HYDROGEN] < 2000)) {
-            //     market.buy(roomName, RESOURCE_HYDROGEN, 100, 1);
-            // }
-
             if (terminal && Game.market.credits < 5000) {
                 if (terminal.store[RESOURCE_KEANIUM] >= 500 && terminal.store[RESOURCE_ENERGY] > 500) {
                     market.sell(roomName, RESOURCE_KEANIUM, 500, 0.85);
                 }
             }
 
-
-
             var gameTime = Game.time.toString();
 
             if (controllerLevel >= 4 && gameTime.substring(gameTime.length - 1, gameTime.length) == '0') {
-                this.placeRampart(roomName);
+                this.placeRampartForStructure(roomName);
                 var rampartAreas = new Array();
                 var rampartArea1 = {x1: 1, y1: 29, x2: 5, y2: 30};
                 var rampartArea2 = {x1: 4, y1: 31, x2: 5, y2: 32};
@@ -2267,122 +2241,7 @@ module.exports = {
 
         },
 
-    towersDefendAndRepairRoom: function (roomName, wallsLevel) {
-        var hostiles = Game.rooms[roomName].find(FIND_HOSTILE_CREEPS);
 
-        var towers = Game.rooms[roomName].find(
-            FIND_MY_STRUCTURES, {filter: {structureType: STRUCTURE_TOWER}});
-
-        if (towers.length > 0) {
-
-            if (hostiles.length > 0) {
-                var username = hostiles[0].owner.username;
-                Game.notify(`User ${username} spotted in room ${roomName}`);
-                towers.forEach(tower => tower.attack(hostiles[0]));
-            } else {
-
-                // var structure;
-                //
-                // if (towers[0].memory.structureToRepairId) {
-                //     structure = Game.getObjectById(creep.memory.structureToRepairId);
-                // }
-                //
-                // if (structure != (null || undefined)) {
-                //     if (structure.hits <= (structure.hitsMax / 5 * 4) && structure.hits <= (wallMaxRepair - 5000)) {
-                //         structure = undefined;
-                //         towers[0].memory.structureToRepairId = undefined;
-                //     }
-                // }
-
-                // if (towers[0].memory.structureToRepairId == undefined) {
-
-                var energyOk = true;
-
-                for (let i in towers) {
-                    var tower = towers[i];
-                    if (tower.energy < 500) {
-                        energyOk = false;
-                    }
-                }
-
-                if (energyOk) {
-
-                    var structure = towers[0].pos.findClosestByPath(FIND_STRUCTURES, {
-                        filter: (s) =>
-                            s.structureType != STRUCTURE_CONTROLLER &&
-                            s.structureType != STRUCTURE_WALL &&
-                            s.structureType == STRUCTURE_ROAD &&
-                            s.hits <= (s.hitsMax / 5 * 4) && s.hits <= (wallsLevel - 10000)
-
-                    });
-
-                    if (!structure) {
-                        structure = towers[0].pos.findClosestByPath(FIND_STRUCTURES, {
-                            filter: (s) =>
-                                s.structureType != STRUCTURE_CONTROLLER &&
-                                s.structureType != STRUCTURE_WALL &&
-                                s.hits <= (s.hitsMax / 5 * 4) && s.hits <= (wallsLevel - 10000)
-
-                        });
-                    }
-
-
-                    // creep.memory.structureToRepairId = structure.id;
-                    // }
-
-                    if (structure) {
-                        towers.forEach(tower => tower.repair(structure));
-                    }
-                }
-            }
-        }
-    }
-    ,
-
-    placeRampart: function (roomName) {
-        var rampartSites = Game.rooms[roomName].find(FIND_CONSTRUCTION_SITES, {filter: (cs) => cs.structureType == STRUCTURE_RAMPART});
-        if (rampartSites.length == 0) {
-            var structuresForRampart = Game.rooms[roomName].find(FIND_STRUCTURES, {
-                filter: (s) => s.structureType != STRUCTURE_RAMPART &&
-                    s.structureType != STRUCTURE_EXTRACTOR && s.structureType != STRUCTURE_ROAD && s.structureType != STRUCTURE_CONTROLLER &&
-                    s.structureType != STRUCTURE_WALL &&
-                    Game.rooms[roomName].find(FIND_STRUCTURES, {
-                        filter: (is) => is.structureType == STRUCTURE_RAMPART &&
-                            is.pos.x == s.pos.x && is.pos.y == s.pos.y
-                    }).length == 0
-            });
-            if (structuresForRampart.length > 0) {
-                Game.rooms[roomName].createConstructionSite(structuresForRampart[0].pos, STRUCTURE_RAMPART);
-            }
-            var x;
-            var y;
-            var terrain;
-            var terrainOk = false;
-            if (structuresForRampart.length == 0) {
-                var controllerPosition = Game.rooms[roomName].controller.pos;
-                for (x = controllerPosition.x - 1; x <= controllerPosition.x + 1; x++) {
-                    for (y = controllerPosition.y - 1; y <= controllerPosition.y + 1; y++) {
-                        structuresForRampart = Game.rooms[roomName].find(FIND_STRUCTURES, {
-                            filter: (s) => (s.structureType == STRUCTURE_RAMPART || s.structureType == STRUCTURE_CONTROLLER
-                                || s.structureType == STRUCTURE_EXTRACTOR || s.structureType == STRUCTURE_WALL) &&
-                                s.pos.x == x && s.pos.y == y
-                        });
-                        if (structuresForRampart.length == 0) {
-                            terrain = Game.map.getTerrainAt(x, y, roomName);
-                            if (terrain != 'wall') {
-                                terrainOk = true;
-                                break;
-                            }
-                        }
-                    }
-                    if (terrainOk == true) {
-                        Game.rooms[roomName].createConstructionSite(x, y, STRUCTURE_RAMPART);
-                        break;
-                    }
-                }
-            }
-        }
-    },
 
     placeRampartFromArea: function (roomName, rampartAreas) {
         var rampartSites = Game.rooms[roomName].find(FIND_CONSTRUCTION_SITES, {filter: (cs) => cs.structureType == STRUCTURE_RAMPART});

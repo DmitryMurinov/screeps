@@ -28,6 +28,12 @@ module.exports = {
             }
 
             this.towersDefendAndRepairRoom(roomName, wallsLevel);
+
+            if (controllerLevel >= 4 && gameTime.substring(gameTime.length - 2, gameTime.length) == '00') {
+                // this.placeRampartForStructure(roomName);
+                this.placeRampartForController(roomName);
+            }
+
         }
     },
 
@@ -87,7 +93,7 @@ module.exports = {
         }
     },
 
-    placeRampart: function (roomName) {
+    placeRampartForStructure: function (roomName) {
         var rampartSites = Game.rooms[roomName].find(FIND_CONSTRUCTION_SITES, {filter: (cs) => cs.structureType == STRUCTURE_RAMPART});
         if (rampartSites.length == 0) {
             var structuresForRampart = Game.rooms[roomName].find(FIND_STRUCTURES, {
@@ -106,27 +112,31 @@ module.exports = {
             var y;
             var terrain;
             var terrainOk = false;
-            if (structuresForRampart.length == 0) {
-                var controllerPosition = Game.rooms[roomName].controller.pos;
-                for (x = controllerPosition.x - 1; x <= controllerPosition.x + 1; x++) {
-                    for (y = controllerPosition.y - 1; y <= controllerPosition.y + 1; y++) {
-                        structuresForRampart = Game.rooms[roomName].find(FIND_STRUCTURES, {
-                            filter: (s) => (s.structureType == STRUCTURE_RAMPART || s.structureType == STRUCTURE_CONTROLLER
-                                || s.structureType == STRUCTURE_EXTRACTOR || s.structureType == STRUCTURE_WALL) &&
-                                s.pos.x == x && s.pos.y == y
-                        });
-                        if (structuresForRampart.length == 0) {
-                            terrain = Game.map.getTerrainAt(x, y, roomName);
-                            if (terrain != 'wall') {
-                                terrainOk = true;
-                                break;
-                            }
+        }
+    },
+
+    placeRampartForController: function (roomName) {
+        var rampartSites = Game.rooms[roomName].find(FIND_CONSTRUCTION_SITES, {filter: (cs) => cs.structureType == STRUCTURE_RAMPART});
+        if (rampartSites.length == 0) {
+            var controllerPosition = Game.rooms[roomName].controller.pos;
+            for (x = controllerPosition.x - 1; x <= controllerPosition.x + 1; x++) {
+                for (y = controllerPosition.y - 1; y <= controllerPosition.y + 1; y++) {
+                    structuresForRampart = Game.rooms[roomName].find(FIND_STRUCTURES, {
+                        filter: (s) => (s.structureType == STRUCTURE_RAMPART || s.structureType == STRUCTURE_CONTROLLER
+                            || s.structureType == STRUCTURE_EXTRACTOR || s.structureType == STRUCTURE_WALL) &&
+                            s.pos.x == x && s.pos.y == y
+                    });
+                    if (structuresForRampart.length == 0) {
+                        terrain = Game.map.getTerrainAt(x, y, roomName);
+                        if (terrain != 'wall') {
+                            terrainOk = true;
+                            break;
                         }
                     }
-                    if (terrainOk == true) {
-                        Game.rooms[roomName].createConstructionSite(x, y, STRUCTURE_RAMPART);
-                        break;
-                    }
+                }
+                if (terrainOk == true) {
+                    Game.rooms[roomName].createConstructionSite(x, y, STRUCTURE_RAMPART);
+                    break;
                 }
             }
         }
