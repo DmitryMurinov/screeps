@@ -809,7 +809,7 @@ module.exports = {
                 "roomToWorkX1: " + 21 + ", roomToWorkY1: " + 21 + ", roomToWorkName1: \"" + "E55N13" + "\""
             );
 
-            // creepCreate.create(roomName, allCreepsCount, gameTime, creepsData, creepsNeeded, allReservesCount);
+            creepCreate.create(roomName, allCreepsCount, gameTime, creepsData, creepsNeeded, allReservesCount);
         },
 
     E55N13:

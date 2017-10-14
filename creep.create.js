@@ -397,7 +397,7 @@ module.exports = {
                     eval(createString);
                 }else if (controllerLevel > 1 && localMadeRangedAttacker1 < localMadeRangedAttacker1Needed) {
                     var memory = "{role: 'rangedAttacker1', claim: true, working: false, origination: '" + roomName + "', " +
-                        creepsData.get('attacker1') +
+                        creepsData.get('rangedAttacker1') +
                         "}";
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 5 + "(\"rangedAttacker\"), memory)";
                     var createString = eval(constructorString);
