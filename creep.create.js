@@ -113,7 +113,6 @@ module.exports = {
         var localMadeCourierMinerNeeded = creepsNeeded.get("courierMiner");
         var localMadeExaustersNeeded = creepsNeeded.get("exauster");
 
-
         var mines = Game.rooms[roomName].find(FIND_MINERALS);
         var mine = mines[0];
 
