@@ -378,7 +378,7 @@ module.exports = {
             }
 
             var localMadeUpgradersNeeded = 1;
-            if(controllerLevel < 8) {
+            if (controllerLevel < 8) {
                 if (allReservesCount[roomName + ";" + RESOURCE_ENERGY] > 200000) {
                     localMadeUpgradersNeeded += 2;
                 } else if (allReservesCount[roomName + ";" + RESOURCE_ENERGY] > 100000) {
@@ -544,7 +544,7 @@ module.exports = {
         }
 
         var localMadeUpgradersNeeded = 1;
-        if(controllerLevel < 8) {
+        if (controllerLevel < 8) {
             if (allReservesCount[roomName + ";" + RESOURCE_ENERGY] > 200000) {
                 localMadeUpgradersNeeded += 2;
             } else if (allReservesCount[roomName + ";" + RESOURCE_ENERGY] > 100000) {
@@ -777,7 +777,6 @@ module.exports = {
                 "roomToInvestigateName0 : \"E56N13\", roomToInvestigateX0: 5, roomToInvestigateY0: 15," +
                 "roomToInvestigateName1 : \"E55N12\", roomToInvestigateX1: 35, roomToInvestigateY1: 2" +
                 "roomToInvestigateName2 : \"E55N12\", roomToInvestigateX2: 48, roomToInvestigateY2: 13"
-
             );
 
             creepsData.set("outerCourier1",
@@ -914,9 +913,9 @@ module.exports = {
 
             creepsData.set("attacker1", "needBoost: false," +
                 "roomToInvestigateName0 : \"E56N13\", roomToInvestigateX0: 5, roomToInvestigateY0: 15," +
-                "roomToInvestigateName1 : \"E55N12\", roomToInvestigateX1: 35, roomToInvestigateY1: 2" +
-                "roomToInvestigateName2 : \"E55N12\", roomToInvestigateX2: 48, roomToInvestigateY2: 13"
-        );
+                ", roomToInvestigateName1 : \"E55N12\", roomToInvestigateX1: 35, roomToInvestigateY1: 2" +
+                ", roomToInvestigateName2 : \"E55N12\", roomToInvestigateX2: 48, roomToInvestigateY2: 13"
+            );
 
             creepsData.set("outerCourier1",
                 "roomToBackX: 47, roomToBackY: 15, linkRoomX: 27, linkRoomY: 47, "
