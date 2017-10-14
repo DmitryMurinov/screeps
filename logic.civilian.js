@@ -365,7 +365,6 @@ module.exports = {
             var gameTime = Game.time.toString();
 
             if (controllerLevel >= 4 && gameTime.substring(gameTime.length - 1, gameTime.length) == '0') {
-                this.placeRampartForStructure(roomName);
                 var rampartAreas = new Array();
                 var rampartArea1 = {x1: 1, y1: 29, x2: 5, y2: 30};
                 var rampartArea2 = {x1: 4, y1: 31, x2: 5, y2: 32};
@@ -377,7 +376,7 @@ module.exports = {
                 rampartAreas.push(rampartArea3);
                 // rampartAreas.push(rampartArea4);
                 // rampartAreas.push(rampartArea5);
-                this.placeRampartFromArea(roomName, rampartAreas);
+                defendRoom.placeRampartFromArea(roomName, rampartAreas);
             }
 
             if (gameTime.substring(gameTime.length - 2, gameTime.length) == '00') {
