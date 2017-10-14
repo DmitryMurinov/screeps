@@ -582,7 +582,7 @@ module.exports = {
         creepsNeeded.set("outerCourierLogic4", 0);
         creepsNeeded.set("outerCourierLogic5", 0);
         creepsNeeded.set("attackerLogic1", 1);
-        creepsNeeded.set("attackerLogic2", 0);
+        creepsNeeded.set("attackerLogic2", 1);
         creepsNeeded.set("attackerLogic3", 0);
         creepsNeeded.set("attackerLogic4", 0);
         creepsNeeded.set("attackerLogic5", 0);
@@ -613,6 +613,10 @@ module.exports = {
             "roomToInvestigateName0 : \"E51N18\", roomToInvestigateX0: 15, roomToInvestigateY0: 2," +
             "roomToInvestigateName1 : \"E52N19\", roomToInvestigateX1: 10, roomToInvestigateY1: 39," +
             "roomToInvestigateName2 : \"E52N18\", roomToInvestigateX2: 10, roomToInvestigateY2: 2"
+        );
+
+        creepsData.set("attacker2", "needBoost: false," +
+            "roomToInvestigateName0 : \"E52N20\", roomToInvestigateX0: 18, roomToInvestigateY0: 36,"
         );
 
         creepsData.set("outerCourier1",
