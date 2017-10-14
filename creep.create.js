@@ -338,6 +338,37 @@ module.exports = {
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + controllerLevel1to6 + "(\"exauster\"), memory)";
                     var createString = eval(constructorString);
                     eval(createString);
+                } else if (controllerLevel > 2 && controllerAttacker1 < controllerAttacker1Needed && roomMemory.controllerAttacker1Needed == true) {
+                    var memory = "{role: 'controllerAttacker1', claim: false, working: false, origination: '" + roomName + "', arrived: false, " +
+                        creepsData.get('controllerAttacker1') +
+                        "}";
+                    var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 5 + "(\"controllerAttacker\"), memory)";
+                    var createString = eval(constructorString);
+                    eval(createString);
+                    roomMemory.controllerAttacker1Needed = false;
+                } else if (controllerLevel > 2 && controllerAttacker2 < controllerAttacker2Needed && roomMemory.controllerAttacker2Needed == true) {
+                    var memory = "{role: 'controllerAttacker2', claim: false, working: false, origination: '" + roomName + "', arrived: false, " +
+                        creepsData.get('controllerAttacker2') +
+                        "}";
+                    var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 5 + "(\"controllerAttacker\"), memory)";
+                    var createString = eval(constructorString);
+                    eval(createString);
+                    roomMemory.controllerAttacker2Needed = false;
+                } else if (localMadeMedic1 < localMadeMedic1Needed) {
+                    var memory = "{role: 'medic1', claim: true, working: false, origination: '" + roomName + "', arrived1: false " +
+                        creepsData.get('medic1') +
+                        "}";
+                    var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 6 + "(\"medicLogic\"), memory)";
+                    var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 6 + "(\"medicLogic\"), memory)";
+                    var createString = eval(constructorString);
+                    eval(createString);
+                } else if (localMadeMedic2 < localMadeMedic2Needed) {
+                    var memory = "{role: 'medic2', claim: true, working: false, origination: '" + roomName + "', arrived1: false " +
+                        creepsData.get('medic2') +
+                        "}";
+                    var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 6 + "(\"medicLogic\"), memory)";
+                    var createString = eval(constructorString);
+                    eval(createString);
                 } else if (controllerLevel > 1 && localMadeAttackerLogic1 < localMadeAttackerLogic1Needed) {
                     var memory = "{role: 'attackerLogic1', claim: true, working: false, origination: '" + roomName + "', " +
                         creepsData.get('attacker1') +
@@ -571,37 +602,6 @@ module.exports = {
                         "roomToWorkName1: \"" + roomToWorkName5 + "\"," +
                         "}";
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + controllerLevel1to4 + "(\"basicCreepOuter\"), memory)";
-                    var createString = eval(constructorString);
-                    eval(createString);
-                } else if (controllerLevel > 2 && controllerAttacker1 < controllerAttacker1Needed && roomMemory.controllerAttacker1Needed == true) {
-                    var memory = "{role: 'controllerAttacker1', claim: false, working: false, origination: '" + roomName + "', arrived: false, " +
-                        creepsData.get('controllerAttacker1') +
-                        "}";
-                    var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 5 + "(\"controllerAttacker\"), memory)";
-                    var createString = eval(constructorString);
-                    eval(createString);
-                    roomMemory.controllerAttacker1Needed = false;
-                } else if (controllerLevel > 2 && controllerAttacker2 < controllerAttacker2Needed && roomMemory.controllerAttacker2Needed == true) {
-                    var memory = "{role: 'controllerAttacker2', claim: false, working: false, origination: '" + roomName + "', arrived: false, " +
-                        creepsData.get('controllerAttacker2') +
-                        "}";
-                    var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 5 + "(\"controllerAttacker\"), memory)";
-                    var createString = eval(constructorString);
-                    eval(createString);
-                    roomMemory.controllerAttacker2Needed = false;
-                } else if (localMadeMedic1 < localMadeMedic1Needed) {
-                    var memory = "{role: 'medic1', claim: true, working: false, origination: '" + roomName + "', arrived1: false " +
-                        creepsData.get('medic1') +
-                        "}";
-                    var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 6 + "(\"medicLogic\"), memory)";
-                    var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 6 + "(\"medicLogic\"), memory)";
-                    var createString = eval(constructorString);
-                    eval(createString);
-                } else if (localMadeMedic2 < localMadeMedic2Needed) {
-                    var memory = "{role: 'medic2', claim: true, working: false, origination: '" + roomName + "', arrived1: false " +
-                        creepsData.get('medic2') +
-                        "}";
-                    var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 6 + "(\"medicLogic\"), memory)";
                     var createString = eval(constructorString);
                     eval(createString);
                 } else if (controllerLevel > 1 && localMadeAttackerLogic6 < localMadeAttackerLogic6Needed) {

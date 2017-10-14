@@ -207,7 +207,7 @@ module.exports = {
         creepsNeeded.set("outerReserver5", 0);
         creepsNeeded.set("dismantilist1", 0);
         creepsNeeded.set("dismantilist2", 0);
-        creepsNeeded.set("medic1", 0);
+        creepsNeeded.set("medic1", 2);
         creepsNeeded.set("medic2", 0);
         creepsNeeded.set("sieger", 0);
         creepsNeeded.set("bankir", 1);
