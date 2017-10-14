@@ -1959,7 +1959,7 @@ module.exports = {
     },
 
 
-    defendRoom: function (roomName, wallsLevel) {
+    towersDefendAndRepairRoom: function (roomName, wallsLevel) {
         var hostiles = Game.rooms[roomName].find(FIND_HOSTILE_CREEPS);
 
         var towers = Game.rooms[roomName].find(

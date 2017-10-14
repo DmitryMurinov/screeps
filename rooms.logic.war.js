@@ -1,5 +1,5 @@
 var creepTemplates = require('creep.templates');
-var roomLogicCivilian = require('rooms.logic.civilian');
+var roomLogicCivilian = require('logic.civilian');
 
 
 module.exports = {
@@ -743,7 +743,7 @@ module.exports = {
     },
 
 
-    defendRoom: function (roomName) {
+    towersDefendAndRepairRoom: function (roomName) {
         var hostiles = Game.rooms[roomName].find(FIND_HOSTILE_CREEPS);
         if (hostiles.length > 0) {
             var username = hostiles[0].owner.username;

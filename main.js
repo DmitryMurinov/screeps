@@ -1,17 +1,12 @@
 var structLinks = require('links');
-
 var helperCounter = require('helper.counter');
-
-var roomLogicCivilian = require('rooms.logic.civilian');
+var roomLogicCivilian = require('logic.civilian');
 var roomLogicWar = require('rooms.logic.war');
-
 var market = require('market');
-
 var labs = require('labs');
-
 var runAllCreeps = require('creeps.runAllCreeps');
-
 var manageResources = require('manageResources');
+var defendRooms = require('defend.rooms');
 
 module.exports.loop = function () {
 
@@ -31,6 +26,7 @@ module.exports.loop = function () {
     runAllCreeps.run(allCreepsCount, gameTime);
 
 
+
     var roomsList = helperCounter.roomsList();
 
     var resourcesListCatalized = helperCounter.resourcesListCatalized();
@@ -41,6 +37,9 @@ module.exports.loop = function () {
     var allReservesCount = helperCounter.countAllReserves();
 
     // var startCpu = Game.cpu.getUsed();
+
+    defendRooms.towers(roomsList);
+
 
     if(gameTime.substring(gameTime.length - 1, gameTime.length) == ('0' || '5')) {
         roomLogicCivilian.runMyRooms(allCreepsCount, gameTime, allReservesCount);
