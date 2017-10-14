@@ -163,27 +163,14 @@ module.exports = {
             // defendRoom.placeRampartFromArea(roomName, rampartAreas);
         }
 
-        var localMadeUpgradersNeeded = 1;
-        if(controllerLevel < 8) {
-            if (allReservesCount[roomName + ";" + RESOURCE_ENERGY] > 200000) {
-                localMadeUpgradersNeeded += 2;
-            } else if (allReservesCount[roomName + ";" + RESOURCE_ENERGY] > 100000) {
-                localMadeUpgradersNeeded += 1;
-            }
-        }
-
-        var localMadePureMinersNeeded = 0;
-        if (controllerLevel >= 6) {
-            localMadePureMinersNeeded = 1;
-        }
 
         let creepsNeeded = new Map();
 
         creepsNeeded.set("basicCreep", 2);
         creepsNeeded.set("pureHarvester", 1);
-        creepsNeeded.set("pureMiner", localMadePureMinersNeeded);
+        creepsNeeded.set("pureMiner", 0);
         creepsNeeded.set("courier", 1);
-        creepsNeeded.set("upgrader", localMadeUpgradersNeeded);
+        creepsNeeded.set("upgrader", 1);
         creepsNeeded.set("basicCreepOuter1", 1);
         creepsNeeded.set("basicCreepOuter2", 1);
         creepsNeeded.set("basicCreepOuter3", 1);
@@ -288,7 +275,7 @@ module.exports = {
             ", arrived3: false, roomToWorkX1: 3, roomToWorkY1: 35,  roomToWorkName1: \"W27S49\""
         );
 
-        creepCreate.create(roomName, allCreepsCount, gameTime, creepsData, creepsNeeded);
+        creepCreate.create(roomName, allCreepsCount, gameTime, creepsData, creepsNeeded, allReservesCount);
 
     },
 
@@ -481,7 +468,7 @@ module.exports = {
                 "roomToWorkX1: " + 21 + ", roomToWorkY1: " + 21 + ", roomToWorkName1: \"" + "E55N13" + "\""
             );
 
-            creepCreate.create(roomName, allCreepsCount, gameTime, creepsData, creepsNeeded);
+            creepCreate.create(roomName, allCreepsCount, gameTime, creepsData, creepsNeeded, allReservesCount);
 
         },
 
@@ -494,18 +481,6 @@ module.exports = {
         var controllerLevel = Game.rooms[roomName].controller.level;
 
         var roomMemory = Game.rooms[roomName].memory;
-
-        var wallsLevel = 100000;
-
-        var basicCreepsNeeded = 5;
-
-        var localMadeUpgradersNeeded = 1;
-
-        if (allReservesCount[roomName + ";" + RESOURCE_ENERGY] > 200000) {
-            localMadeUpgradersNeeded += 2;
-        } else if (allReservesCount[roomName + ";" + RESOURCE_ENERGY] > 100000) {
-            localMadeUpgradersNeeded += 1;
-        }
 
         var terminals = Game.rooms[roomName].find(FIND_MY_STRUCTURES, {filter: (s) => s.structureType == STRUCTURE_TERMINAL});
         var terminal;
@@ -529,57 +504,11 @@ module.exports = {
             lemergiumAlkalideReserveNeeded = 21000;
         }
 
-        /*        if (terminal && Game.market.credits >= 5000) {
-                    if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_GHODIUM_ALKALIDE] == undefined
-                            || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_GHODIUM_ALKALIDE] < lemergiumAlkalideReserve * 2))) {
-                        market.buy(roomName, RESOURCE_GHODIUM_ALKALIDE, 500, 5.0);
-                    }
-                    else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_UTRIUM_ACID] == undefined
-                            || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_UTRIUM_ACID] < lemergiumAlkalideReserve))) {
-                        market.buy(roomName, RESOURCE_UTRIUM_ACID, 500, 3.0);
-                    }
-                    else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_UTRIUM_ALKALIDE] == undefined
-                            || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_UTRIUM_ALKALIDE] < lemergiumAlkalideReserve))) {
-                        market.buy(roomName, RESOURCE_UTRIUM_ALKALIDE, 500, 3.0);
-                    }
-                    else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_UTRIUM_ALKALIDE] == undefined
-                            || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_UTRIUM_ALKALIDE] < lemergiumAlkalideReserve))) {
-                        market.buy(roomName, RESOURCE_UTRIUM_ALKALIDE, 500, 3.0);
-                    }
-                    else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_LEMERGIUM_ACID] == undefined
-                            || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_LEMERGIUM_ACID] < lemergiumAlkalideReserve))) {
-                        market.buy(roomName, RESOURCE_LEMERGIUM_ACID, 500, 3.0);
-                    }
-                    else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_KEANIUM_ALKALIDE] == undefined
-                            || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_KEANIUM_ALKALIDE] < lemergiumAlkalideReserve))) {
-                        market.buy(roomName, RESOURCE_KEANIUM_ALKALIDE, 500, 3.0);
-                    }
-                    else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_ZYNTHIUM_ACID] == undefined
-                            || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_ZYNTHIUM_ACID] < lemergiumAlkalideReserve))) {
-                        market.buy(roomName, RESOURCE_ZYNTHIUM_ACID, 500, 3.0);
-                    }
-                    else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_ZYNTHIUM_ALKALIDE] == undefined
-                            || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_ZYNTHIUM_ALKALIDE] < lemergiumAlkalideReserve / 2))) {
-                        market.buy(roomName, RESOURCE_ZYNTHIUM_ALKALIDE, 500, 3.0);
-                    }
-                    else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_CATALYST] == undefined
-                            || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_CATALYST] < lemergiumAlkalideReserve * 5))) {
-                        market.buy(roomName, RESOURCE_CATALYST, 500, 1.5);
-                    }
-                    else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] == undefined
-                            || lemergiumAlkalideReserve < lemergiumAlkalideReserveNeeded)) {
-                        market.buy(roomName, RESOURCE_LEMERGIUM_ALKALIDE, 500, 3.0);
-
-                    }
-                }*/
-
-
         if (terminal && Game.market.credits < 5000) {
             if (terminal.store[RESOURCE_OXYGEN] >= 500 && terminal.store[RESOURCE_ENERGY] > 500) {
                 market.sell(roomName, RESOURCE_OXYGEN, 500, 0.6);
             }
         }
-
 
         var gameTime = Game.time.toString();
 
@@ -706,7 +635,7 @@ module.exports = {
             "roomToWorkX1: " + 21 + ", roomToWorkY1: " + 21 + ", roomToWorkName1: \"" + "E55N13" + "\""
         );
 
-        creepCreate.create(roomName, allCreepsCount, gameTime, creepsData, creepsNeeded);
+        creepCreate.create(roomName, allCreepsCount, gameTime, creepsData, creepsNeeded, allReservesCount);
 
     },
 
@@ -734,63 +663,11 @@ module.exports = {
                 terminal = terminals[0];
             }
 
-            /*
-                        if (terminal && Game.market.credits >= 5000) {
-                            if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_GHODIUM_ALKALIDE] == undefined
-                                    || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_GHODIUM_ALKALIDE] < 0))) {
-                                market.buy(roomName, RESOURCE_GHODIUM_ALKALIDE, 500, 5.0);
-                            }
-                            else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_UTRIUM_ACID] == undefined
-                                    || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_UTRIUM_ACID] < 0))) {
-                                market.buy(roomName, RESOURCE_UTRIUM_ACID, 500, 3.0);
-                            }
-                            else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_UTRIUM_ALKALIDE] == undefined
-                                    || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_UTRIUM_ALKALIDE] < 0))) {
-                                market.buy(roomName, RESOURCE_UTRIUM_ALKALIDE, 500, 3.0);
-                            }
-                            else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_UTRIUM_ALKALIDE] == undefined
-                                    || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_UTRIUM_ALKALIDE] < 0))) {
-                                market.buy(roomName, RESOURCE_UTRIUM_ALKALIDE, 500, 3.0);
-                            }
-                            else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_LEMERGIUM_ACID] == undefined
-                                    || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_LEMERGIUM_ACID] < 0))) {
-                                market.buy(roomName, RESOURCE_LEMERGIUM_ACID, 500, 3.0);
-                            }
-                            else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_KEANIUM_ALKALIDE] == undefined
-                                    || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_KEANIUM_ALKALIDE] < 0))) {
-                                market.buy(roomName, RESOURCE_KEANIUM_ALKALIDE, 500, 3.0);
-                            }
-                            else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_ZYNTHIUM_ACID] == undefined
-                                    || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_ZYNTHIUM_ACID] < 0))) {
-                                market.buy(roomName, RESOURCE_ZYNTHIUM_ACID, 500, 3.0);
-                            }
-                            else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_CATALYST] == undefined
-                                    || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_CATALYST] < 0))) {
-                                market.buy(roomName, RESOURCE_CATALYST, 500, 1.5);
-                            }
-                            else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] == undefined
-                                    || terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] < 0)) {
-                                market.buy(roomName, RESOURCE_LEMERGIUM_ALKALIDE, 500, 3.0);
-
-                            }
-                        }
-*/
-
-
-            // } else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_UTRIUM] == undefined
-            //         || terminal.store[RESOURCE_UTRIUM] < 1000)) {
-            //     market.buy(roomName, RESOURCE_UTRIUM, 100, .6);
-            // } else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_HYDROGEN] == undefined
-            //         || terminal.store[RESOURCE_HYDROGEN] < 2000)) {
-            //     market.buy(roomName, RESOURCE_HYDROGEN, 100, 1);
-            // }
-
             if (terminal && Game.market.credits < 5000) {
                 if (terminal.store[RESOURCE_OXYGEN] >= 500 && terminal.store[RESOURCE_ENERGY] > 500) {
                     market.sell(roomName, RESOURCE_OXYGEN, 500, 0.9);
                 }
             }
-
 
             var gameTime = Game.time.toString();
 
@@ -812,7 +689,6 @@ module.exports = {
             var mines = Game.rooms[roomName].find(FIND_MINERALS);
             var mine = mines[0];
 
-
             var localMadePureMinersNeeded = 0;
             if (controllerLevel >= 6) {
                 localMadePureMinersNeeded = 1;
@@ -830,13 +706,11 @@ module.exports = {
             var roomToWorkX2 = 14;
             var roomToWorkY2 = 45;
 
-
             var roomToWorkName3 = "E57N17";
             var roomToWorkX3 = 3;
             var roomToWorkY3 = 31;
 
             // var cpuStart = Game.cpu.getUsed();
-
 
             var localMadeCreeps = _.sum(Game.creeps, (c) => c.memory.origination == roomName);
 
@@ -1446,59 +1320,7 @@ module.exports = {
 
             var roomMemory = Game.rooms[roomName].memory;
 
-            var wallsLevel = 100000;
-
-            var basicCreepsNeeded = 2;
-
             var terminal = Game.rooms[roomName].terminal;
-
-            var lemergiumAlkalideReserve = allReservesCount[roomName + ";" + RESOURCE_LEMERGIUM_ALKALIDE];
-
-            var lemergiumAlkalideReserveNeeded = 2000;
-
-            if (terminal && Game.market.credits >= 5000) {
-                if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_CATALYST] == undefined
-                        || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_CATALYST] < lemergiumAlkalideReserve))) {
-                    market.buy(roomName, RESOURCE_CATALYST, 500, 1.5);
-                }
-                else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_GHODIUM_ALKALIDE] == undefined
-                        || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_GHODIUM_ALKALIDE] < lemergiumAlkalideReserve))) {
-                    market.buy(roomName, RESOURCE_GHODIUM_ALKALIDE, 500, 5.0);
-                }
-                else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_UTRIUM_ACID] == undefined
-                        || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_UTRIUM_ACID] < lemergiumAlkalideReserve))) {
-                    market.buy(roomName, RESOURCE_UTRIUM_ACID, 500, 3.0);
-                }
-                else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_UTRIUM_ALKALIDE] == undefined
-                        || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_UTRIUM_ALKALIDE] < lemergiumAlkalideReserve))) {
-                    market.buy(roomName, RESOURCE_UTRIUM_ALKALIDE, 500, 3.0);
-                }
-                else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_UTRIUM_ALKALIDE] == undefined
-                        || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_UTRIUM_ALKALIDE] < lemergiumAlkalideReserve))) {
-                    market.buy(roomName, RESOURCE_UTRIUM_ALKALIDE, 500, 3.0);
-                }
-                else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_LEMERGIUM_ACID] == undefined
-                        || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_LEMERGIUM_ACID] < lemergiumAlkalideReserve))) {
-                    market.buy(roomName, RESOURCE_LEMERGIUM_ACID, 500, 3.0);
-                }
-                else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_KEANIUM_ALKALIDE] == undefined
-                        || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_KEANIUM_ALKALIDE] < lemergiumAlkalideReserve))) {
-                    market.buy(roomName, RESOURCE_KEANIUM_ALKALIDE, 500, 3.0);
-                }
-                else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_ZYNTHIUM_ACID] == undefined
-                        || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_ZYNTHIUM_ACID] < lemergiumAlkalideReserve))) {
-                    market.buy(roomName, RESOURCE_ZYNTHIUM_ACID, 500, 3.0);
-                }
-                else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_ZYNTHIUM_ALKALIDE] == undefined
-                        || (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] != undefined && terminal.store[RESOURCE_ZYNTHIUM_ALKALIDE] < lemergiumAlkalideReserve / 2))) {
-                    market.buy(roomName, RESOURCE_ZYNTHIUM_ALKALIDE, 500, 3.0);
-                }
-                else if (terminal.store[RESOURCE_ENERGY] >= 100 && (terminal.store[RESOURCE_LEMERGIUM_ALKALIDE] == undefined
-                        || lemergiumAlkalideReserve < lemergiumAlkalideReserveNeeded)) {
-                    market.buy(roomName, RESOURCE_LEMERGIUM_ALKALIDE, 500, 3.0);
-                }
-            }
-
 
             if (terminal && Game.market.credits < 5000) {
                 if (terminal.store[RESOURCE_KEANIUM] >= 500 && terminal.store[RESOURCE_ENERGY] > 500) {
@@ -1520,20 +1342,7 @@ module.exports = {
                 rampartAreas.push(rampartArea3);
                 // rampartAreas.push(rampartArea4);
                 // rampartAreas.push(rampartArea5);
-                defendRoom.placeRampartFromArea(roomName, rampartAreas);
-            }
-
-            var mines = Game.rooms[roomName].find(FIND_MINERALS);
-            var mine = mines[0];
-
-
-            var localMadePureMinersNeeded = 0;
-            if (controllerLevel >= 6) {
-                localMadePureMinersNeeded = 1;
-            }
-
-            if (mine.mineralAmount == 0) {
-                localMadePureMinersNeeded = 0;
+                // defendRoom.placeRampartFromArea(roomName, rampartAreas);
             }
 
             if (gameTime.substring(gameTime.length - 2, gameTime.length) == '00') {
@@ -1541,13 +1350,22 @@ module.exports = {
                 roomMemory.roomToWorkX1 = 3;
                 roomMemory.roomToWorkY1 = 14;
 
-                roomMemory.roomToWorkName2 = "E57N13";
-                roomMemory.roomToWorkX2 = 16;
-                roomMemory.roomToWorkY2 = 5;
+                roomMemory.roomToWorkName2 = "E55N12";
+                roomMemory.roomToWorkX2 = 36;
+                roomMemory.roomToWorkY2 = 2;
 
-                roomMemory.roomToWorkName3 = "E54N17";
-                roomMemory.roomToWorkX3 = 28;
-                roomMemory.roomToWorkY3 = 2;
+                roomMemory.roomToWorkName3 = "E54N13";
+                roomMemory.roomToWorkX3 = 47;
+                roomMemory.roomToWorkY3 = 11;
+
+                roomMemory.roomToWorkName4 = "E54N14";
+                roomMemory.roomToWorkX4 = 40;
+                roomMemory.roomToWorkY4 = 47;
+
+                roomMemory.roomToWorkName5 = "E55N14";
+                roomMemory.roomToWorkX5 = 2;
+                roomMemory.roomToWorkY5 = 43;
+
             }
 
             let creepsNeeded = new Map();
@@ -1558,23 +1376,22 @@ module.exports = {
             creepsNeeded.set("courier", 3);
             creepsNeeded.set("upgrader", 1);
             creepsNeeded.set("basicCreepOuter1", 1);
-            creepsNeeded.set("basicCreepOuter2", 0);
-            creepsNeeded.set("basicCreepOuter3", 0);
+            creepsNeeded.set("basicCreepOuter2", 1);
+            creepsNeeded.set("basicCreepOuter3", 1);
             creepsNeeded.set("basicCreepOuter4", 0);
             creepsNeeded.set("basicCreepOuter5", 0);
             creepsNeeded.set("basicCreepOuter6", 0);
-            creepsNeeded.set("outerHarvesterLogic", 0);
             creepsNeeded.set("outerHarvesterLogic1", 2);
-            creepsNeeded.set("outerHarvesterLogic2", 0);
-            creepsNeeded.set("outerHarvesterLogic3", 0);
+            creepsNeeded.set("outerHarvesterLogic2", 1);
+            creepsNeeded.set("outerHarvesterLogic3", 1);
             creepsNeeded.set("outerHarvesterLogic4", 0);
             creepsNeeded.set("outerHarvesterLogic5", 0);
             creepsNeeded.set("outerCourierLogic1", 2);
-            creepsNeeded.set("outerCourierLogic2", 0);
-            creepsNeeded.set("outerCourierLogic3", 0);
+            creepsNeeded.set("outerCourierLogic2", 1);
+            creepsNeeded.set("outerCourierLogic3", 1);
             creepsNeeded.set("outerCourierLogic4", 0);
             creepsNeeded.set("outerCourierLogic5", 0);
-            creepsNeeded.set("attackerLogic1", 0);
+            creepsNeeded.set("attackerLogic1", 1);
             creepsNeeded.set("attackerLogic2", 0);
             creepsNeeded.set("attackerLogic3", 0);
             creepsNeeded.set("attackerLogic4", 0);
@@ -1587,8 +1404,8 @@ module.exports = {
             creepsNeeded.set("controllerAttacker1", 0);
             creepsNeeded.set("controllerAttacker2", 0);
             creepsNeeded.set("outerReserver1", 1);
-            creepsNeeded.set("outerReserver2", 0);
-            creepsNeeded.set("outerReserver3", 0);
+            creepsNeeded.set("outerReserver2", 1);
+            creepsNeeded.set("outerReserver3", 1);
             creepsNeeded.set("outerReserver4", 0);
             creepsNeeded.set("outerReserver5", 0);
             creepsNeeded.set("dismantilist1", 0);
@@ -1603,20 +1420,22 @@ module.exports = {
             let creepsData = new Map();
 
             creepsData.set("attacker1", "needBoost: false," +
-                "roomToInvestigateName0 : \"E57N14\", roomToInvestigateX0: 16, roomToInvestigateY0: 46," +
-                "roomToInvestigateName1 : \"E57N13\", roomToInvestigateX1: 16, roomToInvestigateY1: 3"
-            );
+                "roomToInvestigateName0 : \"E56N13\", roomToInvestigateX0: 5, roomToInvestigateY0: 15," +
+                "roomToInvestigateName1 : \"E55N12\", roomToInvestigateX1: 35, roomToInvestigateY1: 2" +
+                "roomToInvestigateName2 : \"E55N12\", roomToInvestigateX2: 48, roomToInvestigateY2: 13"
+
+        );
 
             creepsData.set("outerCourier1",
-                "roomToBackX: 48, roomToBackY: 15, linkRoomX: 27, linkRoomY: 47, "
+                "roomToBackX: 47, roomToBackY: 15, linkRoomX: 27, linkRoomY: 47, "
             );
 
             creepsData.set("outerCourier2",
-                "roomToBackX: 28, roomToBackY: 47, linkRoomX: 27, linkRoomY: 47, "
+                "roomToBackX: 36, roomToBackY: 47, linkRoomX: 27, linkRoomY: 47, "
             );
 
             creepsData.set("outerCourier3",
-                "roomToBackX: 20, roomToBackY: 47, linkRoomX: 21, linkRoomY: 47, "
+                "roomToBackX: 2, roomToBackY: 11, linkRoomX: 21, linkRoomY: 47, "
             );
 
             creepsData.set("controllerAttacker1", "needBoost: false," +
@@ -1627,7 +1446,7 @@ module.exports = {
                 "roomToWorkX1: " + 21 + ", roomToWorkY1: " + 21 + ", roomToWorkName1: \"" + "E55N13" + "\""
             );
 
-            creepCreate.create(roomName, allCreepsCount, gameTime, creepsData, creepsNeeded);
+            creepCreate.create(roomName, allCreepsCount, gameTime, creepsData, creepsNeeded, allReservesCount);
 
         },
 

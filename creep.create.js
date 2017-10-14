@@ -2,7 +2,7 @@ var creepTemplates = require('creep.templates');
 
 module.exports = {
 
-    create: function (roomName, allCreepsCount, gameTime, creepsData, creepsNeeded) {
+    create: function (roomName, allCreepsCount, gameTime, creepsData, creepsNeeded, allReservesCount) {
 
         var localMadeCreeps = allCreepsCount[roomName + ";total"];
         var localMadeBasicCreeps = allCreepsCount[roomName + ";basicCreep"];
@@ -110,6 +110,7 @@ module.exports = {
         var localMadeCourierMinerNeeded = creepsNeeded.get("courierMiner");
         var localMadeExaustersNeeded = creepsNeeded.get("exauster");
 
+
         var mines = Game.rooms[roomName].find(FIND_MINERALS);
         var mine = mines[0];
 
@@ -117,13 +118,26 @@ module.exports = {
 
         var roomMemory = Game.rooms[roomName].memory;
 
-        if (controllerLevel < 3) {
+        if (controllerLevel < 6) {
             roomMemory.haveExtractor = false;
+        } else if (roomMemory.haveExtractor == false){
+            var extractors = Game.rooms[roomName].find(FIND_MY_STRUCTURES, {filter: (s) => s.structureType == STRUCTURE_EXTRACTOR});
+            if(extractors.length > 0){
+                roomMemory.haveExtractor = true;
+            }
         }
 
         var localMadePureMinersNeeded = 0;
         if (mine.mineralAmount > 0 && roomMemory.haveExtractor == true) {
             localMadePureMinersNeeded = 1;
+        }
+
+        if(controllerLevel < 8) {
+            if (allReservesCount[roomName + ";" + RESOURCE_ENERGY] > 200000) {
+                localMadeUpgradersNeeded += 2;
+            } else if (allReservesCount[roomName + ";" + RESOURCE_ENERGY] > 100000) {
+                localMadeUpgradersNeeded += 1;
+            }
         }
 
         var roomToWorkName1 = null;

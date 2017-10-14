@@ -70,12 +70,12 @@ module.exports = {
             //     });
             // }
 
-            // if(!enemies) {
-            //     var enemies = creep.pos.findClosestByPath(FIND_HOSTILE_STRUCTURES, {
-            //         filter: (s) => s.structureType != STRUCTURE_CONTROLLER &&
-            //             s.room.controller.safeMode == undefined
-            //     });
-            // }
+            if(!enemies) {
+                var enemies = creep.pos.findClosestByPath(FIND_HOSTILE_STRUCTURES, {
+                    filter: (s) => s.structureType != STRUCTURE_CONTROLLER &&
+                        s.room.controller.safeMode == undefined
+                });
+            }
 
             if(creep.room.name == 'E56N19' && enemies == undefined){
                 enemies = creep.pos.findClosestByPath(FIND_STRUCTURES, {filter: (s) => s.structureType != STRUCTURE_CONTROLLER
