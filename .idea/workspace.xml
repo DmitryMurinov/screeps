@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="">
+    <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="Защита сектора">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logic.civilian.js" afterPath="$PROJECT_DIR$/logic.civilian.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +18,8 @@
       <file leaf-file-name="logic.civilian.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/logic.civilian.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="796" column="49" lean-forward="false" selection-start-line="796" selection-start-column="49" selection-end-line="796" selection-end-column="49" />
+            <state relative-caret-position="536">
+              <caret line="495" column="82" lean-forward="true" selection-start-line="495" selection-start-column="82" selection-end-line="495" selection-end-column="82" />
               <folding />
             </state>
           </provider>
@@ -375,14 +376,7 @@
       <workItem from="1507878328295" duration="6498000" />
       <workItem from="1507906864027" duration="15315000" />
       <workItem from="1507965195220" duration="2057000" />
-      <workItem from="1507988018978" duration="18472000" />
-    </task>
-    <task id="LOCAL-00078" summary="Допиливание логики комнат.">
-      <created>1507926572761</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1507926572761</updated>
+      <workItem from="1507988018978" duration="19104000" />
     </task>
     <task id="LOCAL-00079" summary="Допиливание логики комнат.">
       <created>1507926724981</created>
@@ -720,11 +714,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508018300381</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="Защита сектора">
+      <created>1508018447964</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1508018447964</updated>
+    </task>
+    <option name="localTasksCounter" value="128" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60614000" />
+    <option name="totallyTimeSpent" value="61246000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1171,8 +1172,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/logic.civilian.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="796" column="49" lean-forward="false" selection-start-line="796" selection-start-column="49" selection-end-line="796" selection-end-column="49" />
+        <state relative-caret-position="536">
+          <caret line="495" column="82" lean-forward="true" selection-start-line="495" selection-start-column="82" selection-end-line="495" selection-end-column="82" />
           <folding />
         </state>
       </provider>
