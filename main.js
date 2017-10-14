@@ -38,7 +38,7 @@ module.exports.loop = function () {
 
     // var startCpu = Game.cpu.getUsed();
 
-    defendRooms.towers(roomsList);
+    defendRooms.towers(roomsList, gameTime);
 
 
     if(gameTime.substring(gameTime.length - 1, gameTime.length) == ('0' || '5')) {

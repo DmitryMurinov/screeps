@@ -4,7 +4,7 @@ var market = require('market');
 
 module.exports = {
 
-    towers: function (roomsList) {
+    towers: function (roomsList, gameTime) {
 
         for (let i in roomsList) {
             var roomName = roomsList[i];
