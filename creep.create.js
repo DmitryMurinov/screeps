@@ -677,7 +677,7 @@ module.exports = {
                             var createString = eval(constructorString);
                             eval(createString);
                         } else if (localMadeOuterCourierLogic1 < 3) {
-                            var memory = "{role: 'outerCourier1', working: false, origination: '" + roomName + "', arrived: false, roomToBackX: " + 2 + ", " +
+                            var memory = "{role: 'outerCourierLogic1', working: false, origination: '" + roomName + "', arrived: false, roomToBackX: " + 2 + ", " +
                                 "roomToBackY: " + 19 + "," +
                                 "roomToWorkX: " + roomToWorkX1 + ", roomToWorkY: " + roomToWorkY1 + ",  " +
                                 "roomToWorkName: \"" + roomToWorkName1 + "\"}";
@@ -697,7 +697,7 @@ module.exports = {
                             var createString = eval(constructorString);
                             eval(createString);
                         } else if (localMadeOuterCourierLogic2 < 4) {
-                            var memory = "{role: 'outerCourierLogic', working: false, origination: '" + roomName + "', arrived: false, roomToBackX: " + 6 + ", " +
+                            var memory = "{role: 'outerCourierLogic2', working: false, origination: '" + roomName + "', arrived: false, roomToBackX: " + 6 + ", " +
                                 "roomToBackY: " + 2 + "," +
                                 "roomToWorkX: " + roomToWorkX2 + ", roomToWorkY: " + roomToWorkY2 + ",  " +
                                 "roomToWorkName: \"" + roomToWorkName2 + "\"}";
