@@ -202,12 +202,12 @@ module.exports = {
         creepsNeeded.set("controllerAttacker2", 0);
         creepsNeeded.set("outerReserver1", 1);
         creepsNeeded.set("outerReserver2", 1);
-        creepsNeeded.set("outerReserver3", 1);
+        creepsNeeded.set("outerReserver3", 0);
         creepsNeeded.set("outerReserver4", 0);
         creepsNeeded.set("outerReserver5", 0);
         creepsNeeded.set("dismantilist1", 0);
         creepsNeeded.set("dismantilist2", 0);
-        creepsNeeded.set("medic1", 2);
+        creepsNeeded.set("medic1", 0);
         creepsNeeded.set("medic2", 0);
         creepsNeeded.set("sieger", 0);
         creepsNeeded.set("bankir", 1);
