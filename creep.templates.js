@@ -179,6 +179,10 @@ module.exports = {
             ", ATTACK, MOVE, ATTACK, MOVE, ATTACK, MOVE, ATTACK, MOVE, ATTACK, MOVE, ATTACK, MOVE, ATTACK, MOVE" +
             ", MOVE, MOVE, MOVE, MOVE, MOVE, MOVE, ATTACK, MOVE, ATTACK, MOVE, ATTACK, MOVE]";
 
+        var rangedAttacker = "[TOUGH, TOUGH, TOUGH, TOUGH, TOUGH, RANGED_ATTACK, MOVE, " +
+            "RANGED_ATTACK, MOVE, RANGED_ATTACK, MOVE, RANGED_ATTACK, MOVE, RANGED_ATTACK, MOVE, RANGED_ATTACK, MOVE, " +
+            "MOVE, MOVE, MOVE, MOVE, MOVE, MOVE, HEAL]";
+
         var basicCreep = "[WORK, WORK, WORK, WORK, WORK, WORK, WORK, WORK, WORK, WORK, " +
             "CARRY, CARRY, CARRY, CARRY, MOVE, MOVE, MOVE, MOVE, CARRY, CARRY, CARRY, CARRY, MOVE, MOVE, MOVE, MOVE]";
 
@@ -228,6 +232,8 @@ module.exports = {
             return basicCreepOuter;
         } else if (creepType == 'controllerAttacker') {
             return controllerAttacker;
+        } else if (creepType == 'rangedAttacker') {
+            return rangedAttacker;
         } else {
             return "check creepTypes lev 5";
         }

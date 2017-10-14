@@ -36,6 +36,8 @@ module.exports = {
         var localMadeAttackerLogic7 = allCreepsCount[roomName + ";attackerLogic7"];
         var localMadeAttackerLogic8 = allCreepsCount[roomName + ";attackerLogic8"];
 
+        var localMadeRangedAttacker1 = allCreepsCount[roomName + ";rangedAttacker1"];
+
         var localMadeKeeperKiller1 = allCreepsCount[roomName + ";keeperKiller1"];
         var localMadeKeeperKiller2 = allCreepsCount[roomName + ";keeperKiller2"];
         var localMadeKeeperKiller3 = allCreepsCount[roomName + ";keeperKiller3"];
@@ -89,6 +91,7 @@ module.exports = {
         var localMadeAttackerLogic6Needed = creepsNeeded.get("attackerLogic6");
         var localMadeAttackerLogic7Needed = creepsNeeded.get("attackerLogic7");
         var localMadeAttackerLogic8Needed = creepsNeeded.get("attackerLogic8");
+        var localMadeRangedAttacker1Needed = creepsNeeded.get("rangedAttacker1");
         var localMadeKeeperKiller1Needed = creepsNeeded.get("keeperKiller1");
         var localMadeKeeperKiller2Needed = creepsNeeded.get("keeperKiller2");
         var localMadeKeeperKiller3Needed = creepsNeeded.get("keeperKiller3");
@@ -367,6 +370,13 @@ module.exports = {
                         creepsData.get('medic2') +
                         "}";
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 6 + "(\"medicLogic\"), memory)";
+                    var createString = eval(constructorString);
+                    eval(createString);
+                } else if (controllerLevel > 1 && localMadeRangedAttacker1 < localMadeRangedAttacker1Needed) {
+                    var memory = "{role: 'rangedAttacker1', claim: true, working: false, origination: '" + roomName + "', " +
+                        creepsData.get('attacker1') +
+                        "}";
+                    var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 5 + "(\"rangedAttacker1\"), memory)";
                     var createString = eval(constructorString);
                     eval(createString);
                 } else if (controllerLevel > 1 && localMadeAttackerLogic1 < localMadeAttackerLogic1Needed) {
