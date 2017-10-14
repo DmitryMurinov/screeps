@@ -180,7 +180,7 @@ module.exports = {
         creepsNeeded.set("outerHarvesterLogic", 0);
         creepsNeeded.set("outerHarvesterLogic1", 2);
         creepsNeeded.set("outerHarvesterLogic2", 2);
-        creepsNeeded.set("outerHarvesterLogic3", 2);
+        creepsNeeded.set("outerHarvesterLogic3", 0);
         creepsNeeded.set("outerHarvesterLogic4", 0);
         creepsNeeded.set("outerHarvesterLogic5", 0);
         creepsNeeded.set("outerCourierLogic1", 1);
@@ -190,7 +190,7 @@ module.exports = {
         creepsNeeded.set("outerCourierLogic5", 0);
         creepsNeeded.set("attackerLogic1", 1);
         creepsNeeded.set("attackerLogic2", 1);
-        creepsNeeded.set("attackerLogic3", 1);
+        creepsNeeded.set("attackerLogic3", 0);
         creepsNeeded.set("attackerLogic4", 0);
         creepsNeeded.set("attackerLogic5", 0);
         creepsNeeded.set("rangedAttacker1", 1);
@@ -200,10 +200,10 @@ module.exports = {
         creepsNeeded.set("keeperKiller4", 0);
         creepsNeeded.set("keeperKiller5", 0);
         creepsNeeded.set("controllerAttacker1", 0);
-        creepsNeeded.set("controllerAttacker2", 1);
+        creepsNeeded.set("controllerAttacker2", 0);
         creepsNeeded.set("outerReserver1", 1);
         creepsNeeded.set("outerReserver2", 1);
-        creepsNeeded.set("outerReserver3", 0);
+        creepsNeeded.set("outerReserver3", 1);
         creepsNeeded.set("outerReserver4", 0);
         creepsNeeded.set("outerReserver5", 0);
         creepsNeeded.set("dismantilist1", 0);
