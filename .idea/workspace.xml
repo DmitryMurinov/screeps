@@ -18,8 +18,8 @@
       <file leaf-file-name="logic.civilian.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/logic.civilian.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="622" column="0" lean-forward="true" selection-start-line="622" selection-start-column="0" selection-end-line="622" selection-end-column="0" />
+            <state relative-caret-position="-884">
+              <caret line="282" column="4" lean-forward="false" selection-start-line="282" selection-start-column="4" selection-end-line="282" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -377,14 +377,7 @@
       <workItem from="1507878328295" duration="6498000" />
       <workItem from="1507906864027" duration="15315000" />
       <workItem from="1507965195220" duration="2057000" />
-      <workItem from="1507988018978" duration="19733000" />
-    </task>
-    <task id="LOCAL-00080" summary="Допиливание логики комнат.">
-      <created>1507926849468</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1507926849468</updated>
+      <workItem from="1507988018978" duration="19905000" />
     </task>
     <task id="LOCAL-00081" summary="Допиливание логики комнат.">
       <created>1507927629451</created>
@@ -722,11 +715,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508019400931</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <task id="LOCAL-00129" summary="Обновление комнат.">
+      <created>1508020102371</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1508020102371</updated>
+    </task>
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61875000" />
+    <option name="totallyTimeSpent" value="62047000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -781,7 +781,8 @@
     <MESSAGE value="Выбил соседа." />
     <MESSAGE value="Допиливание логики комнат." />
     <MESSAGE value="Защита сектора" />
-    <option name="LAST_COMMIT_MESSAGE" value="Защита сектора" />
+    <MESSAGE value="Обновление комнат." />
+    <option name="LAST_COMMIT_MESSAGE" value="Обновление комнат." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1173,8 +1174,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/logic.civilian.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="622" column="0" lean-forward="true" selection-start-line="622" selection-start-column="0" selection-end-line="622" selection-end-column="0" />
+        <state relative-caret-position="-884">
+          <caret line="282" column="4" lean-forward="false" selection-start-line="282" selection-start-column="4" selection-end-line="282" selection-end-column="4" />
           <folding />
         </state>
       </provider>

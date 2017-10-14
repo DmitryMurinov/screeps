@@ -160,7 +160,7 @@ module.exports = {
             rampartAreas.push(rampartArea4);
             rampartAreas.push(rampartArea5);
 
-            // defendRoom.placeRampartFromArea(roomName, rampartAreas);
+            defendRoom.placeRampartFromArea(roomName, rampartAreas);
         }
 
 
