@@ -56,13 +56,13 @@ module.exports = {
             if (enemy != undefined) {
 
                 var rampart = enemy.pos.findClosestByRange(FIND_MY_STRUCTURES, {filter: (s) =>
-                s.structureType == STRUCTURE_RAMPART &&
+                s.structureType == STRUCTURE_RAMPART /*&&
                 Game.rooms[s.room.name].find(FIND_STRUCTURES, { filter : (si) => si.pos == s.pos &&
                     si.structureType != STRUCTURE_RAMPART && si.structureType != STRUCTURE_CONTAINER &&
                     si.structureType != STRUCTURE_ROAD
                 }).length == 0 &&
                     Game.rooms[s.room.name].find(FIND_CREEPS, { filter : (c) => c.pos == c.pos
-                }).length == 0
+                }).length == 0*/
                 });
 
                 if (creep.rangedAttack(enemy) == ERR_NOT_IN_RANGE) {
