@@ -59,7 +59,7 @@ module.exports = {
         var localMadeBankir = allCreepsCount[roomName + ";bankir"];
         var localMadeCourierMiner = allCreepsCount[roomName + ";courierMiner"];
         var localMadeExausters = allCreepsCount[roomName + ";exauster"];
-
+        var localMadeDefender = allCreepsCount[roomName + ";defender"];
 
         var localMadeBasicCreepsNeeded = creepsNeeded.get("basicCreep");
         var localMadePureHarvestersNeeded = creepsNeeded.get("pureHarvester");
@@ -112,6 +112,9 @@ module.exports = {
         var localMadeBankirNeeded = creepsNeeded.get("bankir");
         var localMadeCourierMinerNeeded = creepsNeeded.get("courierMiner");
         var localMadeExaustersNeeded = creepsNeeded.get("exauster");
+
+        var localMadeDefenderNeeded = 0;
+
 
         var mines = Game.rooms[roomName].find(FIND_MINERALS);
         var mine = mines[0];
@@ -361,7 +364,6 @@ module.exports = {
                         creepsData.get('medic1') +
                         "}";
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 6 + "(\"medicLogic\"), memory)";
-                    var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 6 + "(\"medicLogic\"), memory)";
                     var createString = eval(constructorString);
                     eval(createString);
                 } else if (localMadeMedic2 < localMadeMedic2Needed) {
@@ -371,11 +373,18 @@ module.exports = {
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 6 + "(\"medicLogic\"), memory)";
                     var createString = eval(constructorString);
                     eval(createString);
-                } else if (controllerLevel > 1 && localMadeRangedAttacker1 < localMadeRangedAttacker1Needed) {
+                } else if (controllerLevel > 1 && localMadeDefender < localMadeDefenderNeeded) {
+                    var memory = "{role: 'defender', claim: true, working: false, origination: '" + roomName + "', " +
+                        // creepsData.get('attacker1') +
+                        "}";
+                    var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 5 + "(\"rangedAttacker\"), memory)";
+                    var createString = eval(constructorString);
+                    eval(createString);
+                }else if (controllerLevel > 1 && localMadeRangedAttacker1 < localMadeRangedAttacker1Needed) {
                     var memory = "{role: 'rangedAttacker1', claim: true, working: false, origination: '" + roomName + "', " +
                         creepsData.get('attacker1') +
                         "}";
-                    var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 5 + "(\"rangedAttacker1\"), memory)";
+                    var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 5 + "(\"rangedAttacker\"), memory)";
                     var createString = eval(constructorString);
                     eval(createString);
                 } else if (controllerLevel > 1 && localMadeAttackerLogic1 < localMadeAttackerLogic1Needed) {
