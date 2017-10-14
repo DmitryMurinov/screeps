@@ -76,6 +76,13 @@ module.exports = {
                 if (!enemies && creep.room.controller) {
                     var enemies = creep.pos.findClosestByPath(FIND_HOSTILE_STRUCTURES, {
                         filter: (s) => s.structureType != STRUCTURE_CONTROLLER &&
+                            s.structureType != STRUCTURE_RAMPART &&
+                            s.room.controller.safeMode == undefined
+                    });
+                }
+                if (!enemies && creep.room.controller) {
+                    var enemies = creep.pos.findClosestByPath(FIND_HOSTILE_STRUCTURES, {
+                        filter: (s) => s.structureType != STRUCTURE_CONTROLLER &&
                             s.room.controller.safeMode == undefined
                     });
                 }
