@@ -784,9 +784,9 @@ module.exports = {
             let creepsData = new Map();
 
             creepsData.set("attacker1", "needBoost: false," +
-                "roomToInvestigateName0 : \"E56N18\", roomToInvestigateX0: 19, roomToInvestigateY0: 47," +
-                "roomToInvestigateName1 : \"E57N17\", roomToInvestigateX1: 2, roomToInvestigateY1: 29" +
-                "roomToInvestigateName2 : \"E55N17\", roomToInvestigateX2: 46, roomToInvestigateY2: 32"
+                "roomToInvestigateName0 : \"E56N18\", roomToInvestigateX0: 19, roomToInvestigateY0: 47"
+                + ", roomToInvestigateName1 : \"E57N17\", roomToInvestigateX1: 2, roomToInvestigateY1: 29"
+                + ", roomToInvestigateName2 : \"E55N17\", roomToInvestigateX2: 46, roomToInvestigateY2: 32"
             );
 
             creepsData.set("outerCourier1",
