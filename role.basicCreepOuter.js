@@ -46,14 +46,16 @@ module.exports = {
                     creep.memory.roomToWorkX = creep.memory.roomToWorkX1;
                     creep.memory.roomToWorkY = creep.memory.roomToWorkY1;
                     creep.memory.roomToWorkName = creep.memory.roomToWorkName1;
-                    if (creep.pos.x == creep.memory.roomToWorkX && creep.pos.y == creep.memory.roomToWorkY && creep.room.name == creep.memory.roomToWorkName) {
+                    if (creep.pos.x > 0 && creep.pos.x < 49 && creep.pos.y > 0 && creep.pos.y < 49 &&
+                        creep.room.name == creep.memory.roomToWorkName) {
                         creep.memory.reachedRoom1 = true;
                     }
                 } else if (creep.memory.reachedRoom2 == false) {
                     creep.memory.roomToWorkX = creep.memory.roomToWorkX2;
                     creep.memory.roomToWorkY = creep.memory.roomToWorkY2;
                     creep.memory.roomToWorkName = creep.memory.roomToWorkName2;
-                    if (creep.pos.x == creep.memory.roomToWorkX && creep.pos.y == creep.memory.roomToWorkY && creep.room.name == creep.memory.roomToWorkName) {
+                    if (creep.pos.x > 0 && creep.pos.x < 49 && creep.pos.y > 0 && creep.pos.y < 49 &&
+                        creep.room.name == creep.memory.roomToWorkName) {
                         creep.memory.reachedRoom2 = true;
                     }
                 } else {

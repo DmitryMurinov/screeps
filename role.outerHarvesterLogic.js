@@ -10,7 +10,8 @@ module.exports = {
         }
 
         if (creep.memory.arrived == false) {
-            if (creep.pos.x == creep.memory.roomToWorkX && creep.pos.y == creep.memory.roomToWorkY && creep.room.name == creep.memory.roomToWorkName) {
+            if (creep.pos.x > 0 && creep.pos.x < 49 && creep.pos.y > 0 && creep.pos.y < 49 &&
+                creep.room.name == creep.memory.roomToWorkName) {
                 creep.memory.arrived = true;
                 creep.memory.destinationPath = undefined;
             }
