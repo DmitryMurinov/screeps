@@ -53,7 +53,7 @@ module.exports = {
                             c.owner.username != 'TheCreepz'
                 });
             }
-
+/*
             if (enemies == undefined) {
                 enemies = creep.pos.findClosestByPath(FIND_HOSTILE_STRUCTURES, {
                     filter: (s) => s.structureType != STRUCTURE_CONTROLLER &&
@@ -87,7 +87,7 @@ module.exports = {
                             s.room.controller.safeMode == undefined
                     });
                 }
-            }
+            }*/
 
             if (enemies != undefined) {
 
