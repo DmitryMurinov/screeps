@@ -137,13 +137,13 @@ module.exports = {
             roomMemory.roomToWorkX3 = 20;
             roomMemory.roomToWorkY3 = 2;
 
-            roomMemory.roomToWorkName4 = "E52N15";
-            roomMemory.roomToWorkX4 = 45;
-            roomMemory.roomToWorkY4 = 38;
+            roomMemory.roomToWorkName4 = "E54N16";
+            roomMemory.roomToWorkX4 = 2;
+            roomMemory.roomToWorkY4 = 29;
 
-            roomMemory.roomToWorkName5 = "E54N16";
+            roomMemory.roomToWorkName5 = "E55N16";
             roomMemory.roomToWorkX5 = 2;
-            roomMemory.roomToWorkY5 = 29;
+            roomMemory.roomToWorkY5 = 10;
         }
 
         if (controllerLevel >= 4 && gameTime.substring(gameTime.length - 2, gameTime.length) == '00') {
@@ -198,7 +198,7 @@ module.exports = {
         creepsNeeded.set("keeperKiller2", 0);
         creepsNeeded.set("keeperKiller3", 0);
         creepsNeeded.set("keeperKiller4", 0);
-        creepsNeeded.set("keeperKiller5", 0);
+        creepsNeeded.set("keeperKiller5", 2);
         creepsNeeded.set("controllerAttacker1", 0);
         creepsNeeded.set("controllerAttacker2", 0);
         creepsNeeded.set("outerReserver1", 1);
