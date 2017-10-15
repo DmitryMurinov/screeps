@@ -37,11 +37,11 @@ module.exports = {
             // console.log(creep.room.name + creep.name + creep.memory.role);
 
             if (creep.memory.role.indexOf('attacker') !== -1) {
-                var startCpu = Game.cpu.getUsed();
+                // var startCpu = Game.cpu.getUsed();
                 // console.log(Game.cpu.getUsed() - startCpu);
                 roleAttacker.run(creep);
                 // var startCpu = Game.cpu.getUsed();
-                console.log(Game.cpu.getUsed() - startCpu);
+                // console.log(Game.cpu.getUsed() - startCpu);
             } else if (creep.memory.role == 'refillerWar') {
                 roleRefillerWar.run(creep);
             } else if (creep.memory.role == 'defender') {
@@ -53,7 +53,11 @@ module.exports = {
             } else if (creep.memory.role == 'courierMine') {
                 roleCourierMine.run(creep);
             } else if (creep.memory.role.indexOf('bankir') !== - 1) {
+                var startCpu = Game.cpu.getUsed();
+                // console.log(Game.cpu.getUsed() - startCpu);
                 roleBankir.run(creep);
+                // var startCpu = Game.cpu.getUsed();
+                console.log(Game.cpu.getUsed() - startCpu);
             }
             if (creep.memory.role == 'upgrader') {
                 roleUpgrader.run(creep);
