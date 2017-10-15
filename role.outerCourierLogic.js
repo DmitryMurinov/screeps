@@ -22,6 +22,9 @@ module.exports = {
             creep.memory.doNothingTicks ++;
         }
 
+        creep.memory.previousPositionX = creep.pos.x;
+        creep.memory.previousPositionY = creep.pos.y;
+
         if(creep.memory.doNothingTicks >= 5){
             creep.memory.doNothingTicks = 0;
             creep.memory.storedPath = null;
