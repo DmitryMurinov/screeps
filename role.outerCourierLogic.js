@@ -216,7 +216,7 @@ module.exports = {
 
         //Lay down roads logic:
 
-        if (gameTime.substring(gameTime.length - 1, gameTime.length) == '0' && creep.room.name == 'E54N16') {
+        if (gameTime.substring(gameTime.length - 1, gameTime.length) == ('10' || '30' || '50' || '70' || '90') && creep.room.name == 'E54N16') {
 
             var constructionSites = Game.rooms[creep.room.name].find(FIND_CONSTRUCTION_SITES);
             if (constructionSites.length == 0) {
@@ -225,15 +225,18 @@ module.exports = {
 
                 var startPosition = new RoomPosition(creep.memory.roomToBackX, creep.memory.roomToBackY, creep.memory.origination);
 
-                console.log(sources.length);
 
                 pathLoop:
                 for(var k in sources) {
                     var source = sources[k];
                     let findedPath = this.findPathForRoad(startPosition, source);
 
+
+
                     for (var i in findedPath.path) {
                         var pathPoint = findedPath.path[i];
+
+                        console.log(findedPath.path.length);
 
                         var structure = Game.rooms[pathPoint.roomName].find(FIND_STRUCTURES, {
                             filter: (s) =>
