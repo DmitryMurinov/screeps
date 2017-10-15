@@ -251,7 +251,7 @@ module.exports = {
     findPathForRoad: function (startPosition, endPosition) {
 
         let result = PathFinder.search(
-            creep.pos, goals,
+            startPosition, endPosition,
             {
                 // We need to set the defaults costs higher so that we
                 // can set the road cost lower in `roomCallback`

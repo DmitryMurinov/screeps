@@ -38,8 +38,8 @@
       <file leaf-file-name="role.outerCourierLogic.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/role.outerCourierLogic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="220" column="62" lean-forward="false" selection-start-line="220" selection-start-column="62" selection-end-line="220" selection-end-column="62" />
+            <state relative-caret-position="460">
+              <caret line="253" column="39" lean-forward="true" selection-start-line="253" selection-start-column="39" selection-end-line="253" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -382,14 +382,7 @@
       <workItem from="1507906864027" duration="15315000" />
       <workItem from="1507965195220" duration="2057000" />
       <workItem from="1507988018978" duration="20725000" />
-      <workItem from="1508048013410" duration="9031000" />
-    </task>
-    <task id="LOCAL-00101" summary="Допиливание логики комнат.">
-      <created>1508010046932</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1508010046932</updated>
+      <workItem from="1508048013410" duration="9117000" />
     </task>
     <task id="LOCAL-00102" summary="Допиливание логики комнат.">
       <created>1508010808248</created>
@@ -727,11 +720,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508068516017</updated>
     </task>
-    <option name="localTasksCounter" value="150" />
+    <task id="LOCAL-00150" summary="В процессе добавления логики прокладки дорог курьерами.">
+      <created>1508068716422</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1508068716422</updated>
+    </task>
+    <option name="localTasksCounter" value="151" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71898000" />
+    <option name="totallyTimeSpent" value="71984000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1180,8 +1180,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/role.outerCourierLogic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="220" column="62" lean-forward="false" selection-start-line="220" selection-start-column="62" selection-end-line="220" selection-end-column="62" />
+        <state relative-caret-position="460">
+          <caret line="253" column="39" lean-forward="true" selection-start-line="253" selection-start-column="39" selection-end-line="253" selection-end-column="39" />
           <folding />
         </state>
       </provider>
