@@ -100,6 +100,31 @@ module.exports = {
 
             } else {
 
+                if (!creep.memory.doNothingTicks) {
+                    creep.memory.doNothingTicks = 0;
+                }
+
+                if(!creep.memory.previousPositionX){
+                    creep.memory.previousPositionX = creep.pos.x;
+                }
+
+                if(!creep.memory.previousPositionY){
+                    creep.memory.previousPositionY = creep.pos.y;
+                }
+
+                if(creep.pos.x == creep.memory.previousPositionX && creep.pos.y == creep.memory.previousPositionY){
+                    creep.memory.doNothingTicks ++;
+                }
+
+                creep.memory.previousPositionX = creep.pos.x;
+                creep.memory.previousPositionY = creep.pos.y;
+
+                if(creep.memory.doNothingTicks >= 5){
+                    creep.memory.doNothingTicks = 0;
+                    creep.memory.storedPath = null;
+                    creep.memory.pathNeedUpdate = true;
+                }
+
                 if (creep.memory.healAvailable && creep.hits < creep.hitsMax) {
                     creep.heal(creep);
                 }
