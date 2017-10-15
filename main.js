@@ -41,7 +41,7 @@ module.exports.loop = function () {
     defendRooms.towers(roomsList, gameTime);
 
 
-    if(gameTime.substring(gameTime.length - 1, gameTime.length) == ('0' || '5')) {
+    if(gameTime.substring(gameTime.length - 1, gameTime.length) == ('0')) {
         roomLogicCivilian.runMyRooms(allCreepsCount, gameTime, allReservesCount);
     }
     // console.log(Game.cpu.getUsed() - startCpu);

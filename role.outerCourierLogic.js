@@ -231,8 +231,6 @@ module.exports = {
                     var source = sources[k];
                     let findedPath = this.findPathForRoad(startPosition, source);
 
-
-
                     for (var i in findedPath.path) {
                         var pathPoint = findedPath.path[i];
 
