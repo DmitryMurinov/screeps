@@ -416,7 +416,7 @@ module.exports = {
             creepsNeeded.set("outerCourierLogic3", 0);
             creepsNeeded.set("outerCourierLogic4", 0);
             creepsNeeded.set("outerCourierLogic5", 0);
-            creepsNeeded.set("attackerLogic1", 0);
+            creepsNeeded.set("attackerLogic1", 1);
             creepsNeeded.set("attackerLogic2", 0);
             creepsNeeded.set("attackerLogic3", 0);
             creepsNeeded.set("attackerLogic4", 0);
