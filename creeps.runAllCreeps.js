@@ -7,6 +7,7 @@ var roleBuilder = require('role.builder');
 var roleOuterClaimerLogic = require('role.outerClaimerLogic');
 var roleBasicCreep = require('role.basicCreep');
 var roleBasicCreepOuter = require('role.basicCreepOuter');
+var roleAttacker = require('role.attackerLogic');
 var roleAttackerLogic = require('role.attackerLogic');
 var roleRefillerWar = require('role.refillerWar');
 var roleSiegerLogic = require('role.sieger');
@@ -35,7 +36,7 @@ module.exports = {
 
             // console.log(creep.room.name + creep.name + creep.memory.role);
 
-            if (creep.memory.role == 'attacker') {
+            if (creep.memory.role.indexOf('attacker') !== -1) {
                 var startCpu = Game.cpu.getUsed();
                 // console.log(Game.cpu.getUsed() - startCpu);
                 roleAttacker.run(creep);
@@ -76,9 +77,9 @@ module.exports = {
                 roleBasicCreepOuter.run(creep);
             } else if (creep.memory.role.indexOf('outerReserver') !== -1) {
                 roleOuterReserver.run(creep);
-            } else if (creep.memory.role.indexOf('attackerLogic') !== -1) {
+            } /*else if (creep.memory.role.indexOf('attackerLogic') !== -1) {
                 roleAttackerLogic.run(creep);
-            } else if (creep.memory.role.indexOf('keeperKiller') !== -1) {
+            }*/ else if (creep.memory.role.indexOf('keeperKiller') !== -1) {
                 roleKeeperKiller.run(creep, allCreepsCount, gameTime);
             } else if (creep.memory.role.indexOf('medic') !== - 1) {
                 roleMedicLogic.run(creep);
