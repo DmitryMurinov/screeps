@@ -454,7 +454,7 @@ module.exports = {
                     var memory = "{role: 'basicCreepOuter1', working: false, origination: '" + roomName + "', arrived: false, " +
                         "roomToWorkX1: " + roomToWorkX1 + "," +
                         "roomToWorkY1: " + roomToWorkY1 + "," +
-                        "roomToWorkName1: \"" + roomToWorkName1 + "\"," +
+                        "roomToWorkName1: \"" + roomToWorkName1 + "\"" +
                         "}";
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + controllerLevel1to4 + "(\"basicCreepOuter\"), memory)";
                     var createString = eval(constructorString);
@@ -505,7 +505,7 @@ module.exports = {
                     var memory = "{role: 'basicCreepOuter2', working: false, origination: '" + roomName + "', arrived: false, " +
                         "roomToWorkX1: " + roomToWorkX2 + "," +
                         "roomToWorkY1: " + roomToWorkY2 + "," +
-                        "roomToWorkName1: \"" + roomToWorkName2 + "\"," +
+                        "roomToWorkName1: \"" + roomToWorkName2 + "\"" +
                         "}";
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + controllerLevel1to4 + "(\"basicCreepOuter\"), memory)";
                     var createString = eval(constructorString);
@@ -556,7 +556,7 @@ module.exports = {
                     var memory = "{role: 'basicCreepOuter3', working: false, origination: '" + roomName + "', arrived: false, " +
                         "roomToWorkX1: " + roomToWorkX3 + "," +
                         "roomToWorkY1: " + roomToWorkY3 + "," +
-                        "roomToWorkName1: \"" + roomToWorkName3 + "\"," +
+                        "roomToWorkName1: \"" + roomToWorkName3 + "\"" +
                         "}";
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + controllerLevel1to4 + "(\"basicCreepOuter\"), memory)";
                     var createString = eval(constructorString);
@@ -607,7 +607,7 @@ module.exports = {
                     var memory = "{role: 'basicCreepOuter4', working: false, origination: '" + roomName + "', arrived: false, " +
                         "roomToWorkX1: " + roomToWorkX4 + "," +
                         "roomToWorkY1: " + roomToWorkY4 + "," +
-                        "roomToWorkName1: \"" + roomToWorkName4 + "\"," +
+                        "roomToWorkName1: \"" + roomToWorkName4 + "\"" +
                         "}";
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + controllerLevel1to4 + "(\"basicCreepOuter\"), memory)";
                     var createString = eval(constructorString);
@@ -658,7 +658,7 @@ module.exports = {
                     var memory = "{role: 'basicCreepOuter5', working: false, origination: '" + roomName + "', arrived: false, " +
                         "roomToWorkX1: " + roomToWorkX5 + "," +
                         "roomToWorkY1: " + roomToWorkY5 + "," +
-                        "roomToWorkName1: \"" + roomToWorkName5 + "\"," +
+                        "roomToWorkName1: \"" + roomToWorkName5 + "\"" +
                         "}";
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + controllerLevel1to4 + "(\"basicCreepOuter\"), memory)";
                     var createString = eval(constructorString);
