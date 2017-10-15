@@ -231,7 +231,7 @@ module.exports = {
                     let findedPath = this.findPathForRoad(startPosition, source);
 
                     for (var i in findedPath.path) {
-                        var pathPoint = new RoomPosition(findedPath.path[i]);
+                        var pathPoint = findedPath.path[i];
 
                         var structure = Game.rooms[pathPoint.roomName].find(FIND_STRUCTURES, {
                             filter: (s) =>
