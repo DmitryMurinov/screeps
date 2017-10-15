@@ -174,19 +174,19 @@ module.exports = {
         creepsNeeded.set("basicCreepOuter1", 1);
         creepsNeeded.set("basicCreepOuter2", 1);
         creepsNeeded.set("basicCreepOuter3", 1);
-        creepsNeeded.set("basicCreepOuter4", 0);
+        creepsNeeded.set("basicCreepOuter4", 2);
         creepsNeeded.set("basicCreepOuter5", 0);
         creepsNeeded.set("basicCreepOuter6", 0);
         creepsNeeded.set("outerHarvesterLogic", 0);
         creepsNeeded.set("outerHarvesterLogic1", 2);
         creepsNeeded.set("outerHarvesterLogic2", 2);
-        creepsNeeded.set("outerHarvesterLogic3", 0);
-        creepsNeeded.set("outerHarvesterLogic4", 0);
+        creepsNeeded.set("outerHarvesterLogic3", 2);
+        creepsNeeded.set("outerHarvesterLogic4", 3);
         creepsNeeded.set("outerHarvesterLogic5", 0);
         creepsNeeded.set("outerCourierLogic1", 1);
         creepsNeeded.set("outerCourierLogic2", 1);
         creepsNeeded.set("outerCourierLogic3", 1);
-        creepsNeeded.set("outerCourierLogic4", 0);
+        creepsNeeded.set("outerCourierLogic4", 2);
         creepsNeeded.set("outerCourierLogic5", 0);
         creepsNeeded.set("attackerLogic1", 1);
         creepsNeeded.set("attackerLogic2", 1);
@@ -197,8 +197,8 @@ module.exports = {
         creepsNeeded.set("keeperKiller1", 0);
         creepsNeeded.set("keeperKiller2", 0);
         creepsNeeded.set("keeperKiller3", 0);
-        creepsNeeded.set("keeperKiller4", 0);
-        creepsNeeded.set("keeperKiller5", 2);
+        creepsNeeded.set("keeperKiller4", 2);
+        creepsNeeded.set("keeperKiller5", 0);
         creepsNeeded.set("controllerAttacker1", 0);
         creepsNeeded.set("controllerAttacker2", 0);
         creepsNeeded.set("outerReserver1", 1);
@@ -230,6 +230,8 @@ module.exports = {
             "roomToInvestigateName0 : \"E56N19\", roomToInvestigateX0: 30, roomToInvestigateY0: 45" // ",roomToInvestigateName1 : \"E53N14\", roomToInvestigateX1: 14, roomToInvestigateY1: 23" +
         );
 
+        creepsData.set("outerHarverster4Level", 5);
+
         creepsData.set("outerCourier1",
             "roomToBackX: 2, roomToBackY: 19, linkRoomX: 2, linkRoomY: 18, "
         );
@@ -240,6 +242,10 @@ module.exports = {
 
         creepsData.set("outerCourier3",
             "roomToBackX: 20, roomToBackY: 47, linkRoomX: 21, linkRoomY: 47, "
+        );
+
+        creepsData.set("outerCourier4",
+            "roomToBackX: 47, roomToBackY: 31, linkRoomX: 47, linkRoomY: 30, "
         );
 
         creepsData.set("controllerAttacker1", "needBoost: false," +

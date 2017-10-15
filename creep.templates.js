@@ -172,8 +172,10 @@ module.exports = {
 
         //max 1800
 
-        var outerHarvesterLogic = "[WORK, WORK, WORK, WORK, WORK, CARRY, CARRY, CARRY," +
-            "CARRY, CARRY, CARRY, CARRY, CARRY, CARRY, CARRY, CARRY, CARRY, MOVE, MOVE, MOVE, MOVE]";
+        //OuterHarvesterForCentralPart
+
+        var outerHarvesterLogic = "[WORK, WORK, WORK, WORK, WORK, WORK, WORK, WORK, WORK, " +
+            " CARRY, CARRY, MOVE, MOVE, MOVE, MOVE, MOVE, MOVE]";
 
         var attackerLogic = "[TOUGH, TOUGH, TOUGH, TOUGH, TOUGH, TOUGH, ATTACK, MOVE" +
             ", ATTACK, MOVE, ATTACK, MOVE, ATTACK, MOVE, ATTACK, MOVE, ATTACK, MOVE, ATTACK, MOVE, ATTACK, MOVE" +
