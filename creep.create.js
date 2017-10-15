@@ -109,8 +109,8 @@ module.exports = {
         var localMadeMedic1Needed = creepsNeeded.get("medic1");
         var localMadeMedic2Needed = creepsNeeded.get("medic2");
         var localMadeSiegerNeeded = creepsNeeded.get("sieger");
-        var localMadeBankirNeeded = creepsNeeded.get("bankir");
-        var localMadeCourierMinerNeeded = creepsNeeded.get("courierMiner");
+        // var localMadeBankirNeeded = creepsNeeded.get("bankir");
+        // var localMadeCourierMinerNeeded = creepsNeeded.get("courierMiner");
         var localMadeExaustersNeeded = creepsNeeded.get("exauster");
 
         var localMadeDefenderNeeded = 0;
@@ -150,6 +150,12 @@ module.exports = {
         var localMadePureMinersNeeded = 0;
         if (mine.mineralAmount > 0 && roomMemory.haveExtractor == true) {
             localMadePureMinersNeeded = 1;
+        }
+
+        var localMadeBankirNeeded = 0;
+
+        if(controllerLevel >= 6){
+            localMadeBankirNeeded = 1;
         }
 
         if(controllerLevel < 8) {

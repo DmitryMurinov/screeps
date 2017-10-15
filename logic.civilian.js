@@ -915,8 +915,8 @@ module.exports = {
             creepsNeeded.set("medic1", 0);
             creepsNeeded.set("medic2", 0);
             creepsNeeded.set("sieger", 0);
-            creepsNeeded.set("bankir", 1);
-            creepsNeeded.set("courierMiner", 0);
+            // creepsNeeded.set("bankir", 1);
+            // creepsNeeded.set("courierMiner", 0);
             creepsNeeded.set("exauster", 0);
 
             let creepsData = new Map();
