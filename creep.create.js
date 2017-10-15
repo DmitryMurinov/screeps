@@ -720,7 +720,7 @@ module.exports = {
                             var memory = "{role: 'attackerLogic1', claim: true, working: false, origination: '" + roomName + "', " +
                                 creepsData.get('attacker1') +
                                 "}";
-                            var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 3 + "(\"attackerLogic\"), memory)";
+                            var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + controllerLevel + "(\"attackerLogic\"), memory)";
                             var createString = eval(constructorString);
                             eval(createString);
                         } else if (localMadeBasicCreepsOuter1 < localMadeBasicCreepsOuter1Needed) {
