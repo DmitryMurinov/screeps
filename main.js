@@ -23,8 +23,11 @@ module.exports.loop = function () {
         }
     }
 
+    var startCpu = Game.cpu.getUsed();
+
     runAllCreeps.run(allCreepsCount, gameTime);
 
+    console.log(Game.cpu.getUsed() - startCpu);
 
 
     var roomsList = helperCounter.roomsList();
@@ -36,11 +39,9 @@ module.exports.loop = function () {
 
     var allReservesCount = helperCounter.countAllReserves();
 
-    var startCpu = Game.cpu.getUsed();
 
     defendRooms.towers(roomsList, gameTime);
 
-    console.log(Game.cpu.getUsed() - startCpu);
 
     if(gameTime.substring(gameTime.length - 1, gameTime.length) == ('0')) {
         roomLogicCivilian.runMyRooms(allCreepsCount, gameTime, allReservesCount);
