@@ -86,6 +86,8 @@ module.exports = {
         //     "TOUGH, TOUGH, TOUGH, TOUGH, TOUGH, TOUGH, TOUGH, TOUGH, TOUGH, TOUGH," +
         //     "MOVE, MOVE, MOVE, MOVE, MOVE, MOVE, MOVE, MOVE, MOVE, MOVE]";
 
+        var basicCreepOuter = "[WORK, WORK, WORK, WORK, CARRY, CARRY, CARRY, CARRY, MOVE, MOVE, MOVE, MOVE]";
+
         var exauster = "[TOUGH, TOUGH, TOUGH, TOUGH, TOUGH, TOUGH, " +
             "MOVE, MOVE, MOVE, MOVE, " +
             "HEAL, HEAL]";
@@ -106,6 +108,8 @@ module.exports = {
             return attackerLogic;
         } else if (creepType == 'exauster') {
             return exauster;
+        } else if (creepType == 'basicCreepOuter') {
+            return basicCreepOuter;
         } else if (creepType == 'controllerAttacker') {
             return controllerAttacker;
         } else {
@@ -127,8 +131,6 @@ module.exports = {
 
         var dismantilist = "[WORK, WORK, WORK, WORK, WORK, WORK, WORK, WORK, MOVE, MOVE, MOVE, MOVE]";
 
-        var basicCreepOuter = "[WORK, WORK, WORK, CARRY, MOVE, MOVE]";
-
         var pureHarvester = "[WORK, WORK, WORK, WORK, WORK, WORK, WORK, CARRY, MOVE, MOVE, MOVE]";
 
         var courier = "[CARRY, CARRY, MOVE, CARRY, CARRY, MOVE, CARRY, CARRY, MOVE, CARRY, CARRY, MOVE, " +
@@ -141,6 +143,9 @@ module.exports = {
 
         var outerCourierLogic = "[CARRY, CARRY, MOVE, CARRY, CARRY, MOVE, CARRY, CARRY, MOVE, CARRY, CARRY, MOVE, " +
             "CARRY, CARRY, MOVE, CARRY, CARRY, MOVE, CARRY, CARRY, MOVE, CARRY, CARRY, MOVE]";
+
+        var basicCreepOuter = "[WORK, WORK, WORK, WORK, WORK, CARRY, CARRY, CARRY, CARRY, CARRY, " +
+            "MOVE, MOVE, MOVE, MOVE, MOVE, MOVE, MOVE, MOVE, MOVE, MOVE]";
 
         if (creepType == 'basicCreep') {
             return basicCreep;
