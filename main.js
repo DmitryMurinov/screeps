@@ -23,11 +23,11 @@ module.exports.loop = function () {
         }
     }
 
-    var startCpu = Game.cpu.getUsed();
+    // var startCpu = Game.cpu.getUsed();
 
     runAllCreeps.run(allCreepsCount, gameTime);
 
-    console.log(Game.cpu.getUsed() - startCpu);
+    // console.log(Game.cpu.getUsed() - startCpu);
 
 
     var roomsList = helperCounter.roomsList();

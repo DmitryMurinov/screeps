@@ -36,7 +36,11 @@ module.exports = {
             // console.log(creep.room.name + creep.name + creep.memory.role);
 
             if (creep.memory.role == 'attacker') {
+                var startCpu = Game.cpu.getUsed();
+                // console.log(Game.cpu.getUsed() - startCpu);
                 roleAttacker.run(creep);
+                // var startCpu = Game.cpu.getUsed();
+                console.log(Game.cpu.getUsed() - startCpu);
             } else if (creep.memory.role == 'refillerWar') {
                 roleRefillerWar.run(creep);
             } else if (creep.memory.role == 'defender') {
