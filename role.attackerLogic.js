@@ -50,7 +50,7 @@ module.exports = {
                 enemies = creep.pos.findClosestByPath(FIND_HOSTILE_CREEPS, {
                     filter:
                         (c) => c.owner.username != 'Source Keeper' &&
-                            c.owner.username != 'Creepz'
+                            c.owner.username != 'TheCreepz'
                 });
             }
 
