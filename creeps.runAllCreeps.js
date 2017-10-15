@@ -63,7 +63,7 @@ module.exports = {
             } else if (creep.memory.role.indexOf('outerHarvesterLogic') !== - 1) {
                 roleOuterHarvesterLogic.run(creep);
             } else if (creep.memory.role.indexOf('outerCourierLogic') !== -1) {
-                roleOuterCourierLogic.run(creep);
+                roleOuterCourierLogic.run(creep, gameTime);
             } else if (creep.memory.role.indexOf('outerClaimerLogic') !== -1) {
                 roleOuterClaimerLogic.run(creep);
             } else if (creep.memory.role == 'basicCreep') {
