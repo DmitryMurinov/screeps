@@ -242,7 +242,7 @@ module.exports = {
 
                             // console.log(!structure);
 
-                            if (structure.length == 0 && (terrain == 'plain' || terrain == 'swamp') && pathPoint.roomName == creep.room.name
+                            if (structure.length == 0 && (terrain == 'plain' || terrain == 'swamp')
                                 && pathPoint.x > 0 && pathPoint.x < 49 && pathPoint.y > 0 && pathPoint.y < 49) {
 
                                 var result = Game.rooms[pathPoint.roomName].createConstructionSite(pathPoint, STRUCTURE_ROAD);
