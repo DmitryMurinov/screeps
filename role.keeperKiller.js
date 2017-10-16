@@ -4,9 +4,14 @@ module.exports = {
 
         //TransferLogic:
 
+        if(creep.memory.arrived == true && creep.room.name != creep.memory.roomToWorkName1
+        && creep.room.name != creep.memory.roomToWorkName2){
+            creep.memory.arrived = false;
+            creep.memory.reachedRoom1 = false;
+            creep.memory.reachedRoom2 = false;
+        }
+
         if (creep.memory.arrived == false && creep.memory.roomToWorkName1) {
-
-
 
             if (creep.hits < creep.hitsMax) {
                 creep.heal(creep);

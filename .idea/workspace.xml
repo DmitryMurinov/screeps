@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/role.outerCourierLogic.js" afterPath="$PROJECT_DIR$/role.outerCourierLogic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/role.keeperKiller.js" afterPath="$PROJECT_DIR$/role.keeperKiller.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,17 +45,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="role.keeperKiller.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="role.keeperKiller.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/role.keeperKiller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="318" column="29" lean-forward="false" selection-start-line="318" selection-start-column="29" selection-end-line="318" selection-end-column="29" />
+            <state relative-caret-position="170">
+              <caret line="10" column="46" lean-forward="true" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="role.outerCourierLogic.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="role.outerCourierLogic.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/role.outerCourierLogic.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
@@ -203,8 +203,8 @@
         <option value="$PROJECT_DIR$/main.js" />
         <option value="$PROJECT_DIR$/role.attackerLogic.js" />
         <option value="$PROJECT_DIR$/creeps.runAllCreeps.js" />
-        <option value="$PROJECT_DIR$/role.keeperKiller.js" />
         <option value="$PROJECT_DIR$/role.outerCourierLogic.js" />
+        <option value="$PROJECT_DIR$/role.keeperKiller.js" />
       </list>
     </option>
   </component>
@@ -386,14 +386,7 @@
       <workItem from="1508048013410" duration="9410000" />
       <workItem from="1508075824982" duration="2724000" />
       <workItem from="1508176490823" duration="601000" />
-      <workItem from="1508178832994" duration="2582000" />
-    </task>
-    <task id="LOCAL-00119" summary="Защита сектора">
-      <created>1508016550065</created>
-      <option name="number" value="00119" />
-      <option name="presentableId" value="LOCAL-00119" />
-      <option name="project" value="LOCAL" />
-      <updated>1508016550065</updated>
+      <workItem from="1508178832994" duration="3140000" />
     </task>
     <task id="LOCAL-00120" summary="Защита сектора">
       <created>1508016809958</created>
@@ -731,11 +724,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508182112971</updated>
     </task>
-    <option name="localTasksCounter" value="168" />
+    <task id="LOCAL-00168" summary="Добавил прокладку дорог курьерами.">
+      <created>1508182166622</created>
+      <option name="number" value="00168" />
+      <option name="presentableId" value="LOCAL-00168" />
+      <option name="project" value="LOCAL" />
+      <updated>1508182166622</updated>
+    </task>
+    <option name="localTasksCounter" value="169" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78184000" />
+    <option name="totallyTimeSpent" value="78742000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1149,14 +1149,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/role.keeperKiller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="318" column="29" lean-forward="false" selection-start-line="318" selection-start-column="29" selection-end-line="318" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/role.attackerLogic.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1177,6 +1169,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="263" column="0" lean-forward="true" selection-start-line="263" selection-start-column="0" selection-end-line="263" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.keeperKiller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="46" lean-forward="true" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
           <folding />
         </state>
       </provider>
