@@ -245,12 +245,13 @@ module.exports = {
                         }
                     }
 
-                var leftUpperCorner = new RoomPosition(1, 1, creep.room.name);
+                if (sources.length == 3) {
+                    var leftUpperCorner = new RoomPosition(1, 1, creep.room.name);
 
-                var lair1 = leftUpperCorner.findClosestByRange(FIND_STRUCTURES, {
-                    filter: (s) => s.structureType == STRUCTURE_KEEPER_LAIR
-                });
-                if (lair1) {
+                    var lair1 = leftUpperCorner.findClosestByRange(FIND_STRUCTURES, {
+                        filter: (s) => s.structureType == STRUCTURE_KEEPER_LAIR
+                    });
+
                     var lair2 = lair1.pos.findClosestByRange(FIND_STRUCTURES, {
                         filter: (s) => s.structureType == STRUCTURE_KEEPER_LAIR
                             && s.pos != lair1.pos

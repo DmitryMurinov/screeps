@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/creep.create.js" afterPath="$PROJECT_DIR$/creep.create.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/role.outerCourierLogic.js" afterPath="$PROJECT_DIR$/role.outerCourierLogic.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,6 +15,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="logic.civilian.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logic.civilian.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="884">
+              <caret line="126" column="13" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="role.keeperKiller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/role.keeperKiller.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -25,17 +35,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="role.outerCourierLogic.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="role.outerCourierLogic.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/role.outerCourierLogic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3791">
-              <caret line="223" column="60" lean-forward="false" selection-start-line="223" selection-start-column="60" selection-end-line="223" selection-end-column="60" />
+            <state relative-caret-position="465">
+              <caret line="247" column="42" lean-forward="false" selection-start-line="247" selection-start-column="42" selection-end-line="247" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="creep.create.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="creep.create.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/creep.create.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
@@ -48,8 +58,8 @@
       <file leaf-file-name="creep.templates.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/creep.templates.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="182" column="74" lean-forward="false" selection-start-line="182" selection-start-column="74" selection-end-line="182" selection-end-column="74" />
+            <state relative-caret-position="340">
+              <caret line="338" column="38" lean-forward="false" selection-start-line="338" selection-start-column="38" selection-end-line="338" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -100,16 +110,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
               <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="19" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="role.bankir.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/role.bankir.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="113" column="25" lean-forward="true" selection-start-line="113" selection-start-column="25" selection-end-line="113" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -205,8 +205,8 @@
         <option value="$PROJECT_DIR$/creep.templates.js" />
         <option value="$PROJECT_DIR$/role.outerHarvesterLogic.js" />
         <option value="$PROJECT_DIR$/links.js" />
-        <option value="$PROJECT_DIR$/role.outerCourierLogic.js" />
         <option value="$PROJECT_DIR$/creep.create.js" />
+        <option value="$PROJECT_DIR$/role.outerCourierLogic.js" />
       </list>
     </option>
   </component>
@@ -388,14 +388,7 @@
       <workItem from="1508048013410" duration="9410000" />
       <workItem from="1508075824982" duration="2724000" />
       <workItem from="1508176490823" duration="601000" />
-      <workItem from="1508178832994" duration="7044000" />
-    </task>
-    <task id="LOCAL-00130" summary="Обновление комнат.">
-      <created>1508020262751</created>
-      <option name="number" value="00130" />
-      <option name="presentableId" value="LOCAL-00130" />
-      <option name="project" value="LOCAL" />
-      <updated>1508020262751</updated>
+      <workItem from="1508178832994" duration="7876000" />
     </task>
     <task id="LOCAL-00131" summary="Обновление комнат.">
       <created>1508020851948</created>
@@ -733,11 +726,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508186040293</updated>
     </task>
-    <option name="localTasksCounter" value="179" />
+    <task id="LOCAL-00179" summary="Допиливание строительства дорог.">
+      <created>1508186628363</created>
+      <option name="number" value="00179" />
+      <option name="presentableId" value="LOCAL-00179" />
+      <option name="project" value="LOCAL" />
+      <updated>1508186628363</updated>
+    </task>
+    <option name="localTasksCounter" value="180" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82646000" />
+    <option name="totallyTimeSpent" value="83478000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1063,14 +1063,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logic.civilian.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2142">
-          <caret line="126" column="13" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -1151,14 +1143,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/role.outerClaimerLogic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/role.keeperKiller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="487">
@@ -1167,26 +1151,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/role.outerCourierLogic.js">
+    <entry file="file://$PROJECT_DIR$/creep.create.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3791">
-          <caret line="223" column="60" lean-forward="false" selection-start-line="223" selection-start-column="60" selection-end-line="223" selection-end-column="60" />
+        <state relative-caret-position="340">
+          <caret line="583" column="86" lean-forward="true" selection-start-line="583" selection-start-column="86" selection-end-line="583" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.outerClaimerLogic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic.civilian.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="126" column="13" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/creep.templates.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="182" column="74" lean-forward="false" selection-start-line="182" selection-start-column="74" selection-end-line="182" selection-end-column="74" />
+        <state relative-caret-position="340">
+          <caret line="338" column="38" lean-forward="false" selection-start-line="338" selection-start-column="38" selection-end-line="338" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/creep.create.js">
+    <entry file="file://$PROJECT_DIR$/role.outerCourierLogic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="583" column="86" lean-forward="true" selection-start-line="583" selection-start-column="86" selection-end-line="583" selection-end-column="86" />
+        <state relative-caret-position="465">
+          <caret line="247" column="42" lean-forward="false" selection-start-line="247" selection-start-column="42" selection-end-line="247" selection-end-column="42" />
           <folding />
         </state>
       </provider>
