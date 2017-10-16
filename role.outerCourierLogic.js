@@ -215,8 +215,8 @@ module.exports = {
         }
 
         //Lay down roads logic:
-        // gameTime.substring(gameTime.length - 1, gameTime.length) == ('10' || '30' || '50' || '70' || '90') &&
-        if ( creep.name == 'Chase') {
+        if (gameTime.substring(gameTime.length - 3, gameTime.length) == '250' ||
+            gameTime.substring(gameTime.length - 3, gameTime.length) == '500') {
 
             var constructionSites = Game.rooms[creep.room.name].find(FIND_CONSTRUCTION_SITES);
             if (constructionSites.length == 0) {
@@ -225,28 +225,31 @@ module.exports = {
 
                 var startPosition = new RoomPosition(creep.memory.roomToBackX, creep.memory.roomToBackY, creep.memory.origination);
 
-
                 pathLoop:
-                for(var k in sources) {
-                    var source = sources[k];
-                    let findedPath = this.findPathForRoad(startPosition, source);
+                    for(var k in sources) {
+                        var source = sources[k];
+                        let findedPath = this.findPathForRoad(startPosition, source);
 
-                    for (var i in findedPath.path) {
-                        var pathPoint = findedPath.path[i];
+                        for (var i in findedPath.path) {
+                            var pathPoint = findedPath.path[i];
 
-                        console.log(findedPath.path.length);
 
-                        var structure = Game.rooms[pathPoint.roomName].find(FIND_STRUCTURES, {
-                            filter: (s) =>
-                                s.structureType == STRUCTURE_ROAD && s.pos == pathPoint
-                        });
-                        var terrain = Game.map.getTerrainAt(pathPoint);
-                        if (!structure && terrain == ('plain' || 'swamp')) {
-                            Game.rooms[pathPoint.roomName].createConstructionSite(structuresForRampart[0].pos, STRUCTURE_ROAD);
-                            break pathLoop;
+                            var structure = Game.rooms[pathPoint.roomName].find(FIND_STRUCTURES, {
+                                filter: (s) =>
+                                    s.structureType == STRUCTURE_ROAD && s.pos == pathPoint
+                            });
+                            var terrain = Game.map.getTerrainAt(pathPoint);
+
+                            // console.log(!structure);
+
+                            if (structure.length == 0 && (terrain == 'plain' || terrain == 'swamp') && pathPoint.roomName == creep.room.name
+                                && pathPoint.x > 0 && pathPoint.x < 49 && pathPoint.y > 0 && pathPoint.y < 49) {
+
+                                var result = Game.rooms[pathPoint.roomName].createConstructionSite(pathPoint, STRUCTURE_ROAD);
+                                break pathLoop;
+                            }
                         }
                     }
-                }
             }
         }
     },
