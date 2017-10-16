@@ -171,6 +171,9 @@ module.exports = {
                             creep.memory.storedPath = creep.pos.findPathTo(enemy);
                         }
                         creep.moveByPath(creep.memory.storedPath);
+                        if (creep.hits < creep.hitsMax) {
+                            creep.heal(creep);
+                        }
                     }
                 } else {
                     creep.memory.enemyId = null;
@@ -257,6 +260,9 @@ module.exports = {
                                 creep.memory.storedPath = creep.pos.findPathTo(enemy);
                             }
                             creep.moveByPath(creep.memory.storedPath);
+                            if (creep.hits < creep.hitsMax) {
+                                creep.heal(creep);
+                            }
                         }
                     } else {
                         creep.memory.enemyId = null;
@@ -308,6 +314,9 @@ module.exports = {
                                 creep.memory.storedPath = creep.pos.findPathTo(enemy);
                             }
                             creep.moveByPath(creep.memory.storedPath);
+                            if (creep.hits < creep.hitsMax) {
+                                creep.heal(creep);
+                            }
                         }
                     } else {
                         creep.memory.enemyId = null;
