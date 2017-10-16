@@ -234,9 +234,6 @@ module.exports = {
                     var enemy;
 
                     if (!creep.memory.enemyId) {
-                        if (creep.hits < creep.hitsMax) {
-                            creep.heal(creep);
-                        } else {
                             enemy = creep.pos.findClosestByPath(FIND_HOSTILE_CREEPS, {
                                 filter: (c) =>
                                     c.pos.inRangeTo(lair1, 5) ||
@@ -246,7 +243,6 @@ module.exports = {
                                 creep.memory.enemyId = enemy.id;
                                 creep.memory.storedPath = null;
                             }
-                        }
                     } else {
                         enemy = Game.getObjectById(creep.memory.enemyId);
                     }
@@ -279,6 +275,9 @@ module.exports = {
                             creep.memory.storedPath = creep.pos.findPathTo(lair);
                         } else {
                             creep.moveByPath(creep.memory.storedPath);
+                            if (creep.hits < creep.hitsMax) {
+                                creep.heal(creep);
+                            }
                         }
                     }
                 } else {
@@ -289,9 +288,6 @@ module.exports = {
                     var enemy;
 
                     if (!creep.memory.enemyId) {
-                        if (creep.hits < creep.hitsMax) {
-                            creep.heal(creep);
-                        } else {
                             enemy = creep.pos.findClosestByPath(FIND_HOSTILE_CREEPS, {
                                 filter: (c) =>
                                     c.pos.inRangeTo(lair3, 5) ||
@@ -300,7 +296,6 @@ module.exports = {
                             if (enemy) {
                                 creep.memory.enemyId = enemy.id;
                             }
-                        }
                     } else {
                         enemy = Game.getObjectById(creep.memory.enemyId);
                     }
@@ -333,6 +328,9 @@ module.exports = {
                             creep.memory.storedPath = creep.pos.findPathTo(lair);
                         } else {
                             creep.moveByPath(creep.memory.storedPath);
+                            if (creep.hits < creep.hitsMax) {
+                                creep.heal(creep);
+                            }
                         }
                     }
 
