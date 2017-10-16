@@ -215,42 +215,124 @@ module.exports = {
         }
 
         //Lay down roads logic:
-        if (gameTime.substring(gameTime.length - 1, gameTime.length) == '0' ||
+        if (gameTime.substring(gameTime.length - 1, gameTime.length) == '250' ||
             gameTime.substring(gameTime.length - 3, gameTime.length) == '750' && creep.room.name == creep.memory.roomToWorkName) {
 
             var constructionSites = Game.rooms[creep.room.name].find(FIND_CONSTRUCTION_SITES);
             if (constructionSites.length == 0) {
 
                 let sources = creep.room.find(FIND_SOURCES);
-
                 var startPosition = new RoomPosition(creep.memory.roomToBackX, creep.memory.roomToBackY, creep.memory.origination);
 
-                pathLoop:
-                    for(var k in sources) {
+                pathLoopSources:
+                    for (var k in sources) {
                         var source = sources[k];
                         let findedPath = this.findPathForRoad(startPosition, source);
-
                         for (var i in findedPath.path) {
                             var pathPoint = findedPath.path[i];
-
-
                             var structure = Game.rooms[pathPoint.roomName].find(FIND_STRUCTURES, {
                                 filter: (s) =>
-                                    s.structureType == STRUCTURE_ROAD && s.pos == pathPoint
+                                    s.structureType == STRUCTURE_ROAD && s.pos.roomName == pathPoint.roomName
+                                    && s.pos.x == pathPoint.x && s.pos.y == pathPoint.y
                             });
                             var terrain = Game.map.getTerrainAt(pathPoint);
 
                             if (structure.length == 0 && (terrain == 'plain' || terrain == 'swamp')
                                 && pathPoint.x > 0 && pathPoint.x < 49 && pathPoint.y > 0 && pathPoint.y < 49) {
-
                                 var result = Game.rooms[pathPoint.roomName].createConstructionSite(pathPoint, STRUCTURE_ROAD);
-
-                                console.log(pathPoint + " " + result);
-
-                                break pathLoop;
+                                break pathLoopSources;
                             }
                         }
                     }
+
+                var leftUpperCorner = new RoomPosition(1, 1, creep.room.name);
+
+                var lair1 = leftUpperCorner.findClosestByRange(FIND_STRUCTURES, {
+                    filter: (s) => s.structureType == STRUCTURE_KEEPER_LAIR
+                });
+                if (lair1) {
+                    var lair2 = lair1.pos.findClosestByRange(FIND_STRUCTURES, {
+                        filter: (s) => s.structureType == STRUCTURE_KEEPER_LAIR
+                            && s.pos != lair1.pos
+                    });
+                    var lair3 = lair2.pos.findClosestByRange(FIND_STRUCTURES, {
+                        filter: (s) => s.structureType == STRUCTURE_KEEPER_LAIR
+                            && s.pos != lair1.pos && s.pos != lair2.pos
+                    });
+                    var lair4 = lair3.pos.findClosestByRange(FIND_STRUCTURES, {
+                        filter: (s) => s.structureType == STRUCTURE_KEEPER_LAIR
+                            && s.pos != lair1.pos && s.pos != lair2.pos && s.pos != lair3.pos
+                    });
+
+                    let findedPath = this.findPathForRoad(lair1, lair2);
+                    pathLoopLair1:
+                        for (var i in findedPath.path) {
+                            var pathPoint = findedPath.path[i];
+                            var structure = Game.rooms[pathPoint.roomName].find(FIND_STRUCTURES, {
+                                filter: (s) =>
+                                    s.structureType == STRUCTURE_ROAD && s.pos.roomName == pathPoint.roomName
+                                    && s.pos.x == pathPoint.x && s.pos.y == pathPoint.y
+                            });
+                            var terrain = Game.map.getTerrainAt(pathPoint);
+                            if (structure.length == 0 && (terrain == 'plain' || terrain == 'swamp')
+                                && pathPoint.x > 0 && pathPoint.x < 49 && pathPoint.y > 0 && pathPoint.y < 49) {
+                                Game.rooms[pathPoint.roomName].createConstructionSite(pathPoint, STRUCTURE_ROAD);
+                                break pathLoopLair1;
+                            }
+                        }
+
+                    findedPath = this.findPathForRoad(lair2, lair3);
+                    pathLoopLair2:
+                        for (var i in findedPath.path) {
+                            var pathPoint = findedPath.path[i];
+                            var structure = Game.rooms[pathPoint.roomName].find(FIND_STRUCTURES, {
+                                filter: (s) =>
+                                    s.structureType == STRUCTURE_ROAD && s.pos.roomName == pathPoint.roomName
+                                    && s.pos.x == pathPoint.x && s.pos.y == pathPoint.y
+                            });
+                            var terrain = Game.map.getTerrainAt(pathPoint);
+                            if (structure.length == 0 && (terrain == 'plain' || terrain == 'swamp')
+                                && pathPoint.x > 0 && pathPoint.x < 49 && pathPoint.y > 0 && pathPoint.y < 49) {
+                                Game.rooms[pathPoint.roomName].createConstructionSite(pathPoint, STRUCTURE_ROAD);
+                                break pathLoopLair2;
+                            }
+                        }
+
+                    findedPath = this.findPathForRoad(lair3, lair4);
+                    pathLoopLair3:
+                        for (var i in findedPath.path) {
+                            var pathPoint = findedPath.path[i];
+                            var structure = Game.rooms[pathPoint.roomName].find(FIND_STRUCTURES, {
+                                filter: (s) =>
+                                    s.structureType == STRUCTURE_ROAD && s.pos.roomName == pathPoint.roomName
+                                    && s.pos.x == pathPoint.x && s.pos.y == pathPoint.y
+                            });
+                            var terrain = Game.map.getTerrainAt(pathPoint);
+                            if (structure.length == 0 && (terrain == 'plain' || terrain == 'swamp')
+                                && pathPoint.x > 0 && pathPoint.x < 49 && pathPoint.y > 0 && pathPoint.y < 49) {
+                                Game.rooms[pathPoint.roomName].createConstructionSite(pathPoint, STRUCTURE_ROAD);
+                                break pathLoopLair3;
+                            }
+                        }
+
+
+                    findedPath = this.findPathForRoad(lair4, lair1);
+                    pathLoopLair4:
+                        for (var i in findedPath.path) {
+                            var pathPoint = findedPath.path[i];
+                            var structure = Game.rooms[pathPoint.roomName].find(FIND_STRUCTURES, {
+                                filter: (s) =>
+                                    s.structureType == STRUCTURE_ROAD && s.pos.roomName == pathPoint.roomName
+                                    && s.pos.x == pathPoint.x && s.pos.y == pathPoint.y
+                            });
+                            var terrain = Game.map.getTerrainAt(pathPoint);
+                            if (structure.length == 0 && (terrain == 'plain' || terrain == 'swamp')
+                                && pathPoint.x > 0 && pathPoint.x < 49 && pathPoint.y > 0 && pathPoint.y < 49) {
+                                Game.rooms[pathPoint.roomName].createConstructionSite(pathPoint, STRUCTURE_ROAD);
+                                break pathLoopLair4;
+                            }
+                        }
+                }
             }
         }
     },
