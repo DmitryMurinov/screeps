@@ -68,8 +68,8 @@
       <file leaf-file-name="creep.create.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/creep.create.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="480" column="71" lean-forward="false" selection-start-line="480" selection-start-column="71" selection-end-line="480" selection-end-column="71" />
+            <state relative-caret-position="714">
+              <caret line="632" column="75" lean-forward="false" selection-start-line="632" selection-start-column="75" selection-end-line="632" selection-end-column="75" />
               <folding />
             </state>
           </provider>
@@ -386,14 +386,7 @@
       <workItem from="1508048013410" duration="9410000" />
       <workItem from="1508075824982" duration="2724000" />
       <workItem from="1508176490823" duration="601000" />
-      <workItem from="1508178832994" duration="3920000" />
-    </task>
-    <task id="LOCAL-00123" summary="Защита сектора">
-      <created>1508017198196</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1508017198196</updated>
+      <workItem from="1508178832994" duration="4035000" />
     </task>
     <task id="LOCAL-00124" summary="Защита сектора">
       <created>1508017578675</created>
@@ -731,11 +724,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508183031509</updated>
     </task>
-    <option name="localTasksCounter" value="172" />
+    <task id="LOCAL-00172" summary="Настраивание уровня харвестеров для комнат с киперами.">
+      <created>1508183502946</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1508183502947</updated>
+    </task>
+    <option name="localTasksCounter" value="173" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79522000" />
+    <option name="totallyTimeSpent" value="79637000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1177,8 +1177,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/creep.create.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="480" column="71" lean-forward="false" selection-start-line="480" selection-start-column="71" selection-end-line="480" selection-end-column="71" />
+        <state relative-caret-position="714">
+          <caret line="632" column="75" lean-forward="false" selection-start-line="632" selection-start-column="75" selection-end-line="632" selection-end-column="75" />
           <folding />
         </state>
       </provider>
