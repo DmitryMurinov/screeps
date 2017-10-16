@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="">
+    <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="Допиливание строительства дорог.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/links.js" afterPath="$PROJECT_DIR$/links.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/role.outerCourierLogic.js" afterPath="$PROJECT_DIR$/role.outerCourierLogic.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,26 +15,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="role.courier.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/role.courier.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="245" column="75" lean-forward="false" selection-start-line="245" selection-start-column="75" selection-end-line="245" selection-end-column="75" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="role.controllerAttacker.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/role.controllerAttacker.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="151" column="13" lean-forward="true" selection-start-line="151" selection-start-column="13" selection-end-line="151" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="role.keeperKiller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/role.keeperKiller.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -45,11 +25,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="role.outerCourierLogic.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="role.outerCourierLogic.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/role.outerCourierLogic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="263" column="0" lean-forward="true" selection-start-line="263" selection-start-column="0" selection-end-line="263" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="219" column="0" lean-forward="true" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -85,11 +65,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="links.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="links.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/links.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1819">
               <caret line="107" column="47" lean-forward="false" selection-start-line="107" selection-start-column="47" selection-end-line="107" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="role.basicCreepOuter.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/role.basicCreepOuter.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1150">
+              <caret line="254" column="29" lean-forward="false" selection-start-line="254" selection-start-column="29" selection-end-line="254" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="role.outerClaimerLogic.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/role.outerClaimerLogic.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -165,6 +165,7 @@
       <replace>0);</replace>
       <replace>towersDefendAndRepairRoom</replace>
       <replace>(roomName, allCreepsCount, gameTime, creepsData, creepsNeeded)</replace>
+      <replace>&gt; 0</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -200,12 +201,12 @@
         <option value="$PROJECT_DIR$/main.js" />
         <option value="$PROJECT_DIR$/role.attackerLogic.js" />
         <option value="$PROJECT_DIR$/creeps.runAllCreeps.js" />
-        <option value="$PROJECT_DIR$/role.outerCourierLogic.js" />
         <option value="$PROJECT_DIR$/role.keeperKiller.js" />
         <option value="$PROJECT_DIR$/creep.create.js" />
         <option value="$PROJECT_DIR$/creep.templates.js" />
         <option value="$PROJECT_DIR$/role.outerHarvesterLogic.js" />
         <option value="$PROJECT_DIR$/links.js" />
+        <option value="$PROJECT_DIR$/role.outerCourierLogic.js" />
       </list>
     </option>
   </component>
@@ -387,14 +388,7 @@
       <workItem from="1508048013410" duration="9410000" />
       <workItem from="1508075824982" duration="2724000" />
       <workItem from="1508176490823" duration="601000" />
-      <workItem from="1508178832994" duration="4545000" />
-    </task>
-    <task id="LOCAL-00126" summary="Защита сектора">
-      <created>1508018300381</created>
-      <option name="number" value="00126" />
-      <option name="presentableId" value="LOCAL-00126" />
-      <option name="project" value="LOCAL" />
-      <updated>1508018300381</updated>
+      <workItem from="1508178832994" duration="5010000" />
     </task>
     <task id="LOCAL-00127" summary="Защита сектора">
       <created>1508018447964</created>
@@ -732,11 +726,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508183844960</updated>
     </task>
-    <option name="localTasksCounter" value="175" />
+    <task id="LOCAL-00175" summary="Обновил логику линков.">
+      <created>1508184133841</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
+      <option name="project" value="LOCAL" />
+      <updated>1508184133841</updated>
+    </task>
+    <option name="localTasksCounter" value="176" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80147000" />
+    <option name="totallyTimeSpent" value="80612000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -801,7 +802,8 @@
     <MESSAGE value="Пофиксил застревание keeperKiller'a" />
     <MESSAGE value="Настраивание уровня харвестеров для комнат с киперами." />
     <MESSAGE value="Добавил самолечение харвестеров в комнатах с киперами (для уровня харвестера 5)." />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил самолечение харвестеров в комнатах с киперами (для уровня харвестера 5)." />
+    <MESSAGE value="Обновил логику линков." />
+    <option name="LAST_COMMIT_MESSAGE" value="Обновил логику линков." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -810,13 +812,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/helper.counter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="56" column="35" lean-forward="false" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/creeps.runAllCreeps.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
@@ -1060,13 +1055,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/role.basicCreepOuter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="63" column="13" lean-forward="false" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/defend.rooms.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2652">
@@ -1131,14 +1119,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/role.outerCourierLogic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="263" column="0" lean-forward="true" selection-start-line="263" selection-start-column="0" selection-end-line="263" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/role.keeperKiller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="453">
@@ -1183,6 +1163,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1819">
           <caret line="107" column="47" lean-forward="false" selection-start-line="107" selection-start-column="47" selection-end-line="107" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.basicCreepOuter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1150">
+          <caret line="254" column="29" lean-forward="false" selection-start-line="254" selection-start-column="29" selection-end-line="254" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.outerClaimerLogic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.outerCourierLogic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="219" column="0" lean-forward="true" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -216,7 +216,7 @@ module.exports = {
 
         //Lay down roads logic:
         if (gameTime.substring(gameTime.length - 3, gameTime.length) == '250' ||
-            gameTime.substring(gameTime.length - 3, gameTime.length) == '750') {
+            gameTime.substring(gameTime.length - 3, gameTime.length) == '750' && creep.room.name == creep.memory.roomToWorkName) {
 
             var constructionSites = Game.rooms[creep.room.name].find(FIND_CONSTRUCTION_SITES);
             if (constructionSites.length == 0) {
@@ -244,6 +244,9 @@ module.exports = {
                                 && pathPoint.x > 0 && pathPoint.x < 49 && pathPoint.y > 0 && pathPoint.y < 49) {
 
                                 var result = Game.rooms[pathPoint.roomName].createConstructionSite(pathPoint, STRUCTURE_ROAD);
+
+                                console.log(pathPoint + " " + result);
+
                                 break pathLoop;
                             }
                         }
