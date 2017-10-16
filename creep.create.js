@@ -477,6 +477,9 @@ module.exports = {
                     var memory = "{role: 'outerHarvesterLogic2', working: false, origination: '" + roomName + "', arrived: false, roomToWorkX: " + roomToWorkX2 + ", roomToWorkY: " + roomToWorkY2 + ",  " +
                         "roomToWorkName: \"" + roomToWorkName2 + "\"}";
                     var outerHarvesterLevel = controllerLevel1to3;
+
+                    console.log(creepsData.get("outerHarverster2Level"));
+
                     if(creepsData.get("outerHarverster2Level")){
                         outerHarvesterLevel = creepsData.get("outerHarverster2Level");
                     }
