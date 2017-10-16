@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/role.keeperKiller.js" afterPath="$PROJECT_DIR$/role.keeperKiller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/creep.create.js" afterPath="$PROJECT_DIR$/creep.create.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,16 +15,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="logic.civilian.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logic.civilian.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2142">
-              <caret line="126" column="13" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="role.courier.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/role.courier.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -45,7 +35,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="role.keeperKiller.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="role.keeperKiller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/role.keeperKiller.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="453">
@@ -70,6 +60,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
               <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="creep.create.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/creep.create.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="583" column="20" lean-forward="true" selection-start-line="583" selection-start-column="20" selection-end-line="583" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -198,13 +198,13 @@
         <option value="$PROJECT_DIR$/role.outerReserver.js" />
         <option value="$PROJECT_DIR$/role.basicCreepOuter.js" />
         <option value="$PROJECT_DIR$/logic.civilian.js" />
-        <option value="$PROJECT_DIR$/creep.create.js" />
         <option value="$PROJECT_DIR$/creep.templates.js" />
         <option value="$PROJECT_DIR$/main.js" />
         <option value="$PROJECT_DIR$/role.attackerLogic.js" />
         <option value="$PROJECT_DIR$/creeps.runAllCreeps.js" />
         <option value="$PROJECT_DIR$/role.outerCourierLogic.js" />
         <option value="$PROJECT_DIR$/role.keeperKiller.js" />
+        <option value="$PROJECT_DIR$/creep.create.js" />
       </list>
     </option>
   </component>
@@ -386,14 +386,7 @@
       <workItem from="1508048013410" duration="9410000" />
       <workItem from="1508075824982" duration="2724000" />
       <workItem from="1508176490823" duration="601000" />
-      <workItem from="1508178832994" duration="3352000" />
-    </task>
-    <task id="LOCAL-00121" summary="Защита сектора">
-      <created>1508016898705</created>
-      <option name="number" value="00121" />
-      <option name="presentableId" value="LOCAL-00121" />
-      <option name="project" value="LOCAL" />
-      <updated>1508016898705</updated>
+      <workItem from="1508178832994" duration="3431000" />
     </task>
     <task id="LOCAL-00122" summary="Защита сектора">
       <created>1508016985839</created>
@@ -731,11 +724,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508182734067</updated>
     </task>
-    <option name="localTasksCounter" value="170" />
+    <task id="LOCAL-00170" summary="Пофиксил застревание keeperKiller'a">
+      <created>1508182932500</created>
+      <option name="number" value="00170" />
+      <option name="presentableId" value="LOCAL-00170" />
+      <option name="project" value="LOCAL" />
+      <updated>1508182932500</updated>
+    </task>
+    <option name="localTasksCounter" value="171" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78954000" />
+    <option name="totallyTimeSpent" value="79033000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1086,14 +1086,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/creep.create.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9690">
-          <caret line="570" column="62" lean-forward="false" selection-start-line="570" selection-start-column="62" selection-end-line="570" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/defend.rooms.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2652">
@@ -1178,6 +1170,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="453">
           <caret line="244" column="29" lean-forward="false" selection-start-line="244" selection-start-column="29" selection-end-line="244" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/creep.create.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="583" column="20" lean-forward="true" selection-start-line="583" selection-start-column="20" selection-end-line="583" selection-end-column="20" />
           <folding />
         </state>
       </provider>
