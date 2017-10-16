@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/role.keeperKiller.js" afterPath="$PROJECT_DIR$/role.keeperKiller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/role.outerCourierLogic.js" afterPath="$PROJECT_DIR$/role.outerCourierLogic.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,7 +45,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="role.keeperKiller.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="role.keeperKiller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/role.keeperKiller.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="470">
@@ -55,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="role.outerCourierLogic.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="role.outerCourierLogic.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/role.outerCourierLogic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="255" column="39" lean-forward="true" selection-start-line="255" selection-start-column="39" selection-end-line="255" selection-end-column="39" />
+            <state relative-caret-position="436">
+              <caret line="232" column="0" lean-forward="true" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -200,11 +200,11 @@
         <option value="$PROJECT_DIR$/logic.civilian.js" />
         <option value="$PROJECT_DIR$/creep.create.js" />
         <option value="$PROJECT_DIR$/creep.templates.js" />
-        <option value="$PROJECT_DIR$/role.outerCourierLogic.js" />
         <option value="$PROJECT_DIR$/main.js" />
         <option value="$PROJECT_DIR$/role.attackerLogic.js" />
         <option value="$PROJECT_DIR$/creeps.runAllCreeps.js" />
         <option value="$PROJECT_DIR$/role.keeperKiller.js" />
+        <option value="$PROJECT_DIR$/role.outerCourierLogic.js" />
       </list>
     </option>
   </component>
@@ -386,14 +386,7 @@
       <workItem from="1508048013410" duration="9410000" />
       <workItem from="1508075824982" duration="2724000" />
       <workItem from="1508176490823" duration="601000" />
-      <workItem from="1508178832994" duration="437000" />
-    </task>
-    <task id="LOCAL-00114" summary="Защита сектора">
-      <created>1508014420480</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1508014420480</updated>
+      <workItem from="1508178832994" duration="527000" />
     </task>
     <task id="LOCAL-00115" summary="Защита сектора">
       <created>1508014808105</created>
@@ -731,11 +724,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508179005716</updated>
     </task>
-    <option name="localTasksCounter" value="163" />
+    <task id="LOCAL-00163" summary="В процессе добавления логики прокладки дорог курьерами.">
+      <created>1508179273009</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1508179273009</updated>
+    </task>
+    <option name="localTasksCounter" value="164" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76039000" />
+    <option name="totallyTimeSpent" value="76129000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1123,14 +1123,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/role.outerCourierLogic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="255" column="39" lean-forward="true" selection-start-line="255" selection-start-column="39" selection-end-line="255" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/creeps.runAllCreeps.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -1175,6 +1167,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="470">
           <caret line="318" column="29" lean-forward="false" selection-start-line="318" selection-start-column="29" selection-end-line="318" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.outerCourierLogic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="232" column="0" lean-forward="true" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
           <folding />
         </state>
       </provider>

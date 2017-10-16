@@ -215,8 +215,8 @@ module.exports = {
         }
 
         //Lay down roads logic:
-
-        if (gameTime.substring(gameTime.length - 1, gameTime.length) == ('10' || '30' || '50' || '70' || '90') && creep.room.name == 'E54N16') {
+        // gameTime.substring(gameTime.length - 1, gameTime.length) == ('10' || '30' || '50' || '70' || '90') &&
+        if ( creep.name == 'Chase') {
 
             var constructionSites = Game.rooms[creep.room.name].find(FIND_CONSTRUCTION_SITES);
             if (constructionSites.length == 0) {
