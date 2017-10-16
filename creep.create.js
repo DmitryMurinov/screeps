@@ -579,7 +579,8 @@ module.exports = {
                     var memory = "{role: 'outerHarvesterLogic4', working: false, origination: '" + roomName + "', arrived: false, roomToWorkX: " + roomToWorkX4 + ", roomToWorkY: " + roomToWorkY4 + ",  " +
                         "roomToWorkName: \"" + roomToWorkName4 + "\"}";
                     var outerHarvesterLevel = controllerLevel1to3;
-                    if(creepsData.get("outerHarverster4Level") != undefined){
+                    var levFromData = creepsData.get("outerHarverster4Level");
+                    if(levFromData != undefined){
                         outerHarvesterLevel = creepsData.get("outerHarverster4Level");
                     }
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + outerHarvesterLevel + "(\"pureHarvester\"), memory)";
