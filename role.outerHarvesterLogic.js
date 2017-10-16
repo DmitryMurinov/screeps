@@ -2,6 +2,22 @@ module.exports = {
 
     run: function (creep, roomToHarvestName, roomToHarvestX, roomToHarvestY) {
 
+        if (!creep.memory.healAvailable) {
+            var body = creep.body;
+            creep.memory.healAvailable = false;
+            bodyLoop:
+                for (i in body) {
+                    var bodyPart = body[i];
+                    if (bodyPart.type == HEAL) {
+                        creep.memory.healAvailable = true;
+                        break bodyLoop;
+                    }
+                }
+        }
+
+        if(creep.memory.healAvailable && creep.hits < creep.hitsMax){
+            creep.heal(creep);
+        }
 
         //TransferLogic:
 

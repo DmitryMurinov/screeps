@@ -180,7 +180,7 @@ module.exports = {
         //OuterHarvesterForCentralPart
 
         var outerHarvesterLogic = "[WORK, WORK, WORK, WORK, WORK, WORK, WORK, WORK, WORK, " +
-            " CARRY, CARRY, MOVE, MOVE, MOVE, MOVE, MOVE, MOVE]";
+            " CARRY, CARRY, MOVE, MOVE, MOVE, MOVE, MOVE, MOVE, MOVE, HEAL]";
 
         var attackerLogic = "[TOUGH, TOUGH, TOUGH, TOUGH, TOUGH, TOUGH, ATTACK, MOVE" +
             ", ATTACK, MOVE, ATTACK, MOVE, ATTACK, MOVE, ATTACK, MOVE, ATTACK, MOVE, ATTACK, MOVE, ATTACK, MOVE" +
