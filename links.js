@@ -25,19 +25,19 @@ module.exports = {
         //     linkStorage.memory.sending = false;
         // }
         if(linkEnergySource1 && linkStorage) {
-            if (linkEnergySource1.energy >= 200 && linkEnergySource1.cooldown == 0) {
+            if (linkEnergySource1.energy > 0 && linkEnergySource1.cooldown == 0) {
                 linkEnergySource1.transferEnergy(linkStorage);
             }
         }
 
         if(linkEnergySource2 && linkStorage) {
-            if(linkEnergySource2.energy >= 200 && linkEnergySource2.cooldown == 0) {
+            if(linkEnergySource2.energy > 0 && linkEnergySource2.cooldown == 0) {
                 linkEnergySource2.transferEnergy(linkStorage);
             }
         }
 
         if(linkOuter3 && linkStorage) {
-            if(linkOuter3.energy >= 200 && linkOuter3.cooldown == 0) {
+            if(linkOuter3.energy > 0 && linkOuter3.cooldown == 0) {
                 linkOuter3.transferEnergy(linkStorage);
             }
         }
@@ -63,12 +63,12 @@ module.exports = {
         //     linkStorage.memory.sending = false;
         // }
         // if(linkEnergySource1 && linkStorage) {
-        //     if (linkEnergySource1.energy >= 200 && linkEnergySource1.cooldown == 0) {
+        //     if (linkEnergySource1.energy > 0 && linkEnergySource1.cooldown == 0) {
         //         linkEnergySource1.transferEnergy(linkStorage);
         //     }
         // }
         if(linkOuter1 && linkStorage) {
-            if (linkOuter1.energy >= 200 && linkOuter1.cooldown == 0) {
+            if (linkOuter1.energy > 0 && linkOuter1.cooldown == 0) {
                 linkOuter1.transferEnergy(linkStorage);
             }
         }
@@ -95,17 +95,17 @@ module.exports = {
         // }
 
         if(linkEnergySource1 && linkStorage) {
-            if (linkEnergySource1.energy >= 200 && linkEnergySource1.cooldown == 0) {
+            if (linkEnergySource1.energy > 0 && linkEnergySource1.cooldown == 0) {
                 linkEnergySource1.transferEnergy(linkStorage);
             }
         }
         if(linkEnergySource2 && linkStorage) {
-            if (linkEnergySource2.energy >= 200 && linkEnergySource2.cooldown == 0) {
+            if (linkEnergySource2.energy > 0 && linkEnergySource2.cooldown == 0) {
                 linkEnergySource2.transferEnergy(linkStorage);
             }
         }
         if(linkEnergySource3 && linkStorage) {
-            if (linkEnergySource3.energy >= 200 && linkEnergySource3.cooldown == 0) {
+            if (linkEnergySource3.energy > 0 && linkEnergySource3.cooldown == 0) {
                 linkEnergySource3.transferEnergy(linkStorage);
             }
         }

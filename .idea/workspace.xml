@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/creep.templates.js" afterPath="$PROJECT_DIR$/creep.templates.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/role.outerHarvesterLogic.js" afterPath="$PROJECT_DIR$/role.outerHarvesterLogic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/links.js" afterPath="$PROJECT_DIR$/links.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,16 +65,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="role.pureMiner.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/role.pureMiner.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="creep.templates.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/creep.templates.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -86,11 +75,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="role.outerHarvesterLogic.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="role.outerHarvesterLogic.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/role.outerHarvesterLogic.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
-              <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="links.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/links.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1819">
+              <caret line="107" column="47" lean-forward="false" selection-start-line="107" selection-start-column="47" selection-end-line="107" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -144,6 +143,7 @@
       <find>conso</find>
       <find>localMadeBasicCreepsOuter</find>
       <find>gameti</find>
+      <find>&gt;= 200</find>
     </findStrings>
     <replaceStrings>
       <replace>roomMemory.</replace>
@@ -190,7 +190,6 @@
         <option value="$PROJECT_DIR$/role.basicCreep.js" />
         <option value="$PROJECT_DIR$/defend.rooms.js" />
         <option value="$PROJECT_DIR$/role.controllerAttacker.js" />
-        <option value="$PROJECT_DIR$/links.js" />
         <option value="$PROJECT_DIR$/helper.counter.js" />
         <option value="$PROJECT_DIR$/role.RangedAttacker.js" />
         <option value="$PROJECT_DIR$/labs.js" />
@@ -206,6 +205,7 @@
         <option value="$PROJECT_DIR$/creep.create.js" />
         <option value="$PROJECT_DIR$/creep.templates.js" />
         <option value="$PROJECT_DIR$/role.outerHarvesterLogic.js" />
+        <option value="$PROJECT_DIR$/links.js" />
       </list>
     </option>
   </component>
@@ -387,14 +387,7 @@
       <workItem from="1508048013410" duration="9410000" />
       <workItem from="1508075824982" duration="2724000" />
       <workItem from="1508176490823" duration="601000" />
-      <workItem from="1508178832994" duration="4237000" />
-    </task>
-    <task id="LOCAL-00125" summary="Защита сектора">
-      <created>1508017798212</created>
-      <option name="number" value="00125" />
-      <option name="presentableId" value="LOCAL-00125" />
-      <option name="project" value="LOCAL" />
-      <updated>1508017798212</updated>
+      <workItem from="1508178832994" duration="4545000" />
     </task>
     <task id="LOCAL-00126" summary="Защита сектора">
       <created>1508018300381</created>
@@ -732,11 +725,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508183617001</updated>
     </task>
-    <option name="localTasksCounter" value="174" />
+    <task id="LOCAL-00174" summary="Добавил самолечение харвестеров в комнатах с киперами (для уровня харвестера 5).">
+      <created>1508183844960</created>
+      <option name="number" value="00174" />
+      <option name="presentableId" value="LOCAL-00174" />
+      <option name="project" value="LOCAL" />
+      <updated>1508183844960</updated>
+    </task>
+    <option name="localTasksCounter" value="175" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79839000" />
+    <option name="totallyTimeSpent" value="80147000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -800,7 +800,8 @@
     <MESSAGE value="Добавил прокладку дорог курьерами." />
     <MESSAGE value="Пофиксил застревание keeperKiller'a" />
     <MESSAGE value="Настраивание уровня харвестеров для комнат с киперами." />
-    <option name="LAST_COMMIT_MESSAGE" value="Настраивание уровня харвестеров для комнат с киперами." />
+    <MESSAGE value="Добавил самолечение харвестеров в комнатах с киперами (для уровня харвестера 5)." />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил самолечение харвестеров в комнатах с киперами (для уровня харвестера 5)." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1003,13 +1004,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/links.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="657">
-          <caret line="107" column="68" lean-forward="false" selection-start-line="107" selection-start-column="68" selection-end-line="107" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/labs.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="623">
@@ -1180,7 +1174,15 @@
     <entry file="file://$PROJECT_DIR$/role.outerHarvesterLogic.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/links.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1819">
+          <caret line="107" column="47" lean-forward="false" selection-start-line="107" selection-start-column="47" selection-end-line="107" selection-end-column="47" />
           <folding />
         </state>
       </provider>
