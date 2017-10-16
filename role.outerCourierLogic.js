@@ -240,8 +240,6 @@ module.exports = {
                             });
                             var terrain = Game.map.getTerrainAt(pathPoint);
 
-                            // console.log(!structure);
-
                             if (structure.length == 0 && (terrain == 'plain' || terrain == 'swamp')
                                 && pathPoint.x > 0 && pathPoint.x < 49 && pathPoint.y > 0 && pathPoint.y < 49) {
 
@@ -261,8 +259,8 @@ module.exports = {
             {
                 // We need to set the defaults costs higher so that we
                 // can set the road cost lower in `roomCallback`
-                plainCost: 1,
-                swampCost: 1,
+                plainCost: 5,
+                swampCost: 5,
 
                 roomCallback: function (roomName) {
 
