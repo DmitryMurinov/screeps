@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="Допиливание строительства дорог.">
+    <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/role.outerCourierLogic.js" afterPath="$PROJECT_DIR$/role.outerCourierLogic.js" />
     </list>
@@ -28,8 +28,8 @@
       <file leaf-file-name="role.outerCourierLogic.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/role.outerCourierLogic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="219" column="0" lean-forward="true" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
+            <state relative-caret-position="272">
+              <caret line="217" column="73" lean-forward="false" selection-start-line="217" selection-start-column="73" selection-end-line="217" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -388,14 +388,7 @@
       <workItem from="1508048013410" duration="9410000" />
       <workItem from="1508075824982" duration="2724000" />
       <workItem from="1508176490823" duration="601000" />
-      <workItem from="1508178832994" duration="5010000" />
-    </task>
-    <task id="LOCAL-00127" summary="Защита сектора">
-      <created>1508018447964</created>
-      <option name="number" value="00127" />
-      <option name="presentableId" value="LOCAL-00127" />
-      <option name="project" value="LOCAL" />
-      <updated>1508018447964</updated>
+      <workItem from="1508178832994" duration="5077000" />
     </task>
     <task id="LOCAL-00128" summary="Защита сектора">
       <created>1508019400931</created>
@@ -733,11 +726,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508184133841</updated>
     </task>
-    <option name="localTasksCounter" value="176" />
+    <task id="LOCAL-00176" summary="Допиливание строительства дорог.">
+      <created>1508184597148</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1508184597148</updated>
+    </task>
+    <option name="localTasksCounter" value="177" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80612000" />
+    <option name="totallyTimeSpent" value="80679000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -778,7 +778,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Защита главной комнаты." />
     <MESSAGE value="Обновил логику курьера.&#10;Рефакторинг логики комнат." />
     <MESSAGE value="Обновил логику курьера." />
     <MESSAGE value="Обновляю логику комнат." />
@@ -803,7 +802,8 @@
     <MESSAGE value="Настраивание уровня харвестеров для комнат с киперами." />
     <MESSAGE value="Добавил самолечение харвестеров в комнатах с киперами (для уровня харвестера 5)." />
     <MESSAGE value="Обновил логику линков." />
-    <option name="LAST_COMMIT_MESSAGE" value="Обновил логику линков." />
+    <MESSAGE value="Допиливание строительства дорог." />
+    <option name="LAST_COMMIT_MESSAGE" value="Допиливание строительства дорог." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1185,8 +1185,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/role.outerCourierLogic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="219" column="0" lean-forward="true" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
+        <state relative-caret-position="272">
+          <caret line="217" column="73" lean-forward="false" selection-start-line="217" selection-start-column="73" selection-end-line="217" selection-end-column="73" />
           <folding />
         </state>
       </provider>
