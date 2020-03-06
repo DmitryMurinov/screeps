@@ -30,33 +30,33 @@ module.exports.loop = function () {
     // console.log(Game.cpu.getUsed() - startCpu);
 
 
-    var roomsList = helperCounter.roomsList();
+    // var roomsList = helperCounter.roomsList();
 
-    var resourcesListCatalized = helperCounter.resourcesListCatalized();
+    // var resourcesListCatalized = helperCounter.resourcesListCatalized();
 
     // var startCpu = Game.cpu.getUsed();
     // console.log(Game.cpu.getUsed() - startCpu);
 
-    var allReservesCount = helperCounter.countAllReserves();
+    // var allReservesCount = helperCounter.countAllReserves();
 
 
-    defendRooms.towers(roomsList, gameTime);
+    // defendRooms.towers(roomsList, gameTime);
 
 
-    if(gameTime.substring(gameTime.length - 1, gameTime.length) == ('0')) {
-        roomLogicCivilian.runMyRooms(allCreepsCount, gameTime, allReservesCount);
-    }
+    // if(gameTime.substring(gameTime.length - 1, gameTime.length) == ('0')) {
+    //     roomLogicCivilian.runMyRooms(allCreepsCount, gameTime, allReservesCount);
+    // }
     // console.log(Game.cpu.getUsed() - startCpu);
 
     // roomLogicWar.runMyRooms(gameTime);
 
-    structLinks.linksTransfer();
+    // structLinks.linksTransfer();
 
-    labs.runLabs(allReservesCount, gameTime);
+    // labs.runLabs(allReservesCount, gameTime);
 
-    if(gameTime.substring(gameTime.length - 1, gameTime.length) == '0') {
-        manageResources.runManage(allReservesCount, roomsList, resourcesListCatalized);
-    }
+    // if(gameTime.substring(gameTime.length - 1, gameTime.length) == '0') {
+    //     manageResources.runManage(allReservesCount, roomsList, resourcesListCatalized);
+    // }
 
 
 
