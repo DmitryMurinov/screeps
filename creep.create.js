@@ -305,6 +305,8 @@ module.exports = {
                     controllerLevel1to7 = 7;
                 }
 
+                console.log("We are here!");
+
                 if (localMadeCreeps < 2) {
                     var createString = " Game.spawns." + freeSpawn.name + ".createCreep([WORK, CARRY, CARRY, MOVE, MOVE], " +
                         "undefined, {role: 'basicCreep', working: false, origination: '" + roomName + "'});";
