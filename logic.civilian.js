@@ -218,9 +218,9 @@ module.exports = {
         let creepsData = new Map();
 
         creepsData.set("attacker1", "needBoost: false," +
-            "roomToInvestigateName0 : \"E4S52\", roomToInvestigateX0: 32, roomToInvestigateY0: 42"
+            "roomToInvestigateName0 : \"E4S52\", roomToInvestigateX0: 32, roomToInvestigateY0: 42" +
             ",roomToInvestigateName1 : \"E4S53\", roomToInvestigateX0: 23, roomToInvestigateY0: 6" +
-            ",roomToInvestigateName2 : \"E5S53\", roomToInvestigateX0: 4, roomToInvestigateY0: 16" +
+            ",roomToInvestigateName2 : \"E5S53\", roomToInvestigateX0: 4, roomToInvestigateY0: 16"
         );
 
         creepsData.set("attacker2", "needBoost: false," +
