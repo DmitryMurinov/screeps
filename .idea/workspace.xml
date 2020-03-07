@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="Добавил 3 атакующих для защиты юга.">
+    <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="Добавил 2 внешних курьеров для комнаты 1, при уровне контроллера 2 и 3.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic.civilian.js" beforeDir="false" afterPath="$PROJECT_DIR$/logic.civilian.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,11 +23,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/logic.civilian.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3179">
-              <caret line="187" column="50" selection-start-line="187" selection-start-column="50" selection-end-line="187" selection-end-column="50" />
+            <state relative-caret-position="646">
+              <caret line="203" column="46" lean-forward="true" selection-start-line="203" selection-start-column="46" selection-end-line="203" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -34,13 +35,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/creep.create.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12801">
-              <caret line="753" column="73" selection-start-line="753" selection-start-column="73" selection-end-line="753" selection-end-column="73" />
+            <state relative-caret-position="12223">
+              <caret line="719" column="90" selection-start-line="719" selection-start-column="90" selection-end-line="719" selection-end-column="90" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/creep.templates.js">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -306,14 +307,7 @@
       <workItem from="1508178832994" duration="7876000" />
       <workItem from="1583533348552" duration="1922000" />
       <workItem from="1583567579035" duration="5902000" />
-      <workItem from="1583594425144" duration="262000" />
-    </task>
-    <task id="LOCAL-00137" summary="Обновил логику перемещения в комнаты remote harvesting.">
-      <created>1508049568789</created>
-      <option name="number" value="00137" />
-      <option name="presentableId" value="LOCAL-00137" />
-      <option name="project" value="LOCAL" />
-      <updated>1508049568789</updated>
+      <workItem from="1583594425144" duration="852000" />
     </task>
     <task id="LOCAL-00138" summary="Обновил логику перемещения в комнаты remote harvesting.">
       <created>1508050224614</created>
@@ -651,14 +645,22 @@
       <option name="project" value="LOCAL" />
       <updated>1583586459198</updated>
     </task>
-    <option name="localTasksCounter" value="186" />
+    <task id="LOCAL-00186" summary="Добавил 2 внешних курьеров для комнаты 1, при уровне контроллера 2 и 3.">
+      <created>1583594970005</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
+      <option name="project" value="LOCAL" />
+      <updated>1583594970005</updated>
+    </task>
+    <option name="localTasksCounter" value="187" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91564000" />
+    <option name="totallyTimeSpent" value="92154000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20575693" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -695,7 +697,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Обновление логики патруля вокруг врага." />
     <MESSAGE value="Обновил логику покупки ресурсов" />
     <MESSAGE value="Окружение и патруль." />
     <MESSAGE value="Логика ресурсов" />
@@ -720,7 +721,8 @@
     <MESSAGE value="Поправил место возврата курьеров." />
     <MESSAGE value="Добавил 2 базовых крипа при уровне контроллера = 2" />
     <MESSAGE value="Добавил 3 атакующих для защиты юга." />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил 3 атакующих для защиты юга." />
+    <MESSAGE value="Добавил 2 внешних курьеров для комнаты 1, при уровне контроллера 2 и 3." />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил 2 внешних курьеров для комнаты 1, при уровне контроллера 2 и 3." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/role.refillerWar.js" />
@@ -777,20 +779,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logic.civilian.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3179">
-          <caret line="187" column="50" selection-start-line="187" selection-start-column="50" selection-end-line="187" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/creep.create.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12801">
-          <caret line="753" column="73" selection-start-line="753" selection-start-column="73" selection-end-line="753" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/role.outerHarvesterLogic.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
@@ -831,6 +819,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/creep.templates.js">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/creep.create.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12223">
+          <caret line="719" column="90" selection-start-line="719" selection-start-column="90" selection-end-line="719" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic.civilian.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="203" column="46" lean-forward="true" selection-start-line="203" selection-start-column="46" selection-end-line="203" selection-end-column="46" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
