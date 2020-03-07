@@ -138,8 +138,8 @@ module.exports = {
 
         if (controllerLevel >= 4 && gameTime.substring(gameTime.length - 2, gameTime.length) == '00') {
             var rampartAreas = new Array();
-            var rampartArea1 = {x1: 24, y1: 1, x2: 25, y2: 8};
-            var rampartArea2 = {x1: 26, y1: 26, x2: 27, y2: 32};
+            var rampartArea1 = {x1: 21, y1: 1, x2: 25, y2: 8};
+            var rampartArea2 = {x1: 23, y1: 25, x2: 27, y2: 32};
             // var rampartArea3 = {x1: 20, y1: 31, x2: 34, y2: 31};
             // var rampartArea4 = {x1: 20, y1: 17, x2: 20, y2: 31};
             // var rampartArea5 = {x1: 34, y1: 17, x2: 34, y2: 31};
