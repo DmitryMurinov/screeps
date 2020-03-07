@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="Вклчючил логирование времени.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helper.counter.js" beforeDir="false" afterPath="$PROJECT_DIR$/helper.counter.js" afterDir="false" />
+    <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="Добавил добычу ещё в 2 комнатах.">
       <change beforePath="$PROJECT_DIR$/logic.civilian.js" beforeDir="false" afterPath="$PROJECT_DIR$/logic.civilian.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,20 +13,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
+            <state relative-caret-position="595">
               <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/logic.civilian.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1530">
-              <caret line="147" lean-forward="true" selection-start-line="147" selection-end-line="147" />
+            <state relative-caret-position="323">
+              <caret line="178" column="48" lean-forward="true" selection-start-line="178" selection-start-column="48" selection-end-line="178" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -187,8 +184,8 @@
         <option value="$PROJECT_DIR$/creep.create.js" />
         <option value="$PROJECT_DIR$/role.outerCourierLogic.js" />
         <option value="$PROJECT_DIR$/helper.counter.js" />
-        <option value="$PROJECT_DIR$/logic.civilian.js" />
         <option value="$PROJECT_DIR$/main.js" />
+        <option value="$PROJECT_DIR$/logic.civilian.js" />
       </list>
     </option>
   </component>
@@ -222,6 +219,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -305,14 +308,7 @@
       <workItem from="1508176490823" duration="601000" />
       <workItem from="1508178832994" duration="7876000" />
       <workItem from="1583533348552" duration="1922000" />
-      <workItem from="1583567579035" duration="1741000" />
-    </task>
-    <task id="LOCAL-00132" summary="Обновление комнат.">
-      <created>1508020976138</created>
-      <option name="number" value="00132" />
-      <option name="presentableId" value="LOCAL-00132" />
-      <option name="project" value="LOCAL" />
-      <updated>1508020976138</updated>
+      <workItem from="1583567579035" duration="2387000" />
     </task>
     <task id="LOCAL-00133" summary="Допиливание логики комнат.">
       <created>1508048163592</created>
@@ -650,11 +646,18 @@
       <option name="project" value="LOCAL" />
       <updated>1583533596963</updated>
     </task>
-    <option name="localTasksCounter" value="181" />
+    <task id="LOCAL-00181" summary="Добавил добычу ещё в 2 комнатах.">
+      <created>1583569340716</created>
+      <option name="number" value="00181" />
+      <option name="presentableId" value="LOCAL-00181" />
+      <option name="project" value="LOCAL" />
+      <updated>1583569340717</updated>
+    </task>
+    <option name="localTasksCounter" value="182" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87141000" />
+    <option name="totallyTimeSpent" value="87787000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -695,7 +698,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Обновил логику курьера." />
     <MESSAGE value="Обновляю логику комнат." />
     <MESSAGE value="Обновил резервера до атаки, если контроллер чужой. Выкинул клэйм." />
     <MESSAGE value="Добавил патруль вокруг комнаты рядом." />
@@ -720,7 +722,8 @@
     <MESSAGE value="Обновил логику линков." />
     <MESSAGE value="Допиливание строительства дорог." />
     <MESSAGE value="Вклчючил логирование времени." />
-    <option name="LAST_COMMIT_MESSAGE" value="Вклчючил логирование времени." />
+    <MESSAGE value="Добавил добычу ещё в 2 комнатах." />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил добычу ещё в 2 комнатах." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/role.refillerWar.js" />
@@ -816,17 +819,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logic.civilian.js">
+    <entry file="file://$PROJECT_DIR$/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1530">
-          <caret line="147" lean-forward="true" selection-start-line="147" selection-end-line="147" />
+        <state relative-caret-position="595">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.js">
+    <entry file="file://$PROJECT_DIR$/logic.civilian.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="323">
+          <caret line="178" column="48" lean-forward="true" selection-start-line="178" selection-start-column="48" selection-end-line="178" selection-end-column="48" />
         </state>
       </provider>
     </entry>

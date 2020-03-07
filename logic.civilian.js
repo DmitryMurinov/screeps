@@ -233,11 +233,11 @@ module.exports = {
         creepsData.set("outerHarverster4Level", 5);
 
         creepsData.set("outerCourier1",
-            "roomToBackX: 2, roomToBackY: 19, linkRoomX: 2, linkRoomY: 18, "
+            "roomToBackX: 29, roomToBackY: 46, linkRoomX: 2, linkRoomY: 18, "
         );
 
         creepsData.set("outerCourier2",
-            "roomToBackX: 4, roomToBackY: 1, linkRoomX: 5, linkRoomY: 2, "
+            "roomToBackX: 36, roomToBackY: 46, linkRoomX: 5, linkRoomY: 2, "
         );
 
         creepsData.set("outerCourier3",
