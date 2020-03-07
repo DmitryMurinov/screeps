@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="Добавил патруль для атакующих creep'ов.">
+    <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="Отладка.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creep.create.js" beforeDir="false" afterPath="$PROJECT_DIR$/creep.create.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,20 +23,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/logic.civilian.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="221" column="79" lean-forward="true" selection-start-line="221" selection-start-column="79" selection-end-line="221" selection-end-column="79" />
+            <state relative-caret-position="629">
+              <caret line="286" column="16" lean-forward="true" selection-start-line="286" selection-start-column="16" selection-end-line="286" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/creep.create.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7021">
-              <caret line="719" column="90" selection-start-line="719" selection-start-column="90" selection-end-line="719" selection-end-column="90" />
+            <state relative-caret-position="238">
+              <caret line="269" column="62" selection-start-line="269" selection-start-column="62" selection-end-line="269" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -181,8 +182,8 @@
         <option value="$PROJECT_DIR$/role.outerCourierLogic.js" />
         <option value="$PROJECT_DIR$/helper.counter.js" />
         <option value="$PROJECT_DIR$/main.js" />
-        <option value="$PROJECT_DIR$/creep.create.js" />
         <option value="$PROJECT_DIR$/logic.civilian.js" />
+        <option value="$PROJECT_DIR$/creep.create.js" />
       </list>
     </option>
   </component>
@@ -306,21 +307,7 @@
       <workItem from="1508178832994" duration="7876000" />
       <workItem from="1583533348552" duration="1922000" />
       <workItem from="1583567579035" duration="5902000" />
-      <workItem from="1583594425144" duration="3553000" />
-    </task>
-    <task id="LOCAL-00142" summary="Обновил логику перемещения в комнаты remote harvesting.">
-      <created>1508051231264</created>
-      <option name="number" value="00142" />
-      <option name="presentableId" value="LOCAL-00142" />
-      <option name="project" value="LOCAL" />
-      <updated>1508051231264</updated>
-    </task>
-    <task id="LOCAL-00143" summary="Пофискил создание аттакера.">
-      <created>1508051974849</created>
-      <option name="number" value="00143" />
-      <option name="presentableId" value="LOCAL-00143" />
-      <option name="project" value="LOCAL" />
-      <updated>1508051974849</updated>
+      <workItem from="1583594425144" duration="4457000" />
     </task>
     <task id="LOCAL-00144" summary="Допиливаю логику комнат.">
       <created>1508064225596</created>
@@ -651,11 +638,25 @@
       <option name="project" value="LOCAL" />
       <updated>1583609374211</updated>
     </task>
-    <option name="localTasksCounter" value="191" />
+    <task id="LOCAL-00191" summary="Увеличил кол-во upgraders 1 &gt;&gt; 3.">
+      <created>1583613720061</created>
+      <option name="number" value="00191" />
+      <option name="presentableId" value="LOCAL-00191" />
+      <option name="project" value="LOCAL" />
+      <updated>1583613720061</updated>
+    </task>
+    <task id="LOCAL-00192" summary="Отладка.">
+      <created>1583614428022</created>
+      <option name="number" value="00192" />
+      <option name="presentableId" value="LOCAL-00192" />
+      <option name="project" value="LOCAL" />
+      <updated>1583614428022</updated>
+    </task>
+    <option name="localTasksCounter" value="193" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94855000" />
+    <option name="totallyTimeSpent" value="95759000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -696,8 +697,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Окружение и патруль." />
-    <MESSAGE value="Логика ресурсов" />
     <MESSAGE value="Выбил соседа." />
     <MESSAGE value="Защита сектора" />
     <MESSAGE value="Обновление комнат." />
@@ -721,7 +720,9 @@
     <MESSAGE value="Добавил 3 атакующих для защиты юга." />
     <MESSAGE value="Добавил 2 внешних курьеров для комнаты 1, при уровне контроллера 2 и 3." />
     <MESSAGE value="Добавил патруль для атакующих creep'ов." />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил патруль для атакующих creep'ов." />
+    <MESSAGE value="Увеличил кол-во upgraders 1 &gt;&gt; 3." />
+    <MESSAGE value="Отладка." />
+    <option name="LAST_COMMIT_MESSAGE" value="Отладка." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/role.refillerWar.js" />
@@ -771,13 +772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/role.outerHarvesterLogic.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
@@ -819,17 +813,24 @@
     <entry file="file://$PROJECT_DIR$/creep.templates.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/creep.create.js">
+    <entry file="file://$PROJECT_DIR$/logic.civilian.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7021">
-          <caret line="719" column="90" selection-start-line="719" selection-start-column="90" selection-end-line="719" selection-end-column="90" />
+        <state relative-caret-position="629">
+          <caret line="286" column="16" lean-forward="true" selection-start-line="286" selection-start-column="16" selection-end-line="286" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logic.civilian.js">
+    <entry file="file://$PROJECT_DIR$/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="221" column="79" lean-forward="true" selection-start-line="221" selection-start-column="79" selection-end-line="221" selection-end-column="79" />
+        <state relative-caret-position="595">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/creep.create.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="269" column="62" selection-start-line="269" selection-start-column="62" selection-end-line="269" selection-end-column="62" />
         </state>
       </provider>
     </entry>
