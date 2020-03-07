@@ -188,7 +188,7 @@ module.exports = {
         creepsNeeded.set("outerCourierLogic3", 0);
         creepsNeeded.set("outerCourierLogic4", 0);
         creepsNeeded.set("outerCourierLogic5", 0);
-        creepsNeeded.set("attackerLogic1", 0);
+        creepsNeeded.set("attackerLogic1", 3);
         creepsNeeded.set("attackerLogic2", 0);
         creepsNeeded.set("attackerLogic3", 0);
         creepsNeeded.set("attackerLogic4", 0);
@@ -218,7 +218,7 @@ module.exports = {
         let creepsData = new Map();
 
         creepsData.set("attacker1", "needBoost: false," +
-            "roomToInvestigateName0 : \"E53N17\", roomToInvestigateX0: 12, roomToInvestigateY0: 28" // ",roomToInvestigateName0 : \"E57N11\", roomToInvestigateX0: 28, roomToInvestigateY0: 2" +
+            "roomToInvestigateName0 : \"E4S53\", roomToInvestigateX0: 23, roomToInvestigateY0: 6" // ",roomToInvestigateName0 : \"E57N11\", roomToInvestigateX0: 28, roomToInvestigateY0: 2" +
         );
 
         creepsData.set("attacker2", "needBoost: false," +
