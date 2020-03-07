@@ -219,8 +219,8 @@ module.exports = {
 
         creepsData.set("attacker1", "needBoost: false," +
             "roomToInvestigateName0 : \"E4S52\", roomToInvestigateX0: 32, roomToInvestigateY0: 42" +
-            ",roomToInvestigateName1 : \"E4S53\", roomToInvestigateX0: 23, roomToInvestigateY0: 6" +
-            ",roomToInvestigateName2 : \"E5S53\", roomToInvestigateX0: 4, roomToInvestigateY0: 16"
+            ",roomToInvestigateName1 : \"E4S53\", roomToInvestigateX1: 23, roomToInvestigateY1: 6" +
+            ",roomToInvestigateName2 : \"E5S53\", roomToInvestigateX2: 4, roomToInvestigateY2: 16"
         );
 
         creepsData.set("attacker2", "needBoost: false," +
