@@ -171,8 +171,8 @@ module.exports = {
         creepsNeeded.set("pureMiner", 0);
         creepsNeeded.set("courier", 2);
         creepsNeeded.set("upgrader", 1);
-        creepsNeeded.set("basicCreepOuter1", 1);
-        creepsNeeded.set("basicCreepOuter2", 1);
+        creepsNeeded.set("basicCreepOuter1", 2);
+        creepsNeeded.set("basicCreepOuter2", 2);
         creepsNeeded.set("basicCreepOuter3", 0);
         creepsNeeded.set("basicCreepOuter4", 0);
         creepsNeeded.set("basicCreepOuter5", 0);
