@@ -123,8 +123,8 @@ module.exports = {
             });
         }
 
-        if(enemies && enemies.length > 0){
-            if(enemies.length <= 2){
+        if (enemies && enemies.length > 0) {
+            if (enemies.length <= 2) {
                 localMadeDefenderNeeded = 5;
             } else {
                 localMadeDefenderNeeded = enemies.length * 2.5;
@@ -140,9 +140,9 @@ module.exports = {
 
         if (controllerLevel < 6) {
             roomMemory.haveExtractor = false;
-        } else if (roomMemory.haveExtractor == false){
+        } else if (roomMemory.haveExtractor == false) {
             var extractors = Game.rooms[roomName].find(FIND_MY_STRUCTURES, {filter: (s) => s.structureType == STRUCTURE_EXTRACTOR});
-            if(extractors.length > 0){
+            if (extractors.length > 0) {
                 roomMemory.haveExtractor = true;
             }
         }
@@ -154,11 +154,11 @@ module.exports = {
 
         var localMadeBankirNeeded = 0;
 
-        if(controllerLevel >= 6){
+        if (controllerLevel >= 6) {
             localMadeBankirNeeded = 1;
         }
 
-        if(controllerLevel < 8) {
+        if (controllerLevel < 8) {
             if (allReservesCount[roomName + ";" + RESOURCE_ENERGY] > 200000) {
                 localMadeUpgradersNeeded += 2;
             } else if (allReservesCount[roomName + ";" + RESOURCE_ENERGY] > 100000) {
@@ -229,7 +229,7 @@ module.exports = {
             roomMemory.creepPotential = creepPotential;
         }
 
-        if(!roomMemory.creepPotential){
+        if (!roomMemory.creepPotential) {
             var creepPotential = 0;
 
             if (controllerLevel < 7) {
@@ -303,10 +303,6 @@ module.exports = {
                 var controllerLevel1to7 = controllerLevel;
                 if (controllerLevel == 8) {
                     controllerLevel1to7 = 7;
-                }
-
-                if(controllerLevel = 2){
-                    localMadeBasicCreepsNeeded = localMadeBasicCreepsNeeded + 2;
                 }
 
                 if (localMadeCreeps < 2) {
@@ -405,7 +401,7 @@ module.exports = {
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 5 + "(\"rangedAttacker\"), memory)";
                     var createString = eval(constructorString);
                     eval(createString);
-                }else if (controllerLevel > 1 && localMadeRangedAttacker1 < localMadeRangedAttacker1Needed) {
+                } else if (controllerLevel > 1 && localMadeRangedAttacker1 < localMadeRangedAttacker1Needed) {
                     var memory = "{role: 'rangedAttacker1', claim: true, working: false, origination: '" + roomName + "', " +
                         creepsData.get('rangedAttacker1') +
                         "}";
@@ -430,7 +426,7 @@ module.exports = {
                     var memory = "{role: 'outerHarvesterLogic1', working: false, origination: '" + roomName + "', arrived: false, roomToWorkX: " + roomToWorkX1 + ", roomToWorkY: " + roomToWorkY1 + ",  " +
                         "roomToWorkName: \"" + roomToWorkName1 + "\"}";
                     var outerHarvesterLevel = controllerLevel1to3;
-                    if(creepsData.get("outerHarverster1Level") != undefined){
+                    if (creepsData.get("outerHarverster1Level") != undefined) {
                         outerHarvesterLevel = creepsData.get("outerHarverster1Level");
                     }
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + outerHarvesterLevel + "(\"pureHarvester\"), memory)";
@@ -481,7 +477,7 @@ module.exports = {
                     var memory = "{role: 'outerHarvesterLogic2', working: false, origination: '" + roomName + "', arrived: false, roomToWorkX: " + roomToWorkX2 + ", roomToWorkY: " + roomToWorkY2 + ",  " +
                         "roomToWorkName: \"" + roomToWorkName2 + "\"}";
                     var outerHarvesterLevel = controllerLevel1to3;
-                    if(creepsData.get("outerHarverster2Level") != undefined){
+                    if (creepsData.get("outerHarverster2Level") != undefined) {
                         outerHarvesterLevel = creepsData.get("outerHarverster2Level");
                     }
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + outerHarvesterLevel + "(\"pureHarvester\"), memory)";
@@ -532,7 +528,7 @@ module.exports = {
                     var memory = "{role: 'outerHarvesterLogic3', working: false, origination: '" + roomName + "', arrived: false, roomToWorkX: " + roomToWorkX3 + ", roomToWorkY: " + roomToWorkY3 + ",  " +
                         "roomToWorkName: \"" + roomToWorkName3 + "\"}";
                     var outerHarvesterLevel = controllerLevel1to3;
-                    if(creepsData.get("outerHarverster3Level") != undefined){
+                    if (creepsData.get("outerHarverster3Level") != undefined) {
                         outerHarvesterLevel = creepsData.get("outerHarverster3Level");
                     }
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + outerHarvesterLevel + "(\"pureHarvester\"), memory)";
@@ -584,7 +580,7 @@ module.exports = {
                         "roomToWorkName: \"" + roomToWorkName4 + "\"}";
                     var outerHarvesterLevel = controllerLevel1to3;
                     var levFromData = creepsData.get("outerHarverster4Level");
-                    if(levFromData != undefined){
+                    if (levFromData != undefined) {
                         outerHarvesterLevel = creepsData.get("outerHarverster4Level");
                     }
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + outerHarvesterLevel + "(\"pureHarvester\"), memory)";
@@ -635,7 +631,7 @@ module.exports = {
                     var memory = "{role: 'outerHarvesterLogic5', working: false, origination: '" + roomName + "', arrived: false, roomToWorkX: " + roomToWorkX5 + ", roomToWorkY: " + roomToWorkY5 + ",  " +
                         "roomToWorkName: \"" + roomToWorkName5 + "\"}";
                     var outerHarvesterLevel = controllerLevel1to3;
-                    if(creepsData.get("outerHarverster5Level") != undefined){
+                    if (creepsData.get("outerHarverster5Level") != undefined) {
                         outerHarvesterLevel = creepsData.get("outerHarverster5Level");
                     }
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + outerHarvesterLevel + "(\"pureHarvester\"), memory)";
@@ -710,7 +706,7 @@ module.exports = {
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 5 + "(\"basicCreepOuter\"), memory)";
                     var createString = eval(constructorString);
                     eval(createString);
-                }  else if (localMadeSieger < localMadeSiegerNeeded) {
+                } else if (localMadeSieger < localMadeSiegerNeeded) {
                     var memory = "{role: 'siegerLogic', claim: true, working: false, origination: '" + roomName + "', " +
                         creepsData.get('siegerLogic') +
                         "}";
@@ -719,6 +715,9 @@ module.exports = {
                     eval(createString);
                 }
             } else {
+
+                localMadeBasicCreepsNeeded = localMadeBasicCreepsNeeded + 2;
+                localMadeOuterCourierLogic1Needed = localMadeOuterCourierLogic1Needed + 2;
 
                 if (controllerLevel == 1 && localMadeCreeps < localMadeBasicCreepsNeeded) {
                     var createString = " Game.spawns." + freeSpawn.name + ".createCreep([WORK, WORK, CARRY, MOVE], " +
