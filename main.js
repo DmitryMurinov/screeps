@@ -30,23 +30,23 @@ module.exports.loop = function () {
     console.log(Game.cpu.getUsed() - startCpu);
 
 
-    // var roomsList = helperCounter.roomsList();
+    var roomsList = helperCounter.roomsList();
 
-    // var resourcesListCatalized = helperCounter.resourcesListCatalized();
+    var resourcesListCatalized = helperCounter.resourcesListCatalized();
 
-    // var startCpu = Game.cpu.getUsed();
-    // console.log(Game.cpu.getUsed() - startCpu);
+    var startCpu = Game.cpu.getUsed();
+    console.log(Game.cpu.getUsed() - startCpu);
 
-    // var allReservesCount = helperCounter.countAllReserves();
-
-
-    // defendRooms.towers(roomsList, gameTime);
+    var allReservesCount = helperCounter.countAllReserves();
 
 
-    // if(gameTime.substring(gameTime.length - 1, gameTime.length) == ('0')) {
-    //     roomLogicCivilian.runMyRooms(allCreepsCount, gameTime, allReservesCount);
-    // }
-    // console.log(Game.cpu.getUsed() - startCpu);
+    defendRooms.towers(roomsList, gameTime);
+
+
+    if(gameTime.substring(gameTime.length - 1, gameTime.length) == ('0')) {
+        roomLogicCivilian.runMyRooms(allCreepsCount, gameTime, allReservesCount);
+    }
+    console.log(Game.cpu.getUsed() - startCpu);
 
     // roomLogicWar.runMyRooms(gameTime);
 
