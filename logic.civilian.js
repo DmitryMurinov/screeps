@@ -9,7 +9,7 @@ module.exports = {
 
         this.E4S52(allCreepsCount, gameTime, allReservesCount);
         this.E3S51(allCreepsCount, gameTime, allReservesCount);
-        // this.E8S52(allCreepsCount, gameTime, allReservesCount);
+        this.E8S52(allCreepsCount, gameTime, allReservesCount);
         // this.E56N17(allCreepsCount, gameTime, allReservesCount);
         // this.E55N13(allCreepsCount, gameTime, allReservesCount);
 
