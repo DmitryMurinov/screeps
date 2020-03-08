@@ -133,7 +133,7 @@ module.exports = {
         //
         roomMemory.roomToWorkName5 = "E3S51";
         roomMemory.roomToWorkX5 = 46;
-        roomMemory.roomToWorkY5 = 34;
+        roomMemory.roomToWorkY5 = 36;
         // }
 
         if (controllerLevel >= 4 && gameTime.substring(gameTime.length - 2, gameTime.length) == '00') {
@@ -160,7 +160,7 @@ module.exports = {
         creepsNeeded.set("pureHarvester", 2);
         creepsNeeded.set("pureMiner", 0);
         creepsNeeded.set("courier", 1);
-        creepsNeeded.set("upgrader", 2);
+        creepsNeeded.set("upgrader", 1);
         creepsNeeded.set("basicCreepOuter1", 2);
         creepsNeeded.set("basicCreepOuter2", 2);
         creepsNeeded.set("basicCreepOuter3", 0);
@@ -241,7 +241,7 @@ module.exports = {
         );
 
         creepsData.set("controllerAttacker1", "needBoost: false," +
-            "roomToWorkX1: " + 46 + ", roomToWorkY1: " + 34 + ", roomToWorkName1: \"" + "E3S51" + "\""
+            "roomToWorkX1: " + 46 + ", roomToWorkY1: " + 36 + ", roomToWorkName1: \"" + "E3S51" + "\""
         );
 
         creepsData.set("controllerAttacker2", "needBoost: false," +
