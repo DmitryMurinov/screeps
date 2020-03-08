@@ -141,6 +141,8 @@ module.exports = {
 
         var outerClaimerLogic = "[CLAIM, CLAIM, MOVE, MOVE]";
 
+        var controllerAttacker = "[CLAIM, CLAIM, MOVE, MOVE]";
+
         var outerCourierLogic = "[CARRY, CARRY, MOVE, CARRY, CARRY, MOVE, CARRY, CARRY, MOVE, CARRY, CARRY, MOVE, " +
             "CARRY, CARRY, MOVE, CARRY, CARRY, MOVE, CARRY, CARRY, MOVE, CARRY, CARRY, MOVE]";
 
