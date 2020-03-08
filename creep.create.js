@@ -298,6 +298,11 @@ module.exports = {
                     controllerLevel1to4 = 4;
                 }
 
+                var controllerLevel1to5 = controllerLevel;
+                if (controllerLevel > 5) {
+                    controllerLevel1to5 = 5;
+                }
+
                 var controllerLevel1to6 = controllerLevel;
                 if (controllerLevel > 6) {
                     controllerLevel1to6 = 6;
@@ -307,8 +312,6 @@ module.exports = {
                 if (controllerLevel == 8) {
                     controllerLevel1to7 = 7;
                 }
-
-                console.log("We are here!");
 
                 if (localMadeCreeps < 2) {
                     var createString = " Game.spawns." + freeSpawn.name + ".createCreep([WORK, CARRY, CARRY, MOVE, MOVE], " +
@@ -373,7 +376,7 @@ module.exports = {
                     var memory = "{role: 'controllerAttacker1', claim: false, working: false, origination: '" + roomName + "', arrived: false, " +
                         creepsData.get('controllerAttacker1') +
                         "}";
-                    var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + 5 + "(\"controllerAttacker\"), memory)";
+                    var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + controllerLevel1to5 + "(\"controllerAttacker\"), memory)";
                     var createString = eval(constructorString);
                     eval(createString);
                     roomMemory.controllerAttacker1Needed = false;
