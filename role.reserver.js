@@ -3,7 +3,6 @@ module.exports = {
     run: function (creep) {
 
         //TransferLogic:
-
         if (creep.memory.arrived == false && creep.memory.roomToWorkName1 != undefined && creep.memory.roomToWorkName1 != null) {
 
             if (creep.memory.reachedRoom1 == undefined || creep.memory.reachedRoom1 == null) {

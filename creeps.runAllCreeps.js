@@ -58,8 +58,7 @@ module.exports = {
                 roleBankir.run(creep);
                 // var startCpu = Game.cpu.getUsed();
                 // console.log(Game.cpu.getUsed() - startCpu);
-            }
-            if (creep.memory.role == 'upgrader') {
+            } else if (creep.memory.role == 'upgrader') {
                 roleUpgrader.run(creep);
             } else if (creep.memory.role == 'builder') {
                 roleBuilder.run(creep);

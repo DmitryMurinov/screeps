@@ -9,7 +9,7 @@ module.exports = {
 
         this.E4S52(allCreepsCount, gameTime, allReservesCount);
         this.E3S51(allCreepsCount, gameTime, allReservesCount);
-        // this.E52N19(allCreepsCount, gameTime, allReservesCount);
+        // this.E8S52(allCreepsCount, gameTime, allReservesCount);
         // this.E56N17(allCreepsCount, gameTime, allReservesCount);
         // this.E55N13(allCreepsCount, gameTime, allReservesCount);
 
@@ -138,8 +138,8 @@ module.exports = {
 
         if (controllerLevel >= 4 && gameTime.substring(gameTime.length - 2, gameTime.length) == '00') {
             var rampartAreas = new Array();
-            var rampartArea1 = {x1: 21, y1: 1, x2: 25, y2: 8};
-            var rampartArea2 = {x1: 23, y1: 25, x2: 27, y2: 32};
+            var rampartArea1 = {x1: 21, y1: 1, x2: 24, y2: 8};
+            var rampartArea2 = {x1: 24, y1: 25, x2: 27, y2: 32};
             // var rampartArea3 = {x1: 20, y1: 31, x2: 34, y2: 31};
             // var rampartArea4 = {x1: 20, y1: 17, x2: 20, y2: 31};
             // var rampartArea5 = {x1: 34, y1: 17, x2: 34, y2: 31};
@@ -153,14 +153,27 @@ module.exports = {
             defendRoom.placeRampartFromArea(roomName, rampartAreas);
         }
 
+        var localMadeUpgradersNeeded = 1;
+        if (controllerLevel < 8) {
+            if (allReservesCount[roomName + ";" + RESOURCE_ENERGY] > 200000) {
+                localMadeUpgradersNeeded += 2;
+            } else if (allReservesCount[roomName + ";" + RESOURCE_ENERGY] > 100000) {
+                localMadeUpgradersNeeded += 1;
+            }
+        }
+
+        var localMadePureMinersNeeded = 0;
+        if (controllerLevel >= 6) {
+            localMadePureMinersNeeded = 1;
+        }
 
         let creepsNeeded = new Map();
 
         creepsNeeded.set("basicCreep", 2);
         creepsNeeded.set("pureHarvester", 2);
-        creepsNeeded.set("pureMiner", 0);
+        creepsNeeded.set("pureMiner", localMadePureMinersNeeded);
         creepsNeeded.set("courier", 1);
-        creepsNeeded.set("upgrader", 1);
+        creepsNeeded.set("upgrader", localMadeUpgradersNeeded);
         creepsNeeded.set("basicCreepOuter1", 2);
         creepsNeeded.set("basicCreepOuter2", 2);
         creepsNeeded.set("basicCreepOuter3", 0);
@@ -215,7 +228,7 @@ module.exports = {
 
         creepsData.set("attacker2", "needBoost: false," +
             "roomToInvestigateName0 : \"E3S52\", roomToInvestigateX0: 22, roomToInvestigateY0: 2," +
-            "roomToInvestigateName1 : \"E4S1\", roomToInvestigateX1: 2, roomToInvestigateY1: 40"
+            "roomToInvestigateName1 : \"E4S51\", roomToInvestigateX1: 2, roomToInvestigateY1: 40"
         );
 
         creepsData.set("attacker3", "needBoost: false," +
@@ -435,15 +448,15 @@ module.exports = {
 
             creepsData.set("attacker1", "needBoost: false," +
                 "roomToInvestigateName0 : \"E3S52\", roomToInvestigateX0: 22, roomToInvestigateY0: 2," +
-                "roomToInvestigateName1 : \"E4S1\", roomToInvestigateX1: 2, roomToInvestigateY1: 40"
+                "roomToInvestigateName1 : \"E4S51\", roomToInvestigateX1: 2, roomToInvestigateY1: 40"
             );
 
             creepsData.set("outerCourier1",
-                "roomToBackX: 26, roomToBackY: 47, linkRoomX: 27, linkRoomY: 47, "
+                "roomToBackX: 26, roomToBackY: 46, linkRoomX: 27, linkRoomY: 47, "
             );
 
             creepsData.set("outerCourier2",
-                "roomToBackX: 28, roomToBackY: 47, linkRoomX: 27, linkRoomY: 47, "
+                "roomToBackX: 46, roomToBackY: 25, linkRoomX: 27, linkRoomY: 47, "
             );
 
             creepsData.set("outerCourier3",
@@ -462,11 +475,11 @@ module.exports = {
 
         },
 
-    E52N19: function (allCreepsCount, gameTime, allReservesCount) {
+    E8S52: function (allCreepsCount, gameTime, allReservesCount) {
 
-        var betterRoomName = "W33N23";
+        // var betterRoomName = "W33N23";
 
-        var roomName = "E52N19";
+        var roomName = "E8S52";
 
         var controllerLevel = Game.rooms[roomName].controller.level;
 
@@ -504,12 +517,12 @@ module.exports = {
 
         if (controllerLevel >= 4 && gameTime.substring(gameTime.length - 1, gameTime.length) == '0') {
             var rampartAreas = new Array();
-            var rampartArea1 = {x1: 16, y1: 22, x2: 31, y2: 22};
-            var rampartArea2 = {x1: 13, y1: 22, x2: 13, y2: 26};
-            var rampartArea3 = {x1: 4, y1: 32, x2: 4, y2: 38};
-            var rampartArea4 = {x1: 3, y1: 33, x2: 7, y2: 33};
-            var rampartArea5 = {x1: 3, y1: 32, x2: 3, y2: 32};
-            var rampartArea6 = {x1: 19, y1: 24, x2: 32, y2: 37};
+            // var rampartArea1 = {x1: 16, y1: 22, x2: 31, y2: 22};
+            // var rampartArea2 = {x1: 13, y1: 22, x2: 13, y2: 26};
+            // var rampartArea3 = {x1: 4, y1: 32, x2: 4, y2: 38};
+            // var rampartArea4 = {x1: 3, y1: 33, x2: 7, y2: 33};
+            // var rampartArea5 = {x1: 3, y1: 32, x2: 3, y2: 32};
+            // var rampartArea6 = {x1: 19, y1: 24, x2: 32, y2: 37};
             rampartAreas.push(rampartArea1);
             rampartAreas.push(rampartArea2);
             rampartAreas.push(rampartArea3);
@@ -520,17 +533,17 @@ module.exports = {
         }
 
         if (gameTime.substring(gameTime.length - 2, gameTime.length) == '00') {
-            roomMemory.roomToWorkName1 = "E51N19";
-            roomMemory.roomToWorkX1 = 45;
-            roomMemory.roomToWorkY1 = 41;
+            roomMemory.roomToWorkName1 = "E9S52";
+            roomMemory.roomToWorkX1 = 2;
+            roomMemory.roomToWorkY1 = 8;
 
-            roomMemory.roomToWorkName2 = "E52N18";
-            roomMemory.roomToWorkX2 = 12;
-            roomMemory.roomToWorkY2 = 2;
+            roomMemory.roomToWorkName2 = "E9S51";
+            roomMemory.roomToWorkX2 = 5;
+            roomMemory.roomToWorkY2 = 46;
 
-            roomMemory.roomToWorkName3 = "E51N18";
-            roomMemory.roomToWorkX3 = 19;
-            roomMemory.roomToWorkY3 = 3;
+            // roomMemory.roomToWorkName3 = "E51N18";
+            // roomMemory.roomToWorkX3 = 19;
+            // roomMemory.roomToWorkY3 = 3;
         }
 
         var localMadeUpgradersNeeded = 1;
@@ -552,26 +565,26 @@ module.exports = {
         creepsNeeded.set("basicCreep", 2);
         creepsNeeded.set("pureHarvester", 2);
         creepsNeeded.set("pureMiner", localMadePureMinersNeeded);
-        creepsNeeded.set("courier", 3);
+        creepsNeeded.set("courier", 2);
         creepsNeeded.set("upgrader", localMadeUpgradersNeeded);
         creepsNeeded.set("basicCreepOuter1", 2);
-        creepsNeeded.set("basicCreepOuter2", 1);
+        creepsNeeded.set("basicCreepOuter2", 2);
         creepsNeeded.set("basicCreepOuter3", 0);
         creepsNeeded.set("basicCreepOuter4", 0);
         creepsNeeded.set("basicCreepOuter5", 0);
         creepsNeeded.set("basicCreepOuter6", 0);
         creepsNeeded.set("outerHarvesterLogic", 0);
         creepsNeeded.set("outerHarvesterLogic1", 2);
-        creepsNeeded.set("outerHarvesterLogic2", 1);
-        creepsNeeded.set("outerHarvesterLogic3", 2);
+        creepsNeeded.set("outerHarvesterLogic2", 2);
+        creepsNeeded.set("outerHarvesterLogic3", 0);
         creepsNeeded.set("outerHarvesterLogic4", 0);
         creepsNeeded.set("outerHarvesterLogic5", 0);
-        creepsNeeded.set("outerCourierLogic1", 1);
-        creepsNeeded.set("outerCourierLogic2", 1);
-        creepsNeeded.set("outerCourierLogic3", 2);
+        creepsNeeded.set("outerCourierLogic1", 2);
+        creepsNeeded.set("outerCourierLogic2", 2);
+        creepsNeeded.set("outerCourierLogic3", 0);
         creepsNeeded.set("outerCourierLogic4", 0);
         creepsNeeded.set("outerCourierLogic5", 0);
-        creepsNeeded.set("attackerLogic1", 1);
+        creepsNeeded.set("attackerLogic1", 2);
         creepsNeeded.set("attackerLogic2", 0);
         creepsNeeded.set("attackerLogic3", 0);
         creepsNeeded.set("attackerLogic4", 0);
@@ -586,7 +599,7 @@ module.exports = {
         creepsNeeded.set("controllerAttacker2", 0);
         creepsNeeded.set("outerReserver1", 1);
         creepsNeeded.set("outerReserver2", 1);
-        creepsNeeded.set("outerReserver3", 1);
+        creepsNeeded.set("outerReserver3", 0);
         creepsNeeded.set("outerReserver4", 0);
         creepsNeeded.set("outerReserver5", 0);
         creepsNeeded.set("dismantilist1", 0);
@@ -601,9 +614,9 @@ module.exports = {
         let creepsData = new Map();
 
         creepsData.set("attacker1", "needBoost: false," +
-            "roomToInvestigateName0 : \"E51N18\", roomToInvestigateX0: 15, roomToInvestigateY0: 2," +
-            "roomToInvestigateName1 : \"E52N19\", roomToInvestigateX1: 10, roomToInvestigateY1: 39," +
-            "roomToInvestigateName2 : \"E52N18\", roomToInvestigateX2: 10, roomToInvestigateY2: 2"
+            "roomToInvestigateName0 : \"E9S52\", roomToInvestigateX0: 4, roomToInvestigateY0: 8," +
+            "roomToInvestigateName1 : \"E9S51\", roomToInvestigateX1: 8, roomToInvestigateY1: 46," +
+            "roomToInvestigateName2 : \"E8S52\", roomToInvestigateX2: 43, roomToInvestigateY2: 8"
         );
 
         creepsData.set("attacker2", "needBoost: false," +
@@ -615,11 +628,11 @@ module.exports = {
         );
 
         creepsData.set("outerCourier1",
-            "roomToBackX: 2, roomToBackY: 35, linkRoomX: 2, linkRoomY: 36, "
+            "roomToBackX: 47, roomToBackY: 8, linkRoomX: 2, linkRoomY: 36, "
         );
 
         creepsData.set("outerCourier2",
-            "roomToBackX: 10, roomToBackY: 48, linkRoomX: 13, linkRoomY: 47, "
+            "roomToBackX: 47, roomToBackY: 5, linkRoomX: 13, linkRoomY: 47, "
         );
 
         creepsData.set("outerCourier3",

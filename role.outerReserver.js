@@ -45,17 +45,21 @@ module.exports = {
                 if (creep.pos.x == creep.memory.roomToWorkX && creep.pos.y == creep.memory.roomToWorkY && creep.room.name == creep.memory.roomToWorkName) {
                     creep.memory.storedPath = undefined;
                 } else {
-                    if (!creep.memory.storedPath) {
-                        creep.memory.storedPath = creep.pos.findPathTo(new RoomPosition(creep.memory.roomToWorkX, creep.memory.roomToWorkY, creep.memory.roomToWorkName));
-                    }
-                    var moveResult;
                     if (creep.memory.storedPath) {
                         moveResult = creep.moveByPath(creep.memory.storedPath);
                     }
-                    if (moveResult == OK) {
-                    } else {
+                    var updatePath = 1;
+                    if(creep.memory.prevX != undefined && creep.memory.prevX){
+                        if(creep.memory.prevX != creep.pos.x || creep.memory.prevY != creep.pos.y){
+                            updatePath = 0;
+                        }
+                    }
+                
+                    creep.memory.prevX=creep.pos.x;
+                    creep.memory.prevY=creep.pos.y;
+                    
+                    if (updatePath == 1) {
                         creep.memory.storedPath = creep.pos.findPathTo(new RoomPosition(creep.memory.roomToWorkX, creep.memory.roomToWorkY, creep.memory.roomToWorkName));
-                        moveResult = creep.moveByPath(creep.memory.storedPath);
                     }
                 }
 
