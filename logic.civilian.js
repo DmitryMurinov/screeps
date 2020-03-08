@@ -241,7 +241,7 @@ module.exports = {
         );
 
         creepsData.set("controllerAttacker1", "needBoost: false," +
-            "roomToWorkX1: " + 2 + ", roomToWorkY1: " + 28 + ", roomToWorkName1: \"" + "E8S52" + "\""
+            "roomToWorkX1: " + 2 + ", roomToWorkY1: " + 32 + ", roomToWorkName1: \"" + "E8S52" + "\""
         );
 
         creepsData.set("controllerAttacker2", "needBoost: false," +

@@ -27,7 +27,7 @@ module.exports.loop = function () {
 
     runAllCreeps.run(allCreepsCount, gameTime);
 
-    console.log(Game.cpu.getUsed() - startCpu);
+    // console.log(Game.cpu.getUsed() - startCpu);
 
 
     var roomsList = helperCounter.roomsList();
@@ -35,7 +35,7 @@ module.exports.loop = function () {
     var resourcesListCatalized = helperCounter.resourcesListCatalized();
 
     var startCpu = Game.cpu.getUsed();
-    console.log(Game.cpu.getUsed() - startCpu);
+    // console.log(Game.cpu.getUsed() - startCpu);
 
     var allReservesCount = helperCounter.countAllReserves();
 
