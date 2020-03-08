@@ -165,7 +165,7 @@ module.exports = {
         creepsNeeded.set("basicCreepOuter2", 2);
         creepsNeeded.set("basicCreepOuter3", 0);
         creepsNeeded.set("basicCreepOuter4", 0);
-        creepsNeeded.set("basicCreepOuter5", 2);
+        creepsNeeded.set("basicCreepOuter5", 4);
         creepsNeeded.set("basicCreepOuter6", 0);
         creepsNeeded.set("outerHarvesterLogic", 0);
         creepsNeeded.set("outerHarvesterLogic1", 2);
