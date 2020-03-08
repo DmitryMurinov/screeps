@@ -131,9 +131,9 @@ module.exports = {
         // roomMemory.roomToWorkX4 = 2;
         // roomMemory.roomToWorkY4 = 29;
         //
-        roomMemory.roomToWorkName5 = "E3S51";
-        roomMemory.roomToWorkX5 = 46;
-        roomMemory.roomToWorkY5 = 36;
+        roomMemory.roomToWorkName5 = "E8S52";
+        roomMemory.roomToWorkX5 = 2;
+        roomMemory.roomToWorkY5 = 32;
         // }
 
         if (controllerLevel >= 4 && gameTime.substring(gameTime.length - 2, gameTime.length) == '00') {
@@ -241,7 +241,7 @@ module.exports = {
         );
 
         creepsData.set("controllerAttacker1", "needBoost: false," +
-            "roomToWorkX1: " + 46 + ", roomToWorkY1: " + 36 + ", roomToWorkName1: \"" + "E3S51" + "\""
+            "roomToWorkX1: " + 2 + ", roomToWorkY1: " + 28 + ", roomToWorkName1: \"" + "E8S52" + "\""
         );
 
         creepsData.set("controllerAttacker2", "needBoost: false," +

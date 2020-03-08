@@ -7,7 +7,7 @@ module.exports = {
         var roomsList = new Array();
 
         roomsList.push('E4S52');
-        // roomsList.push('E57N15');
+        roomsList.push('E3S51');
         // roomsList.push('E52N19');
         // roomsList.push('E56N17');
         // roomsList.push('E55N13');
