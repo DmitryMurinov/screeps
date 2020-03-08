@@ -8,7 +8,7 @@ module.exports = {
     runMyRooms: function (allCreepsCount, gameTime, allReservesCount) {
 
         this.E4S52(allCreepsCount, gameTime, allReservesCount);
-        // this.E3S51(allCreepsCount, gameTime, allReservesCount);
+        this.E3S51(allCreepsCount, gameTime, allReservesCount);
         // this.E52N19(allCreepsCount, gameTime, allReservesCount);
         // this.E56N17(allCreepsCount, gameTime, allReservesCount);
         // this.E55N13(allCreepsCount, gameTime, allReservesCount);

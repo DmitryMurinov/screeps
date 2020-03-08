@@ -264,9 +264,6 @@ module.exports = {
 
         var creepPotential = roomMemory.creepPotential;
 
-        console.log("We are here!");
-        console.log("controllerAttacker1Needed = " + controllerAttacker1Needed);
-
         if (freeSpawn != undefined) {
             if (controllerLevel >= 3 && creepPotential >= 800 && localMadeCreeps >= 4) {
                 var pureMinerLevel = 6;
