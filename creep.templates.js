@@ -169,6 +169,8 @@ module.exports = {
             return attackerLogic;
         } else if (creepType == 'dismantilist') {
             return dismantilist;
+        } else if (creepType == 'controllerAttacker') {
+            return controllerAttacker;
         } else {
             return "check creepTypes lev 4";
         }
