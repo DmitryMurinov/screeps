@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="Reserver &amp;&amp; Controller Attacker pathfinding debug.">
+    <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="+1 more room.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creep.create.js" beforeDir="false" afterPath="$PROJECT_DIR$/creep.create.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logic.civilian.js" beforeDir="false" afterPath="$PROJECT_DIR$/logic.civilian.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -39,11 +40,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/logic.civilian.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="253" column="10" lean-forward="true" selection-start-line="253" selection-start-column="10" selection-end-line="253" selection-end-column="10" />
+            <state relative-caret-position="1190">
+              <caret line="250" lean-forward="true" selection-start-line="250" selection-end-line="250" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/creep.create.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="572">
+              <caret line="381" column="70" selection-start-line="381" selection-start-column="70" selection-end-line="381" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -53,15 +63,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="385">
               <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/helper.counter.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -182,12 +183,12 @@
         <option value="$PROJECT_DIR$/role.outerCourierLogic.js" />
         <option value="$PROJECT_DIR$/main.js" />
         <option value="$PROJECT_DIR$/creep.templates.js" />
-        <option value="$PROJECT_DIR$/creep.create.js" />
         <option value="$PROJECT_DIR$/helper.counter.js" />
         <option value="$PROJECT_DIR$/role.reserver.js" />
         <option value="$PROJECT_DIR$/role.outerReserver.js" />
         <option value="$PROJECT_DIR$/role.controllerAttacker.js" />
         <option value="$PROJECT_DIR$/logic.civilian.js" />
+        <option value="$PROJECT_DIR$/creep.create.js" />
       </list>
     </option>
   </component>
@@ -316,21 +317,7 @@
       <workItem from="1583681190499" duration="3121000" />
       <workItem from="1583696014284" duration="3301000" />
       <workItem from="1583701932328" duration="1099000" />
-      <workItem from="1583744537202" duration="1381000" />
-    </task>
-    <task id="LOCAL-00169" summary="Пофиксил застревание keeperKiller'a">
-      <created>1508182734066</created>
-      <option name="number" value="00169" />
-      <option name="presentableId" value="LOCAL-00169" />
-      <option name="project" value="LOCAL" />
-      <updated>1508182734067</updated>
-    </task>
-    <task id="LOCAL-00170" summary="Пофиксил застревание keeperKiller'a">
-      <created>1508182932500</created>
-      <option name="number" value="00170" />
-      <option name="presentableId" value="LOCAL-00170" />
-      <option name="project" value="LOCAL" />
-      <updated>1508182932500</updated>
+      <workItem from="1583744537202" duration="2251000" />
     </task>
     <task id="LOCAL-00171" summary="Настраивание уровня харвестеров для комнат с киперами.">
       <created>1508183031509</created>
@@ -661,11 +648,25 @@
       <option name="project" value="LOCAL" />
       <updated>1583745766889</updated>
     </task>
-    <option name="localTasksCounter" value="218" />
+    <task id="LOCAL-00218" summary="+1 more room.">
+      <created>1583745928702</created>
+      <option name="number" value="00218" />
+      <option name="presentableId" value="LOCAL-00218" />
+      <option name="project" value="LOCAL" />
+      <updated>1583745928702</updated>
+    </task>
+    <task id="LOCAL-00219" summary="+1 more room.">
+      <created>1583746979837</created>
+      <option name="number" value="00219" />
+      <option name="presentableId" value="LOCAL-00219" />
+      <option name="project" value="LOCAL" />
+      <updated>1583746979837</updated>
+    </task>
+    <option name="localTasksCounter" value="220" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113991000" />
+    <option name="totallyTimeSpent" value="114861000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -706,7 +707,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Добавил добычу ещё в 2 комнатах." />
     <MESSAGE value="Курьеры в первой комнате 1 &gt;&gt; 2." />
     <MESSAGE value="Поправил место возврата курьеров." />
     <MESSAGE value="Добавил 2 базовых крипа при уровне контроллера = 2" />
@@ -731,7 +731,8 @@
     <MESSAGE value="Kill player to the right." />
     <MESSAGE value="Reserver debug" />
     <MESSAGE value="Reserver &amp;&amp; Controller Attacker pathfinding debug." />
-    <option name="LAST_COMMIT_MESSAGE" value="Reserver &amp;&amp; Controller Attacker pathfinding debug." />
+    <MESSAGE value="+1 more room." />
+    <option name="LAST_COMMIT_MESSAGE" value="+1 more room." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/role.refillerWar.js" />
@@ -778,13 +779,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1054">
           <caret line="62" column="25" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/creep.create.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6409">
-          <caret line="377" column="39" selection-start-line="377" selection-start-column="39" selection-end-line="377" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -878,8 +872,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/logic.civilian.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="253" column="10" lean-forward="true" selection-start-line="253" selection-start-column="10" selection-end-line="253" selection-end-column="10" />
+        <state relative-caret-position="1190">
+          <caret line="250" lean-forward="true" selection-start-line="250" selection-end-line="250" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/creep.create.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="381" column="70" selection-start-line="381" selection-start-column="70" selection-end-line="381" selection-end-column="70" />
         </state>
       </provider>
     </entry>

@@ -369,7 +369,8 @@ module.exports = {
                     var constructorString = "creepTemplates.creepConstructor(roomName, freeSpawn.name, creepTemplates.lev" + controllerLevel1to6 + "(\"exauster\"), memory)";
                     var createString = eval(constructorString);
                     eval(createString);
-                } else if (controllerLevel > 2 && controllerAttacker1 < controllerAttacker1Needed && roomMemory.controllerAttacker1Needed == true) {
+                } else if (controllerLevel > 2 && controllerAttacker1 < controllerAttacker1Needed) {
+                    // && roomMemory.controllerAttacker1Needed == true
                     var memory = "{role: 'controllerAttacker1', claim: false, working: false, origination: '" + roomName + "', arrived: false, " +
                         creepsData.get('controllerAttacker1') +
                         "}";
@@ -377,7 +378,8 @@ module.exports = {
                     var createString = eval(constructorString);
                     eval(createString);
                     roomMemory.controllerAttacker1Needed = false;
-                } else if (controllerLevel > 2 && controllerAttacker2 < controllerAttacker2Needed && roomMemory.controllerAttacker2Needed == true) {
+                } else if (controllerLevel > 2 && controllerAttacker2 < controllerAttacker2Needed) {
+                    // && roomMemory.controllerAttacker2Needed == true
                     var memory = "{role: 'controllerAttacker2', claim: false, working: false, origination: '" + roomName + "', arrived: false, " +
                         creepsData.get('controllerAttacker2') +
                         "}";
