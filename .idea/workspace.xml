@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="Debug">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="+1 more rooms, E9S54.">
+      <change beforePath="$PROJECT_DIR$/logic.civilian.js" beforeDir="false" afterPath="$PROJECT_DIR$/logic.civilian.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,8 +48,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/logic.civilian.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1003">
-              <caret line="305" selection-start-line="305" selection-end-line="305" />
+            <state relative-caret-position="103">
+              <caret line="896" column="52" selection-start-line="896" selection-start-column="52" selection-end-line="896" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -57,7 +57,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/role.basicCreepOuter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
+            <state relative-caret-position="986">
               <caret line="82" column="13" lean-forward="true" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
             </state>
           </provider>
@@ -183,8 +183,8 @@
         <option value="$PROJECT_DIR$/creep.templates.js" />
         <option value="$PROJECT_DIR$/creep.create.js" />
         <option value="$PROJECT_DIR$/helper.counter.js" />
-        <option value="$PROJECT_DIR$/logic.civilian.js" />
         <option value="$PROJECT_DIR$/role.basicCreepOuter.js" />
+        <option value="$PROJECT_DIR$/logic.civilian.js" />
       </list>
     </option>
   </component>
@@ -315,14 +315,7 @@
       <workItem from="1583701932328" duration="1099000" />
       <workItem from="1583744537202" duration="5663000" />
       <workItem from="1583761127938" duration="1716000" />
-      <workItem from="1583768050255" duration="631000" />
-    </task>
-    <task id="LOCAL-00183" summary="Поправил место возврата курьеров.">
-      <created>1583575909576</created>
-      <option name="number" value="00183" />
-      <option name="presentableId" value="LOCAL-00183" />
-      <option name="project" value="LOCAL" />
-      <updated>1583575909576</updated>
+      <workItem from="1583768050255" duration="1340000" />
     </task>
     <task id="LOCAL-00184" summary="Добавил 2 базовых крипа при уровне контроллера = 2">
       <created>1583585358912</created>
@@ -660,11 +653,18 @@
       <option name="project" value="LOCAL" />
       <updated>1583763919451</updated>
     </task>
-    <option name="localTasksCounter" value="232" />
+    <task id="LOCAL-00232" summary="+1 more rooms, E9S54.">
+      <created>1583768833716</created>
+      <option name="number" value="00232" />
+      <option name="presentableId" value="LOCAL-00232" />
+      <option name="project" value="LOCAL" />
+      <updated>1583768833717</updated>
+    </task>
+    <option name="localTasksCounter" value="233" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120620000" />
+    <option name="totallyTimeSpent" value="121329000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -705,7 +705,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Добавил 3 атакующих для защиты юга." />
     <MESSAGE value="Добавил 2 внешних курьеров для комнаты 1, при уровне контроллера 2 и 3." />
     <MESSAGE value="Добавил патруль для атакующих creep'ов." />
     <MESSAGE value="Увеличил кол-во upgraders 1 &gt;&gt; 3." />
@@ -730,7 +729,8 @@
     <MESSAGE value="+2 more rooms." />
     <MESSAGE value="E6S52 rooms enabled." />
     <MESSAGE value="Debug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Debug" />
+    <MESSAGE value="+1 more rooms, E9S54." />
+    <option name="LAST_COMMIT_MESSAGE" value="+1 more rooms, E9S54." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/role.refillerWar.js" />
@@ -870,15 +870,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/role.basicCreepOuter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
+        <state relative-caret-position="986">
           <caret line="82" column="13" lean-forward="true" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logic.civilian.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="305" selection-start-line="305" selection-end-line="305" />
+        <state relative-caret-position="103">
+          <caret line="896" column="52" selection-start-line="896" selection-start-column="52" selection-end-line="896" selection-end-column="52" />
         </state>
       </provider>
     </entry>
