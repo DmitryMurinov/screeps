@@ -281,7 +281,7 @@ module.exports = {
 
         creepsData.set("basicCreepOuter6",
             "roomToWorkX1: 14, roomToWorkY1: 3, roomToWorkName1: \"E6S52\"" +
-            ",roomToWorkX2: 23, roomToWorkY2: 3, roomToWorkName1: \"E9S54\""
+            ",roomToWorkX2: 23, roomToWorkY2: 3, roomToWorkName2: \"E9S54\""
         );
 
         creepsData.set("siegerLogic",
