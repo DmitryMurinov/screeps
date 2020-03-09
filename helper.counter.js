@@ -10,7 +10,7 @@ module.exports = {
         roomsList.push('E3S51');
         roomsList.push('E8S52');
         roomsList.push('E6S52');
-        // roomsList.push('E55N13');
+        roomsList.push('E9S54');
 
         return roomsList;
     },

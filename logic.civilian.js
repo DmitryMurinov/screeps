@@ -11,7 +11,7 @@ module.exports = {
         this.E3S51(allCreepsCount, gameTime, allReservesCount);
         this.E8S52(allCreepsCount, gameTime, allReservesCount);
         this.E6S52(allCreepsCount, gameTime, allReservesCount);
-        // this.E55N13(allCreepsCount, gameTime, allReservesCount);
+        this.E9S54(allCreepsCount, gameTime, allReservesCount);
 
     },
 
@@ -816,11 +816,11 @@ module.exports = {
             creepCreate.create(roomName, allCreepsCount, gameTime, creepsData, creepsNeeded, allReservesCount);
         },
 
-    E55N13:
+    E9S54:
 
         function (allCreepsCount, gameTime, allReservesCount) {
 
-            var roomName = "E55N13";
+            var roomName = "E9S54";
 
             var controllerLevel = Game.rooms[roomName].controller.level;
 
@@ -838,9 +838,9 @@ module.exports = {
 
             if (controllerLevel >= 4 && gameTime.substring(gameTime.length - 1, gameTime.length) == '0') {
                 var rampartAreas = new Array();
-                var rampartArea1 = {x1: 1, y1: 29, x2: 5, y2: 30};
-                var rampartArea2 = {x1: 4, y1: 31, x2: 5, y2: 32};
-                var rampartArea3 = {x1: 14, y1: 3, x2: 18, y2: 4};
+                // var rampartArea1 = {x1: 1, y1: 29, x2: 5, y2: 30};
+                // var rampartArea2 = {x1: 4, y1: 31, x2: 5, y2: 32};
+                // var rampartArea3 = {x1: 14, y1: 3, x2: 18, y2: 4};
                 // var rampartArea4 = {x1: 3, y1: 33, x2: 7, y2: 38};
                 // var rampartArea5 = {x1: 3, y1: 32, x2: 3, y2: 32};
                 rampartAreas.push(rampartArea1);
@@ -852,25 +852,25 @@ module.exports = {
             }
 
             if (gameTime.substring(gameTime.length - 2, gameTime.length) == '00') {
-                roomMemory.roomToWorkName1 = "E56N13";
-                roomMemory.roomToWorkX1 = 3;
-                roomMemory.roomToWorkY1 = 14;
+                roomMemory.roomToWorkName1 = "E9S53";
+                roomMemory.roomToWorkX1 = 11;
+                roomMemory.roomToWorkY1 = 46;
 
-                roomMemory.roomToWorkName2 = "E55N12";
-                roomMemory.roomToWorkX2 = 36;
-                roomMemory.roomToWorkY2 = 2;
+                roomMemory.roomToWorkName2 = "E9S53";
+                roomMemory.roomToWorkX2 = 46;
+                roomMemory.roomToWorkY2 = 47;
 
-                roomMemory.roomToWorkName3 = "E54N13";
-                roomMemory.roomToWorkX3 = 47;
-                roomMemory.roomToWorkY3 = 11;
+                roomMemory.roomToWorkName3 = "E8S53";
+                roomMemory.roomToWorkX3 = 46;
+                roomMemory.roomToWorkY3 = 20;
 
-                roomMemory.roomToWorkName4 = "E54N14";
-                roomMemory.roomToWorkX4 = 40;
-                roomMemory.roomToWorkY4 = 47;
+                roomMemory.roomToWorkName4 = "E8S54";
+                roomMemory.roomToWorkX4 = 47;
+                roomMemory.roomToWorkY4 = 33;
 
-                roomMemory.roomToWorkName5 = "E55N14";
-                roomMemory.roomToWorkX5 = 2;
-                roomMemory.roomToWorkY5 = 43;
+                // roomMemory.roomToWorkName5 = "E55N14";
+                // roomMemory.roomToWorkX5 = 2;
+                // roomMemory.roomToWorkY5 = 43;
 
             }
 
@@ -884,20 +884,20 @@ module.exports = {
             creepsNeeded.set("basicCreepOuter1", 1);
             creepsNeeded.set("basicCreepOuter2", 1);
             creepsNeeded.set("basicCreepOuter3", 1);
-            creepsNeeded.set("basicCreepOuter4", 0);
+            creepsNeeded.set("basicCreepOuter4", 1);
             creepsNeeded.set("basicCreepOuter5", 0);
             creepsNeeded.set("basicCreepOuter6", 0);
-            creepsNeeded.set("outerHarvesterLogic1", 2);
+            creepsNeeded.set("outerHarvesterLogic1", 1);
             creepsNeeded.set("outerHarvesterLogic2", 1);
             creepsNeeded.set("outerHarvesterLogic3", 1);
-            creepsNeeded.set("outerHarvesterLogic4", 0);
+            creepsNeeded.set("outerHarvesterLogic4", 1);
             creepsNeeded.set("outerHarvesterLogic5", 0);
-            creepsNeeded.set("outerCourierLogic1", 2);
+            creepsNeeded.set("outerCourierLogic1", 1);
             creepsNeeded.set("outerCourierLogic2", 1);
-            creepsNeeded.set("outerCourierLogic3", 1);
-            creepsNeeded.set("outerCourierLogic4", 0);
+            creepsNeeded.set("outerCourierLogic3", 2);
+            creepsNeeded.set("outerCourierLogic4", 1);
             creepsNeeded.set("outerCourierLogic5", 0);
-            creepsNeeded.set("attackerLogic1", 1);
+            creepsNeeded.set("attackerLogic1", 2);
             creepsNeeded.set("attackerLogic2", 0);
             creepsNeeded.set("attackerLogic3", 0);
             creepsNeeded.set("attackerLogic4", 0);
@@ -910,9 +910,9 @@ module.exports = {
             creepsNeeded.set("controllerAttacker1", 0);
             creepsNeeded.set("controllerAttacker2", 0);
             creepsNeeded.set("outerReserver1", 1);
-            creepsNeeded.set("outerReserver2", 1);
+            creepsNeeded.set("outerReserver2", 0);
             creepsNeeded.set("outerReserver3", 1);
-            creepsNeeded.set("outerReserver4", 0);
+            creepsNeeded.set("outerReserver4", 1);
             creepsNeeded.set("outerReserver5", 0);
             creepsNeeded.set("dismantilist1", 0);
             creepsNeeded.set("dismantilist2", 0);
@@ -926,21 +926,25 @@ module.exports = {
             let creepsData = new Map();
 
             creepsData.set("attacker1", "needBoost: false," +
-                "roomToInvestigateName0 : \"E56N13\", roomToInvestigateX0: 5, roomToInvestigateY0: 15"
-                + ", roomToInvestigateName1 : \"E55N12\", roomToInvestigateX1: 35, roomToInvestigateY1: 2"
-                + ", roomToInvestigateName2 : \"E55N12\", roomToInvestigateX2: 48, roomToInvestigateY2: 13"
+                "roomToInvestigateName0 : \"E8S53\", roomToInvestigateX0: 45, roomToInvestigateY0: 37"
+                + ", roomToInvestigateName1 : \"E8S54\", roomToInvestigateX1: 45, roomToInvestigateY1: 18"
+                // + ", roomToInvestigateName2 : \"E55N12\", roomToInvestigateX2: 48, roomToInvestigateY2: 13"
             );
 
             creepsData.set("outerCourier1",
-                "roomToBackX: 47, roomToBackY: 15, linkRoomX: 27, linkRoomY: 47, "
+                "roomToBackX: 13, roomToBackY: 2, linkRoomX: 27, linkRoomY: 47, "
             );
 
             creepsData.set("outerCourier2",
-                "roomToBackX: 36, roomToBackY: 47, linkRoomX: 27, linkRoomY: 47, "
+                "roomToBackX: 40, roomToBackY: 2, linkRoomX: 27, linkRoomY: 47, "
             );
 
             creepsData.set("outerCourier3",
-                "roomToBackX: 2, roomToBackY: 11, linkRoomX: 21, linkRoomY: 47, "
+                "roomToBackX: 14, roomToBackY: 3, linkRoomX: 21, linkRoomY: 47, "
+            );
+
+            creepsData.set("outerCourier4",
+                "roomToBackX: 2, roomToBackY: 34, linkRoomX: 21, linkRoomY: 47, "
             );
 
             creepsData.set("controllerAttacker1", "needBoost: false," +
