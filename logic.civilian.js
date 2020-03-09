@@ -209,7 +209,7 @@ module.exports = {
         creepsNeeded.set("outerReserver3", 0);
         creepsNeeded.set("outerReserver4", 0);
         creepsNeeded.set("outerReserver5", 0);
-        creepsNeeded.set("dismantilist1", 0);
+        creepsNeeded.set("dismantilist1", 1);
         creepsNeeded.set("dismantilist2", 0);
         creepsNeeded.set("medic1", 0);
         creepsNeeded.set("medic2", 0);
@@ -270,8 +270,9 @@ module.exports = {
             "roomToWorkX1: " + 35 + ", roomToWorkY1: " + 4 + ", roomToWorkName1: \"" + "E55N13" + "\""
         );
 
-        creepsData.set("dismantalist1", "needBoost: true," +
-            "roomToWorkX1: " + 48 + ", roomToWorkY1: " + 34 + ", roomToWorkName1: \"" + "E52N15" + "\""
+        creepsData.set("dismantalist1", "needBoost: false," +
+            "roomToWorkX1: " + 20 + ", roomToWorkY1: " + 45 + ", roomToWorkName1: \"" + "E7S52" + "\", " +
+            "roomToWorkX2: " + 28 + ", roomToWorkY2: " + 3 + ", roomToWorkName2: \"" + "E9S54" + "\""
         );
 
         creepsData.set("dismantalist2", "needBoost: true," +
