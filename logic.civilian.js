@@ -178,8 +178,8 @@ module.exports = {
         creepsNeeded.set("basicCreepOuter2", 2);
         creepsNeeded.set("basicCreepOuter3", 0);
         creepsNeeded.set("basicCreepOuter4", 0);
-        creepsNeeded.set("basicCreepOuter5", 4);
-        creepsNeeded.set("basicCreepOuter6", 0);
+        creepsNeeded.set("basicCreepOuter5", 0);
+        creepsNeeded.set("basicCreepOuter6", 4);
         creepsNeeded.set("outerHarvesterLogic", 0);
         creepsNeeded.set("outerHarvesterLogic1", 2);
         creepsNeeded.set("outerHarvesterLogic2", 2);
@@ -279,7 +279,8 @@ module.exports = {
             "roomToWorkX1: " + 48 + ", roomToWorkY1: " + 34 + ", roomToWorkName1: \"" + "E52N15" + "\""
         );
 
-        creepsData.set("basicCreepOuter5",
+        creepsData.set("basicCreepOuter6",
+            "roomToWorkX2: 14, roomToWorkY2: 3, roomToWorkName1: \"E6S52\""
             ",roomToWorkX2: 23, roomToWorkY2: 3, roomToWorkName1: \"E9S54\""
         );
 
