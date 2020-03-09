@@ -70,6 +70,7 @@ module.exports = {
                 } else {
                     if (!creep.memory.storedPath) {
                         console.log(creep.name);
+                        console.log(creep.room.name);
                         creep.memory.storedPath = creep.pos.findPathTo(new RoomPosition(creep.memory.roomToWorkX, creep.memory.roomToWorkY, creep.memory.roomToWorkName));
                     }
                     if (creep.memory.storedPath) {
