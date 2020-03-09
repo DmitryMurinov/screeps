@@ -526,12 +526,12 @@ module.exports = {
             // var rampartArea4 = {x1: 3, y1: 33, x2: 7, y2: 33};
             // var rampartArea5 = {x1: 3, y1: 32, x2: 3, y2: 32};
             // var rampartArea6 = {x1: 19, y1: 24, x2: 32, y2: 37};
-            rampartAreas.push(rampartArea1);
-            rampartAreas.push(rampartArea2);
-            rampartAreas.push(rampartArea3);
-            rampartAreas.push(rampartArea4);
-            rampartAreas.push(rampartArea5);
-            rampartAreas.push(rampartArea6);
+            // rampartAreas.push(rampartArea1);
+            // rampartAreas.push(rampartArea2);
+            // rampartAreas.push(rampartArea3);
+            // rampartAreas.push(rampartArea4);
+            // rampartAreas.push(rampartArea5);
+            // rampartAreas.push(rampartArea6);
             defendRoom.placeRampartFromArea(roomName, rampartAreas);
         }
 
@@ -684,14 +684,14 @@ module.exports = {
 
             if (controllerLevel >= 4 && gameTime.substring(gameTime.length - 1, gameTime.length) == '0') {
                 var rampartAreas = new Array();
-                var rampartArea1 = {x1: 1, y1: 29, x2: 5, y2: 30};
-                var rampartArea2 = {x1: 4, y1: 31, x2: 5, y2: 32};
-                var rampartArea3 = {x1: 14, y1: 3, x2: 18, y2: 4};
+                // var rampartArea1 = {x1: 1, y1: 29, x2: 5, y2: 30};
+                // var rampartArea2 = {x1: 4, y1: 31, x2: 5, y2: 32};
+                // var rampartArea3 = {x1: 14, y1: 3, x2: 18, y2: 4};
                 // var rampartArea4 = {x1: 3, y1: 33, x2: 7, y2: 38};
                 // var rampartArea5 = {x1: 3, y1: 32, x2: 3, y2: 32};
-                rampartAreas.push(rampartArea1);
-                rampartAreas.push(rampartArea2);
-                rampartAreas.push(rampartArea3);
+                // rampartAreas.push(rampartArea1);
+                // rampartAreas.push(rampartArea2);
+                // rampartAreas.push(rampartArea3);
                 // rampartAreas.push(rampartArea4);
                 // rampartAreas.push(rampartArea5);
                 // defendRoom.placeRampartFromArea(roomName, rampartAreas);
@@ -844,9 +844,9 @@ module.exports = {
                 // var rampartArea3 = {x1: 14, y1: 3, x2: 18, y2: 4};
                 // var rampartArea4 = {x1: 3, y1: 33, x2: 7, y2: 38};
                 // var rampartArea5 = {x1: 3, y1: 32, x2: 3, y2: 32};
-                rampartAreas.push(rampartArea1);
-                rampartAreas.push(rampartArea2);
-                rampartAreas.push(rampartArea3);
+                // rampartAreas.push(rampartArea1);
+                // rampartAreas.push(rampartArea2);
+                // rampartAreas.push(rampartArea3);
                 // rampartAreas.push(rampartArea4);
                 // rampartAreas.push(rampartArea5);
                 // defendRoom.placeRampartFromArea(roomName, rampartAreas);
