@@ -280,7 +280,7 @@ module.exports = {
         );
 
         creepsData.set("basicCreepOuter6",
-            "roomToWorkX2: 14, roomToWorkY2: 3, roomToWorkName1: \"E6S52\""
+            "roomToWorkX2: 14, roomToWorkY2: 3, roomToWorkName1: \"E6S52\"" +
             ",roomToWorkX2: 23, roomToWorkY2: 3, roomToWorkName1: \"E9S54\""
         );
 
