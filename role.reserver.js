@@ -45,9 +45,11 @@ module.exports = {
                     if (!creep.memory.storedPath) {
                         creep.memory.storedPath = creep.pos.findPathTo(new RoomPosition(creep.memory.roomToWorkX, creep.memory.roomToWorkY, creep.memory.roomToWorkName));
                     }
+                    var moveResult;
                     if (creep.memory.storedPath) {
                         moveResult = creep.moveByPath(creep.memory.storedPath);
                     }
+                    console.log(moveResult);
                     if (moveResult == OK) {
                     } else {
                         creep.memory.storedPath = creep.pos.findPathTo(new RoomPosition(creep.memory.roomToWorkX, creep.memory.roomToWorkY, creep.memory.roomToWorkName));
