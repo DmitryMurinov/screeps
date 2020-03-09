@@ -9,7 +9,7 @@ module.exports = {
         roomsList.push('E4S52');
         roomsList.push('E3S51');
         roomsList.push('E8S52');
-        // roomsList.push('E56N17');
+        roomsList.push('E6S52');
         // roomsList.push('E55N13');
 
         return roomsList;

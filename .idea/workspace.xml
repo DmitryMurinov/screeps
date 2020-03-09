@@ -17,7 +17,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/role.outerCourierLogic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="4199">
               <caret line="247" column="42" selection-start-line="247" selection-start-column="42" selection-end-line="247" selection-end-column="42" />
             </state>
           </provider>
@@ -25,16 +25,28 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/role.attackerLogic.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2040" />
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manageResources.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/role.controllerAttacker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1462">
+            <state relative-caret-position="2023">
               <caret line="119" column="17" selection-start-line="119" selection-start-column="17" selection-end-line="119" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="714">
+              <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -42,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/creep.templates.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="172" column="38" selection-start-line="172" selection-start-column="38" selection-end-line="172" selection-end-column="38" />
+            <state relative-caret-position="2261">
+              <caret line="133" column="98" selection-start-line="133" selection-start-column="98" selection-end-line="133" selection-end-column="98" />
             </state>
           </provider>
         </entry>
@@ -51,16 +63,21 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/logic.civilian.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="209" column="46" lean-forward="true" selection-start-line="209" selection-start-column="46" selection-end-line="209" selection-end-column="46" />
+            <state relative-caret-position="646">
+              <caret line="791" column="50" lean-forward="true" selection-start-line="791" selection-start-column="50" selection-end-line="791" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/role.dismantalist.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/creep.create.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="691">
+            <state relative-caret-position="6545">
               <caret line="385" column="144" selection-start-line="385" selection-start-column="144" selection-end-line="385" selection-end-column="144" />
             </state>
           </provider>
@@ -69,31 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/role.outerReserver.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
+            <state relative-caret-position="782">
               <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/role.repairer.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/role.basicCreep.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1887">
-              <caret line="111" column="41" selection-start-line="111" selection-start-column="41" selection-end-line="111" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/role.builder.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1445">
-              <caret line="85" column="43" selection-start-line="85" selection-start-column="43" selection-end-line="85" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -211,8 +205,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -316,21 +310,8 @@
       <workItem from="1583681190499" duration="3121000" />
       <workItem from="1583696014284" duration="3301000" />
       <workItem from="1583701932328" duration="1099000" />
-      <workItem from="1583744537202" duration="4669000" />
-    </task>
-    <task id="LOCAL-00177" summary="Допиливание строительства дорог.">
-      <created>1508184659454</created>
-      <option name="number" value="00177" />
-      <option name="presentableId" value="LOCAL-00177" />
-      <option name="project" value="LOCAL" />
-      <updated>1508184659454</updated>
-    </task>
-    <task id="LOCAL-00178" summary="Допиливание строительства дорог.">
-      <created>1508186040293</created>
-      <option name="number" value="00178" />
-      <option name="presentableId" value="LOCAL-00178" />
-      <option name="project" value="LOCAL" />
-      <updated>1508186040293</updated>
+      <workItem from="1583744537202" duration="5663000" />
+      <workItem from="1583761127938" duration="504000" />
     </task>
     <task id="LOCAL-00179" summary="Допиливание строительства дорог.">
       <created>1508186628363</created>
@@ -661,17 +642,31 @@
       <option name="project" value="LOCAL" />
       <updated>1583749192588</updated>
     </task>
-    <option name="localTasksCounter" value="226" />
+    <task id="LOCAL-00226" summary="+2 more rooms.">
+      <created>1583749584867</created>
+      <option name="number" value="00226" />
+      <option name="presentableId" value="LOCAL-00226" />
+      <option name="project" value="LOCAL" />
+      <updated>1583749584867</updated>
+    </task>
+    <task id="LOCAL-00227" summary="+2 more rooms.">
+      <created>1583750601719</created>
+      <option name="number" value="00227" />
+      <option name="presentableId" value="LOCAL-00227" />
+      <option name="project" value="LOCAL" />
+      <updated>1583750601719</updated>
+    </task>
+    <option name="localTasksCounter" value="228" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117279000" />
+    <option name="totallyTimeSpent" value="118777000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21641791" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2185501" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -741,7 +736,6 @@
     <entry file="file://$PROJECT_DIR$/role.bankirLogic.js" />
     <entry file="file://$PROJECT_DIR$/struct.structuresNeedEnergy.js" />
     <entry file="file://$PROJECT_DIR$/rooms.logic.civilian.new.js" />
-    <entry file="file://$PROJECT_DIR$/role.dismantalist.js" />
     <entry file="file://$PROJECT_DIR$/labs.js" />
     <entry file="file://$PROJECT_DIR$/default.iml" />
     <entry file="file://$PROJECT_DIR$/role.RangedAttacker.js" />
@@ -788,16 +782,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manageResources.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/helper.counter.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -829,57 +813,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/role.reserver.js" />
     <entry file="file://$PROJECT_DIR$/role.outerCourierLogic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="4199">
           <caret line="247" column="42" selection-start-line="247" selection-start-column="42" selection-end-line="247" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/role.attackerLogic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2040" />
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/role.reserver.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="51" selection-start-line="51" selection-end-line="52" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/role.outerReserver.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/manageResources.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/role.controllerAttacker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1462">
+        <state relative-caret-position="2023">
           <caret line="119" column="17" selection-start-line="119" selection-start-column="17" selection-end-line="119" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/creep.templates.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="172" column="38" selection-start-line="172" selection-start-column="38" selection-end-line="172" selection-end-column="38" />
+        <state relative-caret-position="2261">
+          <caret line="133" column="98" selection-start-line="133" selection-start-column="98" selection-end-line="133" selection-end-column="98" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/role.dismantalist.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/creep.create.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="691">
+        <state relative-caret-position="6545">
           <caret line="385" column="144" selection-start-line="385" selection-start-column="144" selection-end-line="385" selection-end-column="144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.outerReserver.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logic.civilian.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="209" column="46" lean-forward="true" selection-start-line="209" selection-start-column="46" selection-end-line="209" selection-end-column="46" />
+        <state relative-caret-position="646">
+          <caret line="791" column="50" lean-forward="true" selection-start-line="791" selection-start-column="50" selection-end-line="791" selection-end-column="50" />
         </state>
       </provider>
     </entry>
