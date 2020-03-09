@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="+1 more room logic, E9S54." />
+    <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="+1 more room logic, E9S54.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic.civilian.js" beforeDir="false" afterPath="$PROJECT_DIR$/logic.civilian.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,11 +14,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manageResources.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/role.controllerAttacker.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -46,8 +44,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/logic.civilian.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="204" column="49" selection-start-line="204" selection-start-column="49" selection-end-line="204" selection-end-column="49" />
+            <state relative-caret-position="663">
+              <caret line="282" column="25" selection-start-line="282" selection-start-column="13" selection-end-line="282" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/defend.rooms.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -78,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/creep.create.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6545">
-              <caret line="385" column="144" selection-start-line="385" selection-start-column="144" selection-end-line="385" selection-end-column="144" />
+            <state relative-caret-position="-1045">
+              <caret line="154" column="37" selection-start-line="154" selection-start-column="37" selection-end-line="154" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -97,7 +104,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>roomMemory</find>
       <find>var</find>
       <find>.* =</find>
       <find>creepsNeeded\[&quot;.*&quot;\];</find>
@@ -125,6 +131,9 @@
       <find>courier</find>
       <find>controllerAttacker1Needed</find>
       <find>consol</find>
+      <find>basicCreepOuter6</find>
+      <find>basic</find>
+      <find>ban</find>
     </findStrings>
     <replaceStrings>
       <replace>roomMemory.</replace>
@@ -313,28 +322,7 @@
       <workItem from="1583701932328" duration="1099000" />
       <workItem from="1583744537202" duration="5663000" />
       <workItem from="1583761127938" duration="1716000" />
-      <workItem from="1583768050255" duration="2100000" />
-    </task>
-    <task id="LOCAL-00186" summary="Добавил 2 внешних курьеров для комнаты 1, при уровне контроллера 2 и 3.">
-      <created>1583594970005</created>
-      <option name="number" value="00186" />
-      <option name="presentableId" value="LOCAL-00186" />
-      <option name="project" value="LOCAL" />
-      <updated>1583594970005</updated>
-    </task>
-    <task id="LOCAL-00187" summary="Добавил 2 внешних курьеров для комнаты 1, при уровне контроллера 2 и 3.">
-      <created>1583595281404</created>
-      <option name="number" value="00187" />
-      <option name="presentableId" value="LOCAL-00187" />
-      <option name="project" value="LOCAL" />
-      <updated>1583595281404</updated>
-    </task>
-    <task id="LOCAL-00188" summary="Добавил патруль для атакующих creep'ов.">
-      <created>1583606625410</created>
-      <option name="number" value="00188" />
-      <option name="presentableId" value="LOCAL-00188" />
-      <option name="project" value="LOCAL" />
-      <updated>1583606625410</updated>
+      <workItem from="1583768050255" duration="3013000" />
     </task>
     <task id="LOCAL-00189" summary="Добавил патруль для атакующих creep'ов.">
       <created>1583606765255</created>
@@ -658,14 +646,35 @@
       <option name="project" value="LOCAL" />
       <updated>1583769584682</updated>
     </task>
-    <option name="localTasksCounter" value="235" />
+    <task id="LOCAL-00235" summary="+1 more room logic, E9S54.">
+      <created>1583778440387</created>
+      <option name="number" value="00235" />
+      <option name="presentableId" value="LOCAL-00235" />
+      <option name="project" value="LOCAL" />
+      <updated>1583778440387</updated>
+    </task>
+    <task id="LOCAL-00236" summary="+1 more room logic, E9S54.">
+      <created>1583778498416</created>
+      <option name="number" value="00236" />
+      <option name="presentableId" value="LOCAL-00236" />
+      <option name="project" value="LOCAL" />
+      <updated>1583778498416</updated>
+    </task>
+    <task id="LOCAL-00237" summary="+1 more room logic, E9S54.">
+      <created>1583778912896</created>
+      <option name="number" value="00237" />
+      <option name="presentableId" value="LOCAL-00237" />
+      <option name="project" value="LOCAL" />
+      <updated>1583778912897</updated>
+    </task>
+    <option name="localTasksCounter" value="238" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122089000" />
+    <option name="totallyTimeSpent" value="123002000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22068231" />
@@ -755,13 +764,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/defend.rooms.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2703">
-          <caret line="159" column="49" selection-start-line="159" selection-start-column="49" selection-end-line="159" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/role.outerHarvesterLogic.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
@@ -845,24 +847,10 @@
     <entry file="file://$PROJECT_DIR$/role.dismantalist.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/creep.create.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6545">
-          <caret line="385" column="144" selection-start-line="385" selection-start-column="144" selection-end-line="385" selection-end-column="144" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/role.outerReserver.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
           <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/role.basicCreepOuter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="82" column="13" lean-forward="true" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -873,10 +861,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/role.basicCreepOuter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="82" column="13" lean-forward="true" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/defend.rooms.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/creep.create.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1045">
+          <caret line="154" column="37" selection-start-line="154" selection-start-column="37" selection-end-line="154" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/logic.civilian.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="204" column="49" selection-start-line="204" selection-start-column="49" selection-end-line="204" selection-end-column="49" />
+        <state relative-caret-position="663">
+          <caret line="282" column="25" selection-start-line="282" selection-start-column="13" selection-end-line="282" selection-end-column="25" />
         </state>
       </provider>
     </entry>
