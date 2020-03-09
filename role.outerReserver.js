@@ -54,7 +54,10 @@ module.exports = {
                             updatePath = 0;
                         }
                     }
-                
+
+                    console.log(creep.name);
+                    console.log("moveResult" + moveResult);
+
                     creep.memory.prevX=creep.pos.x;
                     creep.memory.prevY=creep.pos.y;
                     

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="Kill player to the right.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/role.attackerLogic.js" beforeDir="false" afterPath="$PROJECT_DIR$/role.attackerLogic.js" afterDir="false" />
+    <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="Reserver debug">
       <change beforePath="$PROJECT_DIR$/role.reserver.js" beforeDir="false" afterPath="$PROJECT_DIR$/role.reserver.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -41,7 +39,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/role.reserver.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
+            <state relative-caret-position="561">
               <caret line="51" column="44" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
             </state>
           </provider>
@@ -315,14 +313,7 @@
       <workItem from="1583681190499" duration="3121000" />
       <workItem from="1583696014284" duration="3301000" />
       <workItem from="1583701932328" duration="1099000" />
-      <workItem from="1583744537202" duration="548000" />
-    </task>
-    <task id="LOCAL-00164" summary="В процессе добавления логики прокладки дорог курьерами.">
-      <created>1508179362903</created>
-      <option name="number" value="00164" />
-      <option name="presentableId" value="LOCAL-00164" />
-      <option name="project" value="LOCAL" />
-      <updated>1508179362903</updated>
+      <workItem from="1583744537202" duration="833000" />
     </task>
     <task id="LOCAL-00165" summary="Добавил прокладку дорог курьерами.">
       <created>1508180542622</created>
@@ -660,11 +651,18 @@
       <option name="project" value="LOCAL" />
       <updated>1583701112839</updated>
     </task>
-    <option name="localTasksCounter" value="213" />
+    <task id="LOCAL-00213" summary="Reserver debug">
+      <created>1583745100406</created>
+      <option name="number" value="00213" />
+      <option name="presentableId" value="LOCAL-00213" />
+      <option name="project" value="LOCAL" />
+      <updated>1583745100407</updated>
+    </task>
+    <option name="localTasksCounter" value="214" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113158000" />
+    <option name="totallyTimeSpent" value="113443000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -705,7 +703,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Допиливание строительства дорог." />
     <MESSAGE value="Вклчючил логирование времени." />
     <MESSAGE value="Добавил добычу ещё в 2 комнатах." />
     <MESSAGE value="Курьеры в первой комнате 1 &gt;&gt; 2." />
@@ -730,7 +727,8 @@
     <MESSAGE value="+1 rooms logic" />
     <MESSAGE value="+Upgraders 1&gt;&gt;3." />
     <MESSAGE value="Kill player to the right." />
-    <option name="LAST_COMMIT_MESSAGE" value="Kill player to the right." />
+    <MESSAGE value="Reserver debug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reserver debug" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/role.refillerWar.js" />
@@ -875,7 +873,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/role.reserver.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
+        <state relative-caret-position="561">
           <caret line="51" column="44" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
         </state>
       </provider>
