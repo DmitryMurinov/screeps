@@ -49,6 +49,7 @@ module.exports = {
                     if (creep.memory.storedPath) {
                         moveResult = creep.moveByPath(creep.memory.storedPath);
                     }
+                    console.log(creep.name);
                     console.log(moveResult);
                     if (moveResult == OK) {
                     } else {
