@@ -101,16 +101,22 @@ module.exports = {
                 }
 
                 // else
-                if (!creep.memory.storedPath) {
-                    creep.memory.storedPath = creep.pos.findPathTo(new RoomPosition(creep.memory.roomToWorkX, creep.memory.roomToWorkY, creep.memory.roomToWorkName));
-                }
                 if (creep.memory.storedPath) {
                     moveResult = creep.moveByPath(creep.memory.storedPath);
                 }
-                if (moveResult == OK) {
-                } else {
+                var updatePath = 1;
+                if(creep.memory.prevX != undefined && creep.memory.prevX){
+                    if(creep.memory.prevX != creep.pos.x || creep.memory.prevY != creep.pos.y){
+                        updatePath = 0;
+                    }
+                }
+
+                creep.memory.prevX=creep.pos.x;
+                creep.memory.prevY=creep.pos.y;
+
+                if (updatePath == 1 || moveResult == -5 || moveResult == -4) {
                     creep.memory.storedPath = creep.pos.findPathTo(new RoomPosition(creep.memory.roomToWorkX, creep.memory.roomToWorkY, creep.memory.roomToWorkName));
-                    moveResult = creep.moveByPath(creep.memory.storedPath);
+                    creep.moveByPath(creep.memory.storedPath);
                 }
 
             } else

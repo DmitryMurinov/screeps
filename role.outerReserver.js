@@ -45,7 +45,6 @@ module.exports = {
                 if (creep.pos.x == creep.memory.roomToWorkX && creep.pos.y == creep.memory.roomToWorkY && creep.room.name == creep.memory.roomToWorkName) {
                     creep.memory.storedPath = undefined;
                 } else {
-
                     if (creep.memory.storedPath) {
                         moveResult = creep.moveByPath(creep.memory.storedPath);
                     }
@@ -56,17 +55,14 @@ module.exports = {
                         }
                     }
 
-                    console.log(creep.name);
-                    console.log("moveResult" + moveResult);
-
                     creep.memory.prevX=creep.pos.x;
                     creep.memory.prevY=creep.pos.y;
                     
                     if (updatePath == 1 || moveResult == -5 || moveResult == -4) {
                         creep.memory.storedPath = creep.pos.findPathTo(new RoomPosition(creep.memory.roomToWorkX, creep.memory.roomToWorkY, creep.memory.roomToWorkName));
+                        creep.moveByPath(creep.memory.storedPath);
                     }
                 }
-
             }
         }
         else if (creep.memory.arrived == false) {
