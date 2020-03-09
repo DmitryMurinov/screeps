@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="Reserver debug">
-      <change beforePath="$PROJECT_DIR$/role.reserver.js" beforeDir="false" afterPath="$PROJECT_DIR$/role.reserver.js" afterDir="false" />
+    <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="Reserver &amp;&amp; Controller Attacker pathfinding debug.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic.civilian.js" beforeDir="false" afterPath="$PROJECT_DIR$/logic.civilian.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,24 +33,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/role.controllerAttacker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-969" />
+            <state relative-caret-position="2023">
+              <caret line="119" column="17" selection-start-line="119" selection-start-column="17" selection-end-line="119" selection-end-column="17" />
+            </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/role.reserver.js">
+        <entry file="file://$PROJECT_DIR$/logic.civilian.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="51" column="44" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
+            <state relative-caret-position="476">
+              <caret line="253" column="10" lean-forward="true" selection-start-line="253" selection-start-column="10" selection-end-line="253" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.js">
+        <entry file="file://$PROJECT_DIR$/role.outerReserver.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+            <state relative-caret-position="385">
+              <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -167,7 +170,6 @@
         <option value="$PROJECT_DIR$/rooms.logic.civilian.js" />
         <option value="$PROJECT_DIR$/role.basicCreep.js" />
         <option value="$PROJECT_DIR$/defend.rooms.js" />
-        <option value="$PROJECT_DIR$/role.controllerAttacker.js" />
         <option value="$PROJECT_DIR$/role.RangedAttacker.js" />
         <option value="$PROJECT_DIR$/labs.js" />
         <option value="$PROJECT_DIR$/role.defender.js" />
@@ -181,10 +183,11 @@
         <option value="$PROJECT_DIR$/main.js" />
         <option value="$PROJECT_DIR$/creep.templates.js" />
         <option value="$PROJECT_DIR$/creep.create.js" />
-        <option value="$PROJECT_DIR$/role.outerReserver.js" />
         <option value="$PROJECT_DIR$/helper.counter.js" />
-        <option value="$PROJECT_DIR$/logic.civilian.js" />
         <option value="$PROJECT_DIR$/role.reserver.js" />
+        <option value="$PROJECT_DIR$/role.outerReserver.js" />
+        <option value="$PROJECT_DIR$/role.controllerAttacker.js" />
+        <option value="$PROJECT_DIR$/logic.civilian.js" />
       </list>
     </option>
   </component>
@@ -313,35 +316,7 @@
       <workItem from="1583681190499" duration="3121000" />
       <workItem from="1583696014284" duration="3301000" />
       <workItem from="1583701932328" duration="1099000" />
-      <workItem from="1583744537202" duration="833000" />
-    </task>
-    <task id="LOCAL-00165" summary="Добавил прокладку дорог курьерами.">
-      <created>1508180542622</created>
-      <option name="number" value="00165" />
-      <option name="presentableId" value="LOCAL-00165" />
-      <option name="project" value="LOCAL" />
-      <updated>1508180542622</updated>
-    </task>
-    <task id="LOCAL-00166" summary="Добавил прокладку дорог курьерами.">
-      <created>1508180553457</created>
-      <option name="number" value="00166" />
-      <option name="presentableId" value="LOCAL-00166" />
-      <option name="project" value="LOCAL" />
-      <updated>1508180553457</updated>
-    </task>
-    <task id="LOCAL-00167" summary="Добавил прокладку дорог курьерами.">
-      <created>1508182112971</created>
-      <option name="number" value="00167" />
-      <option name="presentableId" value="LOCAL-00167" />
-      <option name="project" value="LOCAL" />
-      <updated>1508182112971</updated>
-    </task>
-    <task id="LOCAL-00168" summary="Добавил прокладку дорог курьерами.">
-      <created>1508182166622</created>
-      <option name="number" value="00168" />
-      <option name="presentableId" value="LOCAL-00168" />
-      <option name="project" value="LOCAL" />
-      <updated>1508182166622</updated>
+      <workItem from="1583744537202" duration="1381000" />
     </task>
     <task id="LOCAL-00169" summary="Пофиксил застревание keeperKiller'a">
       <created>1508182734066</created>
@@ -658,11 +633,39 @@
       <option name="project" value="LOCAL" />
       <updated>1583745100407</updated>
     </task>
-    <option name="localTasksCounter" value="214" />
+    <task id="LOCAL-00214" summary="Reserver debug">
+      <created>1583745373792</created>
+      <option name="number" value="00214" />
+      <option name="presentableId" value="LOCAL-00214" />
+      <option name="project" value="LOCAL" />
+      <updated>1583745373792</updated>
+    </task>
+    <task id="LOCAL-00215" summary="Reserver debug">
+      <created>1583745466718</created>
+      <option name="number" value="00215" />
+      <option name="presentableId" value="LOCAL-00215" />
+      <option name="project" value="LOCAL" />
+      <updated>1583745466718</updated>
+    </task>
+    <task id="LOCAL-00216" summary="Reserver debug">
+      <created>1583745561655</created>
+      <option name="number" value="00216" />
+      <option name="presentableId" value="LOCAL-00216" />
+      <option name="project" value="LOCAL" />
+      <updated>1583745561655</updated>
+    </task>
+    <task id="LOCAL-00217" summary="Reserver &amp;&amp; Controller Attacker pathfinding debug.">
+      <created>1583745766889</created>
+      <option name="number" value="00217" />
+      <option name="presentableId" value="LOCAL-00217" />
+      <option name="project" value="LOCAL" />
+      <updated>1583745766889</updated>
+    </task>
+    <option name="localTasksCounter" value="218" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113443000" />
+    <option name="totallyTimeSpent" value="113991000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -703,7 +706,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Вклчючил логирование времени." />
     <MESSAGE value="Добавил добычу ещё в 2 комнатах." />
     <MESSAGE value="Курьеры в первой комнате 1 &gt;&gt; 2." />
     <MESSAGE value="Поправил место возврата курьеров." />
@@ -728,7 +730,8 @@
     <MESSAGE value="+Upgraders 1&gt;&gt;3." />
     <MESSAGE value="Kill player to the right." />
     <MESSAGE value="Reserver debug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reserver debug" />
+    <MESSAGE value="Reserver &amp;&amp; Controller Attacker pathfinding debug." />
+    <option name="LAST_COMMIT_MESSAGE" value="Reserver &amp;&amp; Controller Attacker pathfinding debug." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/role.refillerWar.js" />
@@ -782,20 +785,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6409">
           <caret line="377" column="39" selection-start-line="377" selection-start-column="39" selection-end-line="377" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logic.civilian.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="949" column="14" lean-forward="true" selection-start-line="949" selection-start-column="14" selection-end-line="949" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/role.outerReserver.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -866,15 +855,31 @@
         <state relative-caret-position="-2040" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/role.controllerAttacker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-969" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/role.reserver.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
-          <caret line="51" column="44" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
+          <caret line="51" selection-start-line="51" selection-end-line="52" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.outerReserver.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.controllerAttacker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2023">
+          <caret line="119" column="17" selection-start-line="119" selection-start-column="17" selection-end-line="119" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic.civilian.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="253" column="10" lean-forward="true" selection-start-line="253" selection-start-column="10" selection-end-line="253" selection-end-column="10" />
         </state>
       </provider>
     </entry>
