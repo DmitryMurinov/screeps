@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="+1 more room logic, E9S54.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logic.civilian.js" beforeDir="false" afterPath="$PROJECT_DIR$/logic.civilian.js" afterDir="false" />
-    </list>
+    <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="Debug." />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,8 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/logic.civilian.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="282" column="25" selection-start-line="282" selection-start-column="13" selection-end-line="282" selection-end-column="25" />
+            <state relative-caret-position="-532">
+              <caret line="849" column="51" lean-forward="true" selection-start-line="849" selection-start-column="51" selection-end-line="849" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -322,28 +319,7 @@
       <workItem from="1583701932328" duration="1099000" />
       <workItem from="1583744537202" duration="5663000" />
       <workItem from="1583761127938" duration="1716000" />
-      <workItem from="1583768050255" duration="3013000" />
-    </task>
-    <task id="LOCAL-00189" summary="Добавил патруль для атакующих creep'ов.">
-      <created>1583606765255</created>
-      <option name="number" value="00189" />
-      <option name="presentableId" value="LOCAL-00189" />
-      <option name="project" value="LOCAL" />
-      <updated>1583606765255</updated>
-    </task>
-    <task id="LOCAL-00190" summary="Добавил патруль для атакующих creep'ов.">
-      <created>1583609374211</created>
-      <option name="number" value="00190" />
-      <option name="presentableId" value="LOCAL-00190" />
-      <option name="project" value="LOCAL" />
-      <updated>1583609374211</updated>
-    </task>
-    <task id="LOCAL-00191" summary="Увеличил кол-во upgraders 1 &gt;&gt; 3.">
-      <created>1583613720061</created>
-      <option name="number" value="00191" />
-      <option name="presentableId" value="LOCAL-00191" />
-      <option name="project" value="LOCAL" />
-      <updated>1583613720061</updated>
+      <workItem from="1583768050255" duration="3692000" />
     </task>
     <task id="LOCAL-00192" summary="Отладка.">
       <created>1583614428022</created>
@@ -667,11 +643,32 @@
       <option name="project" value="LOCAL" />
       <updated>1583778912897</updated>
     </task>
-    <option name="localTasksCounter" value="238" />
+    <task id="LOCAL-00238" summary="+1 more room logic, E9S54.">
+      <created>1583779222106</created>
+      <option name="number" value="00238" />
+      <option name="presentableId" value="LOCAL-00238" />
+      <option name="project" value="LOCAL" />
+      <updated>1583779222107</updated>
+    </task>
+    <task id="LOCAL-00239" summary="+1 more room logic, E9S54.">
+      <created>1583779234294</created>
+      <option name="number" value="00239" />
+      <option name="presentableId" value="LOCAL-00239" />
+      <option name="project" value="LOCAL" />
+      <updated>1583779234294</updated>
+    </task>
+    <task id="LOCAL-00240" summary="Debug.">
+      <created>1583786217301</created>
+      <option name="number" value="00240" />
+      <option name="presentableId" value="LOCAL-00240" />
+      <option name="project" value="LOCAL" />
+      <updated>1583786217301</updated>
+    </task>
+    <option name="localTasksCounter" value="241" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123002000" />
+    <option name="totallyTimeSpent" value="123681000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -712,7 +709,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Добавил патруль для атакующих creep'ов." />
     <MESSAGE value="Увеличил кол-во upgraders 1 &gt;&gt; 3." />
     <MESSAGE value="Отладка." />
     <MESSAGE value="Ramparts added." />
@@ -737,7 +733,8 @@
     <MESSAGE value="Debug" />
     <MESSAGE value="+1 more rooms, E9S54." />
     <MESSAGE value="+1 more room logic, E9S54." />
-    <option name="LAST_COMMIT_MESSAGE" value="+1 more room logic, E9S54." />
+    <MESSAGE value="Debug." />
+    <option name="LAST_COMMIT_MESSAGE" value="Debug." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/role.refillerWar.js" />
@@ -884,8 +881,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/logic.civilian.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="282" column="25" selection-start-line="282" selection-start-column="13" selection-end-line="282" selection-end-column="25" />
+        <state relative-caret-position="-532">
+          <caret line="849" column="51" lean-forward="true" selection-start-line="849" selection-start-column="51" selection-end-line="849" selection-end-column="51" />
         </state>
       </provider>
     </entry>
