@@ -13,30 +13,30 @@ module.exports = {
             creep.memory.doNothingTicks = 0;
         }
 
-        if(!creep.memory.previousPositionX){
+        if (!creep.memory.previousPositionX) {
             creep.memory.previousPositionX = creep.pos.x;
         }
 
-        if(!creep.memory.previousPositionY){
+        if (!creep.memory.previousPositionY) {
             creep.memory.previousPositionY = creep.pos.y;
         }
 
-        if(creep.pos.x == creep.memory.previousPositionX && creep.pos.y == creep.memory.previousPositionY){
-            creep.memory.doNothingTicks ++;
+        if (creep.pos.x == creep.memory.previousPositionX && creep.pos.y == creep.memory.previousPositionY) {
+            creep.memory.doNothingTicks++;
         }
 
         creep.memory.previousPositionX = creep.pos.x;
         creep.memory.previousPositionY = creep.pos.y;
 
-        if(creep.memory.moveResource == undefined || creep.memory.moveResource == null){
+        if (creep.memory.moveResource == undefined || creep.memory.moveResource == null) {
             creep.memory.moveResource = 'finished';
         }
 
-        if(creep.memory.labWork == undefined || creep.memory.labWork == null){
+        if (creep.memory.labWork == undefined || creep.memory.labWork == null) {
             creep.memory.labWork = 'finished';
         }
 
-        if(creep.ticksToLive == 1499){
+        if (creep.ticksToLive == 1499) {
             creep.memory.labWork == 'finished';
             creep.room.memory.labWork = 'finished';
         }
@@ -55,20 +55,19 @@ module.exports = {
             creep.memory.labWork = 'starting';
         }
 
-        if (roomMemory.moveResource == 'starting' && creep.memory.moveResource == 'finished'){
+        if (roomMemory.moveResource == 'starting' && creep.memory.moveResource == 'finished') {
             creep.memory.moveResource = 'starting';
         }
 
         if (creep.memory.labWork != 'finished') {
             this.labWork(creep);
-        } else if (creep.memory.moveResource != 'finished'){
+        } else if (creep.memory.moveResource != 'finished') {
             this.moveResource(creep);
-        }  else {
+        } else {
 
             if (creep.memory.working == true && _.sum(creep.carry) == 0) {
                 creep.memory.working = false;
-            }
-            else if (creep.memory.working == false && _.sum(creep.carry) > 0) {
+            } else if (creep.memory.working == false && _.sum(creep.carry) > 0) {
                 creep.memory.working = true;
             }
 
@@ -106,7 +105,9 @@ module.exports = {
 
             if (creep.memory.linkStorageId == (null || undefined)) {
                 linkStorage = storage.pos.findClosestByRange(FIND_MY_STRUCTURES, {filter: (s) => s.structureType == STRUCTURE_LINK});
-                creep.memory.linkStorageId = linkStorage.id;
+                if (creep.memory.linkStorageId != null && creep.memory.linkStorageId != undefined) {
+                    creep.memory.linkStorageId = linkStorage.id;
+                }
             } else {
                 linkStorage = Game.getObjectById(creep.memory.linkStorageId);
             }
@@ -155,7 +156,7 @@ module.exports = {
                     }
                 } else if (terminal) {
                     if ((terminal.store[mineralType] == undefined
-                            || terminal.store[mineralType] < 10000)
+                        || terminal.store[mineralType] < 10000)
                         && storage.store[mineralType] > 2500) {
                         creep.memory.doNothingTicks = 0;
                         if (creep.withdraw(storage, mineralType) == ERR_NOT_IN_RANGE) {
@@ -207,8 +208,6 @@ module.exports = {
         }
 
 
-
-
         if (creep.memory.labWork == 'started') {
             if (_.sum(creep.carry) == 0 && (!roomMemory.labWorkFromId || !roomMemory.labWorkToId)) {
                 creep.memory.labWork = 'finishing';
@@ -230,10 +229,10 @@ module.exports = {
                 var to = Game.getObjectById(creep.memory.storedToId);
                 var resource = creep.memory.labWorkResource;
 
-                if(to.structureType == STRUCTURE_LAB && to.mineralType != null && to.mineralType != creep.memory.labWorkResource){
+                if (to.structureType == STRUCTURE_LAB && to.mineralType != null && to.mineralType != creep.memory.labWorkResource) {
                     creep.memory.labWork = 'finishing';
                 }
-                if(to.structureType == STRUCTURE_LAB && to.mineralAmount > 2000){
+                if (to.structureType == STRUCTURE_LAB && to.mineralAmount > 2000) {
                     creep.memory.labWork = 'finishing';
                 }
 

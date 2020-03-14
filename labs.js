@@ -150,11 +150,11 @@ module.exports = {
 
                 var terminalPosition = Game.rooms[roomName].terminal.pos;
 
-                var lab1 = Game.rooms[roomName].lookForAt('structure', terminalPosition.x, terminalPosition.y + 2)[0];
-                var lab2 = Game.rooms[roomName].lookForAt('structure', terminalPosition.x, terminalPosition.y + 1)[0];
-                var lab3 = Game.rooms[roomName].lookForAt('structure', terminalPosition.x + 1, terminalPosition.y + 1)[0];
+                var lab1 = Game.rooms[roomName].lookForAt('structure', terminalPosition.x - 2, terminalPosition.y)[0];
+                var lab2 = Game.rooms[roomName].lookForAt('structure', terminalPosition.x - 1, terminalPosition.y)[0];
+                var lab3 = Game.rooms[roomName].lookForAt('structure', terminalPosition.x - 1, terminalPosition.y + 1)[0];
 
-                var upgradePosition = new RoomPosition(Game.rooms[roomName].terminal.pos.x + 1, Game.rooms[roomName].terminal.pos.y + 2, roomName);
+                var upgradePosition = new RoomPosition(Game.rooms[roomName].terminal.pos.x - 1, Game.rooms[roomName].terminal.pos.y + 1, roomName);
                 var creeps = Game.rooms[roomName].lookForAt(LOOK_CREEPS, upgradePosition);
 
                 var creep;
@@ -260,10 +260,9 @@ module.exports = {
         var roomMemory = Game.rooms[roomName].memory;
 
         if (totalLabs == 3) {
-            var lab1 = Game.rooms[roomName].lookForAt('structure', terminalPosition.x, terminalPosition.y + 2)[0];
-            var lab2 = Game.rooms[roomName].lookForAt('structure', terminalPosition.x, terminalPosition.y + 1)[0];
-            var lab3 = Game.rooms[roomName].lookForAt('structure', terminalPosition.x + 1, terminalPosition.y + 1)[0];
-
+            var lab1 = Game.rooms[roomName].lookForAt('structure', terminalPosition.x - 2, terminalPosition.y)[0];
+            var lab2 = Game.rooms[roomName].lookForAt('structure', terminalPosition.x - 1, terminalPosition.y)[0];
+            var lab3 = Game.rooms[roomName].lookForAt('structure', terminalPosition.x - 1, terminalPosition.y + 1)[0];
 
             var ingredient1 = this.ingredientsReaction(resourceNeededType)[0];
             var ingredient2 = this.ingredientsReaction(resourceNeededType)[1];
