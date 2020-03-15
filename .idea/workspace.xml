@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="OuterCreeps6 4&gt;&gt;0.">
+    <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="Bankir debug.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/labs.js" beforeDir="false" afterPath="$PROJECT_DIR$/labs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/role.bankir.js" beforeDir="false" afterPath="$PROJECT_DIR$/role.bankir.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manageResources.js" beforeDir="false" afterPath="$PROJECT_DIR$/manageResources.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,46 +15,44 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/creep.templates.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2261">
-              <caret line="133" column="98" selection-start-line="133" selection-start-column="98" selection-end-line="133" selection-end-column="98" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logic.civilian.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="838">
-              <caret line="189" column="50" selection-start-line="189" selection-start-column="50" selection-end-line="189" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/role.bankir.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1003">
-              <caret line="116" column="32" lean-forward="true" selection-start-line="116" selection-start-column="32" selection-end-line="116" selection-end-column="32" />
+            <state relative-caret-position="290">
+              <caret line="273" column="4" selection-start-line="273" selection-start-column="4" selection-end-line="273" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/labs.js">
+        <entry file="file://$PROJECT_DIR$/role.courierMine.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="270" column="47" lean-forward="true" selection-start-line="270" selection-start-column="47" selection-end-line="270" selection-end-column="47" />
+            <state relative-caret-position="-867" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manageResources.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/defend.rooms.js">
+        <entry file="file://$PROJECT_DIR$/role.courier.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1474">
+              <caret line="141" column="21" selection-start-line="141" selection-start-column="21" selection-end-line="141" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/labs.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
-              <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+              <caret line="270" column="47" selection-start-line="270" selection-start-column="47" selection-end-line="270" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -192,8 +189,9 @@
         <option value="$PROJECT_DIR$/role.basicCreepOuter.js" />
         <option value="$PROJECT_DIR$/helper.counter.js" />
         <option value="$PROJECT_DIR$/logic.civilian.js" />
-        <option value="$PROJECT_DIR$/role.bankir.js" />
         <option value="$PROJECT_DIR$/labs.js" />
+        <option value="$PROJECT_DIR$/role.bankir.js" />
+        <option value="$PROJECT_DIR$/manageResources.js" />
       </list>
     </option>
   </component>
@@ -204,8 +202,8 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="59" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="315" />
     <option name="y" value="95" />
     <option name="width" value="1400" />
     <option name="height" value="848" />
@@ -216,9 +214,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -327,13 +325,7 @@
       <workItem from="1583768050255" duration="3692000" />
       <workItem from="1583824213650" duration="695000" />
       <workItem from="1584196581772" duration="566000" />
-    </task>
-    <task id="LOCAL-00194" summary="Ramparts added.">
-      <created>1583615077474</created>
-      <option name="number" value="00194" />
-      <option name="presentableId" value="LOCAL-00194" />
-      <option name="project" value="LOCAL" />
-      <updated>1583615077475</updated>
+      <workItem from="1584266448821" duration="1533000" />
     </task>
     <task id="LOCAL-00195" summary="Ramparts added.">
       <created>1583615270164</created>
@@ -671,17 +663,23 @@
       <option name="project" value="LOCAL" />
       <updated>1583825034433</updated>
     </task>
-    <option name="localTasksCounter" value="243" />
+    <task id="LOCAL-00243" summary="Bankir debug.">
+      <created>1584266505544</created>
+      <option name="number" value="00243" />
+      <option name="presentableId" value="LOCAL-00243" />
+      <option name="project" value="LOCAL" />
+      <updated>1584266505545</updated>
+    </task>
+    <option name="localTasksCounter" value="244" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124942000" />
+    <option name="totallyTimeSpent" value="126475000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="59" y="95" width="1400" height="848" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31492537" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22814499" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -716,7 +714,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Отладка." />
     <MESSAGE value="Ramparts added." />
     <MESSAGE value="Upgraders 3 &gt;&gt; 2." />
     <MESSAGE value="Take one more room, E3S51." />
@@ -741,11 +738,11 @@
     <MESSAGE value="+1 more room logic, E9S54." />
     <MESSAGE value="Debug." />
     <MESSAGE value="OuterCreeps6 4&gt;&gt;0." />
-    <option name="LAST_COMMIT_MESSAGE" value="OuterCreeps6 4&gt;&gt;0." />
+    <MESSAGE value="Bankir debug." />
+    <option name="LAST_COMMIT_MESSAGE" value="Bankir debug." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/role.refillerWar.js" />
-    <entry file="file://$PROJECT_DIR$/role.courierMine.js" />
     <entry file="file://$PROJECT_DIR$/market.js" />
     <entry file="file://$PROJECT_DIR$/creeps.runAllCreeps.backup20170920.js" />
     <entry file="file://$PROJECT_DIR$/role.bankirLogic.js" />
@@ -777,13 +774,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1054">
           <caret line="62" column="25" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/role.courier.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2397">
-          <caret line="141" column="21" selection-start-line="141" selection-start-column="21" selection-end-line="141" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -822,9 +812,6 @@
     <entry file="file://$PROJECT_DIR$/role.attackerLogic.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/manageResources.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/role.controllerAttacker.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2023">
@@ -843,6 +830,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2261">
           <caret line="133" column="98" selection-start-line="133" selection-start-column="98" selection-end-line="133" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logic.civilian.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3213">
+          <caret line="189" column="50" selection-start-line="189" selection-start-column="50" selection-end-line="189" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -884,25 +878,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logic.civilian.js">
+    <entry file="file://$PROJECT_DIR$/labs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="838">
-          <caret line="189" column="50" selection-start-line="189" selection-start-column="50" selection-end-line="189" selection-end-column="50" />
+        <state relative-caret-position="408">
+          <caret line="270" column="47" selection-start-line="270" selection-start-column="47" selection-end-line="270" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manageResources.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.courier.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1474">
+          <caret line="141" column="21" selection-start-line="141" selection-start-column="21" selection-end-line="141" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/role.bankir.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="116" column="32" lean-forward="true" selection-start-line="116" selection-start-column="32" selection-end-line="116" selection-end-column="32" />
+        <state relative-caret-position="290">
+          <caret line="273" column="4" selection-start-line="273" selection-start-column="4" selection-end-line="273" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/labs.js">
+    <entry file="file://$PROJECT_DIR$/role.courierMine.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="270" column="47" lean-forward="true" selection-start-line="270" selection-start-column="47" selection-end-line="270" selection-end-column="47" />
-        </state>
+        <state relative-caret-position="-867" />
       </provider>
     </entry>
   </component>

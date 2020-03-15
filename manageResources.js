@@ -29,87 +29,91 @@ module.exports = {
 
     },
 
-    catalizedResourceBalancer: function (currentReserves, roomsList, resourcesListCatalized) {
+    catalizedResourceBalancer:
 
-        var roomsWithStorageAndTerminal = 0;
+        function (currentReserves, roomsList, resourcesListCatalized) {
 
-        for (i in roomsList) {
-            var roomName = roomsList[i];
-            var storage = Game.rooms[roomName].storage;
-            var terminal = Game.rooms[roomName].terminal;
+            var roomsWithStorageAndTerminal = 0;
 
-            if (storage && terminal) {
-                roomsWithStorageAndTerminal++;
-            }
-        }
-
-        resourcesListCatalized.push(RESOURCE_CATALYST);
-        resourcesListCatalized.push(RESOURCE_ENERGY);
-
-
-        outerLoop:
-        for(var i in resourcesListCatalized){
-            var catalizedResourse = resourcesListCatalized[i];
-
-            for (var j in roomsList) {
-                var roomName = roomsList[j];
+            for (i in roomsList) {
+                var roomName = roomsList[i];
                 var storage = Game.rooms[roomName].storage;
                 var terminal = Game.rooms[roomName].terminal;
 
                 if (storage && terminal) {
+                    roomsWithStorageAndTerminal++;
+                }
+            }
 
-                    if((currentReserves[roomName + ';' + catalizedResourse] - 1500) >
-                        (currentReserves['total;' + catalizedResourse] / roomsWithStorageAndTerminal)){
-                        var amount = 10000000;
-                        var lineKey = "";
-                        var roomTo = "";
+            resourcesListCatalized.push(RESOURCE_CATALYST);
+            resourcesListCatalized.push(RESOURCE_ENERGY);
 
-                        innerLoop:
-                        for (var k in roomsList) {
-                            var roomToName = roomsList[k];
-                            var storageTo = Game.rooms[roomToName].storage;
-                            var terminalTo = Game.rooms[roomToName].terminal;
-                            if(storageTo && terminalTo && (
-                                (currentReserves[roomToName + ';' + catalizedResourse]) <
-                                (currentReserves['total;' + catalizedResourse] / roomsWithStorageAndTerminal))){
-                                roomTo = roomToName;
-                                break innerLoop;
-                            }
-                        }
-                        
-/*
-                        for(var reserveKey in currentReserves){
-                            var reserveValue = currentReserves[reserveKey];
-                            if(reserveKey.indexOf(catalizedResourse) !== -1 && reserveKey.indexOf("total") === -1){
-                                roomTo = reserveKey.substring(0, reserveKey.indexOf(";"));
-                                if(reserveValue < amount && Game.rooms[roomTo].storage && Game.rooms[roomTo].terminal){
-                                    amount = reserveValue;
-                                    lineKey = reserveKey;
+
+            outerLoop:
+                for (var i in resourcesListCatalized) {
+                    var catalizedResourse = resourcesListCatalized[i];
+
+                    for (var j in roomsList) {
+                        var roomName = roomsList[j];
+                        var storage = Game.rooms[roomName].storage;
+                        var terminal = Game.rooms[roomName].terminal;
+
+                        if (storage && terminal) {
+
+                            if ((currentReserves[roomName + ';' + catalizedResourse] - 1500) >
+                                (currentReserves['total;' + catalizedResourse] / roomsWithStorageAndTerminal)) {
+                                var amount = 10000000;
+                                var lineKey = "";
+                                var roomTo = "";
+
+                                innerLoop:
+                                    for (var k in roomsList) {
+                                        var roomToName = roomsList[k];
+                                        var storageTo = Game.rooms[roomToName].storage;
+                                        var terminalTo = Game.rooms[roomToName].terminal;
+                                        if (storageTo && terminalTo && (
+                                            (currentReserves[roomToName + ';' + catalizedResourse]) <
+                                            (currentReserves['total;' + catalizedResourse] / roomsWithStorageAndTerminal))) {
+                                            roomTo = roomToName;
+                                            break innerLoop;
+                                        }
+                                    }
+
+                                /*
+                                                        for(var reserveKey in currentReserves){
+                                                            var reserveValue = currentReserves[reserveKey];
+                                                            if(reserveKey.indexOf(catalizedResourse) !== -1 && reserveKey.indexOf("total") === -1){
+                                                                roomTo = reserveKey.substring(0, reserveKey.indexOf(";"));
+                                                                if(reserveValue < amount && Game.rooms[roomTo].storage && Game.rooms[roomTo].terminal){
+                                                                    amount = reserveValue;
+                                                                    lineKey = reserveKey;
+                                                                }
+                                                            }
+                                                        }
+
+                                                        roomTo = lineKey.substring(0, lineKey.indexOf(";"));
+                                */
+                                this.sendResources(roomName, roomTo, catalizedResourse, 1000);
+                                Game.rooms[roomName].memory.catalizedResourcesBalanced = false;
+                                Game.rooms[roomName].memory.catalizedResourcesBalancedCleanData = true;
+                                break outerLoop;
+                            } else {
+                                Game.rooms[roomName].memory.catalizedResourcesBalanced = true;
+                                if (Game.rooms[roomName].memory.catalizedResourcesBalancedCleanData = true) {
+                                    Game.rooms[roomName].memory.moveResource == 'finishing';
+                                    Game.rooms[roomName].memory.moveResourceFromId = null;
+                                    Game.rooms[roomName].memory.moveResourceToId = null;
+                                    Game.rooms[roomName].memory.moveResourceResource = null;
+                                    Game.rooms[roomName].memory.moveResourceAmount = 0;
+                                    Game.rooms[roomName].memory.catalizedResourcesBalancedCleanData = false;
                                 }
                             }
                         }
-
-                        roomTo = lineKey.substring(0, lineKey.indexOf(";"));
-*/
-                        this.sendResources(roomName, roomTo, catalizedResourse, 1000);
-                        Game.rooms[roomName].memory.catalizedResourcesBalanced = false;
-                        Game.rooms[roomName].memory.catalizedResourcesBalancedCleanData = true;
-                        break outerLoop;
-                    } else {
-                        Game.rooms[roomName].memory.catalizedResourcesBalanced = true;
-                        if(Game.rooms[roomName].memory.catalizedResourcesBalancedCleanData = true) {
-                            Game.rooms[roomName].memory.moveResource == 'finishing';
-                            Game.rooms[roomName].memory.moveResourceFromId = null;
-                            Game.rooms[roomName].memory.moveResourceToId = null;
-                            Game.rooms[roomName].memory.moveResourceResource = null;
-                            Game.rooms[roomName].memory.moveResourceAmount = 0;
-                            Game.rooms[roomName].memory.catalizedResourcesBalancedCleanData = false;
-                        }
                     }
                 }
-            }
         }
-    },
+
+    ,
 
     sendResources: function (roomFromSend, roomToSend, resource, amount) {
 
@@ -117,7 +121,7 @@ module.exports = {
         var terminalTo = Game.rooms[roomToSend].terminal;
 
         if (terminalFrom && terminalTo && ((resource != RESOURCE_ENERGY && terminalFrom.store[resource] > 100) || (resource == RESOURCE_ENERGY &&
-                terminalFrom.store[resource] > 200))) {
+            terminalFrom.store[resource] > 200))) {
             if (terminalFrom.store[resource] < amount && resource != RESOURCE_ENERGY) {
                 amount = terminalFrom.store[resource];
             } else if (terminalFrom.store[resource] < amount * 2 && resource == RESOURCE_ENERGY) {
@@ -133,7 +137,8 @@ module.exports = {
                 this.moveResource(roomName, objectFrom, objectTo, resource, amount);
             }
         }
-    },
+    }
+    ,
 
     moveResource: function (roomName, objectFrom, objectTo, resource, amount) {
 
@@ -144,7 +149,7 @@ module.exports = {
         }
 
         if (amount > 0) {
-            if(roomMemory.moveResource = 'finished'){
+            if (roomMemory.moveResource = 'finished') {
                 roomMemory.moveResource = 'starting';
             }
             roomMemory.moveResourceFromId = objectFrom.id;

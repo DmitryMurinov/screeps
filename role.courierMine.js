@@ -71,7 +71,7 @@ module.exports = {
             } else {
                 var container = creep.pos.findClosestByPath(FIND_STRUCTURES, {
                     filter: (s) => s.structureType == STRUCTURE_CONTAINER &&
-                        (_.sum(s.store) - s.store[RESOURCE_ENERGY]) > 0
+                        s.getUsedCapacity() > s.store[RESOURCE_ENERGY]
                 });
 
                 if (container) {
