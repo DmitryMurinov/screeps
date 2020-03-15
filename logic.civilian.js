@@ -162,16 +162,10 @@ module.exports = {
             }
         }
 
-        var localMadePureMinersNeeded = 0;
-        if (controllerLevel >= 6) {
-            localMadePureMinersNeeded = 1;
-        }
-
         let creepsNeeded = new Map();
 
         creepsNeeded.set("basicCreep", 2);
         creepsNeeded.set("pureHarvester", 2);
-        creepsNeeded.set("pureMiner", localMadePureMinersNeeded);
         creepsNeeded.set("courier", 1);
         creepsNeeded.set("upgrader", localMadeUpgradersNeeded);
         creepsNeeded.set("basicCreepOuter1", 2);
@@ -391,16 +385,10 @@ module.exports = {
                 }
             }
 
-            var localMadePureMinersNeeded = 0;
-            if (controllerLevel >= 6) {
-                localMadePureMinersNeeded = 1;
-            }
-
             let creepsNeeded = new Map();
 
             creepsNeeded.set("basicCreep", 2);
             creepsNeeded.set("pureHarvester", 2);
-            creepsNeeded.set("pureMiner", 0);
             creepsNeeded.set("courier", 1);
             creepsNeeded.set("upgrader", 3);
             creepsNeeded.set("basicCreepOuter1", 2);
@@ -558,16 +546,10 @@ module.exports = {
             }
         }
 
-        var localMadePureMinersNeeded = 0;
-        if (controllerLevel >= 6) {
-            localMadePureMinersNeeded = 1;
-        }
-
         let creepsNeeded = new Map();
 
         creepsNeeded.set("basicCreep", 2);
         creepsNeeded.set("pureHarvester", 2);
-        creepsNeeded.set("pureMiner", localMadePureMinersNeeded);
         creepsNeeded.set("courier", 2);
         creepsNeeded.set("upgrader", 3);
         creepsNeeded.set("basicCreepOuter1", 2);
@@ -715,25 +697,25 @@ module.exports = {
             }
 
             // if (gameTime.substring(gameTime.length - 2, gameTime.length) == '00') {
-                roomMemory.roomToWorkName1 = "E7S51";
-                roomMemory.roomToWorkX1 = 2;
-                roomMemory.roomToWorkY1 = 21;
+            roomMemory.roomToWorkName1 = "E7S51";
+            roomMemory.roomToWorkX1 = 2;
+            roomMemory.roomToWorkY1 = 21;
 
-                roomMemory.roomToWorkName2 = "E6S51";
-                roomMemory.roomToWorkX2 = 11;
-                roomMemory.roomToWorkY2 = 46;
+            roomMemory.roomToWorkName2 = "E6S51";
+            roomMemory.roomToWorkX2 = 11;
+            roomMemory.roomToWorkY2 = 46;
 
-                roomMemory.roomToWorkName3 = "E57N17";
-                roomMemory.roomToWorkX3 = 2;
-                roomMemory.roomToWorkY3 = 31;
+            roomMemory.roomToWorkName3 = "E57N17";
+            roomMemory.roomToWorkX3 = 2;
+            roomMemory.roomToWorkY3 = 31;
 
-                // roomMemory.roomToWorkName4 = "E56N19";
-                // roomMemory.roomToWorkX4 = 30;
-                // roomMemory.roomToWorkY4 = 47;
-                //
-                // roomMemory.roomToWorkName5 = "E55N14";
-                // roomMemory.roomToWorkX5 = 2;
-                // roomMemory.roomToWorkY5 = 43;
+            // roomMemory.roomToWorkName4 = "E56N19";
+            // roomMemory.roomToWorkX4 = 30;
+            // roomMemory.roomToWorkY4 = 47;
+            //
+            // roomMemory.roomToWorkName5 = "E55N14";
+            // roomMemory.roomToWorkX5 = 2;
+            // roomMemory.roomToWorkY5 = 43;
 
             // }
 
@@ -741,7 +723,6 @@ module.exports = {
 
             creepsNeeded.set("basicCreep", 2);
             creepsNeeded.set("pureHarvester", 2);
-            creepsNeeded.set("pureMiner", 1);
             creepsNeeded.set("courier", 3);
             creepsNeeded.set("upgrader", 3);
             creepsNeeded.set("basicCreepOuter1", 2);
@@ -879,7 +860,6 @@ module.exports = {
 
             creepsNeeded.set("basicCreep", 2);
             creepsNeeded.set("pureHarvester", 2);
-            creepsNeeded.set("pureMiner", 1);
             creepsNeeded.set("courier", 3);
             creepsNeeded.set("upgrader", 3);
             creepsNeeded.set("basicCreepOuter1", 1);
