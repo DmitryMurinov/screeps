@@ -390,7 +390,7 @@ module.exports = {
             creepsNeeded.set("basicCreep", 2);
             creepsNeeded.set("pureHarvester", 2);
             creepsNeeded.set("courier", 1);
-            creepsNeeded.set("upgrader", 3);
+            creepsNeeded.set("upgrader", localMadeUpgradersNeeded);
             creepsNeeded.set("basicCreepOuter1", 2);
             creepsNeeded.set("basicCreepOuter2", 2);
             creepsNeeded.set("basicCreepOuter3", 0);
@@ -551,7 +551,7 @@ module.exports = {
         creepsNeeded.set("basicCreep", 2);
         creepsNeeded.set("pureHarvester", 2);
         creepsNeeded.set("courier", 2);
-        creepsNeeded.set("upgrader", 3);
+        creepsNeeded.set("upgrader", localMadeUpgradersNeeded);
         creepsNeeded.set("basicCreepOuter1", 2);
         creepsNeeded.set("basicCreepOuter2", 2);
         creepsNeeded.set("basicCreepOuter3", 0);
@@ -719,12 +719,21 @@ module.exports = {
 
             // }
 
+            var localMadeUpgradersNeeded = 1;
+            if (controllerLevel < 8) {
+                if (allReservesCount[roomName + ";" + RESOURCE_ENERGY] > 200000) {
+                    localMadeUpgradersNeeded += 2;
+                } else if (allReservesCount[roomName + ";" + RESOURCE_ENERGY] > 100000) {
+                    localMadeUpgradersNeeded += 1;
+                }
+            }
+
             let creepsNeeded = new Map();
 
             creepsNeeded.set("basicCreep", 2);
             creepsNeeded.set("pureHarvester", 2);
             creepsNeeded.set("courier", 3);
-            creepsNeeded.set("upgrader", 3);
+            creepsNeeded.set("upgrader", localMadeUpgradersNeeded);
             creepsNeeded.set("basicCreepOuter1", 2);
             creepsNeeded.set("basicCreepOuter2", 2);
             creepsNeeded.set("basicCreepOuter3", 2);
@@ -856,12 +865,21 @@ module.exports = {
 
             }
 
+            var localMadeUpgradersNeeded = 1;
+            if (controllerLevel < 8) {
+                if (allReservesCount[roomName + ";" + RESOURCE_ENERGY] > 200000) {
+                    localMadeUpgradersNeeded += 2;
+                } else if (allReservesCount[roomName + ";" + RESOURCE_ENERGY] > 100000) {
+                    localMadeUpgradersNeeded += 1;
+                }
+            }
+
             let creepsNeeded = new Map();
 
             creepsNeeded.set("basicCreep", 2);
             creepsNeeded.set("pureHarvester", 2);
             creepsNeeded.set("courier", 3);
-            creepsNeeded.set("upgrader", 3);
+            creepsNeeded.set("upgrader", localMadeUpgradersNeeded);
             creepsNeeded.set("basicCreepOuter1", 1);
             creepsNeeded.set("basicCreepOuter2", 1);
             creepsNeeded.set("basicCreepOuter3", 1);
