@@ -149,7 +149,7 @@ module.exports = {
             }
 
             if (creep.carry.energy < creep.carryCapacity && creep.memory.working == false) {
-                if (linkStorage.energy > 0) {
+                if (linkStorage && linkStorage.energy > 0) {
                     creep.memory.doNothingTicks = 0;
                     if (creep.withdraw(linkStorage, RESOURCE_ENERGY) == ERR_NOT_IN_RANGE) {
                         creep.moveTo(linkStorage);
