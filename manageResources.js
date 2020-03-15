@@ -29,6 +29,27 @@ module.exports = {
 
     },
 
+    clearContainers: function(roomsList){
+        for(i in roomsList) {
+            const roomName = roomsList[i];
+            const mines = Game.rooms[roomName].find(FIND_MINERALS);
+            var mine = mines[0];
+
+            const containersWithNotEnergy = Game.rooms[roomName].find(FIND_STRUCTURES, {
+                filter: (i) => i.structureType == STRUCTURE_CONTAINER &&
+                    i.store[RESOURCE_ENERGY] < i.store.getUsedCapacity() &&
+                    i.pos.getRangeTo(mine) > 3
+            });
+
+            if(containersWithNotEnergy) {
+                // const containerWithNotEnegry = containersWithNotEnergy[];
+
+            }
+        }
+
+
+    },
+
     catalizedResourceBalancer:
 
         function (currentReserves, roomsList, resourcesListCatalized) {

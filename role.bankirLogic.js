@@ -206,9 +206,6 @@ module.exports = {
             }
         }
 
-
-
-
         if (creep.memory.labWork == 'started') {
             if (_.sum(creep.carry) == 0 && (!roomMemory.labWorkFromId || !roomMemory.labWorkToId)) {
                 creep.memory.labWork = 'finishing';
