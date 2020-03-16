@@ -1,69 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="Resource management in progress.">
+    <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="Upgraders count update.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>.* =</find>
-      <find>creepsNeeded\[&quot;.*&quot;\];</find>
-      <find>creepsNeeded\[</find>
-      <find>\];</find>
-      <find>=</find>
-      <find>= .*\..*;</find>
-      <find>localMadeAttackerLogic3</find>
-      <find>3</find>
-      <find>E56N18</find>
-      <find>5</find>
-      <find>.\);</find>
-      <find>this.defendRoom(roomName, wallsLevel);</find>
-      <find>this.defendRoom</find>
-      <find>this</find>
-      <find>(roomName, allCreepsCount, gameTime, creepsData, creepsNeeded)</find>
-      <find>med</find>
-      <find>creepCreate</find>
-      <find>ranged</find>
-      <find>rangedAttacker1</find>
-      <find>conso</find>
-      <find>localMadeBasicCreepsOuter</find>
-      <find>gameti</find>
-      <find>&gt;= 200</find>
-      <find>courier</find>
-      <find>controllerAttacker1Needed</find>
-      <find>consol</find>
-      <find>basicCreepOuter6</find>
-      <find>basic</find>
-      <find>ban</find>
-      <find>couriermine</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>roomMemory.</replace>
-      <replace>creepsNeeded[</replace>
-      <replace>Needed =</replace>
-      <replace>[&quot;</replace>
-      <replace>creepsNeeded.set(&quot;.*&quot;, 0);</replace>
-      <replace>creepsNeeded.set(</replace>
-      <replace>, 0);</replace>
-      <replace>creepsNeeded</replace>
-      <replace>creepsNeeded.get(</replace>
-      <replace>);</replace>
-      <replace>= null;</replace>
-      <replace>4</replace>
-      <replace>5</replace>
-      <replace>6</replace>
-      <replace>7</replace>
-      <replace>8</replace>
-      <replace>0);</replace>
-      <replace>towersDefendAndRepairRoom</replace>
-      <replace>(roomName, allCreepsCount, gameTime, creepsData, creepsNeeded)</replace>
-      <replace>&gt; 0</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -180,14 +124,7 @@
       <workItem from="1583824213650" duration="695000" />
       <workItem from="1584196581772" duration="566000" />
       <workItem from="1584266448821" duration="6023000" />
-      <workItem from="1584304419843" duration="721000" />
-    </task>
-    <task id="LOCAL-00198" summary="Take one more room.">
-      <created>1583666623441</created>
-      <option name="number" value="00198" />
-      <option name="presentableId" value="LOCAL-00198" />
-      <option name="project" value="LOCAL" />
-      <updated>1583666623441</updated>
+      <workItem from="1584304419843" duration="1331000" />
     </task>
     <task id="LOCAL-00199" summary="Added 1to5 controller level for controller attacker.">
       <created>1583668030127</created>
@@ -525,14 +462,20 @@
       <option name="project" value="LOCAL" />
       <updated>1584293067570</updated>
     </task>
-    <option name="localTasksCounter" value="247" />
+    <task id="LOCAL-00247" summary="Upgraders count update.">
+      <created>1584305791847</created>
+      <option name="number" value="00247" />
+      <option name="presentableId" value="LOCAL-00247" />
+      <option name="project" value="LOCAL" />
+      <updated>1584305791848</updated>
+    </task>
+    <option name="localTasksCounter" value="248" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Take one more room." />
     <MESSAGE value="Added 1to5 controller level for controller attacker." />
     <MESSAGE value="Add 1 more room." />
     <MESSAGE value="Added 1 more room." />
@@ -557,9 +500,14 @@
     <MESSAGE value="Courier mine update." />
     <MESSAGE value="Local pure miner create logic update." />
     <MESSAGE value="Resource management in progress." />
-    <option name="LAST_COMMIT_MESSAGE" value="Resource management in progress." />
+    <MESSAGE value="Upgraders count update." />
+    <option name="LAST_COMMIT_MESSAGE" value="Upgraders count update." />
   </component>
   <component name="WindowStateProjectService">
+    <state x="565" y="114" key="CommitChangelistDialog2" timestamp="1584305791218">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="565" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584305791218" />
     <state x="739" y="275" key="FileChooserDialogImpl" timestamp="1584305627049">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -568,6 +516,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584305631268" />
+    <state x="552" y="241" key="Vcs.Push.Dialog.v2" timestamp="1584305793204">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="241" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584305793204" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -16,7 +16,7 @@ module.exports = {
         var containerNeedEnergy = new Array();
 
         containerNeedEnergy = creep.room.find(FIND_STRUCTURES, {
-            filter: (s) => s.structureType == STRUCTURE_CONTAINER && s.store[RESOURCE_ENERGY] < 2000
+            filter: (s) => s.structureType == STRUCTURE_CONTAINER && s.getUsedCapacity() < 2000
         });
 
         return containerNeedEnergy;
@@ -44,7 +44,7 @@ module.exports = {
     closestStorageOrContainerNeedPopupSameRoom: function (creep) {
         var storage = creep.pos.findClosestByPath(FIND_STRUCTURES, {
             filter: (s) => (s.structureType == STRUCTURE_STORAGE && s.store[RESOURCE_ENERGY] < 500000)
-                || (s.structureType == STRUCTURE_CONTAINER && s.store[RESOURCE_ENERGY] < 2000)
+                || (s.structureType == STRUCTURE_CONTAINER && s.getUsedCapacity() < 2000)
         });
         return storage;
     },
