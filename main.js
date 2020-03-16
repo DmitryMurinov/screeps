@@ -46,6 +46,12 @@ module.exports.loop = function () {
     if(gameTime.substring(gameTime.length - 1, gameTime.length) == ('0')) {
         roomLogicCivilian.runMyRooms(allCreepsCount, gameTime, allReservesCount);
     }
+
+
+    if(gameTime.substring(gameTime.length - 3, gameTime.length) == ('509')) {
+        manageResources.clearContainers();
+    }
+
     console.log(Game.cpu.getUsed() - startCpu);
 
     // roomLogicWar.runMyRooms(gameTime);

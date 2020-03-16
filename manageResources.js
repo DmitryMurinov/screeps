@@ -1,3 +1,5 @@
+var helperCounter = require('helper.counter');
+
 module.exports = {
 
     runManage: function (currentReserves, roomsList, resourcesListCatalized) {
@@ -29,7 +31,8 @@ module.exports = {
 
     },
 
-    clearContainers: function(roomsList){
+    clearContainers: function(){
+        var roomsList = helperCounter.roomsList();
         for(i in roomsList) {
             const roomName = roomsList[i];
             const mines = Game.rooms[roomName].find(FIND_MINERALS);
@@ -41,13 +44,32 @@ module.exports = {
                     i.pos.getRangeTo(mine) > 3
             });
 
-            if(containersWithNotEnergy) {
-                // const containerWithNotEnegry = containersWithNotEnergy[];
+            const storages = Game.rooms[roomName].find(FIND_MY_STRUCTURES, {
+                filter: { structureType: STRUCTURE_STORAGE}
+            });
 
+            if(storages && storages.length > 0) {
+                const storage = storages[0];
+
+                if (containersWithNotEnergy && containersWithNotEnergy.length > 0) {
+                    const containerWithNotEnergy = containersWithNotEnergy[0];
+                    var resourcesList = helperCounter.resourcesList();
+                    for (k in resourcesList) {
+                        var resourceName = resourcesList[k];
+                        if (resourceName != 'energy' && containerWithNotEnergy.store.getUsedCapacity(resourceName)) {
+                            console.log(roomName);
+
+                            this.moveResource(roomName,
+                                            containerWithNotEnergy,
+                                            storage,
+                                            resourceName,
+                                            containerWithNotEnergy.store.getUsedCapacity(resourceName));
+                            break;
+                        }
+                    }
+                }
             }
         }
-
-
     },
 
     catalizedResourceBalancer:

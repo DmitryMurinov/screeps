@@ -97,7 +97,7 @@ module.exports = {
 
         var containerController = creep.room.controller.pos.findInRange(FIND_STRUCTURES, 4, {
             filter: (s) => s.structureType == STRUCTURE_CONTAINER
-                && (2000 - s.store[RESOURCE_ENERGY]) >= creep.carryCapacity
+                && (2000 - s.store.getUsedCapacity()) >= creep.carryCapacity
         })[0];
 
         var storage;
