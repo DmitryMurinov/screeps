@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="Added clear container logic to manage Resources module." />
+    <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="Added clear container logic to manage Resources module.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/links.js" beforeDir="false" afterPath="$PROJECT_DIR$/links.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -123,14 +127,7 @@
       <workItem from="1584196581772" duration="566000" />
       <workItem from="1584266448821" duration="6023000" />
       <workItem from="1584304419843" duration="1331000" />
-      <workItem from="1584389027737" duration="2075000" />
-    </task>
-    <task id="LOCAL-00202" summary="Added 1 more room.">
-      <created>1583684570181</created>
-      <option name="number" value="00202" />
-      <option name="presentableId" value="LOCAL-00202" />
-      <option name="project" value="LOCAL" />
-      <updated>1583684570181</updated>
+      <workItem from="1584389027737" duration="2667000" />
     </task>
     <task id="LOCAL-00203" summary="Add 1 more room, E8S52.">
       <created>1583684702269</created>
@@ -468,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584391097287</updated>
     </task>
-    <option name="localTasksCounter" value="251" />
+    <task id="LOCAL-00251" summary="Added clear container logic to manage Resources module.">
+      <created>1584391172610</created>
+      <option name="number" value="00251" />
+      <option name="presentableId" value="LOCAL-00251" />
+      <option name="project" value="LOCAL" />
+      <updated>1584391172610</updated>
+    </task>
+    <option name="localTasksCounter" value="252" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,10 +507,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Added clear container logic to manage Resources module." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="565" y="114" key="CommitChangelistDialog2" timestamp="1584391096874">
+    <state x="565" y="114" key="CommitChangelistDialog2" timestamp="1584391172191">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="565" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584391096874" />
+    <state x="565" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584391172191" />
     <state x="739" y="275" key="FileChooserDialogImpl" timestamp="1584305627049">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -515,10 +519,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584305631268" />
-    <state x="552" y="241" key="Vcs.Push.Dialog.v2" timestamp="1584391098321">
+    <state x="552" y="241" key="Vcs.Push.Dialog.v2" timestamp="1584391173793">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="241" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584391098321" />
+    <state x="552" y="241" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584391173793" />
     <state x="656" y="118" width="607" height="804" key="find.popup" timestamp="1584389275316">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

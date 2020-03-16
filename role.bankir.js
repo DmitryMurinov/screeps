@@ -335,8 +335,16 @@ module.exports = {
                 var resource = creep.memory.moveResourceResource;
 
                 if (_.sum(creep.carry) == 0) {
-                    if (creep.withdraw(from, resource) == ERR_NOT_IN_RANGE) {
+                    const withdrawResult = creep.withdraw(from, resource);
+                    if (withdrawResult == ERR_NOT_IN_RANGE) {
                         creep.moveTo(from);
+                    } else if(withdrawResult == ERR_NOT_ENOUGH_RESOURCES){
+                        if(creep.store.getUsedCapacity() == 0){
+                            creep.memory.moveResource = 'finished';
+                            roomMemory.moveResource = 'finished';
+                            creep.memory.storedToId = null;
+                            creep.memory.labWorkResource = null;
+                        }
                     }
                 } else {
                     if (creep.transfer(to, resource) == ERR_NOT_IN_RANGE) {
@@ -345,7 +353,6 @@ module.exports = {
                 }
             }
         }
-
 
         if (creep.memory.moveResource == 'finishing') {
             if (_.sum(creep.carry) > 0) {

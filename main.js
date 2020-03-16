@@ -1,4 +1,4 @@
-var structLinks = require('links');
+var links = require('links');
 var helperCounter = require('helper.counter');
 var roomLogicCivilian = require('logic.civilian');
 var roomLogicWar = require('rooms.logic.war');
@@ -46,6 +46,8 @@ module.exports.loop = function () {
     if(gameTime.substring(gameTime.length - 1, gameTime.length) == ('0')) {
         roomLogicCivilian.runMyRooms(allCreepsCount, gameTime, allReservesCount);
     }
+
+    links.linksTransfer();
 
 
     if(gameTime.substring(gameTime.length - 3, gameTime.length) == ('509')) {

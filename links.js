@@ -2,22 +2,22 @@ module.exports = {
 
     linksTransfer: function () {
 
-        this.E53N16();
-        this.E57N15();
-        this.E52N19();
+        this.E9S54();
+        // this.E57N15();
+        // this.E52N19();
 
     },
 
-    E53N16: function () {
+    E9S54: function () {
 
-        const linkEnergySource1 = Game.rooms['E53N16'].lookForAt('structure', 2, 18)[0];
+        const linkEnergySource1 = Game.rooms['E9S54'].lookForAt('structure', 16, 14)[0];
 
-        const linkEnergySource2 = Game.rooms['E53N16'].lookForAt('structure', 5, 2)[0];
+        const linkEnergySource2 = Game.rooms['E9S54'].lookForAt('structure', 39, 17)[0];
 
-        const linkOuter3 = Game.rooms['E53N16'].lookForAt('structure', 47, 30)[0];
+        // const linkOuter3 = Game.rooms['E9S54'].lookForAt('structure', 47, 30)[0];
 
 
-        const linkStorage = Game.rooms['E53N16'].lookForAt('structure', 29, 24)[0];
+        const linkStorage = Game.rooms['E9S54'].lookForAt('structure', 38, 26)[0];
         // const linkTo = linkFrom.pos.findInRange(FIND_MY_STRUCTURES, 2,
         //     {filter: {structureType: STRUCTURE_LINK}})[0];
 
@@ -36,11 +36,11 @@ module.exports = {
             }
         }
 
-        if(linkOuter3 && linkStorage) {
-            if(linkOuter3.energy > 0 && linkOuter3.cooldown == 0) {
-                linkOuter3.transferEnergy(linkStorage);
-            }
-        }
+        // if(linkOuter3 && linkStorage) {
+        //     if(linkOuter3.energy > 0 && linkOuter3.cooldown == 0) {
+        //         linkOuter3.transferEnergy(linkStorage);
+        //     }
+        // }
 
     },
 
