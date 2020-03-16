@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="Upgraders count update.">
+    <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="Debug courier logic.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/struct.structuresNeedEnergy.js" beforeDir="false" afterPath="$PROJECT_DIR$/struct.structuresNeedEnergy.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,13 +126,7 @@
       <workItem from="1584196581772" duration="566000" />
       <workItem from="1584266448821" duration="6023000" />
       <workItem from="1584304419843" duration="1331000" />
-    </task>
-    <task id="LOCAL-00199" summary="Added 1to5 controller level for controller attacker.">
-      <created>1583668030127</created>
-      <option name="number" value="00199" />
-      <option name="presentableId" value="LOCAL-00199" />
-      <option name="project" value="LOCAL" />
-      <updated>1583668030127</updated>
+      <workItem from="1584389027737" duration="288000" />
     </task>
     <task id="LOCAL-00200" summary="Add 1 more room.">
       <created>1583669173900</created>
@@ -469,14 +464,20 @@
       <option name="project" value="LOCAL" />
       <updated>1584305791848</updated>
     </task>
-    <option name="localTasksCounter" value="248" />
+    <task id="LOCAL-00248" summary="Debug courier logic.">
+      <created>1584389218389</created>
+      <option name="number" value="00248" />
+      <option name="presentableId" value="LOCAL-00248" />
+      <option name="project" value="LOCAL" />
+      <updated>1584389218389</updated>
+    </task>
+    <option name="localTasksCounter" value="249" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added 1to5 controller level for controller attacker." />
     <MESSAGE value="Add 1 more room." />
     <MESSAGE value="Added 1 more room." />
     <MESSAGE value="Add 1 more room, E8S52." />
@@ -501,13 +502,14 @@
     <MESSAGE value="Local pure miner create logic update." />
     <MESSAGE value="Resource management in progress." />
     <MESSAGE value="Upgraders count update." />
-    <option name="LAST_COMMIT_MESSAGE" value="Upgraders count update." />
+    <MESSAGE value="Debug courier logic." />
+    <option name="LAST_COMMIT_MESSAGE" value="Debug courier logic." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="565" y="114" key="CommitChangelistDialog2" timestamp="1584305791218">
+    <state x="565" y="114" key="CommitChangelistDialog2" timestamp="1584389217818">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="565" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584305791218" />
+    <state x="565" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584389217818" />
     <state x="739" y="275" key="FileChooserDialogImpl" timestamp="1584305627049">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -516,10 +518,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584305631268" />
-    <state x="552" y="241" key="Vcs.Push.Dialog.v2" timestamp="1584305793204">
+    <state x="552" y="241" key="Vcs.Push.Dialog.v2" timestamp="1584389219675">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="241" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584305793204" />
+    <state x="552" y="241" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584389219675" />
+    <state x="656" y="118" width="607" height="804" key="find.popup" timestamp="1584389275316">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="118" width="607" height="804" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584389275316" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
