@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="Debug courier logic.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manageResources.js" beforeDir="false" afterPath="$PROJECT_DIR$/manageResources.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/role.courier.js" beforeDir="false" afterPath="$PROJECT_DIR$/role.courier.js" afterDir="false" />
-    </list>
+    <list default="true" id="a6723e67-0abc-4de3-8532-58406348a54a" name="Default" comment="Added clear container logic to manage Resources module." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -128,14 +123,7 @@
       <workItem from="1584196581772" duration="566000" />
       <workItem from="1584266448821" duration="6023000" />
       <workItem from="1584304419843" duration="1331000" />
-      <workItem from="1584389027737" duration="1829000" />
-    </task>
-    <task id="LOCAL-00201" summary="Add 1 more room.">
-      <created>1583672932343</created>
-      <option name="number" value="00201" />
-      <option name="presentableId" value="LOCAL-00201" />
-      <option name="project" value="LOCAL" />
-      <updated>1583672932343</updated>
+      <workItem from="1584389027737" duration="2075000" />
     </task>
     <task id="LOCAL-00202" summary="Added 1 more room.">
       <created>1583684570181</created>
@@ -473,14 +461,20 @@
       <option name="project" value="LOCAL" />
       <updated>1584389320158</updated>
     </task>
-    <option name="localTasksCounter" value="250" />
+    <task id="LOCAL-00250" summary="Added clear container logic to manage Resources module.">
+      <created>1584391097287</created>
+      <option name="number" value="00250" />
+      <option name="presentableId" value="LOCAL-00250" />
+      <option name="project" value="LOCAL" />
+      <updated>1584391097287</updated>
+    </task>
+    <option name="localTasksCounter" value="251" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add 1 more room." />
     <MESSAGE value="Added 1 more room." />
     <MESSAGE value="Add 1 more room, E8S52." />
     <MESSAGE value="Добавил защиту второй комнаты и окрестностей." />
@@ -505,13 +499,14 @@
     <MESSAGE value="Resource management in progress." />
     <MESSAGE value="Upgraders count update." />
     <MESSAGE value="Debug courier logic." />
-    <option name="LAST_COMMIT_MESSAGE" value="Debug courier logic." />
+    <MESSAGE value="Added clear container logic to manage Resources module." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added clear container logic to manage Resources module." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="565" y="114" key="CommitChangelistDialog2" timestamp="1584389319689">
+    <state x="565" y="114" key="CommitChangelistDialog2" timestamp="1584391096874">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="565" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584389319689" />
+    <state x="565" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584391096874" />
     <state x="739" y="275" key="FileChooserDialogImpl" timestamp="1584305627049">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -520,10 +515,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584305631268" />
-    <state x="552" y="241" key="Vcs.Push.Dialog.v2" timestamp="1584389321313">
+    <state x="552" y="241" key="Vcs.Push.Dialog.v2" timestamp="1584391098321">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="241" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584389321313" />
+    <state x="552" y="241" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584391098321" />
     <state x="656" y="118" width="607" height="804" key="find.popup" timestamp="1584389275316">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

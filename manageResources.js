@@ -57,8 +57,6 @@ module.exports = {
                     for (k in resourcesList) {
                         var resourceName = resourcesList[k];
                         if (resourceName != 'energy' && containerWithNotEnergy.store.getUsedCapacity(resourceName)) {
-                            console.log(roomName);
-
                             this.moveResource(roomName,
                                             containerWithNotEnergy,
                                             storage,
